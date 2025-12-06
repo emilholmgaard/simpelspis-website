@@ -14,7 +14,7 @@ export default function NotFound() {
           <Heading as="h1" className="text-6xl sm:text-7xl mb-6">
             404
           </Heading>
-          <Subheading as="p" className="mb-4">Opskrift Ikke Fundet</Subheading>
+          <Subheading className="mb-4">Opskrift Ikke Fundet</Subheading>
           <Lead className="mb-8">
             Denne opskrift er desværre forsvundet... måske blev den spist? 🍽️
           </Lead>

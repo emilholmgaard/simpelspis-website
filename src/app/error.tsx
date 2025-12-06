@@ -28,7 +28,7 @@ export default function Error({
           <Heading as="h1" className="text-6xl sm:text-7xl mb-6">
             Oops!
           </Heading>
-          <Subheading as="p" className="mb-4">Noget Gik Galt</Subheading>
+          <Subheading className="mb-4">Noget Gik Galt</Subheading>
           <Lead className="mb-8">
             Det ser ud til at noget brændte på... eller måske gik vi tom for ingredienser? 🔥
           </Lead>
