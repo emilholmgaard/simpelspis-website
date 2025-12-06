@@ -1,4 +1,4 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
 import recipesData from '@/data/recipes/index.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -4949,45 +4949,103 @@ export default async function RecipePage({
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'
   
-  // Konverter tid til ISO 8601 format (PT90M for 90 min)
+  // Konverter tid til ISO 8601 format (PT90M for 90 min, PT2H for 2 timer)
   function parseTimeToISO(timeStr: string): string {
-    const match = timeStr.match(/(\d+)\s*(min|timer|time)/i)
-    if (match) {
-      const value = parseInt(match[1])
-      const unit = match[2].toLowerCase()
-      if (unit.includes('timer') || unit.includes('time')) {
-        return `PT${value}H`
-      }
-      return `PT${value}M`
+    if (!timeStr) return 'PT30M'
+    
+    // Håndter "2 timer 30 min" format
+    const hoursMatch = timeStr.match(/(\d+)\s*(timer|time)/i)
+    const minutesMatch = timeStr.match(/(\d+)\s*min/i)
+    
+    let hours = 0
+    let minutes = 0
+    
+    if (hoursMatch) {
+      hours = parseInt(hoursMatch[1])
     }
+    if (minutesMatch) {
+      minutes = parseInt(minutesMatch[1])
+    }
+    
+    // Hvis ingen timer, prøv kun minutter
+    if (!hoursMatch && minutesMatch) {
+      minutes = parseInt(minutesMatch[1])
+    }
+    
+    // Hvis ingen match, prøv at parse direkte tal
+    if (!hoursMatch && !minutesMatch) {
+      const numMatch = timeStr.match(/(\d+)/)
+      if (numMatch) {
+        const num = parseInt(numMatch[1])
+        if (timeStr.toLowerCase().includes('timer') || timeStr.toLowerCase().includes('time')) {
+          hours = num
+        } else {
+          minutes = num
+        }
+      }
+    }
+    
+    if (hours > 0 && minutes > 0) {
+      return `PT${hours}H${minutes}M`
+    } else if (hours > 0) {
+      return `PT${hours}H`
+    } else if (minutes > 0) {
+      return `PT${minutes}M`
+    }
+    
     return 'PT30M' // default
   }
 
-  // JSON-LD strukturerede data for Recipe schema
+  // Filtrer og formater ingredienser (fjern sektion headers som "Til kødet:")
+  const formattedIngredients = recipe.ingredients
+    .filter(ing => ing && ing.trim() && !ing.endsWith(':'))
+    .map(ing => ing.trim())
+
+  // Filtrer og formater instruktioner (fjern sektion headers)
+  const formattedInstructions = recipe.instructions
+    .filter(inst => inst && inst.trim() && !inst.match(/^(FORBEREDELSE|TILBEREDNING|SAMMENSAETNING|PRO TIPS)/i))
+    .map((instruction, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      text: instruction.trim(),
+    }))
+
+  // JSON-LD strukturerede data for Recipe schema - fuldt kompatibel med Google's krav
   const recipeSchema = {
     '@context': 'https://schema.org',
     '@type': 'Recipe',
+    // Obligatoriske properties
     name: recipe.title,
+    image: [
+      // Google anbefaler flere billeder med forskellige aspect ratios
+      // Når I får billeder, tilføj dem her som array
+      `${baseUrl}/images/recipes/${slug}-16x9.jpg`,
+      `${baseUrl}/images/recipes/${slug}-4x3.jpg`,
+      `${baseUrl}/images/recipes/${slug}-1x1.jpg`,
+    ],
+    recipeIngredient: formattedIngredients,
+    recipeInstructions: formattedInstructions,
+    // Anbefalede properties for rich results
     description: recipe.description,
-    image: `${baseUrl}/og-image.jpg`, // Tilføj billede senere
-    author: {
-      '@type': 'Organization',
-      name: 'Simpel Spis',
-    },
-    datePublished: new Date().toISOString(),
     prepTime: parseTimeToISO(recipe.prepTime),
     cookTime: parseTimeToISO(recipe.cookTime),
     totalTime: parseTimeToISO(recipe.time),
+    datePublished: new Date().toISOString(),
+    author: {
+      '@type': 'Organization',
+      name: 'Simpel Spis',
+      url: baseUrl,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Simpel Spis',
+      url: baseUrl,
+    },
+    // Yderligere properties
     recipeCategory: recipe.category,
-    recipeDifficulty: recipe.difficulty,
-    recipeIngredient: recipe.ingredients.filter(ing => ing && !ing.endsWith(':')),
-    recipeInstructions: recipe.instructions
-      .filter(inst => inst && !inst.match(/^(FORBEREDELSE|TILBEREDNING|SAMMENSAETNING|PRO TIPS)/))
-      .map((instruction, index) => ({
-        '@type': 'HowToStep',
-        position: index + 1,
-        text: instruction,
-      })),
+    recipeCuisine: 'Danish', // Tilpas efter behov
+    recipeYield: '4', // Standard - tilpas hvis I har servings data
+    // Nutrition information
     nutrition: {
       '@type': 'NutritionInformation',
       calories: recipe.nutrition.energy,
@@ -4999,6 +5057,8 @@ export default async function RecipePage({
       proteinContent: recipe.nutrition.protein,
       sodiumContent: recipe.nutrition.salt,
     },
+    // Keywords for SEO
+    keywords: `${recipe.title}, ${recipe.category}, nem opskrift, dansk mad, ${recipe.difficulty}`,
   }
 
   return (
