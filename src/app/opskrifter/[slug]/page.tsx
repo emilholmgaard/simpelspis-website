@@ -5061,11 +5061,41 @@ export default async function RecipePage({
     keywords: `${recipe.title}, ${recipe.category}, nem opskrift, dansk mad, ${recipe.difficulty}`,
   }
 
+  // BreadcrumbList schema for bedre SEO og navigation
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Forside',
+        item: baseUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Nemme Opskrifter',
+        item: `${baseUrl}/opskrifter`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: recipe.title,
+        item: `${baseUrl}/opskrifter/${slug}`,
+      },
+    ],
+  }
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(recipeSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
       <div className="no-print">
