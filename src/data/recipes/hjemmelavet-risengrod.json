@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-risengrod",
+  "id": "025",
   "title": "Hjemmelavet Risengrød",
   "category": "Dessert",
   "time": "45 min",
@@ -7,7 +8,6 @@
   "cookTime": "35 min",
   "difficulty": "Let",
   "excerpt": "Klassisk dansk risengrød med cremet konsistens og vaniljesmag. Den perfekte dessert til jul eller hverdagen. Denne opskrift giver dig den autentiske risengrød der smager langt bedre end fra butikken. Server med smør, kanel og sukker!",
-  "id": "025",
   "description": "Klassisk dansk risengrød med cremet konsistens og vaniljesmag. Den perfekte dessert til jul eller hverdagen. Denne opskrift giver dig den autentiske risengrød der smager langt bedre end fra butikken. Server med smør, kanel, sukker og måske lidt kirsebærsovs for den ultimative oplevelse!",
   "ingredients": [
     "Til risengrøden:",
@@ -61,5 +61,14 @@
     "For ekstra luksus: Server med flødeskum, kirsebærsovs eller chokoladesovs.",
     "Risengrød kan også serveres kold som risalamande - tilføj flødeskum, vanilje og mandler."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "12g",
+    "saturatedFat": "7g",
+    "carbs": "68g",
+    "sugar": "28g",
+    "fiber": "1g",
+    "protein": "12g",
+    "salt": "0.5g"
+  }
 }

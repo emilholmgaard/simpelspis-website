@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-bagels",
+  "id": "038",
   "title": "Hjemmelavet Bagels",
   "category": "Hurtigt",
   "time": "3 timer",
@@ -7,7 +8,6 @@
   "cookTime": "20 min",
   "difficulty": "Mellem",
   "excerpt": "Autentiske hjemmelavet bagels med sprød skorpe og blød krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske bagels der smager langt bedre end fra bageren. Server med cream cheese, laks eller dit yndlingspålæg!",
-  "id": "038",
   "description": "Autentiske hjemmelavet bagels med sprød skorpe og blød krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske bagels der smager langt bedre end fra bageren. Server med cream cheese, laks, pålæg eller en god kaffe for den ultimative oplevelse!",
   "ingredients": [
     "Til dejen:",
@@ -78,5 +78,14 @@
     "Bagels kan også fryses - skær dem i halve og frys dem, derefter optø og varm dem i ovnen.",
     "For ekstra sprødhed: Kog bagelsene lidt længere i vandet - det giver bedre skorpe."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1350 kJ / 323 kcal",
+    "fat": "2g",
+    "saturatedFat": "0.3g",
+    "carbs": "65g",
+    "sugar": "3g",
+    "fiber": "3g",
+    "protein": "11g",
+    "salt": "1.2g"
+  }
 }

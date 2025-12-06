@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-bagtkartofel",
+  "id": "058",
   "title": "Hjemmelavet Bagtkartofel",
   "category": "Vegetarisk",
   "time": "90 min",
@@ -7,7 +8,6 @@
   "cookTime": "80 min",
   "difficulty": "Let",
   "excerpt": "Bløde og smagfulde hjemmelavet bagtkartofler med sprød skræl. Denne opskrift giver dig de perfekte bagtkartofler der smager langt bedre end fra butikken. Server med smør, creme fraiche eller din yndlingsfyldning!",
-  "id": "058",
   "description": "Bløde og smagfulde hjemmelavet bagtkartofler med sprød skræl. Denne opskrift giver dig de perfekte bagtkartofler der smager langt bedre end fra butikken. Server med smør, creme fraiche, bacon, ost eller din yndlingsfyldning for den ultimative oplevelse!",
   "ingredients": [
     "4 store kartofler (floury type som Maris Piper eller King Edward)",
@@ -58,5 +58,14 @@
     "Bagtkartofler kan også laves i mikroovn - brug højeste effekt i 8-10 minutter (men de bliver ikke lige så sprøde).",
     "For perfekt resultat: Brug et termometer til at kontrollere kødetemperaturen - det er vigtigt for perfekte bagtkartofler."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "850 kJ / 200 kcal",
+    "fat": "7g",
+    "saturatedFat": "1g",
+    "carbs": "30g",
+    "sugar": "2g",
+    "fiber": "4g",
+    "protein": "4g",
+    "salt": "1.0g"
+  }
 }

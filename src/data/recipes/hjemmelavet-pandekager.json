@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-pandekager",
+  "id": "011",
   "title": "Hjemmelavet Pandekager",
   "category": "Hurtigt",
   "time": "30 min",
@@ -7,7 +8,6 @@
   "cookTime": "20 min",
   "difficulty": "Let",
   "excerpt": "Bløde og gyldne hjemmelavet pandekager med den perfekte tekstur. Perfekte til morgenmad, brunch eller dessert. Denne opskrift giver dig de klassiske danske pandekager der smager langt bedre end købte. Server med syltetøj, sukker og citron!",
-  "id": "011",
   "description": "Bløde og gyldne hjemmelavet pandekager med den perfekte tekstur. Perfekte til morgenmad, brunch eller dessert. Denne opskrift giver dig de klassiske danske pandekager der smager langt bedre end købte. Server med syltetøj, sukker og citron - eller prøv dine egne topping-kombinationer!",
   "ingredients": [
     "Til pandekagerne:",
@@ -65,5 +65,14 @@
     "Eksperimenter med størrelser: Lav små pandekager til dessert eller store til hovedret.",
     "For perfekt runde pandekager: Brug en pandekagepande eller en ring på panden."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1250 kJ / 299 kcal",
+    "fat": "12g",
+    "saturatedFat": "6g",
+    "carbs": "38g",
+    "sugar": "8g",
+    "fiber": "1g",
+    "protein": "9g",
+    "salt": "0.5g"
+  }
 }

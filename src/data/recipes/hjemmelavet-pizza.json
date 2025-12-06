@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-pizza",
+  "id": "003",
   "title": "Hjemmelavet Pizza",
   "category": "Hurtigt",
   "time": "60 min",
@@ -7,7 +8,6 @@
   "cookTime": "15 min",
   "difficulty": "Let",
   "excerpt": "Lækker hjemmelavet pizza med sprød bund, saftig tomat-sauce og dit yndlingsfyld. Denne opskrift giver dig den perfekte pizza-bund der smager bedre end takeaway. Perfekt til en hyggelig aften.",
-  "id": "003",
   "description": "Lækker hjemmelavet pizza med sprød bund, saftig tomat-sauce og dit yndlingsfyld. Denne opskrift giver dig den perfekte pizza-bund der smager bedre end takeaway. Perfekt til en hyggelig aften med venner og familie.",
   "ingredients": [
     "Til dejen:",
@@ -78,5 +78,14 @@
     "Lav ekstra sauce og gem i køleskabet - den kan holde sig i op til en uge og bruges til pasta eller andre retter.",
     "Eksperimenter med toppings! Klassisk margherita, pepperoni, hawaii, eller prøv noget helt nyt."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2450 kJ / 585 kcal",
+    "fat": "18g",
+    "saturatedFat": "8g",
+    "carbs": "75g",
+    "sugar": "6g",
+    "fiber": "3g",
+    "protein": "22g",
+    "salt": "1.5g"
+  }
 }

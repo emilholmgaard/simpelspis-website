@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-vaniljekranse",
+  "id": "022",
   "title": "Hjemmelavet Vaniljekranse",
   "category": "Dessert",
   "time": "60 min",
@@ -7,7 +8,6 @@
   "cookTime": "12 min",
   "difficulty": "Let",
   "excerpt": "Klassiske hjemmelavet vaniljekranse med smørrig smag og sprød tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske vaniljekranse der smager langt bedre end fra butikken. Server med kaffe eller te!",
-  "id": "022",
   "description": "Klassiske hjemmelavet vaniljekranse med smørrig smag og sprød tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske vaniljekranse der smager langt bedre end fra butikken. Server med kaffe, te eller en kold mælk for den ultimative oplevelse!",
   "ingredients": [
     "Til dejen:",
@@ -63,5 +63,14 @@
     "For glutenfri version: Brug glutenfrit mel i stedet for hvedemel.",
     "Kranseene kan også laves med chokoladeglasur eller farvet glasur til særlige lejligheder."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2150 kJ / 514 kcal",
+    "fat": "28g",
+    "saturatedFat": "17g",
+    "carbs": "58g",
+    "sugar": "28g",
+    "fiber": "2g",
+    "protein": "6g",
+    "salt": "0.3g"
+  }
 }

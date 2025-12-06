@@ -1,5 +1,6 @@
 {
   "slug": "entrecote",
+  "id": "019",
   "title": "Entrecote",
   "category": "Kød",
   "time": "45 min",
@@ -7,7 +8,6 @@
   "cookTime": "15 min",
   "difficulty": "Mellem",
   "excerpt": "Klassisk entrecote med saftig, mør kød og perfekt stegt skorpe. Den perfekte bøf til en særlig aften. Denne opskrift giver dig den autentiske entrecote der smager langt bedre end fra restauranten. Server med bearnaise sovs og pommes frites!",
-  "id": "019",
   "description": "Klassisk entrecote med saftig, mør kød og perfekt stegt skorpe. Den perfekte bøf til en særlig aften. Denne opskrift giver dig den autentiske entrecote der smager langt bedre end fra restauranten. Server med bearnaise sovs, pommes frites og en god rødvin for den ultimative oplevelse!",
   "ingredients": [
     "Til entrecoten:",
@@ -68,5 +68,14 @@
     "For ekstra saftighed: Brug en termometer og tag steaksene ud 5°C før ønsket temperatur - de fortsætter med at steges under hvile.",
     "Bearnaise sovs kan laves før stegning og holdes varm i et vandbad."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2850 kJ / 681 kcal",
+    "fat": "48g",
+    "saturatedFat": "22g",
+    "carbs": "2g",
+    "sugar": "1g",
+    "fiber": "0g",
+    "protein": "52g",
+    "salt": "1.8g"
+  }
 }

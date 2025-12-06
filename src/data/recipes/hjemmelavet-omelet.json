@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-omelet",
+  "id": "035",
   "title": "Hjemmelavet Omelet",
   "category": "Hurtigt",
   "time": "15 min",
@@ -7,7 +8,6 @@
   "cookTime": "10 min",
   "difficulty": "Let",
   "excerpt": "Perfekt hjemmelavet omelet med gyldenbrun skorpe og cremet fyld. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske omelet der smager langt bedre end fra restauranten. Server med fyld, brød eller salat!",
-  "id": "035",
   "description": "Perfekt hjemmelavet omelet med gyldenbrun skorpe og cremet fyld. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske omelet der smager langt bedre end fra restauranten. Server med fyld, brød, salat eller en god kaffe for den ultimative oplevelse!",
   "ingredients": [
     "Til omeletten:",
@@ -65,5 +65,14 @@
     "Omelet kan også laves i ovnen - hæld blandingen i en bradepande og bag ved 180°C i 10-15 minutter.",
     "For ekstra luksus: Server med kaviar, laks eller trøffel."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1250 kJ / 299 kcal",
+    "fat": "22g",
+    "saturatedFat": "11g",
+    "carbs": "3g",
+    "sugar": "2g",
+    "fiber": "0g",
+    "protein": "18g",
+    "salt": "1.0g"
+  }
 }

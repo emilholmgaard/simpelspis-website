@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-polsehorn",
+  "id": "039",
   "title": "Hjemmelavet Pølsehorn",
   "category": "Hurtigt",
   "time": "45 min",
@@ -7,7 +8,6 @@
   "cookTime": "25 min",
   "difficulty": "Let",
   "excerpt": "Sprøde og smagfulde hjemmelavet pølsehorn med saftig pølse og blød dej. Den perfekte snack eller forret. Denne opskrift giver dig den autentiske pølsehorn der smager langt bedre end fra butikken. Server med ketchup, sennep eller din yndlingsdip!",
-  "id": "039",
   "description": "Sprøde og smagfulde hjemmelavet pølsehorn med saftig pølse og blød dej. Den perfekte snack eller forret. Denne opskrift giver dig den autentiske pølsehorn der smager langt bedre end fra butikken. Server med ketchup, sennep, remoulade eller en god dip for den ultimative oplevelse!",
   "ingredients": [
     "Til dejen:",
@@ -75,5 +75,14 @@
     "Pølsehorn kan også fryses - frys dem efter bagning, derefter optø og varm dem i ovnen.",
     "For ekstra sprødhed: Pensl pølsehornene med smør i stedet for æg - det giver bedre smag."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "22g",
+    "saturatedFat": "10g",
+    "carbs": "48g",
+    "sugar": "3g",
+    "fiber": "2g",
+    "protein": "18g",
+    "salt": "1.5g"
+  }
 }

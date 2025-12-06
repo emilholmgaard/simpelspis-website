@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-chokoladekage",
+  "id": "028",
   "title": "Hjemmelavet Chokoladekage",
   "category": "Dessert",
   "time": "70 min",
@@ -7,7 +8,6 @@
   "cookTime": "50 min",
   "difficulty": "Let",
   "excerpt": "Rig og smagfuld hjemmelavet chokoladekage med mørk chokolade og cremet tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske chokoladekage der smager langt bedre end fra butikken. Server med kaffe eller te!",
-  "id": "028",
   "description": "Rig og smagfuld hjemmelavet chokoladekage med mørk chokolade og cremet tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske chokoladekage der smager langt bedre end fra butikken. Server med kaffe, te eller en kold mælk for den ultimative oplevelse!",
   "ingredients": [
     "Til kagen:",
@@ -68,5 +68,14 @@
     "For vegansk version: Brug plantebaseret smør og æg-erstatning.",
     "Kagen kan også fryses - skær den i skiver og frys dem, derefter optø ved stuetemperatur."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2850 kJ / 681 kcal",
+    "fat": "42g",
+    "saturatedFat": "26g",
+    "carbs": "68g",
+    "sugar": "52g",
+    "fiber": "6g",
+    "protein": "8g",
+    "salt": "0.8g"
+  }
 }

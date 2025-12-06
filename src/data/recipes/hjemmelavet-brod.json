@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-brod",
+  "id": "010",
   "title": "Hjemmelavet Brød",
   "category": "Hurtigt",
   "time": "180 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Mellem",
   "excerpt": "Luftigt og lækkert hjemmelavet brød med guldbrun skorpe. Den perfekte basis til alle måltider. Denne opskrift giver dig det klassiske hjemmebagte brød der smager langt bedre end købt brød. Varmt fra ovnen med smør - der er intet bedre!",
-  "id": "010",
   "description": "Luftigt og lækkert hjemmelavet brød med guldbrun skorpe. Den perfekte basis til alle måltider. Denne opskrift giver dig det klassiske hjemmebagte brød der smager langt bedre end købt brød. Varmt fra ovnen med smør - der er intet bedre! Perfekt til morgenmad, frokost eller som tilbehør til middagsmåltider.",
   "ingredients": [
     "Til dejen:",
@@ -61,5 +61,14 @@
     "Eksperimenter med former: Lav rundt brød, langt brød, eller boller - opskriften virker til begge!",
     "For bedste skorpe: Sæt en skål vand i bunden af ovnen under bagning. Dampen giver en bedre skorpe."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1150 kJ / 275 kcal",
+    "fat": "4g",
+    "saturatedFat": "1g",
+    "carbs": "52g",
+    "sugar": "2g",
+    "fiber": "2g",
+    "protein": "8g",
+    "salt": "0.9g"
+  }
 }

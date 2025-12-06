@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-braendtemandler",
+  "id": "015",
   "title": "Hjemmelavet Brændtemandler",
   "category": "Dessert",
   "time": "30 min",
@@ -7,7 +8,6 @@
   "cookTime": "20 min",
   "difficulty": "Let",
   "excerpt": "Søde og knasende hjemmelavet brændtemandler med karameliseret sukker og mandler. Den perfekte snack eller dessert. Denne opskrift giver dig de klassiske brændtemandler der smager langt bedre end købte. Perfekt til julehygge eller som gave!",
-  "id": "015",
   "description": "Søde og knasende hjemmelavet brændtemandler med karameliseret sukker og mandler. Den perfekte snack eller dessert. Denne opskrift giver dig de klassiske brændtemandler der smager langt bedre end købte. Perfekt til julehygge, som gave, eller bare til en hyggelig aften!",
   "ingredients": [
     "Til brændtemandlerne:",
@@ -55,5 +55,14 @@
     "Lav en dobbelt batch og gem til senere - perfekt til julegaver eller når du har gæster!",
     "For festlig præsentation: Pak dem i smukke glas eller poser med bånd - perfekt som gave!"
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2450 kJ / 585 kcal",
+    "fat": "42g",
+    "saturatedFat": "3g",
+    "carbs": "38g",
+    "sugar": "32g",
+    "fiber": "6g",
+    "protein": "12g",
+    "salt": "0.1g"
+  }
 }

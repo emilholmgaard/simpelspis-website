@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-knaekbrod",
+  "id": "006",
   "title": "Hjemmelavet Knækbrød",
   "category": "Hurtigt",
   "time": "60 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Let",
   "excerpt": "Sprødt og knasende hjemmelavet knækbrød med frø og krydderier. Perfekt til ost, pålæg eller bare som snack. Disse knækbrød er langt bedre end købte og kan tilpasses med dine yndlingsfrø og krydderier.",
-  "id": "006",
   "description": "Sprødt og knasende hjemmelavet knækbrød med frø og krydderier. Perfekt til ost, pålæg eller bare som snack. Disse knækbrød er langt bedre end købte og kan tilpasses med dine yndlingsfrø og krydderier. Holdbart i flere uger og perfekt til meal prep!",
   "ingredients": [
     "Til dejen:",
@@ -61,5 +61,14 @@
     "Lav en dobbelt batch og gem til senere - de holder sig længe og er perfekt til meal prep.",
     "For glutenfri version: Erstat hvedemelet med glutenfrit mel og tilføj lidt ekstra væske."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "22g",
+    "saturatedFat": "3g",
+    "carbs": "45g",
+    "sugar": "1g",
+    "fiber": "8g",
+    "protein": "12g",
+    "salt": "1.2g"
+  }
 }

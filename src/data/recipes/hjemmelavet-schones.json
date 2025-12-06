@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-schones",
+  "id": "036",
   "title": "Hjemmelavet Schones",
   "category": "Dessert",
   "time": "3 timer",
@@ -7,7 +8,6 @@
   "cookTime": "20 min",
   "difficulty": "Mellem",
   "excerpt": "Søde og smagfulde hjemmelavet schones med kanel, sukker og smør. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske schones der smager langt bedre end fra bageren. Server med kaffe eller te!",
-  "id": "036",
   "description": "Søde og smagfulde hjemmelavet schones med kanel, sukker og smør. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske schones der smager langt bedre end fra bageren. Server med kaffe, te eller en kold mælk for den ultimative oplevelse!",
   "ingredients": [
     "Til dejen:",
@@ -78,5 +78,14 @@
     "Schones kan også fryses - frys dem efter bagning, derefter optø og varm dem i ovnen.",
     "For ekstra sødme: Tilføj mere sukker til fyldet eller drys ekstra flormelis over glasuren."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1950 kJ / 466 kcal",
+    "fat": "20g",
+    "saturatedFat": "12g",
+    "carbs": "64g",
+    "sugar": "30g",
+    "fiber": "3g",
+    "protein": "9g",
+    "salt": "0.8g"
+  }
 }

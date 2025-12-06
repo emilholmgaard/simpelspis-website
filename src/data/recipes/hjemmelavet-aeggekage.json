@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-aeggekage",
+  "id": "034",
   "title": "Hjemmelavet Æggekage",
   "category": "Hurtigt",
   "time": "20 min",
@@ -7,7 +8,6 @@
   "cookTime": "15 min",
   "difficulty": "Let",
   "excerpt": "Cremet og smagfuld hjemmelavet æggekage med æg, mælk og smør. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske æggekage der smager langt bedre end fra restauranten. Server med bacon, brød eller grøntsager!",
-  "id": "034",
   "description": "Cremet og smagfuld hjemmelavet æggekage med æg, mælk og smør. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske æggekage der smager langt bedre end fra restauranten. Server med bacon, brød, grøntsager eller en god kaffe for den ultimative oplevelse!",
   "ingredients": [
     "Til æggekagen:",
@@ -61,5 +61,14 @@
     "Æggekage kan også laves i ovnen - hæld blandingen i en bradepande og bag ved 180°C i 15-20 minutter.",
     "For ekstra luksus: Server med kaviar, laks eller trøffel."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "32g",
+    "saturatedFat": "16g",
+    "carbs": "4g",
+    "sugar": "3g",
+    "fiber": "0g",
+    "protein": "24g",
+    "salt": "1.2g"
+  }
 }

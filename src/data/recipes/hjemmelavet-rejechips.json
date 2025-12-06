@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-rejechips",
+  "id": "057",
   "title": "Hjemmelavet Rejechips",
   "category": "Fisk",
   "time": "30 min",
@@ -7,7 +8,6 @@
   "cookTime": "10 min",
   "difficulty": "Let",
   "excerpt": "Sprøde og luftige hjemmelavet rejechips med autentisk rejesmag. Denne opskrift giver dig de autentiske rejechips der smager langt bedre end fra butikken. Server som snack eller til forret!",
-  "id": "057",
   "description": "Sprøde og luftige hjemmelavet rejechips med autentisk rejesmag. Denne opskrift giver dig de autentiske rejechips der smager langt bedre end fra butikken. Server som snack eller til forret for den ultimative oplevelse!",
   "ingredients": [
     "200g rejer, skallede og rensede",
@@ -19,6 +19,7 @@
     "1/2 tsk hvidløgspulver",
     "1 spsk vand",
     "1 liter neutral olie (solskin, raps eller jordnøddeolie)",
+    "",
     "Til servering:",
     "Sweet chili sauce",
     "Soyasauce",
@@ -57,5 +58,14 @@
     "Chips kan også laves i ovnen - brug 200°C og vend dem halvvejs gennem stegningen (men de bliver ikke lige så sprøde).",
     "For perfekt resultat: Brug et termometer til at kontrollere olie-temperaturen - det er vigtigt for perfekte chips."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1650 kJ / 390 kcal",
+    "fat": "15g",
+    "saturatedFat": "2g",
+    "carbs": "45g",
+    "sugar": "1g",
+    "fiber": "1g",
+    "protein": "20g",
+    "salt": "1.8g"
+  }
 }

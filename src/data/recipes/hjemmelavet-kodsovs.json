@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-kodsovs",
+  "id": "002",
   "title": "Hjemmelavet Kødsovs",
   "category": "Kød",
   "time": "120 min",
@@ -7,7 +8,6 @@
   "cookTime": "90 min",
   "difficulty": "Mellem",
   "excerpt": "Klassisk hjemmelavet kødsovs med saftigt hakket kød, røde tomater og krydderier. Den perfekte sovs til pasta, kartofler eller ris. Simpel at lave, men smager fantastisk.",
-  "id": "002",
   "description": "Klassisk hjemmelavet kødsovs med saftigt hakket kød, røde tomater og krydderier. Den perfekte sovs til pasta, kartofler eller ris. Simpel at lave, men smager fantastisk. Denne opskrift giver dig en rig, fyldig smag der smager bedre end noget fra en flaske.",
   "ingredients": [
     "Til sovsen:",
@@ -68,5 +68,14 @@
     "Sovsen kan fryses i op til 3 måneder. Opvarm langsomt på lav varme og rør jævnligt.",
     "Hvis du ikke har rødvin, kan du bruge ekstra bouillon eller endda lidt kaffe for dybde."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2150 kJ / 514 kcal",
+    "fat": "24g",
+    "saturatedFat": "10g",
+    "carbs": "32g",
+    "sugar": "8g",
+    "fiber": "4g",
+    "protein": "35g",
+    "salt": "1.8g"
+  }
 }

@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-chokoladeskeer",
+  "id": "014",
   "title": "Hjemmelavet Chokoladeskeer",
   "category": "Dessert",
   "time": "90 min",
@@ -7,7 +8,6 @@
   "cookTime": "60 min",
   "difficulty": "Mellem",
   "excerpt": "Rige og cremede hjemmelavet chokoladeskeer med mørk chokolade og fløde. Den perfekte dessert til særlige lejligheder. Denne opskrift giver dig de lækreste chokoladeskeer der smager langt bedre end købte. Server med bær og flødeskum!",
-  "id": "014",
   "description": "Rige og cremede hjemmelavet chokoladeskeer med mørk chokolade og fløde. Den perfekte dessert til særlige lejligheder. Denne opskrift giver dig de lækreste chokoladeskeer der smager langt bedre end købte. Server med friske bær og flødeskum for den ultimative dessertoplevelse!",
   "ingredients": [
     "Til chokoladeskeerne:",
@@ -65,5 +65,14 @@
     "Lav ekstra og gem til senere - perfekt til når du har gæster eller til en særlig lejlighed!",
     "For festlig præsentation: Server i små glas med lag af chokoladeskeer, flødeskum og bær."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2450 kJ / 585 kcal",
+    "fat": "48g",
+    "saturatedFat": "29g",
+    "carbs": "32g",
+    "sugar": "28g",
+    "fiber": "6g",
+    "protein": "6g",
+    "salt": "0.2g"
+  }
 }

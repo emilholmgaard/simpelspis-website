@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-chocolate-chip-cookies",
+  "id": "041",
   "title": "Hjemmelavet Chocolate Chip Cookies",
   "category": "Dessert",
   "time": "30 min",
@@ -7,7 +8,6 @@
   "cookTime": "10 min",
   "difficulty": "Let",
   "excerpt": "Klassiske hjemmelavet chocolate chip cookies med smeltet chokolade og blød krumme. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske chocolate chip cookies der smager langt bedre end fra butikken. Server med kaffe eller te!",
-  "id": "041",
   "description": "Klassiske hjemmelavet chocolate chip cookies med smeltet chokolade og blød krumme. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske chocolate chip cookies der smager langt bedre end fra butikken. Server med kaffe, te eller en kold mælk for den ultimative oplevelse!",
   "ingredients": [
     "Til cookies:",
@@ -21,6 +21,7 @@
     "1/2 tsk natron",
     "1/2 tsk salt",
     "150g chokoladechips (mørk eller mælkchokolade)",
+    "",
     "Til servering:",
     "Kaffe eller te"
   ],
@@ -58,5 +59,14 @@
     "Cookies kan også fryses - frys dem efter bagning, derefter optø ved stuetemperatur.",
     "For ekstra saftighed: Tilføj lidt mere smør eller et ekstra æg - det giver blødere cookies."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2150 kJ / 514 kcal",
+    "fat": "26g",
+    "saturatedFat": "16g",
+    "carbs": "65g",
+    "sugar": "38g",
+    "fiber": "2g",
+    "protein": "6g",
+    "salt": "0.5g"
+  }
 }

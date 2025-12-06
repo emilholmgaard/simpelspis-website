@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-pasta",
+  "id": "007",
   "title": "Hjemmelavet Pasta",
   "category": "Pasta",
   "time": "75 min",
@@ -7,7 +8,6 @@
   "cookTime": "15 min",
   "difficulty": "Mellem",
   "excerpt": "Frisk hjemmelavet pasta med æg og durummel. Den perfekte pasta til dine yndlingsretter. Denne opskrift giver dig den autentiske italienske pasta-smag og tekstur der er langt bedre end købt pasta.",
-  "id": "007",
   "description": "Frisk hjemmelavet pasta med æg og durummel. Den perfekte pasta til dine yndlingsretter. Denne opskrift giver dig den autentiske italienske pasta-smag og tekstur der er langt bedre end købt pasta. Perfekt til carbonara, bolognese eller bare med smør og parmesan.",
   "ingredients": [
     "Til pastaen:",
@@ -55,5 +55,14 @@
     "Eksperimenter med former: Lav ravioli, tortellini, eller gnocchi med samme dej. Bare tilpas formen!",
     "For ekstra smag: Tilføj 1 tsk tørret oregano eller basilikum til dejen under æltning."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1950 kJ / 466 kcal",
+    "fat": "12g",
+    "saturatedFat": "3g",
+    "carbs": "68g",
+    "sugar": "2g",
+    "fiber": "3g",
+    "protein": "18g",
+    "salt": "0.6g"
+  }
 }

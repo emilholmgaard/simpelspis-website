@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-floedeboller",
+  "id": "016",
   "title": "Hjemmelavet Flødeboller",
   "category": "Dessert",
   "time": "120 min",
@@ -7,7 +8,6 @@
   "cookTime": "60 min",
   "difficulty": "Svær",
   "excerpt": "Luftige og søde hjemmelavet flødeboller med meringue-kern og chokoladeovertræk. Den perfekte danske klassiker. Denne opskrift giver dig de autentiske flødeboller der smager langt bedre end købte. Perfekt til fester, gaver eller bare til dig selv!",
-  "id": "016",
   "description": "Luftige og søde hjemmelavet flødeboller med meringue-kern og chokoladeovertræk. Den perfekte danske klassiker. Denne opskrift giver dig de autentiske flødeboller der smager langt bedre end købte. Perfekt til fester, gaver eller bare til dig selv! Disse flødeboller er en sand dansk favorit.",
   "ingredients": [
     "Til meringue-kernen:",
@@ -59,5 +59,14 @@
     "Lav ekstra og gem til senere - perfekt til gaver eller når du har gæster!",
     "For festlig præsentation: Pak dem i smukke poser eller æsker - perfekt som julegave eller fødselsdagsgave!"
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "18g",
+    "saturatedFat": "11g",
+    "carbs": "58g",
+    "sugar": "55g",
+    "fiber": "3g",
+    "protein": "4g",
+    "salt": "0.1g"
+  }
 }

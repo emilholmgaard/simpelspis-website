@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-pasta-carbonara",
+  "id": "061",
   "title": "Hjemmelavet Pasta Carbonara",
   "category": "Pasta",
   "time": "25 min",
@@ -7,7 +8,6 @@
   "cookTime": "15 min",
   "difficulty": "Mellem",
   "excerpt": "Klassisk og cremet hjemmelavet pasta carbonara med bacon, æg og parmesan. Denne opskrift giver dig den autentiske carbonara der smager langt bedre end fra restauranten. Perfekt til en hurtig og lækker middag!",
-  "id": "061",
   "description": "Klassisk og cremet hjemmelavet pasta carbonara med bacon, æg og parmesan. Denne opskrift giver dig den autentiske carbonara der smager langt bedre end fra restauranten. Perfekt til en hurtig og lækker middag med familie og venner!",
   "ingredients": [
     "400g spaghetti eller fettuccine",
@@ -17,6 +17,7 @@
     "1 fed hvidløg, finthakket",
     "1/2 tsk sort peber",
     "Salt til pasta-vandet",
+    "",
     "Til servering:",
     "Ekstra parmesan",
     "Frisk peber"
@@ -56,5 +57,14 @@
     "Carbonara kan laves i forvejen, men smager bedst når den er frisk - perfekt til meal prep!",
     "For perfekt resultat: Brug friske ingredienser - det giver bedre smag."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2250 kJ / 540 kcal",
+    "fat": "28g",
+    "saturatedFat": "12g",
+    "carbs": "45g",
+    "sugar": "2g",
+    "fiber": "2g",
+    "protein": "28g",
+    "salt": "2.5g"
+  }
 }

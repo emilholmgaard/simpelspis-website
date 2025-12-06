@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-glog",
+  "id": "005",
   "title": "Hjemmelavet Gløg",
   "category": "Dessert",
   "time": "45 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Let",
   "excerpt": "Varm og krydret hjemmelavet gløg med rødvin, krydderier og appelsin. Den perfekte drik til vintermånederne og juletiden. Denne opskrift giver dig den autentiske gløg-smag der varmer hele kroppen.",
-  "id": "005",
   "description": "Varm og krydret hjemmelavet gløg med rødvin, krydderier og appelsin. Den perfekte drik til vintermånederne og juletiden. Denne opskrift giver dig den autentiske gløg-smag der varmer hele kroppen. Perfekt til at dele med venner og familie omkring juletræet.",
   "ingredients": [
     "Til gløgen:",
@@ -62,5 +62,14 @@
     "Server med pebernødder, æbleskiver eller julekager for den perfekte juleoplevelse.",
     "For en ekstra festlig touch: Tilføj en skvæt flødeskum eller is på toppen før servering."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "850 kJ / 203 kcal",
+    "fat": "0g",
+    "saturatedFat": "0g",
+    "carbs": "18g",
+    "sugar": "16g",
+    "fiber": "0g",
+    "protein": "0g",
+    "salt": "0.1g"
+  }
 }

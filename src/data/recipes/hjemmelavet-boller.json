@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-boller",
+  "id": "004",
   "title": "Hjemmelavet Boller",
   "category": "Hurtigt",
   "time": "90 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Let",
   "excerpt": "Bløde og luftige hjemmelavet boller med guldbrun skorpe. Perfekte til morgenmad, frokost eller som tilbehør til måltider. Disse boller smager langt bedre end købte boller og er overraskende nemme at lave.",
-  "id": "004",
   "description": "Bløde og luftige hjemmelavet boller med guldbrun skorpe. Perfekte til morgenmad, frokost eller som tilbehør til måltider. Disse boller smager langt bedre end købte boller og er overraskende nemme at lave. Varmt fra ovnen med smør - der er intet bedre!",
   "ingredients": [
     "Til dejen:",
@@ -62,5 +62,14 @@
     "Færdige boller kan fryses og genvarmes i ovnen. De holder sig i fryseren i op til 3 måneder.",
     "Eksperimenter med størrelser: Lav små dinner rolls eller store sandwich boller - opskriften virker til begge!"
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1250 kJ / 299 kcal",
+    "fat": "8g",
+    "saturatedFat": "4g",
+    "carbs": "48g",
+    "sugar": "3g",
+    "fiber": "2g",
+    "protein": "9g",
+    "salt": "0.8g"
+  }
 }

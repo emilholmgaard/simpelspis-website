@@ -1,5 +1,6 @@
 {
   "slug": "ribeye",
+  "id": "018",
   "title": "Ribeye",
   "category": "Kød",
   "time": "45 min",
@@ -7,7 +8,6 @@
   "cookTime": "15 min",
   "difficulty": "Mellem",
   "excerpt": "Perfekt stegt ribeye med saftig, mør kød og gyldenbrun skorpe. Den perfekte bøf til en særlig aften. Denne opskrift giver dig den perfekte ribeye der smager langt bedre end fra restauranten. Server med kartofler og grøntsager!",
-  "id": "018",
   "description": "Perfekt stegt ribeye med saftig, mør kød og gyldenbrun skorpe. Den perfekte bøf til en særlig aften. Denne opskrift giver dig den perfekte ribeye der smager langt bedre end fra restauranten. Server med kartofler, grøntsager og en god rødvin for den ultimative oplevelse!",
   "ingredients": [
     "Til ribeyen:",
@@ -62,5 +62,14 @@
     "Eksperimenter med krydderier: Prøv med kaffe, koriander, eller din yndlingssteak-krydderiblanding.",
     "For ekstra saftighed: Brug en termometer og tag steaksene ud 5°C før ønsket temperatur - de fortsætter med at steges under hvile."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2850 kJ / 681 kcal",
+    "fat": "48g",
+    "saturatedFat": "22g",
+    "carbs": "0g",
+    "sugar": "0g",
+    "fiber": "0g",
+    "protein": "52g",
+    "salt": "1.8g"
+  }
 }

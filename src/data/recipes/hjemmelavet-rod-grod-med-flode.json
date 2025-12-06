@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-rod-grod-med-flode",
+  "id": "023",
   "title": "Hjemmelavet Rød Grød med Fløde",
   "category": "Dessert",
   "time": "45 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Let",
   "excerpt": "Klassisk dansk rød grød med fløde med frisk bær og cremet fløde. Den perfekte dessert til sommeren. Denne opskrift giver dig den autentiske rød grød der smager langt bedre end fra butikken. Server med kold fløde!",
-  "id": "023",
   "description": "Klassisk dansk rød grød med fløde med frisk bær og cremet fløde. Den perfekte dessert til sommeren. Denne opskrift giver dig den autentiske rød grød der smager langt bedre end fra butikken. Server med kold fløde, sukker og måske lidt vaniljeis for den ultimative oplevelse!",
   "ingredients": [
     "Til rød grød:",
@@ -16,6 +16,7 @@
     "3 spsk kartoffelmel eller maizena",
     "3 dl vand",
     "1 tsk vaniljeekstrakt (valgfrit)",
+    "",
     "Til servering:",
     "Kold piskefløde (38% fedt)",
     "Sukker til drysning",
@@ -59,5 +60,14 @@
     "For vegansk version: Brug plantebaseret fløde eller kokosmælk i stedet for piskefløde.",
     "Rød grød kan også serveres med vaniljeis, creme fraiche eller yoghurt i stedet for fløde."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1250 kJ / 299 kcal",
+    "fat": "1g",
+    "saturatedFat": "0g",
+    "carbs": "72g",
+    "sugar": "65g",
+    "fiber": "4g",
+    "protein": "2g",
+    "salt": "0.1g"
+  }
 }

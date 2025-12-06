@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-flaeskesteg",
+  "id": "024",
   "title": "Hjemmelavet Flæskesteg",
   "category": "Kød",
   "time": "3 timer",
@@ -7,7 +8,6 @@
   "cookTime": "2 timer 30 min",
   "difficulty": "Mellem",
   "excerpt": "Klassisk dansk flæskesteg med sprødt svær og saftigt kød. Den perfekte hovedret til jul eller særlige lejligheder. Denne opskrift giver dig den autentiske flæskesteg der smager langt bedre end fra slagteren. Server med brun sovs, kartofler og rødkål!",
-  "id": "024",
   "description": "Klassisk dansk flæskesteg med sprødt svær og saftigt kød. Den perfekte hovedret til jul eller særlige lejligheder. Denne opskrift giver dig den autentiske flæskesteg der smager langt bedre end fra slagteren. Server med brun sovs, kartofler, rødkål og en god dansk øl for den ultimative oplevelse!",
   "ingredients": [
     "Til flæskestegen:",
@@ -72,5 +72,14 @@
     "Brun sovsen kan laves med fløde i stedet for vand for ekstra cremethed.",
     "For lettere skæring: Lad flæskestegen hvile i mindst 15 minutter - det gør kødet mere saftigt."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2850 kJ / 681 kcal",
+    "fat": "42g",
+    "saturatedFat": "16g",
+    "carbs": "0g",
+    "sugar": "0g",
+    "fiber": "0g",
+    "protein": "48g",
+    "salt": "1.5g"
+  }
 }

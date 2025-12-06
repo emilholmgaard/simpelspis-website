@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-granola",
+  "id": "008",
   "title": "Hjemmelavet Granola",
   "category": "Hurtigt",
   "time": "45 min",
@@ -7,7 +8,6 @@
   "cookTime": "35 min",
   "difficulty": "Let",
   "excerpt": "Knasende og sødt hjemmelavet granola med havregryn, nødder og tørret frugt. Perfekt til morgenmad med yoghurt eller mælk. Denne opskrift giver dig den perfekte balance mellem sødt og nøddeagtigt, og kan tilpasses med dine yndlingsingredienser.",
-  "id": "008",
   "description": "Knasende og sødt hjemmelavet granola med havregryn, nødder og tørret frugt. Perfekt til morgenmad med yoghurt eller mælk. Denne opskrift giver dig den perfekte balance mellem sødt og nøddeagtigt, og kan tilpasses med dine yndlingsingredienser. Langt bedre end købt granola!",
   "ingredients": [
     "Til granolaen:",
@@ -61,5 +61,14 @@
     "Granolaen kan fryses og holde sig i op til 6 måneder. Tag den ud og lad den tø op ved stuetemperatur.",
     "Lav en dobbelt batch og gem til senere - den holder sig længe og er perfekt til meal prep!"
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2250 kJ / 538 kcal",
+    "fat": "28g",
+    "saturatedFat": "8g",
+    "carbs": "58g",
+    "sugar": "22g",
+    "fiber": "8g",
+    "protein": "12g",
+    "salt": "0.3g"
+  }
 }

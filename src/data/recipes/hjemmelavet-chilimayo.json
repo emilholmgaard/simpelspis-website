@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-chilimayo",
+  "id": "054",
   "title": "Hjemmelavet Chilimayo",
   "category": "Hurtigt",
   "time": "15 min",
@@ -7,7 +8,6 @@
   "cookTime": "0 min",
   "difficulty": "Let",
   "excerpt": "Krydret og smagfuld hjemmelavet chilimayo med cremet mayo og stærk chili. Den perfekte pålæg eller ingrediens til dressinger. Denne opskrift giver dig den autentiske chilimayo der smager langt bedre end fra butikken. Brug på sandwich, burger eller som dip!",
-  "id": "054",
   "description": "Krydret og smagfuld hjemmelavet chilimayo med cremet mayo og stærk chili. Den perfekte pålæg eller ingrediens til dressinger. Denne opskrift giver dig den autentiske chilimayo der smager langt bedre end fra butikken. Brug på sandwich, burger, pommes frites eller som dip for den ultimative oplevelse!",
   "ingredients": [
     "Til mayo:",
@@ -69,5 +69,14 @@
     "Chilimayo kan også bruges som base til dressinger - tilføj yoghurt, citronsaft eller din yndlingsingrediens.",
     "For ekstra luksus: Tilføj trøffel, hvidløg eller din yndlingskrydderiblanding."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "3350 kJ / 800 kcal",
+    "fat": "86g",
+    "saturatedFat": "12g",
+    "carbs": "2g",
+    "sugar": "1g",
+    "fiber": "0.5g",
+    "protein": "3g",
+    "salt": "1.0g"
+  }
 }

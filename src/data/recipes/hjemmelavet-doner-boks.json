@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-doner-boks",
+  "id": "042",
   "title": "Hjemmelavet Doner Boks",
   "category": "Kød",
   "time": "90 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Mellem",
   "excerpt": "Autentisk hjemmelavet doner boks med krydret kød, frisk salat og lækker dressing. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske doner boks der smager langt bedre end fra biks. Server med pommes frites!",
-  "id": "042",
   "description": "Autentisk hjemmelavet doner boks med krydret kød, frisk salat og lækker dressing. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske doner boks der smager langt bedre end fra biks. Server med pommes frites, rødløg og en kold cola for den ultimative oplevelse!",
   "ingredients": [
     "Til kødet:",
@@ -80,5 +80,14 @@
     "Doner boks kan også serveres i pita brød eller durum - fold det sammen som en wrap.",
     "For ekstra luksus: Tilføj feta ost, oliven eller soltørrede tomater."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2450 kJ / 585 kcal",
+    "fat": "32g",
+    "saturatedFat": "12g",
+    "carbs": "38g",
+    "sugar": "6g",
+    "fiber": "4g",
+    "protein": "38g",
+    "salt": "2.2g"
+  }
 }

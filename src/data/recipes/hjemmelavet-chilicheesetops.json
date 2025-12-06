@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-chilicheesetops",
+  "id": "020",
   "title": "Hjemmelavet Chilicheesetops",
   "category": "Hurtigt",
   "time": "25 min",
@@ -7,7 +8,6 @@
   "cookTime": "10 min",
   "difficulty": "Let",
   "excerpt": "Sprøde og smagfulde chilicheesetops med smeltet ost og mild chili. Den perfekte snack eller forret til en hyggelig aften. Denne opskrift giver dig den autentiske chilicheesetops der smager langt bedre end fra butikken. Server med dip og grøntsager!",
-  "id": "020",
   "description": "Sprøde og smagfulde chilicheesetops med smeltet ost og mild chili. Den perfekte snack eller forret til en hyggelig aften. Denne opskrift giver dig den autentiske chilicheesetops der smager langt bedre end fra butikken. Server med dip, grøntsager og en kold øl for den ultimative oplevelse!",
   "ingredients": [
     "Til chilicheesetops:",
@@ -71,5 +71,14 @@
     "Eksperimenter med oster: Prøv med pepper jack, gouda eller blå ost for variation.",
     "For vegetarisk version: Udskift bacon med hakket svampe eller soltørrede tomater."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "28g",
+    "saturatedFat": "14g",
+    "carbs": "32g",
+    "sugar": "4g",
+    "fiber": "3g",
+    "protein": "18g",
+    "salt": "1.2g"
+  }
 }

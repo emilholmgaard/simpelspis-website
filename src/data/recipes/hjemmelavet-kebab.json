@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-kebab",
+  "id": "001",
   "title": "Hjemmelavet Kebab",
   "category": "Kød",
   "time": "90 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Mellem",
   "excerpt": "Autentisk hjemmelavet kebab med krydret kød, frisk salat og lækker dressing. Denne opskrift giver dig den perfekte smag og tekstur. Perfekt til en hyggelig aften.",
-  "id": "001",
   "description": "Autentisk hjemmelavet kebab med krydret kød, frisk salat og lækker dressing. Denne opskrift giver dig den perfekte smag og tekstur - lige så god som fra din yndlingskebabbutik. Perfekt til en hyggelig aften med venner og familie.",
   "ingredients": [
     "Til kødet:",
@@ -67,5 +67,14 @@
     "Lav ekstra marinade og gem til senere - den kan holde sig i køleskabet i op til 3 dage. Perfekt til meal prep!",
     "Restekød kan gemmes i køleskabet i 2-3 dage og genvarmes i ovnen ved 180°C i 10-15 minutter eller på panden. Smager stadig lækkert!"
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2850 kJ / 681 kcal",
+    "fat": "32g",
+    "saturatedFat": "14g",
+    "carbs": "58g",
+    "sugar": "6g",
+    "fiber": "4g",
+    "protein": "42g",
+    "salt": "2.1g"
+  }
 }

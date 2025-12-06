@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-lasagne",
+  "id": "059",
   "title": "Hjemmelavet Lasagne",
   "category": "Pasta",
   "time": "120 min",
@@ -7,7 +8,6 @@
   "cookTime": "90 min",
   "difficulty": "Mellem",
   "excerpt": "Klassisk og smagfuld hjemmelavet lasagne med kødsauce, bechamel og ost. Denne opskrift giver dig den autentiske lasagne der smager langt bedre end fra butikken. Perfekt til en hyggelig aften!",
-  "id": "059",
   "description": "Klassisk og smagfuld hjemmelavet lasagne med kødsauce, bechamel og ost. Denne opskrift giver dig den autentiske lasagne der smager langt bedre end fra butikken. Perfekt til en hyggelig aften med familie og venner!",
   "ingredients": [
     "Til kødsauce:",
@@ -93,5 +93,14 @@
     "Lasagne kan laves i forvejen og opbevares i køleskabet - perfekt til meal prep!",
     "For perfekt resultat: Brug en ildfast form med høje sider - det giver plads til alle lagene."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 440 kcal",
+    "fat": "22g",
+    "saturatedFat": "12g",
+    "carbs": "35g",
+    "sugar": "8g",
+    "fiber": "3g",
+    "protein": "28g",
+    "salt": "2.0g"
+  }
 }

@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-smashburger",
+  "id": "017",
   "title": "Hjemmelavet Smashburger",
   "category": "Kød",
   "time": "30 min",
@@ -7,7 +8,6 @@
   "cookTime": "15 min",
   "difficulty": "Let",
   "excerpt": "Juicy og sprøde hjemmelavet smashburger med tynd, knasende burger og perfekt smeltet ost. Den perfekte burger til hverdagen. Denne opskrift giver dig den autentiske smashburger-smag der smager langt bedre end fastfood. Server med pommes frites!",
-  "id": "017",
   "description": "Juicy og sprøde hjemmelavet smashburger med tynd, knasende burger og perfekt smeltet ost. Den perfekte burger til hverdagen. Denne opskrift giver dig den autentiske smashburger-smag der smager langt bedre end fastfood. Server med pommes frites, salat og dine yndlingsdressings!",
   "ingredients": [
     "Til burgerne:",
@@ -67,5 +67,14 @@
     "Færdige burgers kan ikke gemmes godt - lav dem frisk hver gang!",
     "For perfekt burger: Varm bollerne op først, så de er varme når burgeren er klar."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2850 kJ / 681 kcal",
+    "fat": "38g",
+    "saturatedFat": "16g",
+    "carbs": "45g",
+    "sugar": "8g",
+    "fiber": "3g",
+    "protein": "42g",
+    "salt": "2.2g"
+  }
 }

@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-naan-brod",
+  "id": "037",
   "title": "Hjemmelavet Naan Brød",
   "category": "Hurtigt",
   "time": "2 timer",
@@ -7,7 +8,6 @@
   "cookTime": "10 min",
   "difficulty": "Let",
   "excerpt": "Blødt og smagfuldt hjemmelavet naan brød med hvidløg og smør. Den perfekte brød til indisk mad eller som snack. Denne opskrift giver dig den autentiske naan der smager langt bedre end fra restauranten. Server med curry, dip eller smør!",
-  "id": "037",
   "description": "Blødt og smagfuldt hjemmelavet naan brød med hvidløg og smør. Den perfekte brød til indisk mad eller som snack. Denne opskrift giver dig den autentiske naan der smager langt bedre end fra restauranten. Server med curry, dip, smør eller en god indisk ret for den ultimative oplevelse!",
   "ingredients": [
     "Til dejen:",
@@ -68,5 +68,14 @@
     "Naan kan også steges direkte over gasflamme for ekstra smag - hold den over flammen med en tang.",
     "For ekstra luksus: Server med smeltet smør, hvidløg og frisk koriander."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1350 kJ / 323 kcal",
+    "fat": "8g",
+    "saturatedFat": "4g",
+    "carbs": "52g",
+    "sugar": "2g",
+    "fiber": "2g",
+    "protein": "9g",
+    "salt": "0.8g"
+  }
 }

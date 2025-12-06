@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-mayo",
+  "id": "053",
   "title": "Hjemmelavet Mayo",
   "category": "Hurtigt",
   "time": "10 min",
@@ -7,7 +8,6 @@
   "cookTime": "0 min",
   "difficulty": "Let",
   "excerpt": "Cremet og smagfuld hjemmelavet mayo med æg og olie. Den perfekte pålæg eller ingrediens til dressinger. Denne opskrift giver dig den autentiske mayo der smager langt bedre end fra butikken. Brug på sandwich, i dressinger eller som dip!",
-  "id": "053",
   "description": "Cremet og smagfuld hjemmelavet mayo med æg og olie. Den perfekte pålæg eller ingrediens til dressinger. Denne opskrift giver dig den autentiske mayo der smager langt bedre end fra butikken. Brug på sandwich, i dressinger, som dip eller med pommes frites for den ultimative oplevelse!",
   "ingredients": [
     "Til mayo:",
@@ -18,6 +18,7 @@
     "1/2 tsk salt",
     "1/4 tsk sort peber",
     "1-2 spsk vand (valgfrit, for at justere konsistens)",
+    "",
     "Til servering:",
     "Sandwich",
     "Pommes frites",
@@ -57,5 +58,14 @@
     "Mayo kan også bruges som base til dressinger - tilføj yoghurt, citronsaft eller din yndlingsingrediens.",
     "For ekstra luksus: Tilføj trøffel, hvidløg eller din yndlingskrydderiblanding."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "3250 kJ / 777 kcal",
+    "fat": "84g",
+    "saturatedFat": "12g",
+    "carbs": "1g",
+    "sugar": "0.5g",
+    "fiber": "0g",
+    "protein": "3g",
+    "salt": "0.8g"
+  }
 }

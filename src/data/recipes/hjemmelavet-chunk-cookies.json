@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-chunk-cookies",
+  "id": "040",
   "title": "Hjemmelavet Chunk Cookies",
   "category": "Dessert",
   "time": "35 min",
@@ -7,7 +8,6 @@
   "cookTime": "12 min",
   "difficulty": "Let",
   "excerpt": "Store og saftige hjemmelavet chunk cookies med store chokoladestykker og blød krumme. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske chunk cookies der smager langt bedre end fra butikken. Server med kaffe eller te!",
-  "id": "040",
   "description": "Store og saftige hjemmelavet chunk cookies med store chokoladestykker og blød krumme. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske chunk cookies der smager langt bedre end fra butikken. Server med kaffe, te eller en kold mælk for den ultimative oplevelse!",
   "ingredients": [
     "Til cookies:",
@@ -22,6 +22,7 @@
     "1 tsk salt",
     "200g mørk chokolade, hakket i store stykker",
     "100g chokoladechips (valgfrit)",
+    "",
     "Til servering:",
     "Kaffe eller te"
   ],
@@ -60,5 +61,14 @@
     "Cookies kan også fryses - frys dem efter bagning, derefter optø ved stuetemperatur.",
     "For ekstra saftighed: Tilføj lidt mere smør eller et ekstra æg - det giver blødere cookies."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2250 kJ / 538 kcal",
+    "fat": "28g",
+    "saturatedFat": "17g",
+    "carbs": "68g",
+    "sugar": "42g",
+    "fiber": "3g",
+    "protein": "7g",
+    "salt": "0.6g"
+  }
 }

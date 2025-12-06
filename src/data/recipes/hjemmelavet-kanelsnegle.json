@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-kanelsnegle",
+  "id": "033",
   "title": "Hjemmelavet Kanelsnegle",
   "category": "Dessert",
   "time": "3 timer",
@@ -7,7 +8,6 @@
   "cookTime": "20 min",
   "difficulty": "Mellem",
   "excerpt": "Søde og smagfulde hjemmelavet kanelsnegle med kanel, sukker og smør. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske kanelsnegle der smager langt bedre end fra bageren. Server med kaffe eller te!",
-  "id": "033",
   "description": "Søde og smagfulde hjemmelavet kanelsnegle med kanel, sukker og smør. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske kanelsnegle der smager langt bedre end fra bageren. Server med kaffe, te eller en kold mælk for den ultimative oplevelse!",
   "ingredients": [
     "Til dejen:",
@@ -77,5 +77,14 @@
     "Kanelsnegle kan også fryses - frys dem efter bagning, derefter optø og varm dem i ovnen.",
     "For ekstra sødme: Tilføj mere sukker til fyldet eller drys ekstra flormelis over glasuren."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "18g",
+    "saturatedFat": "11g",
+    "carbs": "62g",
+    "sugar": "28g",
+    "fiber": "2g",
+    "protein": "8g",
+    "salt": "0.8g"
+  }
 }

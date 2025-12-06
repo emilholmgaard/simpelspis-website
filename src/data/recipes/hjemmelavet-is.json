@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-is",
+  "id": "009",
   "title": "Hjemmelavet Is",
   "category": "Dessert",
   "time": "240 min",
@@ -7,7 +8,6 @@
   "cookTime": "210 min",
   "difficulty": "Mellem",
   "excerpt": "Cremet og lækker hjemmelavet is med kun få ingredienser. Den perfekte dessert til enhver lejlighed. Denne opskrift giver dig den cremede tekstur og rene smag der er langt bedre end købt is. Tilpas med dine yndlingssmage!",
-  "id": "009",
   "description": "Cremet og lækker hjemmelavet is med kun få ingredienser. Den perfekte dessert til enhver lejlighed. Denne opskrift giver dig den cremede tekstur og rene smag der er langt bedre end købt is. Tilpas med dine yndlingssmage som vanilje, chokolade, jordbær eller noget helt tredje!",
   "ingredients": [
     "Til basis-is (vanilje):",
@@ -69,5 +69,14 @@
     "Lav ekstra og gem i portioner - perfekt til meal prep eller når du har gæster!",
     "For hurtigere frysning: Brug en tyndere beholder og sæt den i den koldeste del af fryseren."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "32g",
+    "saturatedFat": "19g",
+    "carbs": "28g",
+    "sugar": "26g",
+    "fiber": "0g",
+    "protein": "6g",
+    "salt": "0.2g"
+  }
 }

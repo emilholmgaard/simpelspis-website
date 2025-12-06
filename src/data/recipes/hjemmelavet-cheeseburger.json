@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-cheeseburger",
+  "id": "021",
   "title": "Hjemmelavet Cheeseburger",
   "category": "Kød",
   "time": "30 min",
@@ -7,7 +8,6 @@
   "cookTime": "10 min",
   "difficulty": "Let",
   "excerpt": "Juicy og smagfuld hjemmelavet cheeseburger med saftig bøf, smeltet ost og friske tilbehør. Den perfekte burger til hverdagen. Denne opskrift giver dig den autentiske cheeseburger der smager langt bedre end fastfood. Server med pommes frites!",
-  "id": "021",
   "description": "Juicy og smagfuld hjemmelavet cheeseburger med saftig bøf, smeltet ost og friske tilbehør. Den perfekte burger til hverdagen. Denne opskrift giver dig den autentiske cheeseburger der smager langt bedre end fastfood. Server med pommes frites, coleslaw og en kold cola for den ultimative oplevelse!",
   "ingredients": [
     "Til burgerbøfferne:",
@@ -76,5 +76,14 @@
     "Eksperimenter med tilbehør: Prøv med avocado, bacon, ristede løg eller jalapeños.",
     "For vegetarisk version: Brug vegetarbøffer eller lav dine egne med bønner, grøntsager og krydderier."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2450 kJ / 585 kcal",
+    "fat": "32g",
+    "saturatedFat": "14g",
+    "carbs": "38g",
+    "sugar": "8g",
+    "fiber": "3g",
+    "protein": "35g",
+    "salt": "2.1g"
+  }
 }

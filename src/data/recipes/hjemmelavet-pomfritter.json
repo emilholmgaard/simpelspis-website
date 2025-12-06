@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-pomfritter",
+  "id": "055",
   "title": "Hjemmelavet Pomfritter",
   "category": "Hurtigt",
   "time": "45 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Let",
   "excerpt": "Sprøde og gyldne hjemmelavet pomfritter med perfekt struktur. Denne opskrift giver dig de autentiske pomfritter der smager langt bedre end fra butikken. Server med mayo, ketchup eller din yndlingsdip!",
-  "id": "055",
   "description": "Sprøde og gyldne hjemmelavet pomfritter med perfekt struktur. Denne opskrift giver dig de autentiske pomfritter der smager langt bedre end fra butikken. Server med mayo, ketchup eller din yndlingsdip for den ultimative oplevelse!",
   "ingredients": [
     "4-5 store kartofler (floury type som Maris Piper eller King Edward)",
@@ -58,5 +58,14 @@
     "Pomfritter kan også laves i ovnen - brug 200°C og vend dem halvvejs gennem stegningen.",
     "For perfekt resultat: Brug et termometer til at kontrollere olie-temperaturen - det er vigtigt for perfekte pomfritter."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2100 kJ / 500 kcal",
+    "fat": "25g",
+    "saturatedFat": "3g",
+    "carbs": "60g",
+    "sugar": "2g",
+    "fiber": "5g",
+    "protein": "6g",
+    "salt": "1.2g"
+  }
 }

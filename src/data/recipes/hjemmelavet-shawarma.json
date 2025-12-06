@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-shawarma",
+  "id": "045",
   "title": "Hjemmelavet Shawarma",
   "category": "Kød",
   "time": "120 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Mellem",
   "excerpt": "Autentisk hjemmelavet shawarma med krydret kød, frisk salat og cremet dressing. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske shawarma der smager langt bedre end fra biks. Server med pita brød og pommes frites!",
-  "id": "045",
   "description": "Autentisk hjemmelavet shawarma med krydret kød, frisk salat og cremet dressing. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske shawarma der smager langt bedre end fra biks. Server med pita brød, pommes frites og en kold cola for den ultimative oplevelse!",
   "ingredients": [
     "Til kødet:",
@@ -83,5 +83,14 @@
     "Shawarma kan også serveres i durum eller som wrap - fold det sammen.",
     "For ekstra luksus: Tilføj feta ost, oliven eller soltørrede tomater."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2550 kJ / 609 kcal",
+    "fat": "32g",
+    "saturatedFat": "10g",
+    "carbs": "44g",
+    "sugar": "4g",
+    "fiber": "3g",
+    "protein": "40g",
+    "salt": "2.3g"
+  }
 }

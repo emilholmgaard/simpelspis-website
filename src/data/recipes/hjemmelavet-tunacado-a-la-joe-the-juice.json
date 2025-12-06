@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-tunacado-a-la-joe-the-juice",
+  "id": "052",
   "title": "Hjemmelavet Tunacado a la Joe & The Juice",
   "category": "Fisk",
   "time": "20 min",
@@ -7,7 +8,6 @@
   "cookTime": "5 min",
   "difficulty": "Let",
   "excerpt": "Frisk og smagfuld hjemmelavet tunacado a la Joe & The Juice med tun, cremet avocado, frisk salat og lækker dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske tunacado der smager langt bedre end fra butikken. Server med juice!",
-  "id": "052",
   "description": "Frisk og smagfuld hjemmelavet tunacado a la Joe & The Juice med tun, cremet avocado, frisk salat og lækker dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske tunacado der smager langt bedre end fra butikken. Server med juice, smoothie eller en kold cola for den ultimative oplevelse!",
   "ingredients": [
     "Til sandwich:",
@@ -73,5 +73,14 @@
     "Sandwich kan også serveres med forskellige brødtyper - prøv med ciabatta, focaccia eller din yndlingsbrød.",
     "For ekstra luksus: Tilføj soltørrede tomater, oliven eller din yndlingstopning."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2250 kJ / 538 kcal",
+    "fat": "32g",
+    "saturatedFat": "6g",
+    "carbs": "38g",
+    "sugar": "6g",
+    "fiber": "12g",
+    "protein": "28g",
+    "salt": "1.8g"
+  }
 }

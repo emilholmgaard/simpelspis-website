@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-taquitos",
+  "id": "044",
   "title": "Hjemmelavet Taquitos",
   "category": "Kød",
   "time": "45 min",
@@ -7,7 +8,6 @@
   "cookTime": "20 min",
   "difficulty": "Let",
   "excerpt": "Sprøde og smagfulde hjemmelavet taquitos med krydret kød og smeltet ost. Den perfekte snack eller forret. Denne opskrift giver dig den autentiske taquitos der smager langt bedre end fra butikken. Server med salsa, guacamole eller sour cream!",
-  "id": "044",
   "description": "Sprøde og smagfulde hjemmelavet taquitos med krydret kød og smeltet ost. Den perfekte snack eller forret. Denne opskrift giver dig den autentiske taquitos der smager langt bedre end fra butikken. Server med salsa, guacamole, sour cream eller en kold cola for den ultimative oplevelse!",
   "ingredients": [
     "Til fyldet:",
@@ -73,5 +73,14 @@
     "Taquitos kan også fryses - frys dem efter stegning, derefter optø og varm dem i ovnen.",
     "For ekstra luksus: Tilføj avocado, jalapeños eller din yndlingsdip."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2250 kJ / 538 kcal",
+    "fat": "28g",
+    "saturatedFat": "10g",
+    "carbs": "42g",
+    "sugar": "2g",
+    "fiber": "3g",
+    "protein": "24g",
+    "salt": "1.8g"
+  }
 }

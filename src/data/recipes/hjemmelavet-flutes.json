@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-flutes",
+  "id": "031",
   "title": "Hjemmelavet Flutes",
   "category": "Hurtigt",
   "time": "3 timer",
@@ -7,7 +8,6 @@
   "cookTime": "20 min",
   "difficulty": "Mellem",
   "excerpt": "Sprøde og luftige hjemmelavet flutes med guldbrun skorpe og blød krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske flutes der smager langt bedre end fra bageren. Server med smør og syltetøj!",
-  "id": "031",
   "description": "Sprøde og luftige hjemmelavet flutes med guldbrun skorpe og blød krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske flutes der smager langt bedre end fra bageren. Server med smør, syltetøj eller din yndlingspålæg for den ultimative oplevelse!",
   "ingredients": [
     "Til dejen:",
@@ -70,5 +70,14 @@
     "Flutes kan også fryses - skær dem i halve og frys dem, derefter optø og varm dem i ovnen.",
     "For ekstra sprødhed: Spray flutesene med vand før bagning - det giver bedre skorpe."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1250 kJ / 299 kcal",
+    "fat": "3g",
+    "saturatedFat": "0.5g",
+    "carbs": "58g",
+    "sugar": "1g",
+    "fiber": "2g",
+    "protein": "10g",
+    "salt": "1.2g"
+  }
 }

@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-flaeskestegssandwich",
+  "id": "049",
   "title": "Hjemmelavet Flæskestegssandwich",
   "category": "Kød",
   "time": "3 timer 30 min",
@@ -7,7 +8,6 @@
   "cookTime": "3 timer",
   "difficulty": "Mellem",
   "excerpt": "Klassisk dansk hjemmelavet flæskestegssandwich med sprødt svær, saftigt kød og rødkål. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske flæskestegssandwich der smager langt bedre end fra butikken. Server med brun sovs!",
-  "id": "049",
   "description": "Klassisk dansk hjemmelavet flæskestegssandwich med sprødt svær, saftigt kød og rødkål. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske flæskestegssandwich der smager langt bedre end fra butikken. Server med brun sovs, kartofler eller en kold øl for den ultimative oplevelse!",
   "ingredients": [
     "Til flæskestegen:",
@@ -78,5 +78,14 @@
     "Brun sovsen kan laves med fløde i stedet for vand for ekstra cremethed.",
     "For lettere skæring: Lad flæskestegen hvile i mindst 15 minutter - det gør kødet mere saftigt."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2850 kJ / 681 kcal",
+    "fat": "38g",
+    "saturatedFat": "14g",
+    "carbs": "52g",
+    "sugar": "8g",
+    "fiber": "4g",
+    "protein": "42g",
+    "salt": "2.5g"
+  }
 }

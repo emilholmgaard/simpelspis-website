@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-pizza-slice",
+  "id": "047",
   "title": "Hjemmelavet Pizza Slice",
   "category": "Hurtigt",
   "time": "30 min",
@@ -7,7 +8,6 @@
   "cookTime": "15 min",
   "difficulty": "Let",
   "excerpt": "Lækre hjemmelavet pizza slice med saftig tomatsauce, smeltet ost og din yndlingstopning. Den perfekte snack eller hovedret. Denne opskrift giver dig den autentiske pizza slice der smager langt bedre end fra pizzeriaen. Server med salat!",
-  "id": "047",
   "description": "Lækre hjemmelavet pizza slice med saftig tomatsauce, smeltet ost og din yndlingstopning. Den perfekte snack eller hovedret. Denne opskrift giver dig den autentiske pizza slice der smager langt bedre end fra pizzeriaen. Server med salat, oliven eller en kold cola for den ultimative oplevelse!",
   "ingredients": [
     "Til dejen:",
@@ -82,5 +82,14 @@
     "Pizza kan også fryses - frys den efter bagning, derefter optø og varm den i ovnen.",
     "For ekstra luksus: Tilføj frisk basilikum, olivenolie eller parmesan ost efter bagning."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "18g",
+    "saturatedFat": "8g",
+    "carbs": "52g",
+    "sugar": "4g",
+    "fiber": "3g",
+    "protein": "20g",
+    "salt": "1.5g"
+  }
 }

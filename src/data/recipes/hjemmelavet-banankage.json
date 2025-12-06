@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-banankage",
+  "id": "027",
   "title": "Hjemmelavet Banankage",
   "category": "Dessert",
   "time": "75 min",
@@ -7,7 +8,6 @@
   "cookTime": "55 min",
   "difficulty": "Let",
   "excerpt": "Saftig og smagfuld hjemmelavet banankage med modne bananer og varm kanel. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske banankage der smager langt bedre end fra butikken. Server med kaffe eller te!",
-  "id": "027",
   "description": "Saftig og smagfuld hjemmelavet banankage med modne bananer og varm kanel. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske banankage der smager langt bedre end fra butikken. Server med kaffe, te eller en kold mælk for den ultimative oplevelse!",
   "ingredients": [
     "Til kagen:",
@@ -67,5 +67,14 @@
     "For vegansk version: Brug plantebaseret smør og æg-erstatning.",
     "Kagen kan også fryses - skær den i skiver og frys dem, derefter optø ved stuetemperatur."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1950 kJ / 466 kcal",
+    "fat": "22g",
+    "saturatedFat": "12g",
+    "carbs": "62g",
+    "sugar": "38g",
+    "fiber": "3g",
+    "protein": "6g",
+    "salt": "0.6g"
+  }
 }

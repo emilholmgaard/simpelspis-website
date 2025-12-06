@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-roastbeef-sandwich",
+  "id": "050",
   "title": "Hjemmelavet Roastbeef Sandwich",
   "category": "Kød",
   "time": "2 timer 30 min",
@@ -7,7 +8,6 @@
   "cookTime": "2 timer",
   "difficulty": "Mellem",
   "excerpt": "Saftig og smagfuld hjemmelavet roastbeef sandwich med perfekt stegt oksekød og cremet dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske roastbeef sandwich der smager langt bedre end fra butikken. Server med pommes frites!",
-  "id": "050",
   "description": "Saftig og smagfuld hjemmelavet roastbeef sandwich med perfekt stegt oksekød og cremet dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske roastbeef sandwich der smager langt bedre end fra butikken. Server med pommes frites, coleslaw eller en kold cola for den ultimative oplevelse!",
   "ingredients": [
     "Til roastbeef:",
@@ -80,5 +80,14 @@
     "Dressingen kan laves med forskellige smage - prøv med horseradish, chili eller din yndlingskrydderiblanding.",
     "For lettere skæring: Lad kødet hvile i mindst 15 minutter - det gør kødet mere saftigt."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2650 kJ / 633 kcal",
+    "fat": "32g",
+    "saturatedFat": "12g",
+    "carbs": "44g",
+    "sugar": "6g",
+    "fiber": "3g",
+    "protein": "42g",
+    "salt": "2.3g"
+  }
 }

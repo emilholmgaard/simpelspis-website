@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-frikadeller",
+  "id": "013",
   "title": "Hjemmelavet Frikadeller",
   "category": "Kød",
   "time": "45 min",
@@ -7,7 +8,6 @@
   "cookTime": "25 min",
   "difficulty": "Let",
   "excerpt": "Klassiske danske hjemmelavet frikadeller med hakket kød, løg og krydderier. Den perfekte ret til hverdagen. Denne opskrift giver dig de autentiske danske frikadeller der smager langt bedre end købte. Server med kartofler og brun sovs!",
-  "id": "013",
   "description": "Klassiske danske hjemmelavet frikadeller med hakket kød, løg og krydderier. Den perfekte ret til hverdagen. Denne opskrift giver dig de autentiske danske frikadeller der smager langt bedre end købte. Server med kartofler og brun sovs - det er dansk hjemmekøkken på sit bedste!",
   "ingredients": [
     "Til frikadellerne:",
@@ -57,5 +57,14 @@
     "For perfekt runde frikadeller: Brug en iskugle-former eller form dem med våde hænder.",
     "Eksperimenter med størrelser: Lav små frikadeller til børn eller store til voksne."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "28g",
+    "saturatedFat": "12g",
+    "carbs": "18g",
+    "sugar": "3g",
+    "fiber": "1g",
+    "protein": "28g",
+    "salt": "1.5g"
+  }
 }

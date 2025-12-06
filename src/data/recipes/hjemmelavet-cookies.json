@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-cookies",
+  "id": "012",
   "title": "Hjemmelavet Cookies",
   "category": "Dessert",
   "time": "60 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Let",
   "excerpt": "Klassiske hjemmelavet cookies med chokoladechips - bløde i midten og knasende udenpå. Den perfekte dessert eller snack. Denne opskrift giver dig de perfekte cookies der smager langt bedre end købte. Varme fra ovnen med en kop mælk - der er intet bedre!",
-  "id": "012",
   "description": "Klassiske hjemmelavet cookies med chokoladechips - bløde i midten og knasende udenpå. Den perfekte dessert eller snack. Denne opskrift giver dig de perfekte cookies der smager langt bedre end købte. Varme fra ovnen med en kop mælk - der er intet bedre! Perfekt til at dele med venner og familie.",
   "ingredients": [
     "Til cookies:",
@@ -64,5 +64,14 @@
     "Lav en dobbelt batch og gem til senere - perfekt til meal prep eller når du har gæster!",
     "For perfekt runde cookies: Brug en cookie cutter eller form dem i perfekte kugler med hænderne."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2150 kJ / 514 kcal",
+    "fat": "28g",
+    "saturatedFat": "16g",
+    "carbs": "58g",
+    "sugar": "35g",
+    "fiber": "2g",
+    "protein": "6g",
+    "salt": "0.8g"
+  }
 }

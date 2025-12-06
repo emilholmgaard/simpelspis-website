@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-kylling-sandwich",
+  "id": "048",
   "title": "Hjemmelavet Kylling Sandwich",
   "category": "Kød",
   "time": "35 min",
@@ -7,7 +8,6 @@
   "cookTime": "15 min",
   "difficulty": "Let",
   "excerpt": "Juicy og smagfuld hjemmelavet kylling sandwich med saftig kylling, frisk salat og cremet dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske kylling sandwich der smager langt bedre end fra butikken. Server med pommes frites!",
-  "id": "048",
   "description": "Juicy og smagfuld hjemmelavet kylling sandwich med saftig kylling, frisk salat og cremet dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske kylling sandwich der smager langt bedre end fra butikken. Server med pommes frites, coleslaw eller en kold cola for den ultimative oplevelse!",
   "ingredients": [
     "Til kyllingen:",
@@ -77,5 +77,14 @@
     "Sandwich kan også serveres kold - perfekt til madpakke!",
     "For ekstra luksus: Tilføj bacon, avocado eller din yndlingstopning."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2450 kJ / 585 kcal",
+    "fat": "28g",
+    "saturatedFat": "8g",
+    "carbs": "48g",
+    "sugar": "8g",
+    "fiber": "3g",
+    "protein": "38g",
+    "salt": "2.1g"
+  }
 }

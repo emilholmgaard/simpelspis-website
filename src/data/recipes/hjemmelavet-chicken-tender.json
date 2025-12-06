@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-chicken-tender",
+  "id": "046",
   "title": "Hjemmelavet Chicken Tender",
   "category": "Kød",
   "time": "40 min",
@@ -7,7 +8,6 @@
   "cookTime": "20 min",
   "difficulty": "Let",
   "excerpt": "Sprøde og saftige hjemmelavet chicken tender med gyldenbrun panering. Den perfekte snack eller hovedret. Denne opskrift giver dig den autentiske chicken tender der smager langt bedre end fra fastfood. Server med dip og pommes frites!",
-  "id": "046",
   "description": "Sprøde og saftige hjemmelavet chicken tender med gyldenbrun panering. Den perfekte snack eller hovedret. Denne opskrift giver dig den autentiske chicken tender der smager langt bedre end fra fastfood. Server med dip, pommes frites og en kold cola for den ultimative oplevelse!",
   "ingredients": [
     "Til kyllingen:",
@@ -69,5 +69,14 @@
     "Chicken tenders kan også fryses - frys dem efter stegning, derefter optø og varm dem i ovnen.",
     "For ekstra luksus: Server med forskellige dips - ranch, honning sennep, buffalo sauce eller din yndlingsdip."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "22g",
+    "saturatedFat": "5g",
+    "carbs": "28g",
+    "sugar": "2g",
+    "fiber": "1g",
+    "protein": "32g",
+    "salt": "1.2g"
+  }
 }

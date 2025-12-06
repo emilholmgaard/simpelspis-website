@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-gyros",
+  "id": "043",
   "title": "Hjemmelavet Gyros",
   "category": "Kød",
   "time": "120 min",
@@ -7,7 +8,6 @@
   "cookTime": "30 min",
   "difficulty": "Mellem",
   "excerpt": "Autentisk hjemmelavet gyros med krydret kød, frisk salat og cremet tzatziki. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske gyros der smager langt bedre end fra biks. Server med pita brød og pommes frites!",
-  "id": "043",
   "description": "Autentisk hjemmelavet gyros med krydret kød, frisk salat og cremet tzatziki. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske gyros der smager langt bedre end fra biks. Server med pita brød, pommes frites og en kold cola for den ultimative oplevelse!",
   "ingredients": [
     "Til kødet:",
@@ -83,5 +83,14 @@
     "Gyros kan også serveres i durum eller som wrap - fold det sammen.",
     "For ekstra luksus: Tilføj feta ost, oliven eller soltørrede tomater."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "2650 kJ / 633 kcal",
+    "fat": "34g",
+    "saturatedFat": "12g",
+    "carbs": "42g",
+    "sugar": "5g",
+    "fiber": "3g",
+    "protein": "42g",
+    "salt": "2.5g"
+  }
 }

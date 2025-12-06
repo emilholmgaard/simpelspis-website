@@ -1,5 +1,6 @@
 {
   "slug": "hjemmelavet-nuggets",
+  "id": "056",
   "title": "Hjemmelavet Nuggets",
   "category": "Kød",
   "time": "40 min",
@@ -7,7 +8,6 @@
   "cookTime": "20 min",
   "difficulty": "Let",
   "excerpt": "Sprøde og saftige hjemmelavet nuggets med perfekt panering. Denne opskrift giver dig de autentiske nuggets der smager langt bedre end fra butikken. Server med mayo, ketchup eller din yndlingsdip!",
-  "id": "056",
   "description": "Sprøde og saftige hjemmelavet nuggets med perfekt panering. Denne opskrift giver dig de autentiske nuggets der smager langt bedre end fra butikken. Server med mayo, ketchup eller din yndlingsdip for den ultimative oplevelse!",
   "ingredients": [
     "500g kyllingebryst, skåret i bider (ca. 2-3 cm)",
@@ -61,5 +61,14 @@
     "Nuggets kan også laves i ovnen - brug 200°C og vend dem halvvejs gennem stegningen.",
     "For perfekt resultat: Brug et termometer til at kontrollere olie-temperaturen og kødetemperaturen - det er vigtigt for sikkerhed og perfekte nuggets."
   ],
-  "nutrition": {}
+  "nutrition": {
+    "energy": "1850 kJ / 440 kcal",
+    "fat": "18g",
+    "saturatedFat": "4g",
+    "carbs": "25g",
+    "sugar": "1g",
+    "fiber": "1g",
+    "protein": "35g",
+    "salt": "1.5g"
+  }
 }
