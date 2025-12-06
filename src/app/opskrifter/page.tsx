@@ -4,7 +4,7 @@ import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
-import { ChevronRightIcon } from '@heroicons/react/16/solid'
+import { ChevronRightIcon, FunnelIcon } from '@heroicons/react/24/outline'
 import type { Metadata } from 'next'
 import { getAllRecipes, getAllRecipesWithData, type RecipeListItem, type Recipe } from '@/lib/recipes'
 
@@ -31,18 +31,64 @@ export const metadata: Metadata = {
   },
 }
 
-const categories = [
-  'Alle',
-  'Dessert',
-  'Fisk',
-  'Hurtigt',
-  'Kød',
-  'Pasta',
-  'Vegetarisk',
-  'Laktosefri',
-  'Glutenfri',
-  'Low Carb / Keto',
-  'Vegansk / Plantebaseret',
+// Måltidskategorier
+const mealTypes = [
+  { label: 'Alle', value: 'alle' },
+  { label: 'Morgenmad', value: 'morgenmad' },
+  { label: 'Frokost', value: 'frokost' },
+  { label: 'Aftensmad', value: 'aftensmad' },
+  { label: 'Dessert', value: 'dessert' },
+  { label: 'Snack', value: 'snack' },
+  { label: 'Julemad', value: 'julemad' },
+  { label: 'Sæsonmad', value: 'sæsonmad' },
+]
+
+// Rettyper
+const dishTypes = [
+  { label: 'Alle', value: 'alle' },
+  { label: 'Kød', value: 'kød' },
+  { label: 'Fisk', value: 'fisk' },
+  { label: 'Vegetarisk', value: 'vegetarisk' },
+  { label: 'Pasta', value: 'pasta' },
+  { label: 'Salat', value: 'salat' },
+  { label: 'Sovs', value: 'sovs' },
+  { label: 'Brød & Bageri', value: 'brød-bageri' },
+]
+
+// Diæt & Præferencer
+const dietaryOptions = [
+  { label: 'Laktosefri', value: 'laktosefri' },
+  { label: 'Glutenfri', value: 'glutenfri' },
+  { label: 'Low Carb / Keto', value: 'low-carb-keto' },
+  { label: 'Vegansk / Plantebaseret', value: 'vegansk-plantebaseret' },
+]
+
+// Sortering
+const sortOptions = [
+  { label: 'Standard', value: 'standard' },
+  { label: 'Tid: Hurtigst først', value: 'tid-op' },
+  { label: 'Tid: Længst først', value: 'tid-ned' },
+  { label: 'Sværhedsgrad: Nemmest først', value: 'sværhed-op' },
+  { label: 'Sværhedsgrad: Sværest først', value: 'sværhed-ned' },
+  { label: 'Alfabetisk: A-Z', value: 'alfabetisk-op' },
+  { label: 'Alfabetisk: Z-A', value: 'alfabetisk-ned' },
+]
+
+// Tid filtre
+const timeFilters = [
+  { label: 'Alle', value: 'alle' },
+  { label: 'Under 15 min', value: '15' },
+  { label: 'Under 30 min', value: '30' },
+  { label: 'Under 45 min', value: '45' },
+  { label: 'Under 60 min', value: '60' },
+]
+
+// Sværhedsgrad filtre
+const difficultyFilters = [
+  { label: 'Alle', value: 'alle' },
+  { label: 'Nem', value: 'nem' },
+  { label: 'Mellem', value: 'mellem' },
+  { label: 'Svær', value: 'svær' },
 ]
 
 function RecipeCard({
@@ -93,39 +139,43 @@ function RecipeCard({
   )
 }
 
-function CategoryFilter({
-  selectedCategory,
+function FilterSection({
+  title,
+  children,
+  className = '',
 }: {
-  selectedCategory: string
+  title: string
+  children: React.ReactNode
+  className?: string
 }) {
   return (
-    <div className="flex flex-wrap gap-2">
-      {categories.map((category) => {
-        const categorySlug = category.toLowerCase().replace(/\s+\/\s+/g, '-').replace(/\s+/g, '-')
-        const isSelected =
-          (category === 'Alle' && !selectedCategory) ||
-          category.toLowerCase() === selectedCategory ||
-          categorySlug === selectedCategory ||
-          (selectedCategory === 'low-carb-keto' && category === 'Low Carb / Keto') ||
-          (selectedCategory === 'vegansk-plantebaseret' && category === 'Vegansk / Plantebaseret')
-        return (
-        <Button
-          key={category}
-            variant={isSelected ? 'primary' : 'outline'}
-            href={
-              category === 'Alle'
-                ? '/opskrifter'
-                : `/opskrifter?kategori=${categorySlug}`
-            }
-          className="text-sm"
-        >
-          {category}
-        </Button>
-        )
-      })}
+    <div className={className}>
+      <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">{title}</h3>
+      <div className="flex flex-wrap gap-2">{children}</div>
     </div>
   )
 }
+
+function FilterButton({
+  label,
+  isSelected,
+  href,
+}: {
+  label: string
+  isSelected: boolean
+  href: string
+}) {
+        return (
+        <Button
+            variant={isSelected ? 'primary' : 'outline'}
+      href={href}
+          className="text-sm"
+        >
+      {label}
+        </Button>
+  )
+}
+
 
 export default async function RecipesPage({
   searchParams,
@@ -134,18 +184,23 @@ export default async function RecipesPage({
 }) {
   const params = await searchParams
   const searchQuery = (params.q as string)?.toLowerCase() || ''
-  let selectedCategory = (params.category as string)?.toLowerCase() || (params.kategori as string)?.toLowerCase() || ''
-  // Normalize category names from URL
-  if (selectedCategory === 'low-carb-keto') {
-    selectedCategory = 'low carb / keto'
-  } else if (selectedCategory === 'vegansk-plantebaseret') {
-    selectedCategory = 'vegansk / plantebaseret'
+  const mealType = (params.maaltid as string)?.toLowerCase() || ''
+  const dishType = (params.rettype as string)?.toLowerCase() || ''
+  const dietary = (params.diaet as string)?.toLowerCase() || ''
+  const timeFilter = (params.tid as string) || ''
+  const difficultyFilter = (params.svaerhed as string)?.toLowerCase() || ''
+  const sortBy = (params.sort as string) || 'standard'
+
+  // Normalize dietary options
+  let normalizedDietary = dietary
+  if (dietary === 'low-carb-keto') {
+    normalizedDietary = 'low carb / keto'
+  } else if (dietary === 'vegansk-plantebaseret') {
+    normalizedDietary = 'vegansk / plantebaseret'
   }
-  const timeParam = (params.time as string) || ''
 
   // Hent alle opskrifter fra JSON-filer
-  // For de nye filtre skal vi bruge fulde opskrifter for at tjekke ingredienser
-  const needsFullData = selectedCategory && ['laktosefri', 'glutenfri', 'low carb / keto', 'vegansk / plantebaseret'].includes(selectedCategory)
+  const needsFullData = normalizedDietary && ['laktosefri', 'glutenfri', 'low carb / keto', 'vegansk / plantebaseret'].includes(normalizedDietary)
   const recipeList = getAllRecipes()
   const fullRecipes = needsFullData ? getAllRecipesWithData() : null
   const recipes = needsFullData 
@@ -155,8 +210,59 @@ export default async function RecipesPage({
       })
     : recipeList
 
+  // Helper function to determine meal type from recipe
+  function getMealType(recipe: RecipeListItem): string {
+    const titleLower = recipe.title.toLowerCase()
+    const excerptLower = recipe.excerpt.toLowerCase()
+    const categoryLower = recipe.category.toLowerCase()
+
+    // Julemad
+    if (titleLower.includes('jule') || excerptLower.includes('jule') || titleLower.includes('gløgg') || titleLower.includes('æbleskiver') || titleLower.includes('risengrød')) {
+      return 'julemad'
+    }
+
+    // Morgenmad
+    if (titleLower.includes('pandekage') || titleLower.includes('omelet') || titleLower.includes('æggekage') || titleLower.includes('granola') || titleLower.includes('boller') || titleLower.includes('brød') || titleLower.includes('bagel') || categoryLower === 'morgenmad') {
+      return 'morgenmad'
+    }
+
+    // Frokost
+    if (titleLower.includes('sandwich') || titleLower.includes('salat') || categoryLower === 'frokost') {
+      return 'frokost'
+    }
+
+    // Dessert
+    if (categoryLower === 'dessert' || titleLower.includes('kage') || titleLower.includes('cookie') || titleLower.includes('is') || titleLower.includes('dessert') || titleLower.includes('chokolade') || titleLower.includes('pudding')) {
+      return 'dessert'
+    }
+
+    // Snack
+    if (titleLower.includes('snack') || titleLower.includes('chips') || titleLower.includes('nuggets') || titleLower.includes('tender')) {
+      return 'snack'
+    }
+
+    // Default to aftensmad
+    return 'aftensmad'
+  }
+
+  // Helper function to determine dish type
+  function getDishType(recipe: RecipeListItem): string {
+    const categoryLower = recipe.category.toLowerCase()
+    const titleLower = recipe.title.toLowerCase()
+
+    if (categoryLower === 'kød') return 'kød'
+    if (categoryLower === 'fisk') return 'fisk'
+    if (categoryLower === 'vegetarisk') return 'vegetarisk'
+    if (categoryLower === 'pasta' || titleLower.includes('pasta')) return 'pasta'
+    if (titleLower.includes('salat')) return 'salat'
+    if (titleLower.includes('sovs')) return 'sovs'
+    if (titleLower.includes('brød') || titleLower.includes('boller') || titleLower.includes('bagel') || titleLower.includes('bageri')) return 'brød-bageri'
+    
+    return 'alle'
+  }
+
   // Filtrer opskrifter baseret på alle søgeparametre
-  const filteredRecipes = recipes.filter((recipe) => {
+  let filteredRecipes = recipes.filter((recipe) => {
     // Søg i titel og beskrivelse
     if (searchQuery) {
       const matchesSearch =
@@ -165,58 +271,40 @@ export default async function RecipesPage({
       if (!matchesSearch) return false
     }
 
-    // Filtrer efter kategori
-    if (selectedCategory) {
-      const categoryLower = recipe.category.toLowerCase()
+    // Filtrer efter måltidstype
+    if (mealType && mealType !== 'alle') {
+      const recipeMealType = getMealType(recipe)
+      if (recipeMealType !== mealType) return false
+    }
+
+    // Filtrer efter rettype
+    if (dishType && dishType !== 'alle') {
+      const recipeDishType = getDishType(recipe)
+      if (recipeDishType !== dishType) return false
+    }
+
+    // Filtrer efter diæt
+    if (normalizedDietary) {
       const titleLower = recipe.title.toLowerCase()
       const excerptLower = recipe.excerpt.toLowerCase()
       const fullRecipe = 'fullRecipe' in recipe ? (recipe as RecipeListItem & { fullRecipe?: Recipe }).fullRecipe : undefined
 
-      // Håndter "Hurtigt" kategori (opskrifter under eller lig 30 min)
-      if (selectedCategory === 'hurtigt') {
-        const timeStr = recipe.time.toLowerCase()
-        // Håndter "4 timer" osv.
-        if (timeStr.includes('timer') || timeStr.includes('time')) {
-          return false
-        }
-        const timeMinutes = parseInt(recipe.time)
-        if (isNaN(timeMinutes) || timeMinutes > 30) {
-          return false
-        }
-      }
-      // Håndter "Vegetarisk" kategori
-      else if (selectedCategory === 'vegetarisk') {
-        if (
-          categoryLower !== 'vegetarisk' &&
-          !titleLower.includes('vegetarisk')
-        ) {
-          return false
-        }
-      }
-      // Håndter "Laktosefri" kategori
-      else if (selectedCategory === 'laktosefri') {
+      if (normalizedDietary === 'laktosefri') {
         if (!fullRecipe) return false
         const recipeText = JSON.stringify(fullRecipe).toLowerCase()
-        // Tjek om opskriften indeholder laktoseholdige ingredienser
         const hasLactose = /mælk|smør|ost|fløde|yoghurt|creme|cheese|butter|milk|cream/i.test(recipeText)
         if (hasLactose && !titleLower.includes('laktosefri') && !excerptLower.includes('laktosefri')) {
           return false
         }
-      }
-      // Håndter "Glutenfri" kategori
-      else if (selectedCategory === 'glutenfri') {
+      } else if (normalizedDietary === 'glutenfri') {
         if (!fullRecipe) return false
         const recipeText = JSON.stringify(fullRecipe).toLowerCase()
-        // Tjek om opskriften indeholder glutenholdige ingredienser
         const hasGluten = /hvedemel|rugmel|gluten|pasta|brød|boller|kage|wheat|flour|bread/i.test(recipeText)
         if (hasGluten && !titleLower.includes('glutenfri') && !excerptLower.includes('glutenfri')) {
           return false
         }
-      }
-      // Håndter "Low Carb / Keto" kategori
-      else if (selectedCategory === 'low carb / keto') {
+      } else if (normalizedDietary === 'low carb / keto') {
         if (!fullRecipe) return false
-        // Tjek om opskriften har lave kulhydrater (under 20g per portion)
         const carbsMatch = fullRecipe.nutrition?.carbs?.match(/(\d+)g/)
         if (carbsMatch) {
           const carbs = parseInt(carbsMatch[1])
@@ -224,36 +312,27 @@ export default async function RecipesPage({
             return false
           }
         } else {
-          // Hvis vi ikke kan bestemme, filtrer ud baseret på ingredienser
           const recipeText = JSON.stringify(fullRecipe).toLowerCase()
           const hasHighCarbs = /mel|sukker|ris|pasta|brød|kartofler|kartofel|flour|sugar|rice|bread|potato/i.test(recipeText)
           if (hasHighCarbs && !titleLower.includes('low carb') && !titleLower.includes('keto') && !excerptLower.includes('low carb') && !excerptLower.includes('keto')) {
-            return false
-          }
+          return false
         }
       }
-      // Håndter "Vegansk / Plantebaseret" kategori
-      else if (selectedCategory === 'vegansk / plantebaseret') {
+      } else if (normalizedDietary === 'vegansk / plantebaseret') {
         if (!fullRecipe) return false
         const recipeText = JSON.stringify(fullRecipe).toLowerCase()
-        // Tjek om opskriften indeholder animalske produkter
         const hasAnimalProducts = /kød|okse|lam|svin|kylling|fisk|æg|mælk|smør|ost|fløde|yoghurt|creme|cheese|honning|meat|beef|lamb|pork|chicken|fish|egg|milk|butter|cheese|cream|honey/i.test(recipeText)
         if (hasAnimalProducts && !titleLower.includes('vegansk') && !titleLower.includes('plantebaseret') && !excerptLower.includes('vegansk') && !excerptLower.includes('plantebaseret')) {
           return false
         }
       }
-      // Matcher kategori
-      else if (categoryLower !== selectedCategory) {
-        return false
-      }
     }
 
-    // Filtrer efter tid (max tid i minutter)
-    if (timeParam) {
-      const maxTime = parseInt(timeParam)
+    // Filtrer efter tid
+    if (timeFilter && timeFilter !== 'alle') {
+      const maxTime = parseInt(timeFilter)
       if (!isNaN(maxTime)) {
         const timeStr = recipe.time.toLowerCase()
-        // Håndter "4 timer" osv.
         if (timeStr.includes('timer') || timeStr.includes('time')) {
           return false
         }
@@ -261,6 +340,14 @@ export default async function RecipesPage({
         if (isNaN(recipeTime) || recipeTime > maxTime) {
           return false
         }
+      }
+    }
+
+    // Filtrer efter sværhedsgrad
+    if (difficultyFilter && difficultyFilter !== 'alle') {
+      const difficultyLower = recipe.difficulty.toLowerCase()
+      if (difficultyLower !== difficultyFilter) {
+        return false
       }
     }
 
@@ -275,6 +362,57 @@ export default async function RecipesPage({
     return recipe
   })
 
+  // Sorter opskrifter
+  if (sortBy !== 'standard') {
+    filteredRecipes = [...filteredRecipes].sort((a, b) => {
+      if (sortBy === 'tid-op' || sortBy === 'tid-ned') {
+        const timeA = parseInt(a.time) || 999
+        const timeB = parseInt(b.time) || 999
+        return sortBy === 'tid-op' ? timeA - timeB : timeB - timeA
+      } else if (sortBy === 'sværhed-op' || sortBy === 'sværhed-ned') {
+        const difficultyOrder: Record<string, number> = { 'nem': 1, 'mellem': 2, 'svær': 3 }
+        const diffA = difficultyOrder[a.difficulty.toLowerCase()] || 2
+        const diffB = difficultyOrder[b.difficulty.toLowerCase()] || 2
+        return sortBy === 'sværhed-op' ? diffA - diffB : diffB - diffA
+      } else if (sortBy === 'alfabetisk-op' || sortBy === 'alfabetisk-ned') {
+        return sortBy === 'alfabetisk-op' 
+          ? a.title.localeCompare(b.title, 'da')
+          : b.title.localeCompare(a.title, 'da')
+      }
+      return 0
+    })
+  }
+
+  // Build URL with params
+  function buildUrl(newParams: Record<string, string | null>) {
+    const params = new URLSearchParams()
+    const allParams = { 
+      mealType: newParams.mealType !== undefined ? newParams.mealType : mealType,
+      dishType: newParams.dishType !== undefined ? newParams.dishType : dishType,
+      dietary: newParams.dietary !== undefined ? newParams.dietary : dietary,
+      timeFilter: newParams.timeFilter !== undefined ? newParams.timeFilter : timeFilter,
+      difficultyFilter: newParams.difficultyFilter !== undefined ? newParams.difficultyFilter : difficultyFilter,
+      sortBy: newParams.sortBy !== undefined ? newParams.sortBy : sortBy,
+    }
+    
+    Object.entries(allParams).forEach(([key, value]) => {
+      if (value && value !== 'alle' && value !== 'standard') {
+        const paramKey = key === 'mealType' ? 'maaltid' : 
+                        key === 'dishType' ? 'rettype' :
+                        key === 'dietary' ? 'diaet' :
+                        key === 'timeFilter' ? 'tid' :
+                        key === 'difficultyFilter' ? 'svaerhed' :
+                        key === 'sortBy' ? 'sort' : key
+        params.set(paramKey, value)
+      }
+    })
+    
+    const queryString = params.toString()
+    return queryString ? `/opskrifter?${queryString}` : '/opskrifter'
+  }
+
+  const hasActiveFilters = mealType || dishType || dietary || timeFilter || difficultyFilter || sortBy !== 'standard'
+
   return (
     <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
       <GradientBackground />
@@ -287,34 +425,145 @@ export default async function RecipesPage({
         <Lead className="mt-6 max-w-3xl">
           Fra klassiske retter til moderne fusion-køkken. Simpel Spis.
         </Lead>
-        <div className="mt-12">
-          <CategoryFilter selectedCategory={selectedCategory} />
+
+        {/* Filtreringssektion */}
+        <div className="mt-12 space-y-8 rounded-3xl bg-gray-50 dark:bg-gray-900/50 p-6 ring-1 ring-black/5 dark:ring-white/10">
+          <div className="flex items-center gap-2">
+            <FunnelIcon className="h-5 w-5 text-gray-600 dark:text-gray-400" />
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Filtrer & Sorter</h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <FilterSection title="Måltid">
+              {mealTypes.map((type) => (
+                <FilterButton
+                  key={type.value}
+                  label={type.label}
+                  isSelected={type.value === 'alle' ? !mealType : mealType === type.value}
+                  href={buildUrl({ mealType: type.value === 'alle' ? null : type.value })}
+                />
+              ))}
+            </FilterSection>
+
+            <FilterSection title="Rettype">
+              {dishTypes.map((type) => (
+                <FilterButton
+                  key={type.value}
+                  label={type.label}
+                  isSelected={type.value === 'alle' ? !dishType : dishType === type.value}
+                  href={buildUrl({ dishType: type.value === 'alle' ? null : type.value })}
+                />
+              ))}
+            </FilterSection>
+
+            <FilterSection title="Diæt & Præferencer">
+              {dietaryOptions.map((option) => (
+                <FilterButton
+                  key={option.value}
+                  label={option.label}
+                  isSelected={dietary === option.value}
+                  href={buildUrl({ dietary: dietary === option.value ? null : option.value })}
+                />
+              ))}
+            </FilterSection>
+
+            <FilterSection title="Tid">
+              {timeFilters.map((filter) => (
+                <FilterButton
+                  key={filter.value}
+                  label={filter.label}
+                  isSelected={filter.value === 'alle' ? !timeFilter : timeFilter === filter.value}
+                  href={buildUrl({ timeFilter: filter.value === 'alle' ? null : filter.value })}
+                />
+              ))}
+            </FilterSection>
+
+            <FilterSection title="Sværhedsgrad">
+              {difficultyFilters.map((filter) => (
+                <FilterButton
+                  key={filter.value}
+                  label={filter.label}
+                  isSelected={filter.value === 'alle' ? !difficultyFilter : difficultyFilter === filter.value}
+                  href={buildUrl({ difficultyFilter: filter.value === 'alle' ? null : filter.value })}
+                />
+              ))}
+            </FilterSection>
+
+            <FilterSection title="Sortering">
+              <div className="w-full">
+                <select
+                  value={sortBy}
+                  onChange={(e) => {
+                    window.location.href = buildUrl({ sortBy: e.target.value === 'standard' ? null : e.target.value })
+                  }}
+                  className="w-full rounded-2xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-2 text-sm font-medium text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
+                >
+                  {sortOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </FilterSection>
         </div>
-        {(searchQuery || timeParam) && (
-          <div className="mt-6 flex flex-wrap gap-2 items-center text-sm">
+
+          {hasActiveFilters && (
+            <div className="flex items-center justify-between border-t border-gray-200 dark:border-gray-800 pt-4">
+              <div className="flex flex-wrap gap-2 items-center text-sm">
             <span className="font-semibold text-gray-900 dark:text-gray-50">
               Aktive filtre:
             </span>
-            {searchQuery && (
-              <span className="inline-flex items-center rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 text-xs font-medium text-gray-700 dark:text-gray-300">
-                Søg: &quot;{searchQuery}&quot;
+                {mealType && mealType !== 'alle' && (
+                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                    {mealTypes.find(m => m.value === mealType)?.label}
+                  </span>
+                )}
+                {dishType && dishType !== 'alle' && (
+                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                    {dishTypes.find(d => d.value === dishType)?.label}
+                  </span>
+                )}
+                {dietary && (
+                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                    {dietaryOptions.find(d => d.value === dietary)?.label}
+                  </span>
+                )}
+                {timeFilter && timeFilter !== 'alle' && (
+                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                    Max {timeFilter} min
+                  </span>
+                )}
+                {difficultyFilter && difficultyFilter !== 'alle' && (
+                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                    {difficultyFilters.find(d => d.value === difficultyFilter)?.label}
               </span>
             )}
-            {timeParam && (
-              <span className="inline-flex items-center rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 text-xs font-medium text-gray-700 dark:text-gray-300">
-                Max tid: {timeParam} min
+                {sortBy !== 'standard' && (
+                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                    {sortOptions.find(s => s.value === sortBy)?.label}
               </span>
             )}
+              </div>
             <Link
               href="/opskrifter"
-              className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50 underline text-xs"
+                className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50 underline"
             >
               Ryd alle filtre
             </Link>
           </div>
         )}
+        </div>
+
+        {/* Resultater */}
+        <div className="mt-8">
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            {filteredRecipes.length} {filteredRecipes.length === 1 ? 'opskrift fundet' : 'opskrifter fundet'}
+          </p>
+        </div>
+
         {filteredRecipes.length > 0 ? (
-        <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
             {filteredRecipes.map((recipe) => (
             <RecipeCard key={recipe.slug} {...recipe} />
           ))}
@@ -336,4 +585,3 @@ export default async function RecipesPage({
     </main>
   )
 }
-
