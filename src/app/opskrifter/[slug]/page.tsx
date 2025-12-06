@@ -40,7 +40,7 @@ export async function generateMetadata({
   const url = `${baseUrl}/opskrifter/${slug}`
 
   return {
-    title: `${recipe.title} - Nem Opskrift | Simpel Spis`,
+    title: `${recipe.title} - Nem Opskrift`,
     description: `${recipe.description} Få den komplette nemme opskrift med ingredienser, fremgangsmåde og næringsindhold. ${recipe.time} • ${recipe.difficulty} sværhedsgrad.`,
     keywords: [
       recipe.title.toLowerCase(),
@@ -56,7 +56,7 @@ export async function generateMetadata({
       canonical: url,
     },
     openGraph: {
-      title: `${recipe.title} - Nem Opskrift | Simpel Spis`,
+      title: `${recipe.title} - Nem Opskrift`,
       description: recipe.description,
       type: 'article',
       url: url,
@@ -65,7 +65,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${recipe.title} - Nem Opskrift | Simpel Spis`,
+      title: `${recipe.title} - Nem Opskrift`,
       description: recipe.description,
     },
   }
@@ -380,13 +380,13 @@ export default async function RecipePage({
               <Subheading as="h2">Fremgangsmåde</Subheading>
               <div className="mt-4 space-y-6">
                 {recipe.instructions.map((instruction, index) => {
-                  const isSectionHeader = (instruction.startsWith('FORBEREDELSE') || instruction.startsWith('TILBEREDNING') || instruction.startsWith('SAMMENSAETNING') || instruction.startsWith('PRO TIPS') || instruction.startsWith('TIP'))
+                  const isSectionHeader = (instruction.startsWith('FORBEREDELSE') || instruction.startsWith('TILBEREDNING') || instruction.startsWith('SAMMENSAETNING') || instruction.startsWith('PRO TIPS') || instruction.startsWith('TIP') || instruction.startsWith('GLASUR') || instruction.startsWith('FROSTING'))
                   const isEmpty = instruction.trim() === ''
                   let stepNumber = 0
                   
                   // Tæl faktiske steps (ikke sektionstitler eller tomme linjer)
                   recipe.instructions.slice(0, index).forEach((inst) => {
-                    if (inst.trim() !== '' && !(inst.startsWith('FORBEREDELSE') || inst.startsWith('TILBEREDNING') || inst.startsWith('SAMMENSAETNING') || inst.startsWith('PRO TIPS') || inst.startsWith('TIP'))) {
+                    if (inst.trim() !== '' && !(inst.startsWith('FORBEREDELSE') || inst.startsWith('TILBEREDNING') || inst.startsWith('SAMMENSAETNING') || inst.startsWith('PRO TIPS') || inst.startsWith('TIP') || inst.startsWith('GLASUR') || inst.startsWith('FROSTING'))) {
                       stepNumber++
                     }
                   })

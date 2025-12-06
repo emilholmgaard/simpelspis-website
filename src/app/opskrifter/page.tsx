@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'}/opskrifter`,
   },
   openGraph: {
-    title: 'Alle Nemme Opskrifter | Simpel Spis',
+    title: 'Alle Nemme Opskrifter',
     description: 'Udforsk vores samling af nemme opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken.',
     type: 'website',
     url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'}/opskrifter`,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Alle Nemme Opskrifter | Simpel Spis',
+    title: 'Alle Nemme Opskrifter',
     description: 'Udforsk vores samling af nemme opskrifter fra hele verden.',
   },
 }

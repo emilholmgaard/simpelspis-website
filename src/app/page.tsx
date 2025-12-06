@@ -7,7 +7,7 @@ import { getAllRecipes } from '@/lib/recipes'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Simpel Spis - Nemme Opskrifter',
+  title: 'Nemme Opskrifter',
   description:
     'Søg efter nemme opskrifter baseret på ingredienser, kategori eller tid. Udforsk over 211.000 nemme opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken.',
   keywords: ['nemme opskrifter', 'søg nemme opskrifter', 'nemme madopskrifter', 'nemme opskrifter', 'hurtige nemme opskrifter', 'nemme opskrifter efter ingredienser', 'dansk mad', 'kogebog'],
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     canonical: process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk',
   },
   openGraph: {
-    title: 'Simpel Spis - Nemme Opskrifter',
+    title: 'Nemme Opskrifter',
     description: 'Søg efter nemme opskrifter baseret på ingredienser, kategori eller tid. Udforsk over 211.000 nemme opskrifter fra hele verden.',
     type: 'website',
     url: process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Simpel Spis - Nemme Opskrifter',
+    title: 'Nemme Opskrifter',
     description: 'Søg efter nemme opskrifter baseret på ingredienser, kategori eller tid.',
   },
 }

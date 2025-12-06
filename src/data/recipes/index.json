@@ -778,5 +778,15 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Lækre hjemmelavet chai cookies med varm kanel, kardemomme og ingefær. Den perfekte kage til kaffe eller te. Denne opskrift giver dig de autentiske chai cookies der smager langt bedre end købt."
+  },
+  {
+    "slug": "hjemmelavet-appelsinkage",
+    "title": "Hjemmelavet Appelsinkage",
+    "category": "Dessert",
+    "time": "80 min",
+    "prepTime": "25 min",
+    "cookTime": "55 min",
+    "difficulty": "Let",
+    "excerpt": "Lækker hjemmelavet appelsinkage med frisk appelsin og creme cheese frosting. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig den autentiske appelsinkage der smager langt bedre end købt."
   }
 ]

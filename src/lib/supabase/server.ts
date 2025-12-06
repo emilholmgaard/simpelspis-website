@@ -65,7 +65,7 @@ export async function createServerClient() {
         }
       },
     },
-  })
+  } as Parameters<typeof createClient>[2])
 }
 
 // Helper to create client from request (for API routes)
