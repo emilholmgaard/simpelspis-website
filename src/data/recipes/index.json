@@ -788,5 +788,25 @@
     "cookTime": "55 min",
     "difficulty": "Let",
     "excerpt": "Lækker hjemmelavet appelsinkage med frisk appelsin og creme cheese frosting. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig den autentiske appelsinkage der smager langt bedre end købt."
+  },
+  {
+    "slug": "hjemmelavet-brunkagekugler",
+    "title": "Hjemmelavet Brunkagekugler",
+    "category": "Dessert",
+    "time": "30 min",
+    "prepTime": "20 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Klassiske hjemmelavet brunkagekugler med kakaopulver og kokosmel. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig de autentiske brunkagekugler der smager langt bedre end købt."
+  },
+  {
+    "slug": "hjemmelavet-brownie",
+    "title": "Hjemmelavet Brownie",
+    "category": "Dessert",
+    "time": "50 min",
+    "prepTime": "15 min",
+    "cookTime": "35 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk hjemmelavet brownie med rig chokoladesmag og tæt konsistens. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig den autentiske brownie der smager langt bedre end købt."
   }
 ]

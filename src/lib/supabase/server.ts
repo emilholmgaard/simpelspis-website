@@ -2,14 +2,13 @@ import { createClient } from '@supabase/supabase-js'
 import { cookies } from 'next/headers'
 import { NextRequest } from 'next/server'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error('Missing Supabase environment variables')
-}
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
 
 export async function createServerClient() {
+  if (!supabaseUrl || !supabaseAnonKey) {
+    throw new Error('Missing Supabase environment variables')
+  }
   const cookieStore = await cookies()
   const projectRef = supabaseUrl.split('//')[1]?.split('.')[0] || 'default'
   const authCookieName = `sb-${projectRef}-auth-token`
@@ -70,7 +69,14 @@ export async function createServerClient() {
 
 // Helper to create client from request (for API routes)
 export function createClientFromRequest(request: NextRequest) {
-  return createClient(supabaseUrl, supabaseAnonKey, {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
+  
+  if (!url || !key) {
+    throw new Error('Missing Supabase environment variables')
+  }
+  
+  return createClient(url, key, {
     auth: {
       persistSession: false,
       autoRefreshToken: false,
