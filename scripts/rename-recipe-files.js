@@ -50,3 +50,4 @@ fs.writeFileSync(indexPath, JSON.stringify(indexContent, null, 2) + '\n', 'utf8'
 console.log(`\n✅ Renamed ${renamed} recipe files`)
 console.log('✅ Updated slugs in all files and index.json')
 
+

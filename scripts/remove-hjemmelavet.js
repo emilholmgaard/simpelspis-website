@@ -53,3 +53,4 @@ fs.writeFileSync(indexPath, JSON.stringify(indexContent, null, 2) + '\n', 'utf8'
 console.log(`\n✅ Updated ${updated} recipe files and index.json`)
 console.log('✅ Removed "Hjemmelavet " prefix from all titles')
 
+

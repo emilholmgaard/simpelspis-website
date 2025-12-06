@@ -75,3 +75,4 @@ Dette vil oprette:
 - `updated_at` (TIMESTAMP)
 - Unique constraint: (recipe_slug, user_id)
 
+
