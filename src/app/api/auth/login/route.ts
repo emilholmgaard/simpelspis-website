@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@supabase/supabase-js'
+import { createClientFromRequest } from '@/lib/supabase/server'
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 
 export async function POST(request: NextRequest) {
   try {
@@ -17,19 +16,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create a Supabase client for this request
-    const supabase = createClient(supabaseUrl, supabaseAnonKey, {
-      cookies: {
-        get(name: string) {
-          return request.cookies.get(name)?.value
-        },
-        set(_name: string, _value: string, _options?: unknown) {
-          // Will be handled by response
-        },
-        remove(_name: string, _options?: unknown) {
-          // Will be handled by response
-        },
-      },
-    })
+    const supabase = createClientFromRequest(request)
 
     const { data, error } = await supabase.auth.signInWithPassword({
       email,

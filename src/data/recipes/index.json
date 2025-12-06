@@ -758,5 +758,25 @@
     "cookTime": "40 min",
     "difficulty": "Let",
     "excerpt": "Klassisk hjemmelavet klatkage med æg, sukker, mel og smør. Den perfekte danske kage til kaffe eller dessert. Denne opskrift giver dig den autentiske klatkage der smager langt bedre end købt."
+  },
+  {
+    "slug": "hjemmelavet-gulerodskage",
+    "title": "Hjemmelavet Gulerodskage",
+    "category": "Dessert",
+    "time": "75 min",
+    "prepTime": "20 min",
+    "cookTime": "55 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk hjemmelavet gulerodskage med creme cheese frosting. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig den autentiske gulerodskage der smager langt bedre end købt."
+  },
+  {
+    "slug": "hjemmelavet-chai-cookies",
+    "title": "Hjemmelavet Chai Cookies",
+    "category": "Dessert",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Lækre hjemmelavet chai cookies med varm kanel, kardemomme og ingefær. Den perfekte kage til kaffe eller te. Denne opskrift giver dig de autentiske chai cookies der smager langt bedre end købt."
   }
 ]

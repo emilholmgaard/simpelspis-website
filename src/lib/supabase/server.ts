@@ -87,6 +87,6 @@ export function createClientFromRequest(request: NextRequest) {
         // Cookies removed via response
       },
     },
-  })
+  } as Parameters<typeof createClient>[2])
 }
 
