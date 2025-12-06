@@ -1,0 +1,35 @@
+{
+  "id": "4",
+  "title": "Kylling i Karry",
+  "description": "Dansk familieklassiker. Mør kylling i en cremet karrysovs serveret med ris.",
+  "time": "45",
+  "difficulty": "Nem",
+  "category": "Aftensmad",
+  "servings": "4",
+  "tags": ["Dansk", "Karry"],
+  "ingredients": [
+    "600g kyllingebryst",
+    "2 løg",
+    "2 spsk karrypulver",
+    "200ml fløde",
+    "200ml mælk",
+    "2 spsk mel",
+    "Ris til servering",
+    "Salt og peber"
+  ],
+  "steps": [
+    {
+      "title": "Forbered kyllingen",
+      "text": "Skær kyllingen i tern og steg den i en gryde indtil den er næsten gennemstegt."
+    },
+    {
+      "title": "Tilbered sovsen",
+      "text": "Tilsæt løg og steg i 2 minutter. Tilsæt karrypulver og mel, rør godt. Tilsæt fløde og mælk lidt ad gangen under omrøring."
+    },
+    {
+      "title": "Kog færdig",
+      "text": "Lad det simre i 15-20 minutter indtil kyllingen er mør og sovsen er cremet. Smag til med salt og peber."
+    }
+  ]
+}
+

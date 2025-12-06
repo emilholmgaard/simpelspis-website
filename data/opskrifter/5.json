@@ -1,0 +1,37 @@
+{
+  "id": "5",
+  "title": "Avocado Toast",
+  "description": "Ristet brød med cremet avocado, pocheret æg og chiliflager.",
+  "time": "10",
+  "difficulty": "Meget nem",
+  "category": "Frokost",
+  "servings": "2",
+  "tags": ["Hurtigt", "Sundt"],
+  "ingredients": [
+    "2 skiver groft brød",
+    "1 moden avocado",
+    "2 æg",
+    "Chiliflager",
+    "Citronsaft",
+    "Salt og peber"
+  ],
+  "steps": [
+    {
+      "title": "Rist brødet",
+      "text": "Rist brødene til de er gyldne og sprøde."
+    },
+    {
+      "title": "Forbered avocado",
+      "text": "Mash avocadoen med en gaffel og tilsæt citronsaft, salt og peber."
+    },
+    {
+      "title": "Pocher æg",
+      "text": "Pocher æggene i let kogende vand i 3-4 minutter."
+    },
+    {
+      "title": "Saml",
+      "text": "Smør avocado på brødet, læg ægget på toppen og drys med chiliflager."
+    }
+  ]
+}
+
