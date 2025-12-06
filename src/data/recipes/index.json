@@ -14,7 +14,6 @@
     "title": "Kødsovs",
     "type": "sovs",
     "category": "Sovs",
-    "type": "sovs",
     "time": "120 min",
     "prepTime": "30 min",
     "cookTime": "90 min",
@@ -50,6 +49,26 @@
     "cookTime": "25 min",
     "difficulty": "Let",
     "excerpt": "Klassisk dansk hjemmelavet boller i karry med saftige kødboller, cremet karrysauce og aromatiske krydderier. Den perfekte hverdagsret der smager langt bedre end fra butikken. Nem, hurtig og perfekt til hele familien!"
+  },
+  {
+    "slug": "budget-pasta",
+    "title": "Budget Pasta",
+    "category": "Pasta",
+    "time": "20 min",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og billig pasta med tomatsauce lavet af simple ingredienser. Perfekt budgetvenlig ret der smager fantastisk og er klar på under 20 minutter. Ideel til studerende og alle der vil spare penge uden at gå på kompromis med smagen!"
+  },
+  {
+    "slug": "budget",
+    "title": "Budget Pasta",
+    "category": "Pasta",
+    "time": "20 min",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Simpel og økonomisk budget pasta med få ingredienser. Perfekt til hverdagen når du har brug for en hurtig, billig og lækker ret. Denne opskrift bruger kun basis ingredienser og smager alligevel fantastisk."
   },
   {
     "slug": "glog",
@@ -492,6 +511,16 @@
     "excerpt": "Autentisk hjemmelavet doner boks med krydret kød, frisk salat og lækker dressing. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske doner boks der smager langt bedre end fra biks. Server med pommes frites!"
   },
   {
+    "slug": "graesk-salat",
+    "title": "Græsk Salat",
+    "category": "Salat",
+    "time": "15 min",
+    "prepTime": "15 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk græsk salat med friske tomater, agurk, rødløg, oliven og cremet feta ost. Den klassiske græske ret der smager fantastisk og er perfekt til sommeren. Fuld af smag og farver - perfekt som forret, tilbehør eller hovedret!"
+  },
+  {
     "slug": "gyros",
     "title": "Gyros",
     "category": "Kød",
@@ -500,6 +529,46 @@
     "cookTime": "30 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk hjemmelavet gyros med krydret kød, frisk salat og cremet tzatziki. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske gyros der smager langt bedre end fra biks. Server med pita brød og pommes frites!"
+  },
+  {
+    "slug": "moussaka",
+    "title": "Moussaka - Græsk Aubergine Lasagne",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk græsk moussaka med lag af aubergine, krydret kødsovs og cremet bechamel. Den klassiske græske ret der smager fantastisk og er perfekt til en hyggelig aften. En rigtig smagsoplevelse!"
+  },
+  {
+    "slug": "souvlaki",
+    "title": "Souvlaki - Græske Kebab Spid",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "30 min + 2 timer marinering",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk græsk souvlaki med marineret kød på spid, frisk salat og cremet tzatziki. Den klassiske græske street food der smager fantastisk. Perfekt til sommergrill eller hverdagen!"
+  },
+  {
+    "slug": "spanakopita",
+    "title": "Spanakopita - Græsk Spinat Tærte",
+    "category": "Vegetarisk",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk græsk spanakopita med frisk spinat, feta ost og filodej. Den klassiske græske tærte der smager fantastisk og er perfekt til forret eller hovedret. En rigtig smagsoplevelse!"
+  },
+  {
+    "slug": "pastitsio",
+    "title": "Pastitsio - Græsk Lasagne",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk græsk pastitsio med pasta, krydret kødsovs og cremet bechamel. Den klassiske græske lasagne der smager fantastisk og er perfekt til en hyggelig aften. En rigtig smagsoplevelse!"
   },
   {
     "slug": "hakket-oksekod",
@@ -2383,36 +2452,6 @@
     "excerpt": "Sprøde og smagfulde hjemmelavet grøntsager i airfryer med perfekt tekstur og mindre fedt. Den perfekte hurtige side-ret eller snack. Denne opskrift giver dig de lækreste grøntsager der smager langt bedre end kogte grøntsager. Perfekt til hele familien!"
   },
   {
-    "slug": "airfryer-kylling",
-    "title": "Airfryer Kylling",
-    "category": "Kød",
-    "time": "30 min",
-    "prepTime": "10 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Saftig og sprød hjemmelavet kylling i airfryer med gyldenbrun skorpe og perfekt krydret smag. Den perfekte hurtige hovedret der smager langt bedre end fra butikken. Nem, hurtig og perfekt til hele familien!"
-  },
-  {
-    "slug": "airfryer-pomfritter",
-    "title": "Airfryer Pomfritter",
-    "category": "Hurtigt",
-    "time": "35 min",
-    "prepTime": "15 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Sprøde og gyldne hjemmelavet pomfritter i airfryer med perfekt tekstur. Den perfekte snack eller tilbehør der smager langt bedre end fra butikken. Nem, hurtig og perfekt til hele familien!"
-  },
-  {
-    "slug": "airfryer-grontsager",
-    "title": "Airfryer Grøntsager",
-    "category": "Vegetarisk",
-    "time": "25 min",
-    "prepTime": "10 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "Sprøde og smagfulde hjemmelavet grøntsager i airfryer med perfekt tekstur. Den perfekte side ret eller hovedret der smager langt bedre end kogt. Nem, hurtig og perfekt til hele familien!"
-  },
-  {
     "slug": "airfryer-fisk",
     "title": "Airfryer Fisk",
     "category": "Fisk",
@@ -2431,5 +2470,125 @@
     "cookTime": "25 min",
     "difficulty": "Let",
     "excerpt": "Sprøde og saftige airfryer kyllingvinger med perfekt krydderi. Disse kyllingvinger er langt sundere end friturestegte, men smager lige så godt. Perfekt til hverdagen!"
+  },
+  {
+    "slug": "linsesuppe",
+    "title": "Linsesuppe",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Nærende og mættende hjemmelavet linsesuppe med grøntsager og aromatiske krydderier. Den perfekte budgetvenlige ret der er både sund og lækker. Fuld af protein, fiber og smag - perfekt til hele familien!"
+  },
+  {
+    "slug": "sund-budget-opskrift",
+    "title": "Sund Budget Opskrift",
+    "category": "Grøntsager",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Nærende og budgetvenlig grøntsagsgryde med linser, grøntsager og aromatiske krydderier. Den perfekte sund hverdagsret der er både billig og mættende. Fuld af protein, fiber og smag - perfekt til hele familien!"
+  },
+  {
+    "slug": "sund-budget-linser-curry",
+    "title": "Sund Budget Linser Curry",
+    "category": "Hurtigt",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Nærende og smagfuld linser curry med grøntsager og krydderier. Perfekt sund budgetvenlig ret med masser af protein og fiber. Klar på under 35 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "sund-budget-pasta",
+    "title": "Sund Budget Pasta",
+    "category": "Pasta",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Sund og budgetvenlig pasta med masser af grøntsager og en lækker tomatbaseret sauce. Perfekt til hverdagen - både sund, mættende og billig at lave. Denne opskrift giver dig en lækker ret der ikke koster det store, men smager fantastisk!"
+  },
+  {
+    "slug": "sund-budget-curry",
+    "title": "Sund Budget Curry",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Nem",
+    "excerpt": "Sund og budgetvenlig curry med linser og grøntsager. Fyldt med protein, fiber og smag - perfekt til hverdagen. Nem at lave, billig og mættende. Perfekt til hele familien!"
+  },
+  {
+    "slug": "sund-budget-linser-i-karry",
+    "title": "Sund Budget Linser i Karry",
+    "category": "Vegetarisk",
+    "time": "40 min",
+    "prepTime": "10 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Sund og budgetvenlig linser i karry med grøntsager og aromatiske krydderier. Fuld af protein, fiber og smag - perfekt til hverdagen. Nem, mættende og koster kun få kroner per portion!"
+  },
+  {
+    "slug": "graesk-moussaka",
+    "title": "Græsk Moussaka",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk græsk moussaka med lag af aubergine, krydret kødsauce og cremet bechamel. En klassisk græsk ret der smager fantastisk og er perfekt til en særlig aften. Fyldig, mættende og fuld af smag!"
+  },
+  {
+    "slug": "tzatziki",
+    "title": "Tzatziki",
+    "category": "Sovs",
+    "time": "15 min",
+    "prepTime": "15 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk græsk tzatziki med cremet yoghurt, frisk agurk, hvidløg og dild. Den perfekte dressing til gyros, salat eller bare som dip. Simpel, sund og fyldt med smag!"
+  },
+  {
+    "slug": "graesk-salat",
+    "title": "Græsk Salat",
+    "category": "Salat",
+    "time": "15 min",
+    "prepTime": "15 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk græsk salat med friske tomater, agurk, fetaost, oliven og oregano. Den perfekte sommerret der smager af Grækenland. Frisk, sund og perfekt til frokost eller som tilbehør!"
+  },
+  {
+    "slug": "moussaka",
+    "title": "Moussaka",
+    "category": "Kød",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk græsk moussaka med lag af aubergine, krydret kødsauce og cremet bechamel. Den perfekte komfortmad der smager af Grækenland. Rigt, mættende og perfekt til en særlig aften!"
+  },
+  {
+    "slug": "souvlaki",
+    "title": "Souvlaki",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "60 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk græsk souvlaki med marineret kød på spid, frisk salat og cremet tzatziki. Den perfekte grillret der smager af Grækenland. Saftigt, smagfuldt og perfekt til en sommeraften!"
+  },
+  {
+    "slug": "spanakopita",
+    "title": "Spanakopita",
+    "category": "Vegetarisk",
+    "time": "75 min",
+    "prepTime": "30 min",
+    "cookTime": "45 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk græsk spanakopita med spinat, fetaost og filodej. Den perfekte vegetariske ret der smager af Grækenland. Sprød, smagfuld og perfekt til frokost, forret eller hovedret!"
   }
 ]

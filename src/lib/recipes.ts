@@ -15,6 +15,7 @@ export interface Recipe {
   description: string
   ingredients: string[]
   instructions: string[]
+  budget?: boolean
   nutrition: {
     energy: string
     fat: string

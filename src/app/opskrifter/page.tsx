@@ -74,6 +74,18 @@ const dietaryOptions = [
   { label: 'Vegansk / Plantebaseret', value: 'vegansk-plantebaseret' },
 ]
 
+// Budget filtre
+const budgetFilters = [
+  { label: 'Alle', value: 'alle' },
+  { label: 'Lav Budget', value: 'lav-budget' },
+]
+
+// Sunde filtre
+const healthyFilters = [
+  { label: 'Alle', value: 'alle' },
+  { label: 'Sund', value: 'ja' },
+]
+
 
 // Tid filtre
 const timeFilters = [
@@ -189,6 +201,8 @@ export default async function RecipesPage({
   const dishType = (params.rettype as string)?.toLowerCase() || ''
   const cookingMethod = (params.tilberedning as string)?.toLowerCase() || ''
   const dietary = (params.diaet as string)?.toLowerCase() || ''
+  const budgetFilter = (params.budget as string)?.toLowerCase() || ''
+  const healthyFilter = (params.sund as string)?.toLowerCase() || ''
   const timeFilter = (params.tid as string) || ''
   const difficultyFilter = (params.svaerhed as string)?.toLowerCase() || ''
   const sortBy = (params.sort as string) || 'standard'
@@ -205,7 +219,8 @@ export default async function RecipesPage({
 
   // Hent alle opskrifter fra JSON-filer
   const needsFullData = (normalizedDietary && ['laktosefri', 'glutenfri', 'low carb / keto', 'vegansk / plantebaseret'].includes(normalizedDietary)) || 
-                        (cookingMethod && cookingMethod !== 'alle')
+                        (cookingMethod && cookingMethod !== 'alle') ||
+                        (budgetFilter && budgetFilter === 'lav-budget')
   const recipeList = getAllRecipes()
   const fullRecipes = needsFullData ? getAllRecipesWithData() : null
   const recipes = needsFullData 
@@ -306,6 +321,134 @@ export default async function RecipesPage({
     return 'alle'
   }
 
+  // Helper function to determine if recipe is budget-friendly
+  function isBudgetFriendly(recipe: RecipeListItem & { fullRecipe?: Recipe }): boolean {
+    const fullRecipe = 'fullRecipe' in recipe ? recipe.fullRecipe : undefined
+    if (!fullRecipe) return false
+
+    const titleLower = recipe.title.toLowerCase()
+    const excerptLower = recipe.excerpt.toLowerCase()
+    const recipeText = JSON.stringify(fullRecipe).toLowerCase()
+    const ingredientsText = fullRecipe.ingredients.join(' ').toLowerCase()
+
+    // Check if explicitly marked as budget
+    if (fullRecipe.budget === true || titleLower.includes('budget') || excerptLower.includes('budget') || 
+        titleLower.includes('billig') || excerptLower.includes('billig')) {
+      return true
+    }
+
+    // Check for expensive ingredients that would disqualify
+    const expensiveIngredients = [
+      'laks', 'salmon', 'tun', 'tuna', 'entrecote', 'ribeye', 'oksefilet', 'beef tenderloin',
+      'hummer', 'lobster', 'rejer', 'shrimp', 'scampi', 'krabbe', 'crab',
+      'truffel', 'truffle', 'foie gras', 'kaviar', 'caviar',
+      'parmesan', 'parmesanost', 'brie', 'camembert', 'blå ost', 'blue cheese',
+      'kød (dyrt)', 'premium', 'luksus'
+    ]
+    
+    const hasExpensiveIngredient = expensiveIngredients.some(ingredient => 
+      ingredientsText.includes(ingredient) || recipeText.includes(ingredient)
+    )
+    
+    if (hasExpensiveIngredient) {
+      return false
+    }
+
+    // Check for budget-friendly indicators
+    const budgetFriendlyIngredients = [
+      'ris', 'rice', 'pasta', 'kartofler', 'potato', 'kartofel',
+      'bønner', 'beans', 'linser', 'lentils', 'kikærter', 'chickpeas',
+      'æg', 'egg', 'ost (billig)', 'cheddar', 'gul ost',
+      'kylling', 'chicken', 'hakket kød', 'ground meat', 'minced meat',
+      'tomat', 'tomato', 'løg', 'onion', 'hvidløg', 'garlic',
+      'gulerod', 'carrot', 'kål', 'cabbage', 'broccoli'
+    ]
+
+    // Count budget-friendly ingredients
+    const budgetIngredientCount = budgetFriendlyIngredients.filter(ingredient =>
+      ingredientsText.includes(ingredient) || recipeText.includes(ingredient)
+    ).length
+
+    // Recipe is budget-friendly if it has at least 3 budget-friendly ingredients
+    // and no expensive ingredients
+    return budgetIngredientCount >= 3
+  }
+
+  // Helper function to determine if recipe is healthy
+  function isHealthy(recipe: RecipeListItem & { fullRecipe?: Recipe }): boolean {
+    const fullRecipe = 'fullRecipe' in recipe ? recipe.fullRecipe : undefined
+    if (!fullRecipe) return false
+
+    const titleLower = recipe.title.toLowerCase()
+    const excerptLower = recipe.excerpt.toLowerCase()
+    const recipeText = JSON.stringify(fullRecipe).toLowerCase()
+    const ingredientsText = fullRecipe.ingredients.join(' ').toLowerCase()
+
+    // Check if explicitly marked as healthy
+    if (titleLower.includes('sund') || excerptLower.includes('sund') ||
+        titleLower.includes('healthy') || excerptLower.includes('healthy') ||
+        titleLower.includes('protein') || excerptLower.includes('protein')) {
+      return true
+    }
+
+    // Check for unhealthy ingredients that would disqualify
+    const unhealthyIngredients = [
+      'friture', 'deep fry', 'friturestegt', 'fritter', 'chips (friture)',
+      'margarine', 'transfedt', 'trans fat', 'high fructose', 'corn syrup',
+      'processed', 'forarbejdet', 'konserveringsmiddel'
+    ]
+    
+    const hasUnhealthyIngredient = unhealthyIngredients.some(ingredient => 
+      ingredientsText.includes(ingredient) || recipeText.includes(ingredient)
+    )
+    
+    if (hasUnhealthyIngredient) {
+      return false
+    }
+
+    // Check for healthy indicators
+    const healthyIngredients = [
+      'grøntsager', 'vegetables', 'salat', 'salad', 'broccoli', 'spinat', 'spinach',
+      'bønner', 'beans', 'linser', 'lentils', 'kikærter', 'chickpeas',
+      'kylling', 'chicken', 'fisk', 'fish', 'torsk', 'cod', 'laks', 'salmon',
+      'fuldkorn', 'whole grain', 'havregryn', 'oats', 'quinoa',
+      'olivenolie', 'olive oil', 'avocado', 'nødder', 'nuts',
+      'protein', 'fiber', 'fiberrig', 'high fiber'
+    ]
+
+    // Count healthy ingredients
+    const healthyIngredientCount = healthyIngredients.filter(ingredient =>
+      ingredientsText.includes(ingredient) || recipeText.includes(ingredient)
+    ).length
+
+    // Check nutrition values if available
+    let hasGoodNutrition = false
+    if (fullRecipe.nutrition) {
+      // Check for reasonable fat content (not too high)
+      const fatMatch = fullRecipe.nutrition.fat?.match(/(\d+)g/)
+      const saturatedFatMatch = fullRecipe.nutrition.saturatedFat?.match(/(\d+)g/)
+      const proteinMatch = fullRecipe.nutrition.protein?.match(/(\d+)g/)
+      
+      if (fatMatch && saturatedFatMatch) {
+        const fat = parseInt(fatMatch[1])
+        const saturatedFat = parseInt(saturatedFatMatch[1])
+        // Reasonable fat content (not excessive)
+        if (fat < 50 && saturatedFat < 20) {
+          hasGoodNutrition = true
+        }
+      }
+      
+      // High protein is a good indicator
+      if (proteinMatch && parseInt(proteinMatch[1]) > 15) {
+        hasGoodNutrition = true
+      }
+    }
+
+    // Recipe is healthy if it has at least 3 healthy ingredients
+    // and no unhealthy ingredients, or has good nutrition values
+    return healthyIngredientCount >= 3 || hasGoodNutrition
+  }
+
   // Filtrer opskrifter baseret på alle søgeparametre
   let filteredRecipes = recipes.filter((recipe) => {
     // Søg i titel og beskrivelse
@@ -403,6 +546,20 @@ export default async function RecipesPage({
       }
     }
 
+    // Filtrer efter budget
+    if (budgetFilter && budgetFilter === 'lav-budget') {
+      if (!isBudgetFriendly(recipe as RecipeListItem & { fullRecipe?: Recipe })) {
+        return false
+      }
+    }
+
+    // Filtrer efter sund
+    if (healthyFilter && healthyFilter !== 'alle') {
+      if (!isHealthy(recipe as RecipeListItem & { fullRecipe?: Recipe })) {
+        return false
+      }
+    }
+
     return true
   }).map(recipe => {
     // Remove fullRecipe from the result
@@ -456,6 +613,8 @@ export default async function RecipesPage({
       dietary: newParams.dietary !== undefined ? newParams.dietary : dietary,
       timeFilter: newParams.timeFilter !== undefined ? newParams.timeFilter : timeFilter,
       difficultyFilter: newParams.difficultyFilter !== undefined ? newParams.difficultyFilter : difficultyFilter,
+      budgetFilter: newParams.budgetFilter !== undefined ? newParams.budgetFilter : budgetFilter,
+      healthyFilter: newParams.healthyFilter !== undefined ? newParams.healthyFilter : healthyFilter,
       page: newParams.page !== undefined ? newParams.page : (resetPage ? null : (currentPage > 1 ? currentPage.toString() : null)),
     }
     
@@ -467,6 +626,8 @@ export default async function RecipesPage({
                         key === 'dietary' ? 'diaet' :
                         key === 'timeFilter' ? 'tid' :
                         key === 'difficultyFilter' ? 'svaerhed' :
+                        key === 'budgetFilter' ? 'budget' :
+                        key === 'healthyFilter' ? 'sund' :
                         key === 'sort' ? 'sort' :
                         key === 'page' ? 'page' : key
         // Only include page if it's not 1
@@ -481,7 +642,7 @@ export default async function RecipesPage({
     return queryString ? `/opskrifter?${queryString}` : '/opskrifter'
   }
 
-  const hasActiveFilters = mealType || dishType || cookingMethod || dietary || timeFilter || difficultyFilter
+  const hasActiveFilters = mealType || dishType || cookingMethod || dietary || budgetFilter || healthyFilter || timeFilter || difficultyFilter
 
   // Pagination calculations
   const totalRecipes = sortedRecipes.length
@@ -612,6 +773,28 @@ export default async function RecipesPage({
                 />
               ))}
             </FilterSection>
+
+            <FilterSection title="Budget">
+              {budgetFilters.map((filter) => (
+                <FilterButton
+                  key={filter.value}
+                  label={filter.label}
+                  isSelected={filter.value === 'alle' ? !budgetFilter : budgetFilter === filter.value}
+                  href={buildUrl({ budgetFilter: filter.value === 'alle' ? null : filter.value }, true)}
+                />
+              ))}
+            </FilterSection>
+
+            <FilterSection title="Sundhed">
+              {healthyFilters.map((filter) => (
+                <FilterButton
+                  key={filter.value}
+                  label={filter.label}
+                  isSelected={filter.value === 'alle' ? !healthyFilter : healthyFilter === filter.value}
+                  href={buildUrl({ healthyFilter: filter.value === 'alle' ? null : filter.value }, true)}
+                />
+              ))}
+            </FilterSection>
           </div>
         </div>
 
@@ -639,6 +822,16 @@ export default async function RecipesPage({
               {dietary && (
                 <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
                   {dietaryOptions.find(d => d.value === dietary)?.label}
+                </span>
+              )}
+              {budgetFilter && budgetFilter !== 'alle' && (
+                <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                  {budgetFilters.find(b => b.value === budgetFilter)?.label}
+                </span>
+              )}
+              {healthyFilter && healthyFilter !== 'alle' && (
+                <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                  {healthyFilters.find(h => h.value === healthyFilter)?.label}
                 </span>
               )}
               {timeFilter && timeFilter !== 'alle' && (
