@@ -6,7 +6,7 @@ import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
-import { getAllRecipes, type RecipeListItem } from '@/lib/recipes'
+import { getAllRecipes, getAllRecipesWithData, type RecipeListItem, type Recipe } from '@/lib/recipes'
 
 export const metadata: Metadata = {
   title: 'Alle Nemme Opskrifter',
@@ -39,6 +39,10 @@ const categories = [
   'Kød',
   'Pasta',
   'Vegetarisk',
+  'Laktosefri',
+  'Glutenfri',
+  'Low Carb / Keto',
+  'Vegansk / Plantebaseret',
 ]
 
 function RecipeCard({
@@ -97,9 +101,13 @@ function CategoryFilter({
   return (
     <div className="flex flex-wrap gap-2">
       {categories.map((category) => {
+        const categorySlug = category.toLowerCase().replace(/\s+\/\s+/g, '-').replace(/\s+/g, '-')
         const isSelected =
           (category === 'Alle' && !selectedCategory) ||
-          category.toLowerCase() === selectedCategory
+          category.toLowerCase() === selectedCategory ||
+          categorySlug === selectedCategory ||
+          (selectedCategory === 'low-carb-keto' && category === 'Low Carb / Keto') ||
+          (selectedCategory === 'vegansk-plantebaseret' && category === 'Vegansk / Plantebaseret')
         return (
         <Button
           key={category}
@@ -107,7 +115,7 @@ function CategoryFilter({
             href={
               category === 'Alle'
                 ? '/opskrifter'
-                : `/opskrifter?kategori=${category.toLowerCase()}`
+                : `/opskrifter?kategori=${categorySlug}`
             }
           className="text-sm"
         >
@@ -126,11 +134,26 @@ export default async function RecipesPage({
 }) {
   const params = await searchParams
   const searchQuery = (params.q as string)?.toLowerCase() || ''
-  const selectedCategory = (params.category as string)?.toLowerCase() || (params.kategori as string)?.toLowerCase() || ''
+  let selectedCategory = (params.category as string)?.toLowerCase() || (params.kategori as string)?.toLowerCase() || ''
+  // Normalize category names from URL
+  if (selectedCategory === 'low-carb-keto') {
+    selectedCategory = 'low carb / keto'
+  } else if (selectedCategory === 'vegansk-plantebaseret') {
+    selectedCategory = 'vegansk / plantebaseret'
+  }
   const timeParam = (params.time as string) || ''
 
   // Hent alle opskrifter fra JSON-filer
-  const recipes = getAllRecipes()
+  // For de nye filtre skal vi bruge fulde opskrifter for at tjekke ingredienser
+  const needsFullData = selectedCategory && ['laktosefri', 'glutenfri', 'low carb / keto', 'vegansk / plantebaseret'].includes(selectedCategory)
+  const recipeList = getAllRecipes()
+  const fullRecipes = needsFullData ? getAllRecipesWithData() : null
+  const recipes = needsFullData 
+    ? recipeList.map(item => {
+        const full = fullRecipes?.find(r => r.slug === item.slug)
+        return full ? { ...item, fullRecipe: full } : item
+      })
+    : recipeList
 
   // Filtrer opskrifter baseret på alle søgeparametre
   const filteredRecipes = recipes.filter((recipe) => {
@@ -145,6 +168,9 @@ export default async function RecipesPage({
     // Filtrer efter kategori
     if (selectedCategory) {
       const categoryLower = recipe.category.toLowerCase()
+      const titleLower = recipe.title.toLowerCase()
+      const excerptLower = recipe.excerpt.toLowerCase()
+      const fullRecipe = 'fullRecipe' in recipe ? (recipe as RecipeListItem & { fullRecipe?: Recipe }).fullRecipe : undefined
 
       // Håndter "Hurtigt" kategori (opskrifter under eller lig 30 min)
       if (selectedCategory === 'hurtigt') {
@@ -162,8 +188,57 @@ export default async function RecipesPage({
       else if (selectedCategory === 'vegetarisk') {
         if (
           categoryLower !== 'vegetarisk' &&
-          !recipe.title.toLowerCase().includes('vegetarisk')
+          !titleLower.includes('vegetarisk')
         ) {
+          return false
+        }
+      }
+      // Håndter "Laktosefri" kategori
+      else if (selectedCategory === 'laktosefri') {
+        if (!fullRecipe) return false
+        const recipeText = JSON.stringify(fullRecipe).toLowerCase()
+        // Tjek om opskriften indeholder laktoseholdige ingredienser
+        const hasLactose = /mælk|smør|ost|fløde|yoghurt|creme|cheese|butter|milk|cream/i.test(recipeText)
+        if (hasLactose && !titleLower.includes('laktosefri') && !excerptLower.includes('laktosefri')) {
+          return false
+        }
+      }
+      // Håndter "Glutenfri" kategori
+      else if (selectedCategory === 'glutenfri') {
+        if (!fullRecipe) return false
+        const recipeText = JSON.stringify(fullRecipe).toLowerCase()
+        // Tjek om opskriften indeholder glutenholdige ingredienser
+        const hasGluten = /hvedemel|rugmel|gluten|pasta|brød|boller|kage|wheat|flour|bread/i.test(recipeText)
+        if (hasGluten && !titleLower.includes('glutenfri') && !excerptLower.includes('glutenfri')) {
+          return false
+        }
+      }
+      // Håndter "Low Carb / Keto" kategori
+      else if (selectedCategory === 'low carb / keto') {
+        if (!fullRecipe) return false
+        // Tjek om opskriften har lave kulhydrater (under 20g per portion)
+        const carbsMatch = fullRecipe.nutrition?.carbs?.match(/(\d+)g/)
+        if (carbsMatch) {
+          const carbs = parseInt(carbsMatch[1])
+          if (carbs > 20 && !titleLower.includes('low carb') && !titleLower.includes('keto') && !excerptLower.includes('low carb') && !excerptLower.includes('keto')) {
+            return false
+          }
+        } else {
+          // Hvis vi ikke kan bestemme, filtrer ud baseret på ingredienser
+          const recipeText = JSON.stringify(fullRecipe).toLowerCase()
+          const hasHighCarbs = /mel|sukker|ris|pasta|brød|kartofler|kartofel|flour|sugar|rice|bread|potato/i.test(recipeText)
+          if (hasHighCarbs && !titleLower.includes('low carb') && !titleLower.includes('keto') && !excerptLower.includes('low carb') && !excerptLower.includes('keto')) {
+            return false
+          }
+        }
+      }
+      // Håndter "Vegansk / Plantebaseret" kategori
+      else if (selectedCategory === 'vegansk / plantebaseret') {
+        if (!fullRecipe) return false
+        const recipeText = JSON.stringify(fullRecipe).toLowerCase()
+        // Tjek om opskriften indeholder animalske produkter
+        const hasAnimalProducts = /kød|okse|lam|svin|kylling|fisk|æg|mælk|smør|ost|fløde|yoghurt|creme|cheese|honning|meat|beef|lamb|pork|chicken|fish|egg|milk|butter|cheese|cream|honey/i.test(recipeText)
+        if (hasAnimalProducts && !titleLower.includes('vegansk') && !titleLower.includes('plantebaseret') && !excerptLower.includes('vegansk') && !excerptLower.includes('plantebaseret')) {
           return false
         }
       }
@@ -190,6 +265,14 @@ export default async function RecipesPage({
     }
 
     return true
+  }).map(recipe => {
+    // Remove fullRecipe from the result
+    if ('fullRecipe' in recipe) {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const { fullRecipe: _fullRecipe, ...rest } = recipe as RecipeListItem & { fullRecipe?: Recipe }
+      return rest
+    }
+    return recipe
   })
 
   return (
