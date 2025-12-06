@@ -45,7 +45,7 @@ export default function Home() {
               Simpel Spis
             </Heading>
             <Lead className="mt-4 hidden lg:block mx-auto">
-              Udforsk tusindvis af nemme opskrifter fra hele verden. Fra klassiske
+              Udforsk hundredevis af nemme opskrifter fra hele verden. Fra klassiske
               retter til moderne fusion-køkken.
             </Lead>
           </div>

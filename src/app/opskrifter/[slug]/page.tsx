@@ -383,13 +383,24 @@ export default async function RecipePage({
               <Subheading as="h2">Fremgangsmåde</Subheading>
               <div className="mt-4 space-y-6">
                 {recipe.instructions.map((instruction, index) => {
-                  const isSectionHeader = (instruction.startsWith('FORBEREDELSE') || instruction.startsWith('TILBEREDNING') || instruction.startsWith('SAMMENSAETNING') || instruction.startsWith('PRO TIPS') || instruction.startsWith('TIP') || instruction.startsWith('GLASUR') || instruction.startsWith('FROSTING'))
+                  // Check if instruction is a section header (all caps with optional time in parentheses, or known section headers)
+                  const isKnownHeader = instruction.startsWith('FORBEREDELSE') || instruction.startsWith('TILBEREDNING') || instruction.startsWith('SAMMENSAETNING') || instruction.startsWith('PRO TIPS') || instruction.startsWith('TIP') || instruction.startsWith('GLASUR') || instruction.startsWith('FROSTING') || instruction.startsWith('MÆSKNING') || instruction.startsWith('FILTRERING') || instruction.startsWith('KOGNING') || instruction.startsWith('GÆRING') || instruction.startsWith('FLASKNING') || instruction.startsWith('LAGRING')
+                  // Also check for all-caps headers with time in parentheses
+                  const hasTimeInParens = /\([^)]+\)/.test(instruction)
+                  const textBeforeParens = instruction.replace(/\s*\([^)]+\)\s*$/, '').trim()
+                  const isAllCaps = textBeforeParens === textBeforeParens.toUpperCase() && /^[A-ZÆØÅ\s]+$/.test(textBeforeParens)
+                  const isSectionHeader = isKnownHeader || (isAllCaps && hasTimeInParens)
                   const isEmpty = instruction.trim() === ''
                   let stepNumber = 0
                   
                   // Tæl faktiske steps (ikke sektionstitler eller tomme linjer)
                   recipe.instructions.slice(0, index).forEach((inst) => {
-                    if (inst.trim() !== '' && !(inst.startsWith('FORBEREDELSE') || inst.startsWith('TILBEREDNING') || inst.startsWith('SAMMENSAETNING') || inst.startsWith('PRO TIPS') || inst.startsWith('TIP') || inst.startsWith('GLASUR') || inst.startsWith('FROSTING'))) {
+                    const isKnownHeaderCheck = inst.startsWith('FORBEREDELSE') || inst.startsWith('TILBEREDNING') || inst.startsWith('SAMMENSAETNING') || inst.startsWith('PRO TIPS') || inst.startsWith('TIP') || inst.startsWith('GLASUR') || inst.startsWith('FROSTING') || inst.startsWith('MÆSKNING') || inst.startsWith('FILTRERING') || inst.startsWith('KOGNING') || inst.startsWith('GÆRING') || inst.startsWith('FLASKNING') || inst.startsWith('LAGRING')
+                    const hasTimeCheck = /\([^)]+\)/.test(inst)
+                    const textBeforeParensCheck = inst.replace(/\s*\([^)]+\)\s*$/, '').trim()
+                    const isAllCapsCheck = textBeforeParensCheck === textBeforeParensCheck.toUpperCase() && /^[A-ZÆØÅ\s]+$/.test(textBeforeParensCheck)
+                    const isHeaderCheck = isKnownHeaderCheck || (isAllCapsCheck && hasTimeCheck)
+                    if (inst.trim() !== '' && !isHeaderCheck) {
                       stepNumber++
                     }
                   })

@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     template: '%s | Simpel Spis',
     default: 'Simpel Spis',
   },
-  description: 'Udforsk tusindvis af lækre opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken. Find opskrifter baseret på ingredienser, kategori eller tid.',
+  description: 'Udforsk hundredevis af lækre opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken. Find opskrifter baseret på ingredienser, kategori eller tid.',
   keywords: ['opskrifter', 'madopskrifter', 'kogebog', 'madlavning', 'opskrifter danmark', 'nemme opskrifter', 'italiensk mad', 'dansk mad'],
   openGraph: {
     title: 'Simpel Spis - Nemme Opskrifter',
-    description: 'Udforsk tusindvis af lækre opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken.',
+    description: 'Udforsk hundredevis af lækre opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken.',
     type: 'website',
     locale: 'da_DK',
     siteName: 'Simpel Spis',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Simpel Spis',
-    description: 'Udforsk tusindvis af lækre opskrifter fra hele verden.',
+    description: 'Udforsk hundredevis af lækre opskrifter fra hele verden.',
   },
 }
 

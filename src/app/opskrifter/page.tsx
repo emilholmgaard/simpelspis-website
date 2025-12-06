@@ -179,6 +179,8 @@ export default async function RecipesPage({
   const dietary = (params.diaet as string)?.toLowerCase() || ''
   const timeFilter = (params.tid as string) || ''
   const difficultyFilter = (params.svaerhed as string)?.toLowerCase() || ''
+  const currentPage = Math.max(1, parseInt((params.page as string) || '1', 10))
+  const recipesPerPage = 10
 
   // Normalize dietary options
   let normalizedDietary = dietary
@@ -353,7 +355,7 @@ export default async function RecipesPage({
 
 
   // Build URL with params
-  function buildUrl(newParams: Record<string, string | null>) {
+  function buildUrl(newParams: Record<string, string | null>, resetPage = false) {
     const params = new URLSearchParams()
     const allParams = { 
       mealType: newParams.mealType !== undefined ? newParams.mealType : mealType,
@@ -361,6 +363,7 @@ export default async function RecipesPage({
       dietary: newParams.dietary !== undefined ? newParams.dietary : dietary,
       timeFilter: newParams.timeFilter !== undefined ? newParams.timeFilter : timeFilter,
       difficultyFilter: newParams.difficultyFilter !== undefined ? newParams.difficultyFilter : difficultyFilter,
+      page: newParams.page !== undefined ? newParams.page : (resetPage ? null : (currentPage > 1 ? currentPage.toString() : null)),
     }
     
     Object.entries(allParams).forEach(([key, value]) => {
@@ -369,7 +372,12 @@ export default async function RecipesPage({
                         key === 'dishType' ? 'rettype' :
                         key === 'dietary' ? 'diaet' :
                         key === 'timeFilter' ? 'tid' :
-                        key === 'difficultyFilter' ? 'svaerhed' : key
+                        key === 'difficultyFilter' ? 'svaerhed' :
+                        key === 'page' ? 'page' : key
+        // Only include page if it's not 1
+        if (key === 'page' && value === '1') {
+          return
+        }
         params.set(paramKey, value)
       }
     })
@@ -379,6 +387,49 @@ export default async function RecipesPage({
   }
 
   const hasActiveFilters = mealType || dishType || dietary || timeFilter || difficultyFilter
+
+  // Pagination calculations
+  const totalRecipes = filteredRecipes.length
+  const totalPages = Math.ceil(totalRecipes / recipesPerPage)
+  const startIndex = (currentPage - 1) * recipesPerPage
+  const endIndex = startIndex + recipesPerPage
+  const paginatedRecipes = filteredRecipes.slice(startIndex, endIndex)
+
+  // Generate page numbers for pagination
+  const getPageNumbers = () => {
+    const pages: (number | string)[] = []
+    const maxVisible = 5
+    
+    if (totalPages <= maxVisible) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i)
+      }
+    } else {
+      if (currentPage <= 3) {
+        for (let i = 1; i <= 4; i++) {
+          pages.push(i)
+        }
+        pages.push('...')
+        pages.push(totalPages)
+      } else if (currentPage >= totalPages - 2) {
+        pages.push(1)
+        pages.push('...')
+        for (let i = totalPages - 3; i <= totalPages; i++) {
+          pages.push(i)
+        }
+      } else {
+        pages.push(1)
+        pages.push('...')
+        for (let i = currentPage - 1; i <= currentPage + 1; i++) {
+          pages.push(i)
+        }
+        pages.push('...')
+        pages.push(totalPages)
+      }
+    }
+    
+    return pages
+  }
 
   return (
     <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
@@ -407,7 +458,7 @@ export default async function RecipesPage({
                   key={type.value}
                   label={type.label}
                   isSelected={type.value === 'alle' ? !mealType : mealType === type.value}
-                  href={buildUrl({ mealType: type.value === 'alle' ? null : type.value })}
+                  href={buildUrl({ mealType: type.value === 'alle' ? null : type.value }, true)}
                 />
               ))}
             </FilterSection>
@@ -418,7 +469,7 @@ export default async function RecipesPage({
                   key={type.value}
                   label={type.label}
                   isSelected={type.value === 'alle' ? !dishType : dishType === type.value}
-                  href={buildUrl({ dishType: type.value === 'alle' ? null : type.value })}
+                  href={buildUrl({ dishType: type.value === 'alle' ? null : type.value }, true)}
                 />
               ))}
             </FilterSection>
@@ -429,7 +480,7 @@ export default async function RecipesPage({
                   key={option.value}
                   label={option.label}
                   isSelected={dietary === option.value}
-                  href={buildUrl({ dietary: dietary === option.value ? null : option.value })}
+                  href={buildUrl({ dietary: dietary === option.value ? null : option.value }, true)}
                 />
               ))}
             </FilterSection>
@@ -440,7 +491,7 @@ export default async function RecipesPage({
                   key={filter.value}
                   label={filter.label}
                   isSelected={filter.value === 'alle' ? !timeFilter : timeFilter === filter.value}
-                  href={buildUrl({ timeFilter: filter.value === 'alle' ? null : filter.value })}
+                  href={buildUrl({ timeFilter: filter.value === 'alle' ? null : filter.value }, true)}
                 />
               ))}
             </FilterSection>
@@ -451,7 +502,7 @@ export default async function RecipesPage({
                   key={filter.value}
                   label={filter.label}
                   isSelected={filter.value === 'alle' ? !difficultyFilter : difficultyFilter === filter.value}
-                  href={buildUrl({ difficultyFilter: filter.value === 'alle' ? null : filter.value })}
+                  href={buildUrl({ difficultyFilter: filter.value === 'alle' ? null : filter.value }, true)}
                 />
               ))}
             </FilterSection>
@@ -502,16 +553,81 @@ export default async function RecipesPage({
         {/* Resultater */}
         <div className="mt-8">
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            {filteredRecipes.length} {filteredRecipes.length === 1 ? 'opskrift fundet' : 'opskrifter fundet'}
+            {totalRecipes} {totalRecipes === 1 ? 'opskrift fundet' : 'opskrifter fundet'}
+            {totalPages > 1 && (
+              <span className="ml-2">
+                (Side {currentPage} af {totalPages})
+              </span>
+            )}
           </p>
         </div>
 
-        {filteredRecipes.length > 0 ? (
-          <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
-            {filteredRecipes.map((recipe) => (
-            <RecipeCard key={recipe.slug} {...recipe} />
-          ))}
-        </div>
+        {paginatedRecipes.length > 0 ? (
+          <>
+            <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
+              {paginatedRecipes.map((recipe) => (
+                <RecipeCard key={recipe.slug} {...recipe} />
+              ))}
+            </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="mt-12 flex items-center justify-center gap-2 flex-wrap">
+                {/* Previous Button */}
+                {currentPage > 1 ? (
+                  <Button
+                    href={buildUrl({ page: (currentPage - 1).toString() })}
+                    variant="outline"
+                  >
+                    Forrige
+                  </Button>
+                ) : (
+                  <span className="inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)] rounded-full border border-transparent shadow-sm ring-1 ring-black/10 dark:ring-white/20 text-base font-medium whitespace-nowrap text-gray-950 dark:text-gray-50 opacity-50 cursor-not-allowed">
+                    Forrige
+                  </span>
+                )}
+
+                {/* Page Numbers */}
+                <div className="flex items-center gap-1 flex-wrap justify-center">
+                  {getPageNumbers().map((page, index) => {
+                    if (page === '...') {
+                      return (
+                        <span key={`ellipsis-${index}`} className="px-3 py-2 text-gray-500 dark:text-gray-400">
+                          ...
+                        </span>
+                      )
+                    }
+                    const pageNum = page as number
+                    const isActive = pageNum === currentPage
+                    return (
+                      <Button
+                        key={pageNum}
+                        href={pageNum === 1 ? buildUrl({ page: null }) : buildUrl({ page: pageNum.toString() })}
+                        variant={isActive ? 'primary' : 'outline'}
+                        className={isActive ? '' : 'min-w-[2.5rem]'}
+                      >
+                        {pageNum}
+                      </Button>
+                    )
+                  })}
+                </div>
+
+                {/* Next Button */}
+                {currentPage < totalPages ? (
+                  <Button
+                    href={buildUrl({ page: (currentPage + 1).toString() })}
+                    variant="outline"
+                  >
+                    Næste
+                  </Button>
+                ) : (
+                  <span className="inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)] rounded-full border border-transparent shadow-sm ring-1 ring-black/10 dark:ring-white/20 text-base font-medium whitespace-nowrap text-gray-950 dark:text-gray-50 opacity-50 cursor-not-allowed">
+                    Næste
+                  </span>
+                )}
+              </div>
+            )}
+          </>
         ) : (
           <div className="mt-16 text-center py-12">
             <p className="text-lg text-gray-600 dark:text-gray-400">
