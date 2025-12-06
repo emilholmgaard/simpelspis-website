@@ -7,7 +7,6 @@ import { Heading, Lead, Subheading } from '@/components/text'
 import { ChevronRightIcon, FunnelIcon } from '@heroicons/react/24/outline'
 import type { Metadata } from 'next'
 import { getAllRecipes, getAllRecipesWithData, type RecipeListItem, type Recipe } from '@/lib/recipes'
-import { SortSelect } from '@/components/recipe-sort-select'
 
 export const metadata: Metadata = {
   title: 'Alle Nemme Opskrifter',
@@ -64,16 +63,6 @@ const dietaryOptions = [
   { label: 'Vegansk / Plantebaseret', value: 'vegansk-plantebaseret' },
 ]
 
-// Sortering
-const sortOptions = [
-  { label: 'Standard', value: 'standard' },
-  { label: 'Tid: Hurtigst først', value: 'tid-op' },
-  { label: 'Tid: Længst først', value: 'tid-ned' },
-  { label: 'Sværhedsgrad: Nemmest først', value: 'sværhed-op' },
-  { label: 'Sværhedsgrad: Sværest først', value: 'sværhed-ned' },
-  { label: 'Alfabetisk: A-Z', value: 'alfabetisk-op' },
-  { label: 'Alfabetisk: Z-A', value: 'alfabetisk-ned' },
-]
 
 // Tid filtre
 const timeFilters = [
@@ -190,7 +179,6 @@ export default async function RecipesPage({
   const dietary = (params.diaet as string)?.toLowerCase() || ''
   const timeFilter = (params.tid as string) || ''
   const difficultyFilter = (params.svaerhed as string)?.toLowerCase() || ''
-  const sortBy = (params.sort as string) || 'standard'
 
   // Normalize dietary options
   let normalizedDietary = dietary
@@ -363,26 +351,6 @@ export default async function RecipesPage({
     return recipe
   })
 
-  // Sorter opskrifter
-  if (sortBy !== 'standard') {
-    filteredRecipes = [...filteredRecipes].sort((a, b) => {
-      if (sortBy === 'tid-op' || sortBy === 'tid-ned') {
-        const timeA = parseInt(a.time) || 999
-        const timeB = parseInt(b.time) || 999
-        return sortBy === 'tid-op' ? timeA - timeB : timeB - timeA
-      } else if (sortBy === 'sværhed-op' || sortBy === 'sværhed-ned') {
-        const difficultyOrder: Record<string, number> = { 'nem': 1, 'mellem': 2, 'svær': 3 }
-        const diffA = difficultyOrder[a.difficulty.toLowerCase()] || 2
-        const diffB = difficultyOrder[b.difficulty.toLowerCase()] || 2
-        return sortBy === 'sværhed-op' ? diffA - diffB : diffB - diffA
-      } else if (sortBy === 'alfabetisk-op' || sortBy === 'alfabetisk-ned') {
-        return sortBy === 'alfabetisk-op' 
-          ? a.title.localeCompare(b.title, 'da')
-          : b.title.localeCompare(a.title, 'da')
-      }
-      return 0
-    })
-  }
 
   // Build URL with params
   function buildUrl(newParams: Record<string, string | null>) {
@@ -393,17 +361,15 @@ export default async function RecipesPage({
       dietary: newParams.dietary !== undefined ? newParams.dietary : dietary,
       timeFilter: newParams.timeFilter !== undefined ? newParams.timeFilter : timeFilter,
       difficultyFilter: newParams.difficultyFilter !== undefined ? newParams.difficultyFilter : difficultyFilter,
-      sortBy: newParams.sortBy !== undefined ? newParams.sortBy : sortBy,
     }
     
     Object.entries(allParams).forEach(([key, value]) => {
-      if (value && value !== 'alle' && value !== 'standard') {
+      if (value && value !== 'alle') {
         const paramKey = key === 'mealType' ? 'maaltid' : 
                         key === 'dishType' ? 'rettype' :
                         key === 'dietary' ? 'diaet' :
                         key === 'timeFilter' ? 'tid' :
-                        key === 'difficultyFilter' ? 'svaerhed' :
-                        key === 'sortBy' ? 'sort' : key
+                        key === 'difficultyFilter' ? 'svaerhed' : key
         params.set(paramKey, value)
       }
     })
@@ -412,7 +378,7 @@ export default async function RecipesPage({
     return queryString ? `/opskrifter?${queryString}` : '/opskrifter'
   }
 
-  const hasActiveFilters = mealType || dishType || dietary || timeFilter || difficultyFilter || sortBy !== 'standard'
+  const hasActiveFilters = mealType || dishType || dietary || timeFilter || difficultyFilter
 
   return (
     <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
@@ -428,13 +394,13 @@ export default async function RecipesPage({
         </Lead>
 
         {/* Filtreringssektion */}
-        <div className="mt-12 space-y-8 rounded-3xl bg-gray-50 dark:bg-gray-900/50 p-6 ring-1 ring-black/5 dark:ring-white/10">
-          <div className="flex items-center gap-2">
+        <div className="mt-12">
+          <div className="flex items-center gap-2 mb-6">
             <FunnelIcon className="h-5 w-5 text-gray-600 dark:text-gray-400" />
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Filtrer & Sorter</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Filtrer</h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="space-y-6">
             <FilterSection title="Måltid">
               {mealTypes.map((type) => (
                 <FilterButton
@@ -490,58 +456,48 @@ export default async function RecipesPage({
               ))}
             </FilterSection>
           </div>
+        </div>
 
-          <div className="mt-6">
-            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">Sortering</h3>
-            <SortSelect currentSort={sortBy} />
-          </div>
-
-          {hasActiveFilters && (
-            <div className="flex items-center justify-between border-t border-gray-200 dark:border-gray-800 pt-4">
-              <div className="flex flex-wrap gap-2 items-center text-sm">
-            <span className="font-semibold text-gray-900 dark:text-gray-50">
-              Aktive filtre:
-            </span>
-                {mealType && mealType !== 'alle' && (
-                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
-                    {mealTypes.find(m => m.value === mealType)?.label}
-                  </span>
-                )}
-                {dishType && dishType !== 'alle' && (
-                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
-                    {dishTypes.find(d => d.value === dishType)?.label}
-                  </span>
-                )}
-                {dietary && (
-                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
-                    {dietaryOptions.find(d => d.value === dietary)?.label}
-                  </span>
-                )}
-                {timeFilter && timeFilter !== 'alle' && (
-                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
-                    Max {timeFilter} min
-                  </span>
-                )}
-                {difficultyFilter && difficultyFilter !== 'alle' && (
-                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
-                    {difficultyFilters.find(d => d.value === difficultyFilter)?.label}
+        {hasActiveFilters && (
+          <div className="flex items-center justify-between border-t border-gray-200 dark:border-gray-800 pt-6 mt-6">
+            <div className="flex flex-wrap gap-2 items-center text-sm">
+              <span className="font-semibold text-gray-900 dark:text-gray-50">
+                Aktive filtre:
               </span>
-            )}
-                {sortBy !== 'standard' && (
-                  <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
-                    {sortOptions.find(s => s.value === sortBy)?.label}
-              </span>
-            )}
-              </div>
+              {mealType && mealType !== 'alle' && (
+                <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                  {mealTypes.find(m => m.value === mealType)?.label}
+                </span>
+              )}
+              {dishType && dishType !== 'alle' && (
+                <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                  {dishTypes.find(d => d.value === dishType)?.label}
+                </span>
+              )}
+              {dietary && (
+                <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                  {dietaryOptions.find(d => d.value === dietary)?.label}
+                </span>
+              )}
+              {timeFilter && timeFilter !== 'alle' && (
+                <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                  Max {timeFilter} min
+                </span>
+              )}
+              {difficultyFilter && difficultyFilter !== 'alle' && (
+                <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                  {difficultyFilters.find(d => d.value === difficultyFilter)?.label}
+                </span>
+              )}
+            </div>
             <Link
               href="/opskrifter"
-                className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50 underline"
+              className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50 underline"
             >
               Ryd alle filtre
             </Link>
           </div>
         )}
-        </div>
 
         {/* Resultater */}
         <div className="mt-8">
