@@ -7,15 +7,23 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "extract-recipes": "node scripts/extract-recipes.js"
+    "extract-recipes": "node scripts/extract-recipes.js",
+    "migrate": "tsx scripts/migrate.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.6",
     "@heroicons/react": "^2.2.0",
+    "@supabase/supabase-js": "^2.86.2",
     "@vercel/analytics": "^1.6.1",
     "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
+    "drizzle-kit": "^0.31.8",
+    "drizzle-orm": "^0.45.0",
     "framer-motion": "^12.23.11",
     "next": "^15.5.7",
+    "postgres": "^3.4.7",
     "react": "^19",
     "react-dom": "^19",
     "react-use-measure": "^2.1.7"
@@ -33,6 +41,7 @@
     "prettier-plugin-organize-imports": "^4.2.0",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "tailwindcss": "^4.1.15",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

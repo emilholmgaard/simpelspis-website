@@ -1,10 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from './link'
 import { Logo } from './logo'
+import { Button } from './button'
+import { AuthModal } from './auth/auth-modal'
+import { UserMenu } from './auth/user-menu'
 
 const navigation = [
   { name: 'Nemme Opskrifter', href: '/opskrifter' },
@@ -12,6 +15,15 @@ const navigation = [
 
 export function Navbar({ banner }: { banner?: React.ReactNode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [authModalOpen, setAuthModalOpen] = useState(false)
+  const [user, setUser] = useState<any>(null)
+
+  useEffect(() => {
+    fetch('/api/auth/user')
+      .then((res) => res.json())
+      .then((data) => setUser(data.user))
+      .catch(() => {})
+  }, [])
 
   return (
     <header>
@@ -31,7 +43,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12 lg:items-center">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -41,6 +53,13 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               {item.name}
             </Link>
           ))}
+          {user ? (
+            <UserMenu />
+          ) : (
+            <Button variant="outline" onClick={() => setAuthModalOpen(true)}>
+              Log ind
+            </Button>
+          )}
         </div>
       </div>
       </nav>
@@ -79,6 +98,11 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           </div>
         </DialogPanel>
       </Dialog>
+      <AuthModal
+        isOpen={authModalOpen}
+        onClose={() => setAuthModalOpen(false)}
+        onSuccess={() => window.location.reload()}
+      />
     </header>
   )
 }

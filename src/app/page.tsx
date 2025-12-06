@@ -3,6 +3,7 @@ import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { SearchForm } from '@/components/search-form'
 import { Heading, Lead } from '@/components/text'
+import { getAllRecipes } from '@/lib/recipes'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -29,6 +30,9 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
+  const recipes = getAllRecipes()
+  const recipeCount = recipes.length
+
   return (
     <main className="overflow-hidden min-h-screen flex flex-col">
       <GradientBackground />
@@ -55,7 +59,7 @@ export default function Home() {
           <div className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center">
             <div className="flex items-baseline">
               <span className="text-2xl font-semibold text-gray-950 dark:text-gray-50 sm:text-3xl">
-                39
+                {recipeCount}
               </span>
             </div>
             <span className="text-base font-medium text-gray-500 dark:text-gray-400 sm:text-lg">

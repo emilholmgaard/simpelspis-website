@@ -8,6 +8,11 @@ import { ArrowLeftIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getRecipeBySlug, getAllRecipesWithData } from '@/lib/recipes'
+import { ReviewForm } from '@/components/reviews/review-form'
+import { ReviewList } from '@/components/reviews/review-list'
+import { db } from '@/lib/db'
+import { reviews } from '@/lib/db/schema'
+import { eq, sql } from 'drizzle-orm'
 
 export async function generateStaticParams() {
   const recipes = getAllRecipesWithData()
@@ -79,6 +84,29 @@ export default async function RecipePage({
   }
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'
+  
+  // Fetch review stats for AggregateRating schema
+  let reviewStats = null
+  try {
+    const stats = await db
+      .select({
+        averageRating: sql<number>`COALESCE(AVG(${reviews.rating})::numeric, 0)`,
+        totalReviews: sql<number>`COUNT(*)::int`,
+      })
+      .from(reviews)
+      .where(eq(reviews.recipeSlug, slug))
+    
+    const result = stats[0]
+    if (result && result.totalReviews && result.totalReviews > 0) {
+      reviewStats = {
+        averageRating: parseFloat(result.averageRating?.toString() || '0'),
+        totalReviews: result.totalReviews || 0,
+      }
+    }
+  } catch (error) {
+    // Ignore errors - reviews are optional
+    console.error('Error fetching review stats:', error)
+  }
   
   // Konverter tid til ISO 8601 format (PT90M for 90 min, PT2H for 2 timer)
   function parseTimeToISO(timeStr: string): string {
@@ -192,6 +220,18 @@ export default async function RecipePage({
     },
     // Keywords for SEO
     keywords: `${recipe.title}, ${recipe.category}, nem opskrift, dansk mad, ${recipe.difficulty}`,
+    // AggregateRating for reviews (if reviews exist)
+    ...(reviewStats && reviewStats.totalReviews > 0
+      ? {
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: reviewStats.averageRating.toFixed(1),
+            reviewCount: reviewStats.totalReviews,
+            bestRating: '5',
+            worstRating: '1',
+          },
+        }
+      : {}),
   }
 
   // BreadcrumbList schema for bedre SEO og navigation
@@ -429,6 +469,16 @@ export default async function RecipePage({
         </div>
 
         <RecipeActions title={recipe.title} slug={slug} />
+      </Container>
+
+      <Container className="pb-24">
+        <div className="max-w-4xl">
+          <Subheading className="mt-12 mb-8">Anmeldelser</Subheading>
+          <ReviewList recipeSlug={slug} />
+          <div className="mt-8">
+            <ReviewForm recipeSlug={slug} />
+          </div>
+        </div>
       </Container>
     </main>
     </>
