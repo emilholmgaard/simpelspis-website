@@ -1,0 +1,56 @@
+{
+  "slug": "keto-brod",
+  "id": "083",
+  "title": "Keto Brød",
+  "category": "Hurtigt",
+  "time": "60 min",
+  "prepTime": "15 min",
+  "cookTime": "45 min",
+  "difficulty": "Let",
+  "excerpt": "Luftigt og lækkert hjemmelavet keto brød med mandelmel og kokosmel. Perfekt til low carb og keto diæt. Dette brød er lavet uden hvedemel og har kun få kulhydrater, men smager fantastisk. Perfekt til morgenmad, frokost eller som tilbehør.",
+  "description": "Luftigt og lækkert hjemmelavet keto brød med mandelmel og kokosmel. Perfekt til low carb og keto diæt. Dette brød er lavet uden hvedemel og har kun få kulhydrater, men smager fantastisk. Perfekt til morgenmad, frokost eller som tilbehør til dine favoritretter. Varmt fra ovnen med smør - der er intet bedre!",
+  "ingredients": [
+    "Til brødet:",
+    "200g mandelmel (finthakket mandler)",
+    "50g kokosmel",
+    "30g psylliumskaller (hele frøskaller)",
+    "1 tsk bagepulver",
+    "1 tsk salt",
+    "4 store æg",
+    "2 spsk kokosolie eller smør, smeltet",
+    "100ml vand (kogende)",
+    "1 spsk æblecidereddike",
+    "Valgfri: 1 spsk sesamfrø eller chiafrø til pynt"
+  ],
+  "instructions": [
+    "Forvarm ovnen til 175°C (varmluft) eller 190°C (almindelig ovn).",
+    "Bland mandelmel, kokosmel, psylliumskaller, bagepulver og salt i en stor skål. Tip: Brug en fin sigte for at undgå klumper.",
+    "Tilføj æg, smeltet kokosolie og æblecidereddike til de tørre ingredienser. Rør godt sammen med en håndmixer eller piskeris. Tip: Rør grundigt - det skal være jævnt blandet.",
+    "Hæld det kogende vand i dejen og rør straks kraftigt med en håndmixer i 30 sekunder, indtil dejen bliver tyk og elastisk. Tip: Vigtigt at røre straks - vandet aktiverer psylliumskallerne.",
+    "Lad dejen hvile i 5-10 minutter, så den kan stivne lidt. Tip: Dejen skal være tyk og formbar - ikke flydende.",
+    "Form dejen til en oval eller rund brødform (ca. 20 cm lang) på et bageplade med bagepapir. Tip: Brug våde hænder for at undgå at dejen klæber.",
+    "Pynt med sesamfrø eller chiafrø hvis ønsket. Tip: Tryk frøene let ned i dejen så de sidder fast.",
+    "Bak brødet i den forvarmede ovn i 40-45 minutter, indtil det er gyldenbrunt og hul i midten når du banker på bunden. Tip: Tjek efter 40 minutter - det skal lyde hult når du banker på bunden.",
+    "Tag brødet ud og lad det køle helt af på en rist før du skærer det. Vigtigt: Lad det køle helt af - det bliver mere struktureret når det køler af.",
+    "Skær brødet i skiver når det er kølet af. Tip: Brug en skarp kniv og skær tynde skiver for bedre tekstur."
+  ],
+  "nutrition": {
+    "energy": "180 kcal",
+    "fat": "14g",
+    "saturatedFat": "4g",
+    "carbs": "4g",
+    "sugar": "1g",
+    "fiber": "8g",
+    "protein": "8g",
+    "salt": "0.5g"
+  },
+  "tips": [
+    "For luftigere brød: Pisk æggene let før du tilføjer dem til dejen. Det giver mere luft i brødet.",
+    "For knasende skorpe: Pensl brødet med æggeblomme før bagning. Det giver en gyldenbrun skorpe.",
+    "For sødt brød: Tilføj 1-2 spsk erythritol eller stevia til dejen. Perfekt til morgenmad.",
+    "Brødet kan gemmes i køleskabet i op til 5 dage eller fryses i op til 3 måneder. Tag det ud og toast det før servering.",
+    "For bedre smag: Toast brødet let før servering. Det giver bedre tekstur og smag.",
+    "Brødet kan også bages i en brødform (20x10 cm) for et mere traditionelt brød. Juster bagetiden til 45-50 minutter."
+  ]
+}
+

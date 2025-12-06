@@ -88,19 +88,22 @@ export default async function RecipePage({
   // Fetch review stats for AggregateRating schema
   let reviewStats = null
   try {
-    const stats = await db
-      .select({
-        averageRating: sql<number>`COALESCE(AVG(${reviews.rating})::numeric, 0)`,
-        totalReviews: sql<number>`COUNT(*)::int`,
-      })
-      .from(reviews)
-      .where(eq(reviews.recipeSlug, slug))
-    
-    const result = stats[0]
-    if (result && result.totalReviews && result.totalReviews > 0) {
-      reviewStats = {
-        averageRating: parseFloat(result.averageRating?.toString() || '0'),
-        totalReviews: result.totalReviews || 0,
+    // Check if DATABASE_URL is available before attempting database query
+    if (process.env.DATABASE_URL) {
+      const stats = await db
+        .select({
+          averageRating: sql<number>`COALESCE(AVG(${reviews.rating})::numeric, 0)`,
+          totalReviews: sql<number>`COUNT(*)::int`,
+        })
+        .from(reviews)
+        .where(eq(reviews.recipeSlug, slug))
+      
+      const result = stats[0]
+      if (result && result.totalReviews && result.totalReviews > 0) {
+        reviewStats = {
+          averageRating: parseFloat(result.averageRating?.toString() || '0'),
+          totalReviews: result.totalReviews || 0,
+        }
       }
     }
   } catch (error) {

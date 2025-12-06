@@ -818,5 +818,15 @@
     "cookTime": "10 min",
     "difficulty": "Let",
     "excerpt": "Klassiske hjemmelavet rugbrødskugler med kakaopulver og kokosmel. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig de autentiske rugbrødskugler der smager langt bedre end købt."
+  },
+  {
+    "slug": "keto-brod",
+    "title": "Keto Brød",
+    "category": "Hurtigt",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Let",
+    "excerpt": "Luftigt og lækkert hjemmelavet keto brød med mandelmel og kokosmel. Perfekt til low carb og keto diæt. Dette brød er lavet uden hvedemel og har kun få kulhydrater, men smager fantastisk. Perfekt til morgenmad, frokost eller som tilbehør."
   }
 ]

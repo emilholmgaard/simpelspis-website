@@ -7,6 +7,7 @@ import { Heading, Lead, Subheading } from '@/components/text'
 import { ChevronRightIcon, FunnelIcon } from '@heroicons/react/24/outline'
 import type { Metadata } from 'next'
 import { getAllRecipes, getAllRecipesWithData, type RecipeListItem, type Recipe } from '@/lib/recipes'
+import { SortSelect } from '@/components/recipe-sort-select'
 
 export const metadata: Metadata = {
   title: 'Alle Nemme Opskrifter',
@@ -488,25 +489,12 @@ export default async function RecipesPage({
                 />
               ))}
             </FilterSection>
+          </div>
 
-            <FilterSection title="Sortering">
-              <div className="w-full">
-                <select
-                  value={sortBy}
-                  onChange={(e) => {
-                    window.location.href = buildUrl({ sortBy: e.target.value === 'standard' ? null : e.target.value })
-                  }}
-                  className="w-full rounded-2xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-2 text-sm font-medium text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
-                >
-                  {sortOptions.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </FilterSection>
-        </div>
+          <div className="mt-6">
+            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">Sortering</h3>
+            <SortSelect currentSort={sortBy} />
+          </div>
 
           {hasActiveFilters && (
             <div className="flex items-center justify-between border-t border-gray-200 dark:border-gray-800 pt-4">
