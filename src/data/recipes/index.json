@@ -718,5 +718,45 @@
     "cookTime": "30 min",
     "difficulty": "Mellem",
     "excerpt": "Søde og cremede hjemmelavet bamseboller med kokos, chokolade og konditorcreme. Den perfekte dessert eller snack. Denne opskrift giver dig de autentiske bamseboller der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "hjemmelavet-pizzadej",
+    "title": "Hjemmelavet Pizzadej",
+    "category": "Hurtigt",
+    "time": "90 min",
+    "prepTime": "20 min",
+    "cookTime": "70 min",
+    "difficulty": "Let",
+    "excerpt": "Perfekt hjemmelavet pizzadej med gær, mel og olivenolie. Den perfekte bund til alle slags pizzaer. Denne opskrift giver dig den autentiske pizzadej der smager langt bedre end købt."
+  },
+  {
+    "slug": "hjemmelavet-laksemouse",
+    "title": "Hjemmelavet Laksemouse",
+    "category": "Fisk",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker hjemmelavet laksemouse med røget laks, creme fraiche og dild. Den perfekte forret eller tilbehør. Denne opskrift giver dig den autentiske laksemouse der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "hjemmelavet-beef-wellington",
+    "title": "Hjemmelavet Beef Wellington",
+    "category": "Kød",
+    "time": "3 timer",
+    "prepTime": "2 timer",
+    "cookTime": "1 time",
+    "difficulty": "Svær",
+    "excerpt": "Klassisk hjemmelavet Beef Wellington med oksekød, champignonfarce og puff pastry. Den perfekte festret. Denne opskrift giver dig den autentiske Beef Wellington der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "hjemmelavet-klatkage",
+    "title": "Hjemmelavet Klatkage",
+    "category": "Dessert",
+    "time": "60 min",
+    "prepTime": "20 min",
+    "cookTime": "40 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk hjemmelavet klatkage med æg, sukker, mel og smør. Den perfekte danske kage til kaffe eller dessert. Denne opskrift giver dig den autentiske klatkage der smager langt bedre end købt."
   }
 ]
