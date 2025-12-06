@@ -40,6 +40,16 @@
     "excerpt": "Bløde og luftige hjemmelavet boller med guldbrun skorpe. Perfekte til morgenmad, frokost eller som tilbehør til måltider. Disse boller smager langt bedre end købte boller og er overraskende nemme at lave."
   },
   {
+    "slug": "boller-i-karry",
+    "title": "Boller i Karry",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk dansk hjemmelavet boller i karry med saftige kødboller, cremet karrysauce og aromatiske krydderier. Den perfekte hverdagsret der smager langt bedre end fra butikken. Nem, hurtig og perfekt til hele familien!"
+  },
+  {
     "slug": "glog",
     "title": "Gløg",
     "category": "Dessert",
@@ -480,6 +490,16 @@
     "excerpt": "Juicy og smagfuld hjemmelavet kylling sandwich med saftig kylling, frisk salat og cremet dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske kylling sandwich der smager langt bedre end fra butikken. Server med pommes frites!"
   },
   {
+    "slug": "kylling-i-ovn",
+    "title": "Kylling i Ovn",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og sprød hjemmelavet kylling i ovn med gyldenbrun skorpe og perfekt krydret smag. Den perfekte hovedret til hverdagen eller weekenden. Denne opskrift giver dig den autentiske ovnbagte kylling der smager langt bedre end fra butikken. Server med kartofler, ris eller grøntsager!"
+  },
+  {
     "slug": "flaeskestegssandwich",
     "title": "Flæskestegssandwich",
     "category": "Kød",
@@ -608,6 +628,36 @@
     "cookTime": "15 min",
     "difficulty": "Mellem",
     "excerpt": "Klassisk og cremet hjemmelavet pasta carbonara med bacon, æg og parmesan. Denne opskrift giver dig den autentiske carbonara der smager langt bedre end fra restauranten. Perfekt til en hurtig og lækker middag!"
+  },
+  {
+    "slug": "pasta-bolognese",
+    "title": "Pasta Bolognese",
+    "category": "Pasta",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk autentisk hjemmelavet pasta bolognese med saftig kødsauce, tomater og parmesan. Den perfekte italienske klassiker der smager langt bedre end fra restauranten. Perfekt til en hyggelig aften med familie og venner!"
+  },
+  {
+    "slug": "pasta-bolognese-glutenfri",
+    "title": "Pasta Bolognese (Glutenfri)",
+    "category": "Pasta",
+    "time": "90 min",
+    "prepTime": "20 min",
+    "cookTime": "70 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk og autentisk hjemmelavet glutenfri pasta bolognese med rig kødsauce, friske tomater og aromatiske krydderier. Den perfekte italienske klassiker der smager langt bedre end fra restauranten - helt uden gluten! Perfekt til en hyggelig aften med familie og venner!"
+  },
+  {
+    "slug": "bolognese",
+    "title": "Bolognese",
+    "category": "Pasta",
+    "time": "120 min",
+    "prepTime": "20 min",
+    "cookTime": "100 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet bolognese med saftig kødsauce, rødvin og aromatiske krydderier. Den perfekte pasta sauce der smager langt bedre end fra butikken. Denne opskrift giver dig den klassiske italienske bolognese der er perfekt til spaghetti, lasagne eller din yndlingspasta. Perfekt til en hyggelig aften!"
   },
   {
     "slug": "bearnaise-sovs",
@@ -848,5 +898,435 @@
     "cookTime": "45 min",
     "difficulty": "Let",
     "excerpt": "Luftigt og lækkert hjemmelavet keto brød med mandelmel og kokosmel. Perfekt til low carb og keto diæt. Dette brød er lavet uden hvedemel og har kun få kulhydrater, men smager fantastisk. Perfekt til morgenmad, frokost eller som tilbehør."
+  },
+  {
+    "slug": "keto-boller-i-karry",
+    "title": "Keto Boller i Karry",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Lækker hjemmelavet keto boller i karry med saftige kødboller, cremet karrysauce og minimalt kulhydratindhold. Perfekt til low carb og keto diæt. Denne opskrift giver dig den autentiske danske klassiker uden kulhydrater. Nem, hurtig og perfekt til hele familien!"
+  },
+  {
+    "slug": "keto-lasagne",
+    "title": "Keto Lasagne",
+    "category": "Kød",
+    "time": "75 min",
+    "prepTime": "25 min",
+    "cookTime": "50 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet og smagfuld hjemmelavet keto lasagne med zucchini i stedet for pasta, rig kødsauce og smeltet ost. Perfekt til low carb og keto diæt. Denne opskrift giver dig den autentiske lasagne-smag med kun få kulhydrater. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "ramen",
+    "title": "Ramen",
+    "category": "Pasta",
+    "time": "60 min",
+    "prepTime": "20 min",
+    "cookTime": "40 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet ramen med rig bouillon, saftig kylling, bløde æg og friske grøntsager. Den perfekte komfortmad der smager langt bedre end instant ramen. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "tacos",
+    "title": "Tacos",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Autentiske hjemmelavet tacos med krydret kød, friske grøntsager og lækker salsa. Den perfekte ret til en hyggelig aften med familie og venner. Denne opskrift giver dig de autentiske tacos der smager langt bedre end fra restauranten. Server med guacamole, creme fraiche og lime!"
+  },
+  {
+    "slug": "kylling-og-ris",
+    "title": "Kylling og Ris",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk og nem hjemmelavet kylling og ris med saftig kylling, perfekt kogt ris og lækker sovs. Den perfekte hverdagsret der smager langt bedre end takeaway. Sund, mættende og perfekt til hele familien!"
+  },
+  {
+    "slug": "kylling-tikka-masala",
+    "title": "Kylling Tikka Masala",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet kylling tikka masala med krydret kylling, cremet tomat-sauce og aromatiske krydderier. Den perfekte indiske klassiker der smager langt bedre end fra takeaway. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "kylling-teriyaki",
+    "title": "Kylling Teriyaki",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk hjemmelavet kylling teriyaki med saftig kylling, sødsur teriyaki sauce og perfekt kogt ris. Den perfekte asiatiske klassiker der smager langt bedre end fra takeaway. Nem, hurtig og perfekt til hverdagen!"
+  },
+  {
+    "slug": "kylling-curry",
+    "title": "Kylling Curry",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og smagfuld hjemmelavet kylling curry med krydret kylling, cremet sauce og aromatiske krydderier. Den perfekte hverdagsret der smager langt bedre end takeaway. Hurtig, nem og perfekt til hele familien!"
+  },
+  {
+    "slug": "protein-kage",
+    "title": "Protein Kage",
+    "category": "Dessert",
+    "time": "50 min",
+    "prepTime": "15 min",
+    "cookTime": "35 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og smagfuld hjemmelavet protein kage med højt proteinindhold og lavt sukkerindhold. Den perfekte kage til træning, morgenmad eller snack. Denne opskrift giver dig den autentiske protein kage der smager langt bedre end fra butikken. Perfekt til fitness og sund livsstil!"
+  },
+  {
+    "slug": "sushi",
+    "title": "Sushi",
+    "category": "Fisk",
+    "time": "90 min",
+    "prepTime": "60 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet sushi med perfekt kogt ris, frisk fisk og cremet avocado. Denne opskrift giver dig den autentiske sushi der smager langt bedre end fra restauranten. Perfekt til en særlig aften!"
+  },
+  {
+    "slug": "risotto",
+    "title": "Risotto",
+    "category": "Pasta",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet og smagfuld hjemmelavet risotto med parmesan og hvidløg. Den perfekte italienske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske risotto med perfekt cremet konsistens. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "kylling-curry",
+    "title": "Kylling Curry",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og smagfuld hjemmelavet kylling curry med cremet sovs og perfekt krydret smag. Den perfekte hverdagsret der smager langt bedre end takeaway. Denne opskrift giver dig den autentiske kylling curry der er både nem at lave og utroligt lækker. Server med ris eller naan brød!"
+  },
+  {
+    "slug": "kyllingburger",
+    "title": "Kyllingburger",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "20 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Juicy og sprød hjemmelavet kyllingburger med saftig kylling, frisk salat og cremet dressing. Den perfekte burger til hverdagen. Denne opskrift giver dig den autentiske kyllingburger der smager langt bedre end fra fastfood. Server med pommes frites!"
+  },
+  {
+    "slug": "pasta-bolognese",
+    "title": "Pasta Bolognese",
+    "category": "Pasta",
+    "time": "90 min",
+    "prepTime": "20 min",
+    "cookTime": "70 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet pasta bolognese med rig kødsauce, frisk pasta og parmesan. Den klassiske italienske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den perfekte bolognese med dyb smag og cremet konsistens. Perfekt til en hyggelig aften med familie og venner!"
+  },
+  {
+    "slug": "fastalavensbolle",
+    "title": "Fastalavensbolle",
+    "category": "Dessert",
+    "time": "4 timer",
+    "prepTime": "3 timer",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk dansk fastalavensbolle med søde boller, mandelmassa og flødeskum. Den perfekte dessert til fastelavn eller hverdagen. Denne opskrift giver dig den autentiske fastalavensbolle der smager langt bedre end fra bageren. Server med flormelis!"
+  },
+  {
+    "slug": "fastalavensbolle-laktosefri",
+    "title": "Fastalavensbolle (Laktosefri)",
+    "category": "Dessert",
+    "time": "4 timer",
+    "prepTime": "3 timer",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk dansk laktosefri fastalavensbolle med søde boller, mandelmassa og laktosefrit flødeskum. Den perfekte dessert til fastelavn eller hverdagen - helt uden laktose! Denne opskrift giver dig den autentiske fastalavensbolle der smager langt bedre end fra bageren. Server med flormelis!"
+  },
+  {
+    "slug": "kyllingfilet",
+    "title": "Kyllingfilet",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og mør hjemmelavet kyllingfilet med gyldenbrun skorpe og perfekt krydret smag. Den perfekte hovedret til hverdagen. Denne opskrift giver dig den autentiske kyllingfilet der smager langt bedre end fra butikken. Server med kartofler, ris eller grøntsager!"
+  },
+  {
+    "slug": "bolognese",
+    "title": "Bolognese",
+    "category": "Pasta",
+    "time": "120 min",
+    "prepTime": "20 min",
+    "cookTime": "100 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet bolognese med saftigt hakket kød, rødvin, mælk og aromatiske krydderier. Den perfekte italienske klassiker der smager langt bedre end fra restauranten. Perfekt til pasta, lasagne eller polenta!"
+  },
+  {
+    "slug": "bolognese-laktosefri",
+    "title": "Bolognese (Laktosefri)",
+    "category": "Pasta",
+    "time": "120 min",
+    "prepTime": "20 min",
+    "cookTime": "100 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet laktosefri bolognese med saftigt hakket kød, rødvin, laktosefri mælk og aromatiske krydderier. Den perfekte italienske klassiker der smager langt bedre end fra restauranten - helt uden laktose! Perfekt til pasta, lasagne eller polenta!"
+  },
+  {
+    "slug": "bolognese-plantebaseret",
+    "title": "Bolognese (Plantebaseret)",
+    "category": "Vegetarisk",
+    "time": "90 min",
+    "prepTime": "20 min",
+    "cookTime": "70 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet plantebaseret bolognese med linser, champignoner, rødvin og plantemælk. Den perfekte italienske klassiker uden kød, der smager lige så godt som originalen. Perfekt til pasta, lasagne eller polenta!"
+  },
+  {
+    "slug": "bolognese-plantebaseret-glutenfri",
+    "title": "Bolognese (Plantebaseret, Glutenfri)",
+    "category": "Vegetarisk",
+    "time": "90 min",
+    "prepTime": "20 min",
+    "cookTime": "70 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet plantebaseret og glutenfri bolognese med linser, champignoner, rødvin og plantemælk. Den perfekte italienske klassiker uden kød og gluten, der smager lige så godt som originalen. Perfekt til glutenfri pasta, ris eller polenta!"
+  },
+  {
+    "slug": "plantebaseret-bolognese",
+    "title": "Plantebaseret Bolognese",
+    "category": "Vegetarisk",
+    "time": "90 min",
+    "prepTime": "20 min",
+    "cookTime": "70 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker plantebaseret bolognese med røde linser, champignons og aromatiske krydderier. Den perfekte vegetariske klassiker der smager langt bedre end fra butikken. Mættende, sund og perfekt til pasta, lasagne eller polenta!"
+  },
+  {
+    "slug": "kylling-teriyaki",
+    "title": "Kylling Teriyaki",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og smagfuld hjemmelavet kylling teriyaki med sødsur teriyaki sauce, saftig kylling og perfekt glasering. Den perfekte asiatiske hverdagsret der smager langt bedre end takeaway. Hurtig, nem og perfekt til hele familien!"
+  },
+  {
+    "slug": "pasta-pesto",
+    "title": "Pasta Pesto",
+    "category": "Pasta",
+    "time": "20 min",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og hurtig hjemmelavet pasta pesto med frisk basilikum, parmesan og pinjekerner. Den perfekte nemme opskrift der smager langt bedre end fra butikken. Klar på under 20 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "keto-kylling",
+    "title": "Keto Kylling",
+    "category": "Kød",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og smagfuld hjemmelavet keto kylling med cremet sovs og friske grøntsager. Perfekt til low carb og keto diæt. Denne opskrift giver dig en lækker hovedret med minimalt kulhydratindhold, men masser af smag. Perfekt til en sund hverdagsret!"
+  },
+  {
+    "slug": "keto-pizza",
+    "title": "Keto Pizza",
+    "category": "Hurtigt",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Lækker hjemmelavet keto pizza med sprød bund lavet af mandelmel og ost. Perfekt til low carb og keto diæt. Denne opskrift giver dig den perfekte pizza-bund uden kulhydrater, men med fantastisk smag. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "keto-kylling-broccoli-ost",
+    "title": "Keto Kylling med Broccoli og Ost",
+    "category": "Kød",
+    "time": "40 min",
+    "prepTime": "10 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og smagfuld keto-venlig kylling med broccoli og ost. Perfekt low-carb ret med højt proteinindhold og minimalt kulhydratindhold. Den perfekte hverdagsret til keto-diæt. Mættende, sund og perfekt til hele familien!"
+  },
+  {
+    "slug": "keto-lasagne",
+    "title": "Keto Lasagne",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Smagfuld hjemmelavet keto lasagne med zucchini i stedet for pasta, rig kødsauce og cremet ost. Perfekt til low carb og keto diæt. Denne opskrift giver dig en lækker og mættende ret med minimalt kulhydratindhold. Perfekt til hverdagen eller særlige lejligheder!"
+  },
+  {
+    "slug": "keto-bolognese",
+    "title": "Keto Bolognese",
+    "category": "Kød",
+    "time": "100 min",
+    "prepTime": "20 min",
+    "cookTime": "80 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet keto bolognese med saftigt hakket kød, rødvin og aromatiske krydderier. Serveret med zucchini-nudler i stedet for pasta. Perfekt til low carb og keto diæt. Denne opskrift giver dig den klassiske bolognese-smag med minimalt kulhydratindhold."
+  },
+  {
+    "slug": "keto-bof",
+    "title": "Keto Bøf",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og smagfuld hjemmelavet keto bøf med perfekt stegt oksekød, cremet smør-sauce og friske grøntsager. Perfekt til low carb og keto diæt. Denne opskrift giver dig en lækker og mættende ret med minimalt kulhydratindhold. Perfekt til hverdagen eller særlige lejligheder!"
+  },
+  {
+    "slug": "keto-kartoffelmos",
+    "title": "Keto Kartoffelmos",
+    "category": "Vegetarisk",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet og smagfuld hjemmelavet keto kartoffelmos med blomkål, smør og fløde. Perfekt til low carb og keto diæt. Denne opskrift giver dig den cremede konsistens og smag som kartoffelmos, men med minimalt kulhydratindhold. Perfekt til hverdagen eller særlige lejligheder!"
+  },
+  {
+    "slug": "plantebaseret-bolognese",
+    "title": "Plantebaseret Bolognese",
+    "category": "Vegetarisk",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Let",
+    "excerpt": "Lækker plantebaseret bolognese med røde linser, champignoner og aromatiske krydderier. Den perfekte vegetariske klassiker der smager langt bedre end fra butikken. Mættende, sund og perfekt til pasta, lasagne eller polenta!"
+  },
+  {
+    "slug": "plantebaseret-curry",
+    "title": "Plantebaseret Curry",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Smagfuld hjemmelavet plantebaseret curry med kikærter, grøntsager og cremet kokos-sauce. Den perfekte veganske hverdagsret der smager langt bedre end takeaway. Nem, sund og perfekt til hele familien!"
+  },
+  {
+    "slug": "plantebaseret-burger",
+    "title": "Plantebaseret Burger",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "25 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Juicy og smagfuld hjemmelavet plantebaseret burger med kikærter, grøntsager og aromatiske krydderier. Den perfekte vegetariske burger der smager langt bedre end fra butikken. Sund, mættende og perfekt til hele familien!"
+  },
+  {
+    "slug": "plantebaseret-lasagne",
+    "title": "Plantebaseret Lasagne",
+    "category": "Vegetarisk",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet og smagfuld hjemmelavet plantebaseret lasagne med linser, champignoner, bechamel og ost. Den perfekte vegetariske klassiker der smager lige så godt som originalen. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "plantebaseret-lasagne",
+    "title": "Plantebaseret Lasagne",
+    "category": "Vegetarisk",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet og smagfuld hjemmelavet plantebaseret lasagne med linser, champignoner og vegansk bechamel. Den perfekte vegetariske klassiker der smager langt bedre end fra butikken. Fuld af smag og protein, perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "kartoffelmos-laktosefri",
+    "title": "Kartoffelmos (Laktosefri)",
+    "category": "Vegetarisk",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet og smagfuld hjemmelavet laktosefri kartoffelmos med plantebaseret smør og laktosefri mælk. Den perfekte tilbehør til kød, fisk eller grøntsager. Denne opskrift giver dig den autentiske kartoffelmos der smager langt bedre end fra butikken - helt uden laktose! Perfekt til hverdagen eller særlige lejligheder!"
+  },
+  {
+    "slug": "boller-i-karry-laktosefri",
+    "title": "Boller i Karry (Laktosefri)",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk dansk hjemmelavet boller i karry med saftige kødboller, cremet karrysauce og aromatiske krydderier - helt uden laktose! Den perfekte hverdagsret der smager langt bedre end fra butikken. Nem, hurtig og perfekt til hele familien!"
+  },
+  {
+    "slug": "keto-chili",
+    "title": "Keto Chili",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Let",
+    "excerpt": "Krydret og mættende hjemmelavet keto chili med hakket kød, tomater og aromatiske krydderier. Perfekt til low carb og keto diæt. Denne opskrift giver dig en lækker og mættende ret med minimalt kulhydratindhold. Perfekt til hverdagen eller særlige lejligheder!"
+  },
+  {
+    "slug": "keto-frikadeller",
+    "title": "Keto Frikadeller",
+    "category": "Kød",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Klassiske danske hjemmelavet keto frikadeller med hakket kød, mandelmel og fløde. Perfekt til low carb og keto diæt. Denne opskrift giver dig de autentiske danske frikadeller med minimalt kulhydratindhold. Server med grøntsager og cremet sovs!"
+  },
+  {
+    "slug": "pasta-bolognese-glutenfri",
+    "title": "Pasta Bolognese (Glutenfri)",
+    "category": "Pasta",
+    "time": "90 min",
+    "prepTime": "20 min",
+    "cookTime": "70 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk og autentisk hjemmelavet glutenfri pasta bolognese med rig kødsauce, friske tomater og aromatiske krydderier. Den perfekte italienske klassiker der smager langt bedre end fra restauranten - helt uden gluten! Perfekt til en hyggelig aften med familie og venner!"
+  },
+  {
+    "slug": "kylling-curry-glutenfri",
+    "title": "Kylling Curry (Glutenfri)",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og smagfuld hjemmelavet glutenfri kylling curry med krydret kylling, cremet sauce og aromatiske krydderier. Den perfekte hverdagsret der smager langt bedre end takeaway. Hurtig, nem og perfekt til hele familien - helt uden gluten!"
+  },
+  {
+    "slug": "bolognese-plantebaseret-glutenfri",
+    "title": "Bolognese (Plantebaseret, Glutenfri)",
+    "category": "Vegetarisk",
+    "time": "90 min",
+    "prepTime": "20 min",
+    "cookTime": "70 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet plantebaseret og glutenfri bolognese med linser, champignoner, rødvin og plantemælk. Den perfekte italienske klassiker uden kød og gluten, der smager lige så godt som originalen. Perfekt til glutenfri pasta, lasagne eller polenta!"
   }
 ]
