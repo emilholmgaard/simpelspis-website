@@ -1,12 +1,30 @@
 'use client'
 
 import { clsx } from 'clsx'
+import Image from 'next/image'
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <span className={clsx(className, 'text-base font-medium text-gray-950 dark:text-gray-50')}>
-      Simpel Spis
-    </span>
+    <div className={clsx(className, 'relative flex items-center')}>
+      <Image
+        src="/logo_black.svg"
+        alt="Simpel Spis"
+        width={1804}
+        height={328}
+        className="h-auto w-auto max-h-6 object-contain dark:hidden"
+        priority
+        unoptimized
+      />
+      <Image
+        src="/logo_white.svg"
+        alt="Simpel Spis"
+        width={1804}
+        height={328}
+        className="h-auto w-auto max-h-6 object-contain hidden dark:block"
+        priority
+        unoptimized
+      />
+    </div>
   )
 }
 

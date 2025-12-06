@@ -8,6 +8,7 @@ import { ChevronRightIcon, FunnelIcon } from '@heroicons/react/24/outline'
 import type { Metadata } from 'next'
 import { getAllRecipes, getAllRecipesWithData, type RecipeListItem, type Recipe } from '@/lib/recipes'
 import { AnimatedRecipeCard } from '@/components/animated-recipe-card'
+import { SortSelect } from '@/components/recipe-sort-select'
 
 export const metadata: Metadata = {
   title: 'Alle Nemme Opskrifter',
@@ -190,6 +191,7 @@ export default async function RecipesPage({
   const dietary = (params.diaet as string)?.toLowerCase() || ''
   const timeFilter = (params.tid as string) || ''
   const difficultyFilter = (params.svaerhed as string)?.toLowerCase() || ''
+  const sortBy = (params.sort as string) || 'standard'
   const currentPage = Math.max(1, parseInt((params.page as string) || '1', 10))
   const recipesPerPage = 10
 
@@ -412,6 +414,37 @@ export default async function RecipesPage({
     return recipe
   })
 
+  // Sort recipes
+  const sortedRecipes = [...filteredRecipes].sort((a, b) => {
+    switch (sortBy) {
+      case 'alfabetisk-op':
+        return a.title.localeCompare(b.title, 'da')
+      case 'alfabetisk-ned':
+        return b.title.localeCompare(a.title, 'da')
+      case 'tid-op': {
+        const timeA = parseInt(a.time.match(/\d+/)?.[0] || '999')
+        const timeB = parseInt(b.time.match(/\d+/)?.[0] || '999')
+        return timeA - timeB
+      }
+      case 'tid-ned': {
+        const timeA = parseInt(a.time.match(/\d+/)?.[0] || '0')
+        const timeB = parseInt(b.time.match(/\d+/)?.[0] || '0')
+        return timeB - timeA
+      }
+      case 'sværhed-op': {
+        const order = { 'nem': 1, 'mellem': 2, 'svær': 3 }
+        return (order[a.difficulty.toLowerCase() as keyof typeof order] || 99) - 
+               (order[b.difficulty.toLowerCase() as keyof typeof order] || 99)
+      }
+      case 'sværhed-ned': {
+        const order = { 'nem': 1, 'mellem': 2, 'svær': 3 }
+        return (order[b.difficulty.toLowerCase() as keyof typeof order] || 99) - 
+               (order[a.difficulty.toLowerCase() as keyof typeof order] || 99)
+      }
+      default:
+        return 0
+    }
+  })
 
   // Build URL with params
   function buildUrl(newParams: Record<string, string | null>, resetPage = false) {
@@ -434,6 +467,7 @@ export default async function RecipesPage({
                         key === 'dietary' ? 'diaet' :
                         key === 'timeFilter' ? 'tid' :
                         key === 'difficultyFilter' ? 'svaerhed' :
+                        key === 'sort' ? 'sort' :
                         key === 'page' ? 'page' : key
         // Only include page if it's not 1
         if (key === 'page' && value === '1') {
@@ -450,11 +484,11 @@ export default async function RecipesPage({
   const hasActiveFilters = mealType || dishType || cookingMethod || dietary || timeFilter || difficultyFilter
 
   // Pagination calculations
-  const totalRecipes = filteredRecipes.length
+  const totalRecipes = sortedRecipes.length
   const totalPages = Math.ceil(totalRecipes / recipesPerPage)
   const startIndex = (currentPage - 1) * recipesPerPage
   const endIndex = startIndex + recipesPerPage
-  const paginatedRecipes = filteredRecipes.slice(startIndex, endIndex)
+  const paginatedRecipes = sortedRecipes.slice(startIndex, endIndex)
 
   // Generate page numbers for pagination
   const getPageNumbers = () => {
@@ -627,16 +661,27 @@ export default async function RecipesPage({
           </div>
         )}
 
-        {/* Resultater */}
-        <div className="mt-8">
+        {/* Resultater og sortering */}
+        <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            {totalRecipes} {totalRecipes === 1 ? 'opskrift fundet' : 'opskrifter fundet'}
-            {totalPages > 1 && (
-              <span className="ml-2">
-                (Side {currentPage} af {totalPages})
-              </span>
+            {totalRecipes === 0 ? (
+              'Ingen opskrifter fundet'
+            ) : (
+              <>
+                Viser {startIndex + 1}-{Math.min(endIndex, totalRecipes)} af {totalRecipes} {totalRecipes === 1 ? 'opskrift' : 'opskrifter'}
+                {totalPages > 1 && (
+                  <span className="ml-2">
+                    (Side {currentPage} af {totalPages})
+                  </span>
+                )}
+              </>
             )}
           </p>
+          {totalRecipes > 0 && (
+            <div className="w-full sm:w-auto sm:min-w-[200px]">
+              <SortSelect currentSort={sortBy} />
+            </div>
+          )}
         </div>
 
         {paginatedRecipes.length > 0 ? (

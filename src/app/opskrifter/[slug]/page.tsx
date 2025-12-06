@@ -4,19 +4,20 @@ import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { RecipeActions } from '@/components/recipe-actions'
 import { Heading, Subheading } from '@/components/text'
-import { ArrowLeftIcon } from '@heroicons/react/16/solid'
+import { ArrowLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getRecipeBySlug, getAllRecipesWithData } from '@/lib/recipes'
+import { getRecipeBySlug, getAllRecipes, getAllRecipesWithData, type RecipeListItem, type Recipe } from '@/lib/recipes'
 import { ReviewForm } from '@/components/reviews/review-form'
 import { ReviewList } from '@/components/reviews/review-list'
 import { db } from '@/lib/db'
 import { reviews } from '@/lib/db/schema'
 import { eq, sql } from 'drizzle-orm'
+import { AnimatedRecipeCard } from '@/components/animated-recipe-card'
 
 export async function generateStaticParams() {
   const recipes = getAllRecipesWithData()
-  return recipes.map((recipe) => ({
+  return recipes.map((recipe: Recipe) => ({
     slug: recipe.slug,
   }))
 }
@@ -237,6 +238,16 @@ export default async function RecipePage({
       : {}),
   }
 
+  // Find lignende opskrifter baseret på kategori
+  function getSimilarRecipes(currentSlug: string, category: string, limit: number = 4): RecipeListItem[] {
+    const allRecipes = getAllRecipes()
+    return allRecipes
+      .filter(r => r.slug !== currentSlug && r.category === category)
+      .slice(0, limit)
+  }
+
+  const similarRecipes = getSimilarRecipes(slug, recipe.category)
+
   // BreadcrumbList schema for bedre SEO og navigation
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -279,6 +290,31 @@ export default async function RecipePage({
       <Navbar />
       </div>
       <Container className="mt-28 pb-24">
+        {/* Breadcrumbs */}
+        <nav className="no-print mb-8" aria-label="Breadcrumb">
+          <ol className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <li>
+              <Link href="/" className="data-hover:text-gray-950 dark:data-hover:text-gray-50">
+                Forside
+              </Link>
+            </li>
+            <li>
+              <ChevronRightIcon className="size-4" />
+            </li>
+            <li>
+              <Link href="/opskrifter" className="data-hover:text-gray-950 dark:data-hover:text-gray-50">
+                Opskrifter
+              </Link>
+            </li>
+            <li>
+              <ChevronRightIcon className="size-4" />
+            </li>
+            <li className="text-gray-950 dark:text-gray-50 font-medium" aria-current="page">
+              {recipe.title}
+            </li>
+          </ol>
+        </nav>
+
         <Link
           href="/opskrifter"
           className="no-print mb-8 inline-flex items-center gap-2 text-sm/6 font-medium text-gray-600 dark:text-gray-400 data-hover:text-gray-950 dark:data-hover:text-gray-50"
@@ -494,6 +530,20 @@ export default async function RecipePage({
           </div>
         </div>
       </Container>
+
+      {/* Lignende opskrifter */}
+      {similarRecipes.length > 0 && (
+        <Container className="pb-24">
+          <div className="max-w-7xl">
+            <Subheading className="mb-8">Lignende opskrifter</Subheading>
+            <div className="grid grid-cols-1 gap-8">
+              {similarRecipes.map((similarRecipe, index) => (
+                <AnimatedRecipeCard key={similarRecipe.slug} {...similarRecipe} index={index} />
+              ))}
+            </div>
+          </div>
+        </Container>
+      )}
     </main>
     </>
   )

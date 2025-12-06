@@ -4,6 +4,7 @@ import { Navbar } from '@/components/navbar'
 import { Heading, Lead } from '@/components/text'
 import { getAllRecipes } from '@/lib/recipes'
 import { HomeSearchInput } from '@/components/home-search-input'
+import { AnimatedNumber } from '@/components/animated-number'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -83,7 +84,7 @@ export default function Home() {
           <div className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center">
             <div className="flex items-baseline">
               <span className="text-2xl font-semibold text-gray-950 dark:text-gray-50 sm:text-3xl">
-                {recipeCount}
+                <AnimatedNumber start={0} end={recipeCount} />
               </span>
             </div>
             <span className="text-base font-medium text-gray-500 dark:text-gray-400 sm:text-lg">
