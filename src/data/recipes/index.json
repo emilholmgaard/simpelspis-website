@@ -680,6 +680,26 @@
     "excerpt": "Klassisk dansk hjemmelavet brunsovs med stegesaft, fløde og mel. Den perfekte sovs til flæskesteg, frikadeller eller kød. Denne opskrift giver dig den autentiske brunsovs der smager langt bedre end fra butikken."
   },
   {
+    "slug": "pad-thai",
+    "title": "Pad Thai",
+    "category": "Pasta",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk thailandsk pad thai med risnudler, æg, kylling og friske grøntsager. Den perfekte ret med sød-syrlig smag. Denne opskrift giver dig den autentiske pad thai der smager langt bedre end fra takeaway."
+  },
+  {
+    "slug": "durum",
+    "title": "Durum",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "60 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet durum med krydret kød, frisk salat og cremet dressing. Den perfekte wrap til en hyggelig aften. Denne opskrift giver dig den autentiske durum der smager langt bedre end fra kebabbutikken."
+  },
+  {
     "slug": "whisky-sour",
     "title": "Whisky Sour",
     "category": "Dessert",
