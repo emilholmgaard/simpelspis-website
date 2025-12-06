@@ -7,6 +7,7 @@ import { Heading, Lead, Subheading } from '@/components/text'
 import { ChevronRightIcon, FunnelIcon } from '@heroicons/react/24/outline'
 import type { Metadata } from 'next'
 import { getAllRecipes, getAllRecipesWithData, type RecipeListItem, type Recipe } from '@/lib/recipes'
+import { AnimatedRecipeCard } from '@/components/animated-recipe-card'
 
 export const metadata: Metadata = {
   title: 'Alle Nemme Opskrifter',
@@ -640,9 +641,9 @@ export default async function RecipesPage({
 
         {paginatedRecipes.length > 0 ? (
           <>
-            <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
-              {paginatedRecipes.map((recipe) => (
-                <RecipeCard key={recipe.slug} {...recipe} />
+            <div className="mt-8 grid grid-cols-1 gap-8">
+              {paginatedRecipes.map((recipe, index) => (
+                <AnimatedRecipeCard key={recipe.slug} {...recipe} index={index} />
               ))}
             </div>
 

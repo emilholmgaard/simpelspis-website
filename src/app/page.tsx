@@ -1,9 +1,9 @@
 import { Container } from '@/components/container'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
-import { SearchForm } from '@/components/search-form'
 import { Heading, Lead } from '@/components/text'
 import { getAllRecipes } from '@/lib/recipes'
+import { HomeSearchInput } from '@/components/home-search-input'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -34,25 +34,41 @@ export default function Home() {
   const recipeCount = recipes.length
 
   return (
-    <main className="overflow-hidden min-h-screen flex flex-col">
+    <main className="overflow-hidden min-h-screen flex flex-col relative">
       <GradientBackground />
+      {/* Bottom right gradient */}
+      <div
+        className="absolute -bottom-64 right-0 h-96 w-96 md:h-[500px] md:w-[500px] transform-gpu bg-linear-115 from-[#1e3a8a] from-28% via-[#1e40af] via-70% to-[#0f172a] dark:from-[#1e3a8a] dark:via-[#1e40af] dark:to-[#0f172a] rotate-12 rounded-full blur-3xl opacity-100 dark:opacity-40 -z-10"
+      />
       <Navbar />
-      <Container className="flex-1 flex items-center justify-center py-12">
+      <Container className="flex-1 flex items-center justify-center py-12 relative z-10">
         <div className="mx-auto max-w-5xl w-full flex flex-col items-center justify-center">
           {/* Hero Header Container */}
           <div className="mb-8 text-center w-full">
-            <Heading as="h1" className="text-4xl sm:text-5xl lg:text-6xl">
-              Simpel Spis
-            </Heading>
+            <div className="relative inline-block">
+              <Heading 
+                as="h1" 
+                className="text-4xl sm:text-5xl lg:text-6xl relative z-10 text-blue-600 drop-shadow-[0_0_15px_rgba(37,99,235,0.6)]"
+              >
+                Simpel Spis
+              </Heading>
+              <Heading 
+                as="h1" 
+                className="text-4xl sm:text-5xl lg:text-6xl absolute inset-0 blur-2xl opacity-60 text-blue-600 pointer-events-none"
+                aria-hidden="true"
+              >
+                Simpel Spis
+              </Heading>
+            </div>
             <Lead className="mt-4 hidden lg:block mx-auto">
               Udforsk hundredevis af nemme opskrifter fra hele verden. Fra klassiske
               retter til moderne fusion-køkken.
             </Lead>
           </div>
 
-          {/* Search Container */}
-          <div className="mb-8 w-full max-w-4xl">
-            <SearchForm />
+          {/* Pill Search Input */}
+          <div className="mb-8 w-full max-w-2xl">
+            <HomeSearchInput />
           </div>
 
           {/* Counter Container */}
