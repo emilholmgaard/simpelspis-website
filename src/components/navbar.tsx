@@ -76,7 +76,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     <div className="relative">
       <div className="absolute left-1/2 w-screen -translate-x-1/2 bottom-0 border-b border-gray-200 dark:border-gray-700" />
       <Container>
-        <Disclosure as="header" className="pt-12 sm:pt-16">
+        <Disclosure as="header" className="pt-2 sm:pt-4">
           <div className="relative flex justify-between items-center">
             <div className="relative flex gap-6 items-center">
               <Link href="/" title="Home">
