@@ -15,24 +15,33 @@ export async function GET(request: NextRequest) {
       )
     }
 
-    const stats = await db
-      .select({
-        averageRating: sql<number>`COALESCE(AVG(${reviews.rating})::numeric, 0)`,
-        totalReviews: sql<number>`COUNT(*)::int`,
-        ratingDistribution: sql<number[]>`array_agg(${reviews.rating})`,
-      })
+    // Get all reviews for this recipe
+    const allReviews = await db
+      .select()
       .from(reviews)
       .where(eq(reviews.recipeSlug, recipeSlug))
 
-    const result = stats[0]
-    const distribution = result.ratingDistribution || []
+    if (allReviews.length === 0) {
+      return NextResponse.json({
+        averageRating: 0,
+        totalReviews: 0,
+        ratingCounts: [0, 0, 0, 0, 0],
+      })
+    }
+
+    // Calculate stats manually
+    const totalReviews = allReviews.length
+    const sumRating = allReviews.reduce((sum, review) => sum + review.rating, 0)
+    const averageRating = sumRating / totalReviews
+
+    // Count ratings
     const ratingCounts = [1, 2, 3, 4, 5].map(
-      (rating) => distribution.filter((r) => r === rating).length
+      (rating) => allReviews.filter((r) => r.rating === rating).length
     )
 
     return NextResponse.json({
-      averageRating: parseFloat(result.averageRating?.toString() || '0'),
-      totalReviews: result.totalReviews || 0,
+      averageRating,
+      totalReviews,
       ratingCounts,
     })
   } catch (error) {

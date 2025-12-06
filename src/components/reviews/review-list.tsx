@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { TrashIcon } from '@heroicons/react/24/outline'
 import { HeartRating } from './star-rating'
 
 interface Review {
@@ -23,6 +24,7 @@ interface ReviewListProps {
 export function ReviewList({ recipeSlug }: ReviewListProps) {
   const [reviews, setReviews] = useState<Review[]>([])
   const [loading, setLoading] = useState(true)
+  const [currentUserId, setCurrentUserId] = useState<string | null>(null)
   const [stats, setStats] = useState({
     averageRating: 0,
     totalReviews: 0,
@@ -36,8 +38,31 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
         fetch(`/api/reviews/stats?recipeSlug=${recipeSlug}`),
       ])
 
+      if (!reviewsRes.ok || !statsRes.ok) {
+        console.error('Failed to fetch reviews or stats')
+        setReviews([])
+        setStats({
+          averageRating: 0,
+          totalReviews: 0,
+          ratingCounts: [0, 0, 0, 0, 0],
+        })
+        return
+      }
+
       const reviewsData = await reviewsRes.json()
       const statsData = await statsRes.json()
+
+      // Ensure reviewsData is an array
+      if (!Array.isArray(reviewsData)) {
+        console.error('Reviews data is not an array:', reviewsData)
+        setReviews([])
+        setStats(statsData || {
+          averageRating: 0,
+          totalReviews: 0,
+          ratingCounts: [0, 0, 0, 0, 0],
+        })
+        return
+      }
 
       // Fetch user data for each review
       const reviewsWithUsers = await Promise.all(
@@ -56,9 +81,19 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
       )
 
       setReviews(reviewsWithUsers)
-      setStats(statsData)
+      setStats(statsData || {
+        averageRating: 0,
+        totalReviews: 0,
+        ratingCounts: [0, 0, 0, 0, 0],
+      })
     } catch (error) {
       console.error('Error fetching reviews:', error)
+      setReviews([])
+      setStats({
+        averageRating: 0,
+        totalReviews: 0,
+        ratingCounts: [0, 0, 0, 0, 0],
+      })
     } finally {
       setLoading(false)
     }
@@ -66,7 +101,41 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
 
   useEffect(() => {
     fetchReviews()
+    // Fetch current user
+    fetch('/api/auth/user')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.user) {
+          setCurrentUserId(data.user.id)
+        }
+      })
+      .catch(() => {
+        // User not logged in
+      })
   }, [recipeSlug])
+
+  const handleDeleteReview = async (reviewId: string) => {
+    if (!confirm('Er du sikker på, at du vil slette din anmeldelse?')) {
+      return
+    }
+
+    try {
+      const response = await fetch(`/api/reviews/${reviewId}`, {
+        method: 'DELETE',
+      })
+
+      if (!response.ok) {
+        const data = await response.json()
+        alert(data.error || 'Kunne ikke slette anmeldelse')
+        return
+      }
+
+      // Refresh reviews and stats
+      await fetchReviews()
+    } catch (error) {
+      alert('Noget gik galt. Prøv igen.')
+    }
+  }
 
   if (loading) {
     return (
@@ -113,10 +182,21 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
               className="rounded-3xl bg-white dark:bg-gray-800 p-6 shadow-md ring-1 ring-black/5 dark:ring-white/10"
             >
               <div className="flex items-start justify-between mb-3">
-                <div>
-                  <p className="font-medium text-gray-950 dark:text-gray-50">
-                    {review.user?.username || 'Anonym'}
-                  </p>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2">
+                    <p className="font-medium text-gray-950 dark:text-gray-50">
+                      {review.user?.username || 'Anonym'}
+                    </p>
+                    {currentUserId === review.userId && (
+                      <button
+                        onClick={() => handleDeleteReview(review.id)}
+                        className="text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 transition-colors"
+                        title="Slet anmeldelse"
+                      >
+                        <TrashIcon className="h-4 w-4" />
+                      </button>
+                    )}
+                  </div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
                     {new Date(review.createdAt).toLocaleDateString('da-DK', {
                       year: 'numeric',

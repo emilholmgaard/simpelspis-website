@@ -8,8 +8,13 @@ if (!connectionString) {
   throw new Error('DATABASE_URL is not set')
 }
 
-// Disable prefetch as it is not supported for "Transaction" pool mode
-const client = postgres(connectionString, { prepare: false })
+// Configure connection pool with limits
+const client = postgres(connectionString, {
+  prepare: false,
+  max: 10, // Maximum number of connections in the pool
+  idle_timeout: 20, // Close idle connections after 20 seconds
+  connect_timeout: 10, // Connection timeout
+})
 
 export const db = drizzle(client, { schema })
 
