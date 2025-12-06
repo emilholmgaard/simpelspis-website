@@ -35,6 +35,14 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden min-h-screen flex flex-col relative">
+      {/* Pattern background with wave fade effect */}
+      <div 
+        className="absolute inset-0 bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-gray-950)]/2 dark:[--pattern-fg:var(--color-white)]/5 pointer-events-none"
+        style={{
+          maskImage: 'radial-gradient(ellipse 120% 80% at 50% 50%, black 40%, transparent 100%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 120% 80% at 50% 50%, black 40%, transparent 100%)',
+        }}
+      />
       <GradientBackground />
       {/* Bottom right gradient */}
       <div

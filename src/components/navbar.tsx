@@ -37,7 +37,7 @@ export function Navbar() {
         <div className="mx-auto flex max-w-2xl lg:max-w-6xl items-center justify-between py-6">
         <Link href="/" className="-m-1.5 p-1.5">
           <span className="sr-only">Simpel Spis</span>
-          <Logo className="h-8" />
+          <Logo className="h-12" />
         </Link>
         <div className="flex lg:hidden">
           <button
@@ -75,7 +75,7 @@ export function Navbar() {
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Simpel Spis</span>
-              <Logo className="h-8" />
+              <Logo className="h-12" />
             </Link>
             <button
               type="button"
