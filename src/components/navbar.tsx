@@ -15,7 +15,8 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
 
   return (
     <header>
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      <nav aria-label="Global" className="px-6 lg:px-8">
+        <div className="mx-auto flex max-w-2xl lg:max-w-6xl items-center justify-between py-6">
         <Link href="/" className="-m-1.5 p-1.5">
           <span className="sr-only">Simpel Spis</span>
           <Logo className="h-8" />
@@ -41,6 +42,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             </Link>
           ))}
         </div>
+      </div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-50" />

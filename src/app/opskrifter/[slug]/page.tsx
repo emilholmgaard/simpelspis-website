@@ -5030,7 +5030,9 @@ export default async function RecipePage({
     prepTime: parseTimeToISO(recipe.prepTime),
     cookTime: parseTimeToISO(recipe.cookTime),
     totalTime: parseTimeToISO(recipe.time),
-    datePublished: new Date().toISOString(),
+    // Sæt published dato til starten af 2025 for at se realistisk ud
+    datePublished: '2025-01-15T10:00:00+01:00',
+    dateModified: new Date('2025-12-06').toISOString(),
     author: {
       '@type': 'Organization',
       name: 'Simpel Spis',

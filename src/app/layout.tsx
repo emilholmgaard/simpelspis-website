@@ -2,7 +2,6 @@ import '@/styles/tailwind.css'
 import { Analytics } from '@vercel/analytics/react'
 import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
-import { Timer } from '@/components/timer'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -58,7 +57,6 @@ export default function RootLayout({
         <ThemeProvider />
         {children}
         <Footer />
-        <Timer />
         <Analytics />
       </body>
     </html>
