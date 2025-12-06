@@ -1,4 +1,5 @@
 import '@/styles/tailwind.css'
+import { Analytics } from '@vercel/analytics/react'
 import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Timer } from '@/components/timer'
@@ -57,6 +58,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Timer />
+        <Analytics />
       </body>
     </html>
   )
