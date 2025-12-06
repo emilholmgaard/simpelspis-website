@@ -5,6 +5,7 @@ export interface Recipe {
   slug: string
   id: string
   title: string
+  type?: string
   category: string
   time: string
   prepTime: string
@@ -29,6 +30,7 @@ export interface Recipe {
 export interface RecipeListItem {
   slug: string
   title: string
+  type?: string
   category: string
   time: string
   prepTime: string

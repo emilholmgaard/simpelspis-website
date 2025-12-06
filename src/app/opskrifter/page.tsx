@@ -55,6 +55,15 @@ const dishTypes = [
   { label: 'Brød & Bageri', value: 'brød-bageri' },
 ]
 
+// Tilberedningsmetoder
+const cookingMethods = [
+  { label: 'Alle', value: 'alle' },
+  { label: 'Airfryer', value: 'airfryer' },
+  { label: 'Ovn', value: 'ovn' },
+  { label: 'Pande', value: 'pande' },
+  { label: 'Gril', value: 'gril' },
+]
+
 // Diæt & Præferencer
 const dietaryOptions = [
   { label: 'Laktosefri', value: 'laktosefri' },
@@ -176,6 +185,7 @@ export default async function RecipesPage({
   const searchQuery = (params.q as string)?.toLowerCase() || ''
   const mealType = (params.maaltid as string)?.toLowerCase() || ''
   const dishType = (params.rettype as string)?.toLowerCase() || ''
+  const cookingMethod = (params.tilberedning as string)?.toLowerCase() || ''
   const dietary = (params.diaet as string)?.toLowerCase() || ''
   const timeFilter = (params.tid as string) || ''
   const difficultyFilter = (params.svaerhed as string)?.toLowerCase() || ''
@@ -191,7 +201,8 @@ export default async function RecipesPage({
   }
 
   // Hent alle opskrifter fra JSON-filer
-  const needsFullData = normalizedDietary && ['laktosefri', 'glutenfri', 'low carb / keto', 'vegansk / plantebaseret'].includes(normalizedDietary)
+  const needsFullData = (normalizedDietary && ['laktosefri', 'glutenfri', 'low carb / keto', 'vegansk / plantebaseret'].includes(normalizedDietary)) || 
+                        (cookingMethod && cookingMethod !== 'alle')
   const recipeList = getAllRecipes()
   const fullRecipes = needsFullData ? getAllRecipesWithData() : null
   const recipes = needsFullData 
@@ -237,7 +248,7 @@ export default async function RecipesPage({
   }
 
   // Helper function to determine dish type
-  function getDishType(recipe: RecipeListItem): string {
+  function getDishType(recipe: RecipeListItem, fullRecipe?: Recipe): string {
     const categoryLower = recipe.category.toLowerCase()
     const titleLower = recipe.title.toLowerCase()
 
@@ -249,6 +260,46 @@ export default async function RecipesPage({
     if (titleLower.includes('sovs')) return 'sovs'
     if (titleLower.includes('brød') || titleLower.includes('boller') || titleLower.includes('bagel') || titleLower.includes('bageri')) return 'brød-bageri'
     
+    return 'alle'
+  }
+
+  // Helper function to determine cooking method
+  function getCookingMethod(recipe: RecipeListItem & { fullRecipe?: Recipe }): string {
+    const titleLower = recipe.title.toLowerCase()
+    const excerptLower = recipe.excerpt.toLowerCase()
+    const fullRecipe = 'fullRecipe' in recipe ? recipe.fullRecipe : undefined
+    const recipeText = fullRecipe ? JSON.stringify(fullRecipe).toLowerCase() : ''
+
+    // Check for airfryer
+    if (titleLower.includes('airfryer') || titleLower.includes('air fryer') || titleLower.includes('air-fryer') || 
+        titleLower.includes('luftfritør') || titleLower.includes('luft fritør') ||
+        excerptLower.includes('airfryer') || excerptLower.includes('air fryer') || excerptLower.includes('air-fryer') ||
+        excerptLower.includes('luftfritør') || excerptLower.includes('luft fritør') ||
+        recipeText.includes('airfryer') || recipeText.includes('air fryer') || recipeText.includes('air-fryer') ||
+        recipeText.includes('luftfritør') || recipeText.includes('luft fritør')) {
+      return 'airfryer'
+    }
+
+    // Check for oven
+    if (titleLower.includes('ovn') || excerptLower.includes('ovn') || 
+        recipeText.includes('ovn') || recipeText.includes('bages') || 
+        recipeText.includes('bagt') || recipeText.includes('oven')) {
+      return 'ovn'
+    }
+
+    // Check for pan
+    if (titleLower.includes('pande') || excerptLower.includes('pande') || 
+        recipeText.includes('pande') || recipeText.includes('stege') ||
+        recipeText.includes('pan')) {
+      return 'pande'
+    }
+
+    // Check for grill
+    if (titleLower.includes('gril') || excerptLower.includes('gril') || 
+        recipeText.includes('gril') || recipeText.includes('grill')) {
+      return 'gril'
+    }
+
     return 'alle'
   }
 
@@ -270,8 +321,15 @@ export default async function RecipesPage({
 
     // Filtrer efter rettype
     if (dishType && dishType !== 'alle') {
-      const recipeDishType = getDishType(recipe)
+      const fullRecipe = 'fullRecipe' in recipe ? (recipe as RecipeListItem & { fullRecipe?: Recipe }).fullRecipe : undefined
+      const recipeDishType = getDishType(recipe, fullRecipe)
       if (recipeDishType !== dishType) return false
+    }
+
+    // Filtrer efter tilberedningsmetode
+    if (cookingMethod && cookingMethod !== 'alle') {
+      const recipeCookingMethod = getCookingMethod(recipe as RecipeListItem & { fullRecipe?: Recipe })
+      if (recipeCookingMethod !== cookingMethod) return false
     }
 
     // Filtrer efter diæt
@@ -360,6 +418,7 @@ export default async function RecipesPage({
     const allParams = { 
       mealType: newParams.mealType !== undefined ? newParams.mealType : mealType,
       dishType: newParams.dishType !== undefined ? newParams.dishType : dishType,
+      cookingMethod: newParams.cookingMethod !== undefined ? newParams.cookingMethod : cookingMethod,
       dietary: newParams.dietary !== undefined ? newParams.dietary : dietary,
       timeFilter: newParams.timeFilter !== undefined ? newParams.timeFilter : timeFilter,
       difficultyFilter: newParams.difficultyFilter !== undefined ? newParams.difficultyFilter : difficultyFilter,
@@ -370,6 +429,7 @@ export default async function RecipesPage({
       if (value && value !== 'alle') {
         const paramKey = key === 'mealType' ? 'maaltid' : 
                         key === 'dishType' ? 'rettype' :
+                        key === 'cookingMethod' ? 'tilberedning' :
                         key === 'dietary' ? 'diaet' :
                         key === 'timeFilter' ? 'tid' :
                         key === 'difficultyFilter' ? 'svaerhed' :
@@ -386,7 +446,7 @@ export default async function RecipesPage({
     return queryString ? `/opskrifter?${queryString}` : '/opskrifter'
   }
 
-  const hasActiveFilters = mealType || dishType || dietary || timeFilter || difficultyFilter
+  const hasActiveFilters = mealType || dishType || cookingMethod || dietary || timeFilter || difficultyFilter
 
   // Pagination calculations
   const totalRecipes = filteredRecipes.length
@@ -474,6 +534,17 @@ export default async function RecipesPage({
               ))}
             </FilterSection>
 
+            <FilterSection title="Tilberedningsmetode">
+              {cookingMethods.map((method) => (
+                <FilterButton
+                  key={method.value}
+                  label={method.label}
+                  isSelected={method.value === 'alle' ? !cookingMethod : cookingMethod === method.value}
+                  href={buildUrl({ cookingMethod: method.value === 'alle' ? null : method.value }, true)}
+                />
+              ))}
+            </FilterSection>
+
             <FilterSection title="Diæt & Præferencer">
               {dietaryOptions.map((option) => (
                 <FilterButton
@@ -523,6 +594,11 @@ export default async function RecipesPage({
               {dishType && dishType !== 'alle' && (
                 <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
                   {dishTypes.find(d => d.value === dishType)?.label}
+                </span>
+              )}
+              {cookingMethod && cookingMethod !== 'alle' && (
+                <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/30 px-3 py-1 text-xs font-medium text-blue-700 dark:text-blue-300">
+                  {cookingMethods.find(m => m.value === cookingMethod)?.label}
                 </span>
               )}
               {dietary && (
