@@ -96,6 +96,22 @@ export default function BrugsvilkarPage() {
             </p>
           </section>
 
+          <section>
+            <h2 className="text-xl font-semibold text-gray-950 dark:text-gray-50 mb-3">
+              Kontakt
+            </h2>
+            <p>
+              Hvis du har spørgsmål til vores brugsvilkår, kan du kontakte os på{' '}
+              <a
+                href="mailto:hej@simpelspis.dk"
+                className="underline hover:text-gray-900 dark:hover:text-gray-50 font-medium"
+              >
+                hej@simpelspis.dk
+              </a>
+              .
+            </p>
+          </section>
+
           <section className="pt-4 border-t border-gray-200 dark:border-gray-800">
             <p className="text-sm text-gray-500 dark:text-gray-500">
               Sidst opdateret: {new Date().toLocaleDateString('da-DK', {

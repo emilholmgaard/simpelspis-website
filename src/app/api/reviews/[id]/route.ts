@@ -6,7 +6,7 @@ import { eq } from 'drizzle-orm'
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const supabase = await createServerClient()
@@ -18,7 +18,7 @@ export async function DELETE(
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    const reviewId = params.id
+    const { id: reviewId } = await params
 
     // Check if review exists and belongs to user
     const existingReview = await db

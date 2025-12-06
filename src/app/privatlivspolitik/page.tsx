@@ -132,7 +132,31 @@ export default function PrivatlivspolitikPage() {
             </h2>
             <p>
               Hvis du har spørgsmål til vores behandling af dine personoplysninger, 
-              eller hvis du ønsker at udøve dine rettigheder, kan du kontakte os.
+              eller hvis du ønsker at udøve dine rettigheder, kan du kontakte os på{' '}
+              <a
+                href="mailto:hej@simpelspis.dk"
+                className="underline hover:text-gray-900 dark:hover:text-gray-50 font-medium"
+              >
+                hej@simpelspis.dk
+              </a>
+              .
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-gray-950 dark:text-gray-50 mb-3">
+              Kontakt
+            </h2>
+            <p>
+              Hvis du har spørgsmål til vores privatlivspolitik eller ønsker at udøve dine rettigheder, 
+              kan du kontakte os på{' '}
+              <a
+                href="mailto:hej@simpelspis.dk"
+                className="underline hover:text-gray-900 dark:hover:text-gray-50 font-medium"
+              >
+                hej@simpelspis.dk
+              </a>
+              .
             </p>
           </section>
 

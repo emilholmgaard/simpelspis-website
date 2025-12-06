@@ -100,8 +100,14 @@ export default function CookiePolitikPage() {
               Kontakt
             </h2>
             <p>
-              Hvis du har spørgsmål til vores brug af cookies, kan du kontakte os gennem vores 
-              kontaktformular eller email.
+              Hvis du har spørgsmål til vores brug af cookies, kan du kontakte os på{' '}
+              <a
+                href="mailto:hej@simpelspis.dk"
+                className="underline hover:text-gray-900 dark:hover:text-gray-50 font-medium"
+              >
+                hej@simpelspis.dk
+              </a>
+              .
             </p>
           </section>
 
