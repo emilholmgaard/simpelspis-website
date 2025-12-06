@@ -112,6 +112,7 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
       .catch(() => {
         // User not logged in
       })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [recipeSlug])
 
   const handleDeleteReview = async (reviewId: string) => {
@@ -132,7 +133,7 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
 
       // Refresh reviews and stats
       await fetchReviews()
-    } catch (error) {
+    } catch {
       alert('Noget gik galt. Prøv igen.')
     }
   }

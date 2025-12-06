@@ -1,7 +1,5 @@
 'use client'
 
-import { clsx } from 'clsx'
-
 function RollingDigit({ digit }: { digit: number }) {
   return (
     <span className="relative inline-block overflow-hidden">
@@ -25,7 +23,6 @@ function RollingDigit({ digit }: { digit: number }) {
 export function RollingNumber({ value }: { value: number }) {
   const str = value.toString().replace('.', '')
   const parts = str.split('')
-  const hasDecimal = value.toString().includes('.')
 
   return (
     <span className="inline-flex items-baseline">

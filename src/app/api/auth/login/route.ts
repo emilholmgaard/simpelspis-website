@@ -22,10 +22,10 @@ export async function POST(request: NextRequest) {
         get(name: string) {
           return request.cookies.get(name)?.value
         },
-        set(name: string, value: string, options: any) {
+        set(_name: string, _value: string, _options?: unknown) {
           // Will be handled by response
         },
-        remove(name: string, options: any) {
+        remove(_name: string, _options?: unknown) {
           // Will be handled by response
         },
       },

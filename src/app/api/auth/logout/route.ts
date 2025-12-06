@@ -3,7 +3,7 @@ import { createServerClient } from '@/lib/supabase/server'
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
 
-export async function POST(request: NextRequest) {
+export async function POST() {
   try {
     const supabase = await createServerClient()
     const { error } = await supabase.auth.signOut()

@@ -19,7 +19,7 @@ export async function PATCH(request: NextRequest) {
     const { username, email } = body
 
     // Update user in database
-    const updates: any = {}
+    const updates: { username?: string | null; email?: string } = {}
     if (username !== undefined) {
       updates.username = username || null
     }

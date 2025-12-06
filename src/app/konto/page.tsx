@@ -38,6 +38,7 @@ export default function KontoPage() {
 
   useEffect(() => {
     fetchUser()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const fetchUser = async () => {
@@ -65,7 +66,7 @@ export default function KontoPage() {
     setSaving(true)
 
     try {
-      const updates: any = {}
+      const updates: { username?: string | null; email?: string } = {}
       if (username !== user?.username) {
         updates.username = username || null
       }
@@ -94,7 +95,7 @@ export default function KontoPage() {
 
       setSuccess('Profil opdateret')
       fetchUser()
-    } catch (err) {
+    } catch {
       setError('Noget gik galt. Prøv igen.')
     } finally {
       setSaving(false)
@@ -140,7 +141,7 @@ export default function KontoPage() {
       setCurrentPassword('')
       setNewPassword('')
       setConfirmPassword('')
-    } catch (err) {
+    } catch {
       setError('Noget gik galt. Prøv igen.')
     } finally {
       setSaving(false)
@@ -185,7 +186,7 @@ export default function KontoPage() {
       // Logout and redirect
       await fetch('/api/auth/logout', { method: 'POST' })
       window.location.href = '/'
-    } catch (error) {
+    } catch {
       setError('Noget gik galt. Prøv igen.')
     } finally {
       setDeleting(false)

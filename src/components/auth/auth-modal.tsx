@@ -61,7 +61,7 @@ export function AuthModal({ isOpen, onClose, onSuccess }: AuthModalProps) {
       window.location.reload()
       onSuccess?.()
       onClose()
-    } catch (err) {
+    } catch {
       setError('Noget gik galt. Prøv igen.')
     } finally {
       setLoading(false)
@@ -89,7 +89,7 @@ export function AuthModal({ isOpen, onClose, onSuccess }: AuthModalProps) {
       }
 
       setSuccess('Vi har sendt dig en email med instruktioner til at nulstille din adgangskode.')
-    } catch (err) {
+    } catch {
       setError('Noget gik galt. Prøv igen.')
     } finally {
       setLoading(false)

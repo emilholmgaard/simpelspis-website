@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
 import { Button } from './button'
 import { Link } from './link'
 
@@ -59,10 +58,10 @@ export function CookieBanner() {
           </div>
           <div className="flex items-center gap-3 lg:flex-shrink-0">
             <Button variant="outline" onClick={handleReject} className="text-sm">
-              Afvis
+              Kun nødvendige
             </Button>
             <Button onClick={handleAccept} className="text-sm">
-              Accepter
+              Accepter alle
             </Button>
           </div>
         </div>

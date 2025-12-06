@@ -13,10 +13,16 @@ const navigation = [
   { name: 'Nemme Opskrifter', href: '/opskrifter' },
 ]
 
-export function Navbar({ banner }: { banner?: React.ReactNode }) {
+interface User {
+  id: string
+  email: string
+  username: string | null
+}
+
+export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [authModalOpen, setAuthModalOpen] = useState(false)
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<User | null>(null)
 
   useEffect(() => {
     fetch('/api/auth/user')

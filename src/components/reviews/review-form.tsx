@@ -10,8 +10,14 @@ interface ReviewFormProps {
   onReviewSubmitted?: () => void
 }
 
+interface User {
+  id: string
+  email: string
+  username: string | null
+}
+
 export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<User | null>(null)
   const [rating, setRating] = useState(0)
   const [comment, setComment] = useState('')
   const [loading, setLoading] = useState(false)
@@ -72,8 +78,8 @@ export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
       setTimeout(() => {
         window.location.reload()
       }, 500)
-    } catch (err: any) {
-      setError(err.message || 'Noget gik galt')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Noget gik galt')
     } finally {
       setLoading(false)
     }
