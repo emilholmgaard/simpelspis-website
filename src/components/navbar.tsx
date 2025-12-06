@@ -1,99 +1,82 @@
 'use client'
 
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from '@headlessui/react'
-import { Bars2Icon } from '@heroicons/react/24/solid'
-import { motion } from 'framer-motion'
-import { Container } from './container'
+import { useState } from 'react'
+import { Dialog, DialogPanel } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from './link'
 import { Logo } from './logo'
 
-const links = [
-  { href: '/opskrifter', label: 'Nemme Opskrifter' },
+const navigation = [
+  { name: 'Nemme Opskrifter', href: '/opskrifter' },
 ]
 
-function DesktopNav() {
-  return (
-    <nav className="relative hidden lg:flex gap-4">
-      {links.map(({ href, label }) => (
-        <Link
-          key={href}
-          href={href}
-          className="flex items-center px-4 py-3 text-base font-medium text-gray-950 dark:text-gray-50 bg-blend-multiply data-hover:bg-black/2.5 dark:data-hover:bg-white/10"
-        >
-          {label}
-        </Link>
-      ))}
-    </nav>
-  )
-}
-
-function MobileNavButton() {
-  return (
-    <DisclosureButton
-      className="flex size-12 items-center justify-center self-center rounded-lg data-hover:bg-black/5 dark:data-hover:bg-white/10 lg:hidden"
-      aria-label="Open main menu"
-    >
-      <Bars2Icon className="size-6 text-gray-950 dark:text-gray-50" />
-    </DisclosureButton>
-  )
-}
-
-function MobileNav() {
-  return (
-    <DisclosurePanel className="lg:hidden">
-      <div className="flex flex-col gap-6 py-4">
-        {links.map(({ href, label }, linkIndex) => (
-          <motion.div
-            initial={{ opacity: 0, rotateX: -90 }}
-            animate={{ opacity: 1, rotateX: 0 }}
-            transition={{
-              duration: 0.15,
-              ease: 'easeInOut',
-              rotateX: { duration: 0.3, delay: linkIndex * 0.1 },
-            }}
-            key={href}
-          >
-            <Link href={href} className="text-base font-medium text-gray-950 dark:text-gray-50">
-              {label}
-            </Link>
-          </motion.div>
-        ))}
-      </div>
-      <div className="absolute left-1/2 w-screen -translate-x-1/2">
-        <div className="absolute inset-x-0 top-0 border-t border-black/5 dark:border-white/10" />
-        <div className="absolute inset-x-0 top-2 border-t border-black/5 dark:border-white/10" />
-      </div>
-    </DisclosurePanel>
-  )
-}
-
 export function Navbar({ banner }: { banner?: React.ReactNode }) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
-    <div className="relative">
-      <div className="absolute left-1/2 w-screen -translate-x-1/2 bottom-0 border-b border-gray-200 dark:border-gray-700" />
-      <Container>
-        <Disclosure as="header" className="pt-2 sm:pt-4">
-          <div className="relative flex justify-between items-center">
-            <div className="relative flex gap-6 items-center">
-              <Link href="/" title="Home">
-                <Logo className="h-9" />
-              </Link>
-              {banner && (
-                <div className="relative hidden items-center py-3 lg:flex">
-                  {banner}
-                </div>
-              )}
-            </div>
-            <DesktopNav />
-            <MobileNavButton />
+    <header>
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+        <Link href="/" className="-m-1.5 p-1.5">
+          <span className="sr-only">Simpel Spis</span>
+          <Logo className="h-8" />
+        </Link>
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(true)}
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400"
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon aria-hidden="true" className="size-6" />
+          </button>
+        </div>
+        <div className="hidden lg:flex lg:gap-x-12">
+          {navigation.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-base font-medium tracking-tight text-gray-950 dark:text-gray-50"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      </nav>
+      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+        <div className="fixed inset-0 z-50" />
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
+          <div className="flex items-center justify-between">
+            <Link href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Simpel Spis</span>
+              <Logo className="h-8" />
+            </Link>
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(false)}
+              className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-400"
+            >
+              <span className="sr-only">Close menu</span>
+              <XMarkIcon aria-hidden="true" className="size-6" />
+            </button>
           </div>
-          <MobileNav />
-        </Disclosure>
-      </Container>
-    </div>
+          <div className="mt-6 flow-root">
+            <div className="-my-6 divide-y divide-gray-500/10 dark:divide-white/10">
+              <div className="space-y-2 py-6">
+                {navigation.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium tracking-tight text-gray-950 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-white/5"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </DialogPanel>
+      </Dialog>
+    </header>
   )
 }

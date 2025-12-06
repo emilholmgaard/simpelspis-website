@@ -4942,7 +4942,7 @@ export default async function RecipePage({
       <GradientBackground />
       <Navbar />
       </div>
-      <Container className="mt-16 pb-24">
+      <Container className="mt-28 pb-24">
         <Link
           href="/opskrifter"
           className="no-print mb-8 inline-flex items-center gap-2 text-sm/6 font-medium text-gray-600 dark:text-gray-400 data-hover:text-gray-950 dark:data-hover:text-gray-50"

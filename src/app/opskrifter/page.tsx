@@ -856,7 +856,7 @@ export default async function RecipesPage({
     <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
       <GradientBackground />
       <Navbar />
-      <Container className="mt-16 pb-24">
+      <Container className="mt-28 pb-24">
         <Subheading>Nemme Opskrifter</Subheading>
         <Heading as="h1" className="mt-2">
           Udforsk vores samling af nemme opskrifter.

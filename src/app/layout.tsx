@@ -1,4 +1,5 @@
 import '@/styles/tailwind.css'
+import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Timer } from '@/components/timer'
 import type { Metadata } from 'next'
@@ -54,6 +55,7 @@ export default function RootLayout({
       <body className="text-gray-950 dark:text-gray-50 bg-white dark:bg-gray-950 antialiased transition-colors">
         <ThemeProvider />
         {children}
+        <Footer />
         <Timer />
       </body>
     </html>
