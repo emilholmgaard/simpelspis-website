@@ -12,10 +12,21 @@ export const metadata: Metadata = {
   description:
     'Udforsk vores samling af nemme opskrifter fra hele verden. Fra klassiske retter som carbonara og tiramisu til moderne fusion-køkken. Find nemme opskrifter efter kategori, sværhedsgrad eller tid.',
   keywords: ['alle nemme opskrifter', 'nemme opskrifter samling', 'pasta nemme opskrifter', 'fisk nemme opskrifter', 'dessert nemme opskrifter', 'vegetarisk nemme opskrifter', 'dansk mad'],
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'}/opskrifter`,
+  },
   openGraph: {
-    title: 'Alle Nemme Opskrifter',
+    title: 'Alle Nemme Opskrifter | Simpel Spis',
     description: 'Udforsk vores samling af nemme opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken.',
     type: 'website',
+    url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'}/opskrifter`,
+    siteName: 'Simpel Spis',
+    locale: 'da_DK',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Alle Nemme Opskrifter | Simpel Spis',
+    description: 'Udforsk vores samling af nemme opskrifter fra hele verden.',
   },
 }
 

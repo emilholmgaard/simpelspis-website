@@ -4900,8 +4900,11 @@ export async function generateMetadata({
     }
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'
+  const url = `${baseUrl}/opskrifter/${slug}`
+
   return {
-    title: `${recipe.title} - Nem Opskrift`,
+    title: `${recipe.title} - Nem Opskrift | Simpel Spis`,
     description: `${recipe.description} Få den komplette nemme opskrift med ingredienser, fremgangsmåde og næringsindhold. ${recipe.time} • ${recipe.difficulty} sværhedsgrad.`,
     keywords: [
       recipe.title.toLowerCase(),
@@ -4910,15 +4913,23 @@ export async function generateMetadata({
       'nem madopskrift',
       recipe.difficulty.toLowerCase(),
       `${recipe.time} nem opskrift`,
+      'simpel spis',
+      'dansk opskrift',
     ],
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title: `${recipe.title} - Nem Opskrift`,
-    description: recipe.description,
+      title: `${recipe.title} - Nem Opskrift | Simpel Spis`,
+      description: recipe.description,
       type: 'article',
+      url: url,
+      siteName: 'Simpel Spis',
+      locale: 'da_DK',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${recipe.title} - Nem Opskrift`,
+      title: `${recipe.title} - Nem Opskrift | Simpel Spis`,
       description: recipe.description,
     },
   }
@@ -4936,8 +4947,67 @@ export default async function RecipePage({
     notFound()
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'
+  
+  // Konverter tid til ISO 8601 format (PT90M for 90 min)
+  function parseTimeToISO(timeStr: string): string {
+    const match = timeStr.match(/(\d+)\s*(min|timer|time)/i)
+    if (match) {
+      const value = parseInt(match[1])
+      const unit = match[2].toLowerCase()
+      if (unit.includes('timer') || unit.includes('time')) {
+        return `PT${value}H`
+      }
+      return `PT${value}M`
+    }
+    return 'PT30M' // default
+  }
+
+  // JSON-LD strukturerede data for Recipe schema
+  const recipeSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Recipe',
+    name: recipe.title,
+    description: recipe.description,
+    image: `${baseUrl}/og-image.jpg`, // Tilføj billede senere
+    author: {
+      '@type': 'Organization',
+      name: 'Simpel Spis',
+    },
+    datePublished: new Date().toISOString(),
+    prepTime: parseTimeToISO(recipe.prepTime),
+    cookTime: parseTimeToISO(recipe.cookTime),
+    totalTime: parseTimeToISO(recipe.time),
+    recipeCategory: recipe.category,
+    recipeDifficulty: recipe.difficulty,
+    recipeIngredient: recipe.ingredients.filter(ing => ing && !ing.endsWith(':')),
+    recipeInstructions: recipe.instructions
+      .filter(inst => inst && !inst.match(/^(FORBEREDELSE|TILBEREDNING|SAMMENSAETNING|PRO TIPS)/))
+      .map((instruction, index) => ({
+        '@type': 'HowToStep',
+        position: index + 1,
+        text: instruction,
+      })),
+    nutrition: {
+      '@type': 'NutritionInformation',
+      calories: recipe.nutrition.energy,
+      fatContent: recipe.nutrition.fat,
+      saturatedFatContent: recipe.nutrition.saturatedFat,
+      carbohydrateContent: recipe.nutrition.carbs,
+      sugarContent: recipe.nutrition.sugar,
+      fiberContent: recipe.nutrition.fiber,
+      proteinContent: recipe.nutrition.protein,
+      sodiumContent: recipe.nutrition.salt,
+    },
+  }
+
   return (
-    <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(recipeSchema) }}
+      />
+      <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
       <div className="no-print">
       <GradientBackground />
       <Navbar />
@@ -5138,6 +5208,7 @@ export default async function RecipePage({
         <RecipeActions title={recipe.title} slug={slug} />
       </Container>
     </main>
+    </>
   )
 }
 
