@@ -1,7 +1,7 @@
 [
   {
-    "slug": "hjemmelavet-kebab",
-    "title": "Hjemmelavet Kebab",
+    "slug": "kebab",
+    "title": "Kebab",
     "category": "Kød",
     "time": "90 min",
     "prepTime": "60 min",
@@ -10,8 +10,8 @@
     "excerpt": "Autentisk hjemmelavet kebab med krydret kød, frisk salat og lækker dressing. Denne opskrift giver dig den perfekte smag og tekstur. Perfekt til en hyggelig aften."
   },
   {
-    "slug": "hjemmelavet-kodsovs",
-    "title": "Hjemmelavet Kødsovs",
+    "slug": "kodsovs",
+    "title": "Kødsovs",
     "category": "Kød",
     "time": "120 min",
     "prepTime": "30 min",
@@ -20,8 +20,8 @@
     "excerpt": "Klassisk hjemmelavet kødsovs med saftigt hakket kød, røde tomater og krydderier. Den perfekte sovs til pasta, kartofler eller ris. Simpel at lave, men smager fantastisk."
   },
   {
-    "slug": "hjemmelavet-pizza",
-    "title": "Hjemmelavet Pizza",
+    "slug": "pizza",
+    "title": "Pizza",
     "category": "Hurtigt",
     "time": "60 min",
     "prepTime": "45 min",
@@ -30,8 +30,8 @@
     "excerpt": "Lækker hjemmelavet pizza med sprød bund, saftig tomat-sauce og dit yndlingsfyld. Denne opskrift giver dig den perfekte pizza-bund der smager bedre end takeaway. Perfekt til en hyggelig aften."
   },
   {
-    "slug": "hjemmelavet-boller",
-    "title": "Hjemmelavet Boller",
+    "slug": "boller",
+    "title": "Boller",
     "category": "Hurtigt",
     "time": "90 min",
     "prepTime": "60 min",
@@ -40,8 +40,8 @@
     "excerpt": "Bløde og luftige hjemmelavet boller med guldbrun skorpe. Perfekte til morgenmad, frokost eller som tilbehør til måltider. Disse boller smager langt bedre end købte boller og er overraskende nemme at lave."
   },
   {
-    "slug": "hjemmelavet-glog",
-    "title": "Hjemmelavet Gløg",
+    "slug": "glog",
+    "title": "Gløg",
     "category": "Dessert",
     "time": "45 min",
     "prepTime": "15 min",
@@ -50,8 +50,8 @@
     "excerpt": "Varm og krydret hjemmelavet gløg med rødvin, krydderier og appelsin. Den perfekte drik til vintermånederne og juletiden. Denne opskrift giver dig den autentiske gløg-smag der varmer hele kroppen."
   },
   {
-    "slug": "hjemmelavet-knaekbrod",
-    "title": "Hjemmelavet Knækbrød",
+    "slug": "knaekbrod",
+    "title": "Knækbrød",
     "category": "Hurtigt",
     "time": "60 min",
     "prepTime": "30 min",
@@ -60,8 +60,8 @@
     "excerpt": "Sprødt og knasende hjemmelavet knækbrød med frø og krydderier. Perfekt til ost, pålæg eller bare som snack. Disse knækbrød er langt bedre end købte og kan tilpasses med dine yndlingsfrø og krydderier."
   },
   {
-    "slug": "hjemmelavet-pasta",
-    "title": "Hjemmelavet Pasta",
+    "slug": "pasta",
+    "title": "Pasta",
     "category": "Pasta",
     "time": "75 min",
     "prepTime": "60 min",
@@ -70,8 +70,8 @@
     "excerpt": "Frisk hjemmelavet pasta med æg og durummel. Den perfekte pasta til dine yndlingsretter. Denne opskrift giver dig den autentiske italienske pasta-smag og tekstur der er langt bedre end købt pasta."
   },
   {
-    "slug": "hjemmelavet-granola",
-    "title": "Hjemmelavet Granola",
+    "slug": "granola",
+    "title": "Granola",
     "category": "Hurtigt",
     "time": "45 min",
     "prepTime": "10 min",
@@ -80,8 +80,8 @@
     "excerpt": "Knasende og sødt hjemmelavet granola med havregryn, nødder og tørret frugt. Perfekt til morgenmad med yoghurt eller mælk. Denne opskrift giver dig den perfekte balance mellem sødt og nøddeagtigt, og kan tilpasses med dine yndlingsingredienser."
   },
   {
-    "slug": "hjemmelavet-is",
-    "title": "Hjemmelavet Is",
+    "slug": "is",
+    "title": "Is",
     "category": "Dessert",
     "time": "240 min",
     "prepTime": "30 min",
@@ -90,8 +90,8 @@
     "excerpt": "Cremet og lækker hjemmelavet is med kun få ingredienser. Den perfekte dessert til enhver lejlighed. Denne opskrift giver dig den cremede tekstur og rene smag der er langt bedre end købt is. Tilpas med dine yndlingssmage!"
   },
   {
-    "slug": "hjemmelavet-brod",
-    "title": "Hjemmelavet Brød",
+    "slug": "brod",
+    "title": "Brød",
     "category": "Hurtigt",
     "time": "180 min",
     "prepTime": "150 min",
@@ -100,8 +100,8 @@
     "excerpt": "Luftigt og lækkert hjemmelavet brød med guldbrun skorpe. Den perfekte basis til alle måltider. Denne opskrift giver dig det klassiske hjemmebagte brød der smager langt bedre end købt brød. Varmt fra ovnen med smør - der er intet bedre!"
   },
   {
-    "slug": "hjemmelavet-pandekager",
-    "title": "Hjemmelavet Pandekager",
+    "slug": "pandekager",
+    "title": "Pandekager",
     "category": "Hurtigt",
     "time": "30 min",
     "prepTime": "10 min",
@@ -110,8 +110,8 @@
     "excerpt": "Bløde og gyldne hjemmelavet pandekager med den perfekte tekstur. Perfekte til morgenmad, brunch eller dessert. Denne opskrift giver dig de klassiske danske pandekager der smager langt bedre end købte. Server med syltetøj, sukker og citron!"
   },
   {
-    "slug": "hjemmelavet-cookies",
-    "title": "Hjemmelavet Cookies",
+    "slug": "cookies",
+    "title": "Cookies",
     "category": "Dessert",
     "time": "60 min",
     "prepTime": "30 min",
@@ -120,8 +120,8 @@
     "excerpt": "Klassiske hjemmelavet cookies med chokoladechips - bløde i midten og knasende udenpå. Den perfekte dessert eller snack. Denne opskrift giver dig de perfekte cookies der smager langt bedre end købte. Varme fra ovnen med en kop mælk - der er intet bedre!"
   },
   {
-    "slug": "hjemmelavet-frikadeller",
-    "title": "Hjemmelavet Frikadeller",
+    "slug": "frikadeller",
+    "title": "Frikadeller",
     "category": "Kød",
     "time": "45 min",
     "prepTime": "20 min",
@@ -130,8 +130,8 @@
     "excerpt": "Klassiske danske hjemmelavet frikadeller med hakket kød, løg og krydderier. Den perfekte ret til hverdagen. Denne opskrift giver dig de autentiske danske frikadeller der smager langt bedre end købte. Server med kartofler og brun sovs!"
   },
   {
-    "slug": "hjemmelavet-chokoladeskeer",
-    "title": "Hjemmelavet Chokoladeskeer",
+    "slug": "chokoladeskeer",
+    "title": "Chokoladeskeer",
     "category": "Dessert",
     "time": "90 min",
     "prepTime": "30 min",
@@ -140,8 +140,8 @@
     "excerpt": "Rige og cremede hjemmelavet chokoladeskeer med mørk chokolade og fløde. Den perfekte dessert til særlige lejligheder. Denne opskrift giver dig de lækreste chokoladeskeer der smager langt bedre end købte. Server med bær og flødeskum!"
   },
   {
-    "slug": "hjemmelavet-braendtemandler",
-    "title": "Hjemmelavet Brændtemandler",
+    "slug": "braendtemandler",
+    "title": "Brændtemandler",
     "category": "Dessert",
     "time": "30 min",
     "prepTime": "10 min",
@@ -150,8 +150,8 @@
     "excerpt": "Søde og knasende hjemmelavet brændtemandler med karameliseret sukker og mandler. Den perfekte snack eller dessert. Denne opskrift giver dig de klassiske brændtemandler der smager langt bedre end købte. Perfekt til julehygge eller som gave!"
   },
   {
-    "slug": "hjemmelavet-floedeboller",
-    "title": "Hjemmelavet Flødeboller",
+    "slug": "floedeboller",
+    "title": "Flødeboller",
     "category": "Dessert",
     "time": "120 min",
     "prepTime": "60 min",
@@ -160,8 +160,8 @@
     "excerpt": "Luftige og søde hjemmelavet flødeboller med meringue-kern og chokoladeovertræk. Den perfekte danske klassiker. Denne opskrift giver dig de autentiske flødeboller der smager langt bedre end købte. Perfekt til fester, gaver eller bare til dig selv!"
   },
   {
-    "slug": "hjemmelavet-smashburger",
-    "title": "Hjemmelavet Smashburger",
+    "slug": "smashburger",
+    "title": "Smashburger",
     "category": "Kød",
     "time": "30 min",
     "prepTime": "15 min",
@@ -190,8 +190,8 @@
     "excerpt": "Klassisk entrecote med saftig, mør kød og perfekt stegt skorpe. Den perfekte bøf til en særlig aften. Denne opskrift giver dig den autentiske entrecote der smager langt bedre end fra restauranten. Server med bearnaise sovs og pommes frites!"
   },
   {
-    "slug": "hjemmelavet-chilicheesetops",
-    "title": "Hjemmelavet Chilicheesetops",
+    "slug": "chilicheesetops",
+    "title": "Chilicheesetops",
     "category": "Hurtigt",
     "time": "25 min",
     "prepTime": "15 min",
@@ -200,8 +200,8 @@
     "excerpt": "Sprøde og smagfulde chilicheesetops med smeltet ost og mild chili. Den perfekte snack eller forret til en hyggelig aften. Denne opskrift giver dig den autentiske chilicheesetops der smager langt bedre end fra butikken. Server med dip og grøntsager!"
   },
   {
-    "slug": "hjemmelavet-cheeseburger",
-    "title": "Hjemmelavet Cheeseburger",
+    "slug": "cheeseburger",
+    "title": "Cheeseburger",
     "category": "Kød",
     "time": "30 min",
     "prepTime": "20 min",
@@ -210,8 +210,8 @@
     "excerpt": "Juicy og smagfuld hjemmelavet cheeseburger med saftig bøf, smeltet ost og friske tilbehør. Den perfekte burger til hverdagen. Denne opskrift giver dig den autentiske cheeseburger der smager langt bedre end fastfood. Server med pommes frites!"
   },
   {
-    "slug": "hjemmelavet-vaniljekranse",
-    "title": "Hjemmelavet Vaniljekranse",
+    "slug": "vaniljekranse",
+    "title": "Vaniljekranse",
     "category": "Dessert",
     "time": "60 min",
     "prepTime": "30 min",
@@ -220,8 +220,8 @@
     "excerpt": "Klassiske hjemmelavet vaniljekranse med smørrig smag og sprød tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske vaniljekranse der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
-    "slug": "hjemmelavet-rod-grod-med-flode",
-    "title": "Hjemmelavet Rød Grød med Fløde",
+    "slug": "rod-grod-med-flode",
+    "title": "Rød Grød med Fløde",
     "category": "Dessert",
     "time": "45 min",
     "prepTime": "15 min",
@@ -230,8 +230,8 @@
     "excerpt": "Klassisk dansk rød grød med fløde med frisk bær og cremet fløde. Den perfekte dessert til sommeren. Denne opskrift giver dig den autentiske rød grød der smager langt bedre end fra butikken. Server med kold fløde!"
   },
   {
-    "slug": "hjemmelavet-flaeskesteg",
-    "title": "Hjemmelavet Flæskesteg",
+    "slug": "flaeskesteg",
+    "title": "Flæskesteg",
     "category": "Kød",
     "time": "3 timer",
     "prepTime": "30 min",
@@ -240,8 +240,8 @@
     "excerpt": "Klassisk dansk flæskesteg med sprødt svær og saftigt kød. Den perfekte hovedret til jul eller særlige lejligheder. Denne opskrift giver dig den autentiske flæskesteg der smager langt bedre end fra slagteren. Server med brun sovs, kartofler og rødkål!"
   },
   {
-    "slug": "hjemmelavet-risengrod",
-    "title": "Hjemmelavet Risengrød",
+    "slug": "risengrod",
+    "title": "Risengrød",
     "category": "Dessert",
     "time": "45 min",
     "prepTime": "10 min",
@@ -250,8 +250,8 @@
     "excerpt": "Klassisk dansk risengrød med cremet konsistens og vaniljesmag. Den perfekte dessert til jul eller hverdagen. Denne opskrift giver dig den autentiske risengrød der smager langt bedre end fra butikken. Server med smør, kanel og sukker!"
   },
   {
-    "slug": "hjemmelavet-aebleskiver",
-    "title": "Hjemmelavet Æbleskiver",
+    "slug": "aebleskiver",
+    "title": "Æbleskiver",
     "category": "Dessert",
     "time": "40 min",
     "prepTime": "20 min",
@@ -260,8 +260,8 @@
     "excerpt": "Klassiske dansk æbleskiver med luftig tekstur og guldbrun farve. Den perfekte dessert eller snack til jul eller hverdagen. Denne opskrift giver dig den autentiske æbleskiver der smager langt bedre end fra butikken. Server med flormelis og syltetøj!"
   },
   {
-    "slug": "hjemmelavet-banankage",
-    "title": "Hjemmelavet Banankage",
+    "slug": "banankage",
+    "title": "Banankage",
     "category": "Dessert",
     "time": "75 min",
     "prepTime": "20 min",
@@ -270,8 +270,8 @@
     "excerpt": "Saftig og smagfuld hjemmelavet banankage med modne bananer og varm kanel. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske banankage der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
-    "slug": "hjemmelavet-chokoladekage",
-    "title": "Hjemmelavet Chokoladekage",
+    "slug": "chokoladekage",
+    "title": "Chokoladekage",
     "category": "Dessert",
     "time": "70 min",
     "prepTime": "20 min",
@@ -280,8 +280,8 @@
     "excerpt": "Rig og smagfuld hjemmelavet chokoladekage med mørk chokolade og cremet tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske chokoladekage der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
-    "slug": "hjemmelavet-nutella",
-    "title": "Hjemmelavet Nutella",
+    "slug": "nutella",
+    "title": "Nutella",
     "category": "Dessert",
     "time": "30 min",
     "prepTime": "10 min",
@@ -290,8 +290,8 @@
     "excerpt": "Cremet og smagfuld hjemmelavet nutella med hasselnødder og chokolade. Den perfekte pålæg eller ingrediens til kager. Denne opskrift giver dig den autentiske nutella der smager langt bedre end fra butikken. Server på brød, pandekager eller i kager!"
   },
   {
-    "slug": "hjemmelavet-lagkage",
-    "title": "Hjemmelavet Lagkage",
+    "slug": "lagkage",
+    "title": "Lagkage",
     "category": "Dessert",
     "time": "90 min",
     "prepTime": "30 min",
@@ -300,8 +300,8 @@
     "excerpt": "Luftig og smagfuld hjemmelavet lagkage med cremet flødeskum og friske bær. Den perfekte kage til fødselsdage eller særlige lejligheder. Denne opskrift giver dig den autentiske lagkage der smager langt bedre end fra konditoriet. Server med kaffe eller te!"
   },
   {
-    "slug": "hjemmelavet-flutes",
-    "title": "Hjemmelavet Flutes",
+    "slug": "flutes",
+    "title": "Flutes",
     "category": "Hurtigt",
     "time": "3 timer",
     "prepTime": "30 min",
@@ -310,8 +310,8 @@
     "excerpt": "Sprøde og luftige hjemmelavet flutes med guldbrun skorpe og blød krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske flutes der smager langt bedre end fra bageren. Server med smør og syltetøj!"
   },
   {
-    "slug": "hjemmelavet-baguette",
-    "title": "Hjemmelavet Baguette",
+    "slug": "baguette",
+    "title": "Baguette",
     "category": "Hurtigt",
     "time": "4 timer",
     "prepTime": "40 min",
@@ -320,8 +320,8 @@
     "excerpt": "Autentisk fransk hjemmelavet baguette med sprød skorpe og luftig krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske baguette der smager langt bedre end fra bageren. Server med smør, ost eller din yndlingspålæg!"
   },
   {
-    "slug": "hjemmelavet-kanelsnegle",
-    "title": "Hjemmelavet Kanelsnegle",
+    "slug": "kanelsnegle",
+    "title": "Kanelsnegle",
     "category": "Dessert",
     "time": "3 timer",
     "prepTime": "30 min",
@@ -330,8 +330,8 @@
     "excerpt": "Søde og smagfulde hjemmelavet kanelsnegle med kanel, sukker og smør. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske kanelsnegle der smager langt bedre end fra bageren. Server med kaffe eller te!"
   },
   {
-    "slug": "hjemmelavet-aeggekage",
-    "title": "Hjemmelavet Æggekage",
+    "slug": "aeggekage",
+    "title": "Æggekage",
     "category": "Hurtigt",
     "time": "20 min",
     "prepTime": "5 min",
@@ -340,8 +340,8 @@
     "excerpt": "Cremet og smagfuld hjemmelavet æggekage med æg, mælk og smør. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske æggekage der smager langt bedre end fra restauranten. Server med bacon, brød eller grøntsager!"
   },
   {
-    "slug": "hjemmelavet-omelet",
-    "title": "Hjemmelavet Omelet",
+    "slug": "omelet",
+    "title": "Omelet",
     "category": "Hurtigt",
     "time": "15 min",
     "prepTime": "5 min",
@@ -350,8 +350,8 @@
     "excerpt": "Perfekt hjemmelavet omelet med gyldenbrun skorpe og cremet fyld. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske omelet der smager langt bedre end fra restauranten. Server med fyld, brød eller salat!"
   },
   {
-    "slug": "hjemmelavet-schones",
-    "title": "Hjemmelavet Schones",
+    "slug": "schones",
+    "title": "Schones",
     "category": "Dessert",
     "time": "3 timer",
     "prepTime": "30 min",
@@ -360,8 +360,8 @@
     "excerpt": "Søde og smagfulde hjemmelavet schones med kanel, sukker og smør. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske schones der smager langt bedre end fra bageren. Server med kaffe eller te!"
   },
   {
-    "slug": "hjemmelavet-naan-brod",
-    "title": "Hjemmelavet Naan Brød",
+    "slug": "naan-brod",
+    "title": "Naan Brød",
     "category": "Hurtigt",
     "time": "2 timer",
     "prepTime": "20 min",
@@ -370,8 +370,8 @@
     "excerpt": "Blødt og smagfuldt hjemmelavet naan brød med hvidløg og smør. Den perfekte brød til indisk mad eller som snack. Denne opskrift giver dig den autentiske naan der smager langt bedre end fra restauranten. Server med curry, dip eller smør!"
   },
   {
-    "slug": "hjemmelavet-bagels",
-    "title": "Hjemmelavet Bagels",
+    "slug": "bagels",
+    "title": "Bagels",
     "category": "Hurtigt",
     "time": "3 timer",
     "prepTime": "30 min",
@@ -380,8 +380,8 @@
     "excerpt": "Autentiske hjemmelavet bagels med sprød skorpe og blød krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske bagels der smager langt bedre end fra bageren. Server med cream cheese, laks eller dit yndlingspålæg!"
   },
   {
-    "slug": "hjemmelavet-polsehorn",
-    "title": "Hjemmelavet Pølsehorn",
+    "slug": "polsehorn",
+    "title": "Pølsehorn",
     "category": "Hurtigt",
     "time": "45 min",
     "prepTime": "20 min",
@@ -390,8 +390,8 @@
     "excerpt": "Sprøde og smagfulde hjemmelavet pølsehorn med saftig pølse og blød dej. Den perfekte snack eller forret. Denne opskrift giver dig den autentiske pølsehorn der smager langt bedre end fra butikken. Server med ketchup, sennep eller din yndlingsdip!"
   },
   {
-    "slug": "hjemmelavet-chunk-cookies",
-    "title": "Hjemmelavet Chunk Cookies",
+    "slug": "chunk-cookies",
+    "title": "Chunk Cookies",
     "category": "Dessert",
     "time": "35 min",
     "prepTime": "15 min",
@@ -400,8 +400,8 @@
     "excerpt": "Store og saftige hjemmelavet chunk cookies med store chokoladestykker og blød krumme. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske chunk cookies der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
-    "slug": "hjemmelavet-chocolate-chip-cookies",
-    "title": "Hjemmelavet Chocolate Chip Cookies",
+    "slug": "chocolate-chip-cookies",
+    "title": "Chocolate Chip Cookies",
     "category": "Dessert",
     "time": "30 min",
     "prepTime": "15 min",
@@ -410,8 +410,8 @@
     "excerpt": "Klassiske hjemmelavet chocolate chip cookies med smeltet chokolade og blød krumme. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske chocolate chip cookies der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
-    "slug": "hjemmelavet-doner-boks",
-    "title": "Hjemmelavet Doner Boks",
+    "slug": "doner-boks",
+    "title": "Doner Boks",
     "category": "Kød",
     "time": "90 min",
     "prepTime": "60 min",
@@ -420,8 +420,8 @@
     "excerpt": "Autentisk hjemmelavet doner boks med krydret kød, frisk salat og lækker dressing. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske doner boks der smager langt bedre end fra biks. Server med pommes frites!"
   },
   {
-    "slug": "hjemmelavet-gyros",
-    "title": "Hjemmelavet Gyros",
+    "slug": "gyros",
+    "title": "Gyros",
     "category": "Kød",
     "time": "120 min",
     "prepTime": "90 min",
@@ -430,8 +430,8 @@
     "excerpt": "Autentisk hjemmelavet gyros med krydret kød, frisk salat og cremet tzatziki. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske gyros der smager langt bedre end fra biks. Server med pita brød og pommes frites!"
   },
   {
-    "slug": "hjemmelavet-taquitos",
-    "title": "Hjemmelavet Taquitos",
+    "slug": "taquitos",
+    "title": "Taquitos",
     "category": "Kød",
     "time": "45 min",
     "prepTime": "25 min",
@@ -440,8 +440,8 @@
     "excerpt": "Sprøde og smagfulde hjemmelavet taquitos med krydret kød og smeltet ost. Den perfekte snack eller forret. Denne opskrift giver dig den autentiske taquitos der smager langt bedre end fra butikken. Server med salsa, guacamole eller sour cream!"
   },
   {
-    "slug": "hjemmelavet-shawarma",
-    "title": "Hjemmelavet Shawarma",
+    "slug": "shawarma",
+    "title": "Shawarma",
     "category": "Kød",
     "time": "120 min",
     "prepTime": "90 min",
@@ -450,8 +450,8 @@
     "excerpt": "Autentisk hjemmelavet shawarma med krydret kød, frisk salat og cremet dressing. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske shawarma der smager langt bedre end fra biks. Server med pita brød og pommes frites!"
   },
   {
-    "slug": "hjemmelavet-chicken-tender",
-    "title": "Hjemmelavet Chicken Tender",
+    "slug": "chicken-tender",
+    "title": "Chicken Tender",
     "category": "Kød",
     "time": "40 min",
     "prepTime": "20 min",
@@ -460,8 +460,8 @@
     "excerpt": "Sprøde og saftige hjemmelavet chicken tender med gyldenbrun panering. Den perfekte snack eller hovedret. Denne opskrift giver dig den autentiske chicken tender der smager langt bedre end fra fastfood. Server med dip og pommes frites!"
   },
   {
-    "slug": "hjemmelavet-pizza-slice",
-    "title": "Hjemmelavet Pizza Slice",
+    "slug": "pizza-slice",
+    "title": "Pizza Slice",
     "category": "Hurtigt",
     "time": "30 min",
     "prepTime": "15 min",
@@ -470,8 +470,8 @@
     "excerpt": "Lækre hjemmelavet pizza slice med saftig tomatsauce, smeltet ost og din yndlingstopning. Den perfekte snack eller hovedret. Denne opskrift giver dig den autentiske pizza slice der smager langt bedre end fra pizzeriaen. Server med salat!"
   },
   {
-    "slug": "hjemmelavet-kylling-sandwich",
-    "title": "Hjemmelavet Kylling Sandwich",
+    "slug": "kylling-sandwich",
+    "title": "Kylling Sandwich",
     "category": "Kød",
     "time": "35 min",
     "prepTime": "20 min",
@@ -480,8 +480,8 @@
     "excerpt": "Juicy og smagfuld hjemmelavet kylling sandwich med saftig kylling, frisk salat og cremet dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske kylling sandwich der smager langt bedre end fra butikken. Server med pommes frites!"
   },
   {
-    "slug": "hjemmelavet-flaeskestegssandwich",
-    "title": "Hjemmelavet Flæskestegssandwich",
+    "slug": "flaeskestegssandwich",
+    "title": "Flæskestegssandwich",
     "category": "Kød",
     "time": "3 timer 30 min",
     "prepTime": "30 min",
@@ -490,8 +490,8 @@
     "excerpt": "Klassisk dansk hjemmelavet flæskestegssandwich med sprødt svær, saftigt kød og rødkål. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske flæskestegssandwich der smager langt bedre end fra butikken. Server med brun sovs!"
   },
   {
-    "slug": "hjemmelavet-roastbeef-sandwich",
-    "title": "Hjemmelavet Roastbeef Sandwich",
+    "slug": "roastbeef-sandwich",
+    "title": "Roastbeef Sandwich",
     "category": "Kød",
     "time": "2 timer 30 min",
     "prepTime": "30 min",
@@ -500,8 +500,8 @@
     "excerpt": "Saftig og smagfuld hjemmelavet roastbeef sandwich med perfekt stegt oksekød og cremet dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske roastbeef sandwich der smager langt bedre end fra butikken. Server med pommes frites!"
   },
   {
-    "slug": "hjemmelavet-avocado-sandwich-a-la-joe-the-juice",
-    "title": "Hjemmelavet Avocado Sandwich a la Joe & The Juice",
+    "slug": "avocado-sandwich-a-la-joe-the-juice",
+    "title": "Avocado Sandwich a la Joe & The Juice",
     "category": "Vegetarisk",
     "time": "15 min",
     "prepTime": "10 min",
@@ -510,8 +510,8 @@
     "excerpt": "Frisk og sund hjemmelavet avocado sandwich a la Joe & The Juice med cremet avocado, frisk salat og lækker dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske avocado sandwich der smager langt bedre end fra butikken. Server med juice!"
   },
   {
-    "slug": "hjemmelavet-tunacado-a-la-joe-the-juice",
-    "title": "Hjemmelavet Tunacado a la Joe & The Juice",
+    "slug": "tunacado-a-la-joe-the-juice",
+    "title": "Tunacado a la Joe & The Juice",
     "category": "Fisk",
     "time": "20 min",
     "prepTime": "15 min",
@@ -520,8 +520,8 @@
     "excerpt": "Frisk og smagfuld hjemmelavet tunacado a la Joe & The Juice med tun, cremet avocado, frisk salat og lækker dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske tunacado der smager langt bedre end fra butikken. Server med juice!"
   },
   {
-    "slug": "hjemmelavet-mayo",
-    "title": "Hjemmelavet Mayo",
+    "slug": "mayo",
+    "title": "Mayo",
     "category": "Hurtigt",
     "time": "10 min",
     "prepTime": "10 min",
@@ -530,8 +530,8 @@
     "excerpt": "Cremet og smagfuld hjemmelavet mayo med æg og olie. Den perfekte pålæg eller ingrediens til dressinger. Denne opskrift giver dig den autentiske mayo der smager langt bedre end fra butikken. Brug på sandwich, i dressinger eller som dip!"
   },
   {
-    "slug": "hjemmelavet-chilimayo",
-    "title": "Hjemmelavet Chilimayo",
+    "slug": "chilimayo",
+    "title": "Chilimayo",
     "category": "Hurtigt",
     "time": "15 min",
     "prepTime": "15 min",
@@ -540,8 +540,8 @@
     "excerpt": "Krydret og smagfuld hjemmelavet chilimayo med cremet mayo og stærk chili. Den perfekte pålæg eller ingrediens til dressinger. Denne opskrift giver dig den autentiske chilimayo der smager langt bedre end fra butikken. Brug på sandwich, burger eller som dip!"
   },
   {
-    "slug": "hjemmelavet-pomfritter",
-    "title": "Hjemmelavet Pomfritter",
+    "slug": "pomfritter",
+    "title": "Pomfritter",
     "category": "Hurtigt",
     "time": "45 min",
     "prepTime": "15 min",
@@ -550,8 +550,8 @@
     "excerpt": "Sprøde og gyldne hjemmelavet pomfritter med perfekt struktur. Denne opskrift giver dig de autentiske pomfritter der smager langt bedre end fra butikken. Server med mayo, ketchup eller din yndlingsdip!"
   },
   {
-    "slug": "hjemmelavet-nuggets",
-    "title": "Hjemmelavet Nuggets",
+    "slug": "nuggets",
+    "title": "Nuggets",
     "category": "Kød",
     "time": "40 min",
     "prepTime": "20 min",
@@ -560,8 +560,8 @@
     "excerpt": "Sprøde og saftige hjemmelavet nuggets med perfekt panering. Denne opskrift giver dig de autentiske nuggets der smager langt bedre end fra butikken. Server med mayo, ketchup eller din yndlingsdip!"
   },
   {
-    "slug": "hjemmelavet-rejechips",
-    "title": "Hjemmelavet Rejechips",
+    "slug": "rejechips",
+    "title": "Rejechips",
     "category": "Fisk",
     "time": "30 min",
     "prepTime": "20 min",
@@ -570,8 +570,8 @@
     "excerpt": "Sprøde og luftige hjemmelavet rejechips med autentisk rejesmag. Denne opskrift giver dig de autentiske rejechips der smager langt bedre end fra butikken. Server som snack eller til forret!"
   },
   {
-    "slug": "hjemmelavet-bagtkartofel",
-    "title": "Hjemmelavet Bagtkartofel",
+    "slug": "bagtkartofel",
+    "title": "Bagtkartofel",
     "category": "Vegetarisk",
     "time": "90 min",
     "prepTime": "10 min",
@@ -580,8 +580,8 @@
     "excerpt": "Bløde og smagfulde hjemmelavet bagtkartofler med sprød skræl. Denne opskrift giver dig de perfekte bagtkartofler der smager langt bedre end fra butikken. Server med smør, creme fraiche eller din yndlingsfyldning!"
   },
   {
-    "slug": "hjemmelavet-lasagne",
-    "title": "Hjemmelavet Lasagne",
+    "slug": "lasagne",
+    "title": "Lasagne",
     "category": "Pasta",
     "time": "120 min",
     "prepTime": "30 min",
@@ -590,8 +590,8 @@
     "excerpt": "Klassisk og smagfuld hjemmelavet lasagne med kødsauce, bechamel og ost. Denne opskrift giver dig den autentiske lasagne der smager langt bedre end fra butikken. Perfekt til en hyggelig aften!"
   },
   {
-    "slug": "hjemmelavet-margherita-pizza",
-    "title": "Hjemmelavet Margherita Pizza",
+    "slug": "margherita-pizza",
+    "title": "Margherita Pizza",
     "category": "Hurtigt",
     "time": "90 min",
     "prepTime": "60 min",
@@ -600,8 +600,8 @@
     "excerpt": "Klassisk og autentisk hjemmelavet Margherita pizza med tomatsauce, mozzarella og basilikum. Denne opskrift giver dig den perfekte pizza der smager langt bedre end fra pizzeriaen. Perfekt til en hyggelig aften!"
   },
   {
-    "slug": "hjemmelavet-pasta-carbonara",
-    "title": "Hjemmelavet Pasta Carbonara",
+    "slug": "pasta-carbonara",
+    "title": "Pasta Carbonara",
     "category": "Pasta",
     "time": "25 min",
     "prepTime": "10 min",
@@ -610,8 +610,8 @@
     "excerpt": "Klassisk og cremet hjemmelavet pasta carbonara med bacon, æg og parmesan. Denne opskrift giver dig den autentiske carbonara der smager langt bedre end fra restauranten. Perfekt til en hurtig og lækker middag!"
   },
   {
-    "slug": "hjemmelavet-bearnaise-sovs",
-    "title": "Hjemmelavet Bearnaise Sovs",
+    "slug": "bearnaise-sovs",
+    "title": "Bearnaise Sovs",
     "category": "Hurtigt",
     "time": "20 min",
     "prepTime": "10 min",
@@ -620,8 +620,8 @@
     "excerpt": "Klassisk fransk hjemmelavet bearnaise sovs med smør, æggeblommer, estragon og skalotteløg. Den perfekte sovs til entrecote, bøf eller pommes frites. Denne opskrift giver dig den autentiske bearnaise der smager langt bedre end fra restauranten."
   },
   {
-    "slug": "hjemmelavet-gin-hass",
-    "title": "Hjemmelavet Gin Hass",
+    "slug": "gin-hass",
+    "title": "Gin Hass",
     "category": "Dessert",
     "time": "30 min",
     "prepTime": "20 min",
@@ -630,8 +630,8 @@
     "excerpt": "Klassisk dansk hjemmelavet gin hass med gin, flødeskum og friske bær. Den perfekte dessert til sommeren eller særlige lejligheder. Denne opskrift giver dig den autentiske gin hass der smager langt bedre end fra restauranten."
   },
   {
-    "slug": "hjemmelavet-amerikanske-pandekager",
-    "title": "Hjemmelavet Amerikanske Pandekager",
+    "slug": "amerikanske-pandekager",
+    "title": "Amerikanske Pandekager",
     "category": "Hurtigt",
     "time": "25 min",
     "prepTime": "10 min",
@@ -640,8 +640,8 @@
     "excerpt": "Luftige og tykke hjemmelavet amerikanske pandekager med bagepulver og smør. Den perfekte morgenmad eller brunch. Denne opskrift giver dig de autentiske amerikanske pandekager der smager langt bedre end fra restauranten."
   },
   {
-    "slug": "hjemmelavet-bananpandekager",
-    "title": "Hjemmelavet Bananpandekager",
+    "slug": "bananpandekager",
+    "title": "Bananpandekager",
     "category": "Hurtigt",
     "time": "30 min",
     "prepTime": "15 min",
@@ -650,8 +650,8 @@
     "excerpt": "Søde og saftige hjemmelavet bananpandekager med mosede bananer og kanel. Den perfekte morgenmad eller brunch. Denne opskrift giver dig de lækreste bananpandekager der smager langt bedre end fra restauranten."
   },
   {
-    "slug": "hjemmelavet-andesovs",
-    "title": "Hjemmelavet Andesovs",
+    "slug": "andesovs",
+    "title": "Andesovs",
     "category": "Kød",
     "time": "45 min",
     "prepTime": "15 min",
@@ -660,8 +660,8 @@
     "excerpt": "Klassisk dansk hjemmelavet andesovs med andefedt, fløde og portvin. Den perfekte sovs til and, kalkun eller høns. Denne opskrift giver dig den autentiske andesovs der smager langt bedre end fra restauranten."
   },
   {
-    "slug": "hjemmelavet-strawberry-daiquiri",
-    "title": "Hjemmelavet Strawberry Daiquiri",
+    "slug": "strawberry-daiquiri",
+    "title": "Strawberry Daiquiri",
     "category": "Dessert",
     "time": "10 min",
     "prepTime": "5 min",
@@ -670,8 +670,8 @@
     "excerpt": "Frisk og sød hjemmelavet strawberry daiquiri med rom, jordbær og lime. Den perfekte cocktail til sommeren eller særlige lejligheder. Denne opskrift giver dig den autentiske daiquiri der smager langt bedre end fra baren."
   },
   {
-    "slug": "hjemmelavet-brunsovs",
-    "title": "Hjemmelavet Brunsovs",
+    "slug": "brunsovs",
+    "title": "Brunsovs",
     "category": "Kød",
     "time": "30 min",
     "prepTime": "10 min",
@@ -680,8 +680,8 @@
     "excerpt": "Klassisk dansk hjemmelavet brunsovs med stegesaft, fløde og mel. Den perfekte sovs til flæskesteg, frikadeller eller kød. Denne opskrift giver dig den autentiske brunsovs der smager langt bedre end fra butikken."
   },
   {
-    "slug": "hjemmelavet-whisky-sour",
-    "title": "Hjemmelavet Whisky Sour",
+    "slug": "whisky-sour",
+    "title": "Whisky Sour",
     "category": "Dessert",
     "time": "10 min",
     "prepTime": "5 min",
@@ -690,8 +690,8 @@
     "excerpt": "Klassisk hjemmelavet whisky sour med whisky, citronsaft og simpelt sirup. Den perfekte cocktail til aftenen eller særlige lejligheder. Denne opskrift giver dig den autentiske whisky sour der smager langt bedre end fra baren."
   },
   {
-    "slug": "hjemmelavet-gateau-marcel",
-    "title": "Hjemmelavet Gateau Marcel",
+    "slug": "gateau-marcel",
+    "title": "Gateau Marcel",
     "category": "Dessert",
     "time": "120 min",
     "prepTime": "45 min",
@@ -700,8 +700,8 @@
     "excerpt": "Klassisk dansk hjemmelavet Gateau Marcel med chokoladebund, marcipan og flødeskum. Den perfekte kage til fødselsdage eller særlige lejligheder. Denne opskrift giver dig den autentiske Gateau Marcel der smager langt bedre end fra konditoriet."
   },
   {
-    "slug": "hjemmelavet-lagkagebund",
-    "title": "Hjemmelavet Lagkagebund",
+    "slug": "lagkagebund",
+    "title": "Lagkagebund",
     "category": "Dessert",
     "time": "60 min",
     "prepTime": "30 min",
@@ -710,8 +710,8 @@
     "excerpt": "Luftig og let hjemmelavet lagkagebund med æg, sukker og mel. Den perfekte bund til lagkager, lagkager eller andre kager. Denne opskrift giver dig den autentiske lagkagebund der smager langt bedre end købt."
   },
   {
-    "slug": "hjemmelavet-bamseboller",
-    "title": "Hjemmelavet Bamseboller",
+    "slug": "bamseboller",
+    "title": "Bamseboller",
     "category": "Dessert",
     "time": "60 min",
     "prepTime": "30 min",
@@ -720,8 +720,8 @@
     "excerpt": "Søde og cremede hjemmelavet bamseboller med kokos, chokolade og konditorcreme. Den perfekte dessert eller snack. Denne opskrift giver dig de autentiske bamseboller der smager langt bedre end fra butikken."
   },
   {
-    "slug": "hjemmelavet-pizzadej",
-    "title": "Hjemmelavet Pizzadej",
+    "slug": "pizzadej",
+    "title": "Pizzadej",
     "category": "Hurtigt",
     "time": "90 min",
     "prepTime": "20 min",
@@ -730,8 +730,8 @@
     "excerpt": "Perfekt hjemmelavet pizzadej med gær, mel og olivenolie. Den perfekte bund til alle slags pizzaer. Denne opskrift giver dig den autentiske pizzadej der smager langt bedre end købt."
   },
   {
-    "slug": "hjemmelavet-laksemouse",
-    "title": "Hjemmelavet Laksemouse",
+    "slug": "laksemouse",
+    "title": "Laksemouse",
     "category": "Fisk",
     "time": "60 min",
     "prepTime": "30 min",
@@ -740,8 +740,8 @@
     "excerpt": "Lækker hjemmelavet laksemouse med røget laks, creme fraiche og dild. Den perfekte forret eller tilbehør. Denne opskrift giver dig den autentiske laksemouse der smager langt bedre end fra butikken."
   },
   {
-    "slug": "hjemmelavet-beef-wellington",
-    "title": "Hjemmelavet Beef Wellington",
+    "slug": "beef-wellington",
+    "title": "Beef Wellington",
     "category": "Kød",
     "time": "3 timer",
     "prepTime": "2 timer",
@@ -750,8 +750,8 @@
     "excerpt": "Klassisk hjemmelavet Beef Wellington med oksekød, champignonfarce og puff pastry. Den perfekte festret. Denne opskrift giver dig den autentiske Beef Wellington der smager langt bedre end fra restauranten."
   },
   {
-    "slug": "hjemmelavet-klatkage",
-    "title": "Hjemmelavet Klatkage",
+    "slug": "klatkage",
+    "title": "Klatkage",
     "category": "Dessert",
     "time": "60 min",
     "prepTime": "20 min",
@@ -760,8 +760,8 @@
     "excerpt": "Klassisk hjemmelavet klatkage med æg, sukker, mel og smør. Den perfekte danske kage til kaffe eller dessert. Denne opskrift giver dig den autentiske klatkage der smager langt bedre end købt."
   },
   {
-    "slug": "hjemmelavet-gulerodskage",
-    "title": "Hjemmelavet Gulerodskage",
+    "slug": "gulerodskage",
+    "title": "Gulerodskage",
     "category": "Dessert",
     "time": "75 min",
     "prepTime": "20 min",
@@ -770,8 +770,8 @@
     "excerpt": "Klassisk hjemmelavet gulerodskage med creme cheese frosting. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig den autentiske gulerodskage der smager langt bedre end købt."
   },
   {
-    "slug": "hjemmelavet-chai-cookies",
-    "title": "Hjemmelavet Chai Cookies",
+    "slug": "chai-cookies",
+    "title": "Chai Cookies",
     "category": "Dessert",
     "time": "45 min",
     "prepTime": "15 min",
@@ -780,8 +780,8 @@
     "excerpt": "Lækre hjemmelavet chai cookies med varm kanel, kardemomme og ingefær. Den perfekte kage til kaffe eller te. Denne opskrift giver dig de autentiske chai cookies der smager langt bedre end købt."
   },
   {
-    "slug": "hjemmelavet-appelsinkage",
-    "title": "Hjemmelavet Appelsinkage",
+    "slug": "appelsinkage",
+    "title": "Appelsinkage",
     "category": "Dessert",
     "time": "80 min",
     "prepTime": "25 min",
@@ -790,8 +790,8 @@
     "excerpt": "Lækker hjemmelavet appelsinkage med frisk appelsin og creme cheese frosting. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig den autentiske appelsinkage der smager langt bedre end købt."
   },
   {
-    "slug": "hjemmelavet-brunkagekugler",
-    "title": "Hjemmelavet Brunkagekugler",
+    "slug": "brunkagekugler",
+    "title": "Brunkagekugler",
     "category": "Dessert",
     "time": "30 min",
     "prepTime": "20 min",
@@ -800,8 +800,8 @@
     "excerpt": "Klassiske hjemmelavet brunkagekugler med kakaopulver og kokosmel. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig de autentiske brunkagekugler der smager langt bedre end købt."
   },
   {
-    "slug": "hjemmelavet-brownie",
-    "title": "Hjemmelavet Brownie",
+    "slug": "brownie",
+    "title": "Brownie",
     "category": "Dessert",
     "time": "50 min",
     "prepTime": "15 min",
@@ -810,8 +810,8 @@
     "excerpt": "Klassisk hjemmelavet brownie med rig chokoladesmag og tæt konsistens. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig den autentiske brownie der smager langt bedre end købt."
   },
   {
-    "slug": "hjemmelavet-rugbrodskugler",
-    "title": "Hjemmelavet Rugbrødskugler",
+    "slug": "rugbrodskugler",
+    "title": "Rugbrødskugler",
     "category": "Dessert",
     "time": "25 min",
     "prepTime": "15 min",
