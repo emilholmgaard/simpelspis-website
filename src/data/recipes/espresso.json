@@ -1,0 +1,53 @@
+{
+  "slug": "espresso",
+  "id": "711",
+  "title": "Espresso",
+  "category": "Dessert",
+  "time": "2 min",
+  "prepTime": "2 min",
+  "cookTime": "0 min",
+  "difficulty": "Let",
+  "excerpt": "Klassisk espresso - ren og stærk kaffe. Den perfekte kaffedrik for dem der elsker stærk kaffe uden mælk. Denne opskrift giver dig en autentisk espresso oplevelse hjemme.",
+  "description": "Klassisk espresso - ren og stærk kaffe. Den perfekte kaffedrik for dem der elsker stærk kaffe uden mælk. Denne opskrift giver dig en autentisk espresso oplevelse hjemme. Server i en lille espresso kop med sukker ved siden af for den ultimative oplevelse!",
+  "ingredients": [
+    "Til espresso:",
+    "1 shot espresso (ca. 30ml)",
+    "",
+    "Til servering (valgfrit):",
+    "Sukker",
+    "Citronskal"
+  ],
+  "instructions": [
+    "FORBEREDELSE (1 min)",
+    "Forbered en lille espresso kop. Tip: Brug en traditionel espresso kop - den er lille og bred.",
+    "Forbered espresso maskine eller kaffemaskine. Tip: Brug friskbrygget espresso for bedste smag.",
+    "",
+    "TILBEREDNING (1 min)",
+    "Brew 1 shot espresso direkte i koppen. Tip: Espresso skal være friskbrygget for bedste smag.",
+    "Espresso skal have en crema (gylden skum) på toppen. Tip: Crema er tegn på god espresso.",
+    "",
+    "SAMMENSAETNING (0 min)",
+    "Server straks. Tip: Espresso smager bedst når den er lige brygget - drik den hurtigt.",
+    "Tilføj sukker hvis ønsket. Tip: Mange foretrækker espresso uden sukker for at smage kaffens smag.",
+    "Tilføj citronskal hvis ønsket. Tip: Citronskal giver ekstra smag.",
+    "",
+    "PRO TIPS",
+    "For bedste resultat: Brug friskbrygget espresso - det giver bedste smag.",
+    "For stærkere kaffe: Brug mere kaffe eller finere maling - det giver stærkere kaffesmag.",
+    "For perfekt crema: Brug frisk kaffe og korrekt maling - det giver bedste crema.",
+    "Espresso drikkes normalt hurtigt - det er en lille stærk drik.",
+    "For autentisk oplevelse: Drik espresso stående som i Italien - det er traditionen."
+  ],
+  "nutrition": {
+    "energy": "20 kJ / 5 kcal",
+    "fat": "0g",
+    "saturatedFat": "0g",
+    "carbs": "0g",
+    "sugar": "0g",
+    "fiber": "0g",
+    "protein": "0g",
+    "salt": "0g"
+  },
+  "datePublished": "2025-01-15T10:00:00+01:00",
+  "dateModified": "2025-01-15T10:00:00+01:00"
+}

@@ -1,15 +1,5 @@
 [
   {
-    "slug": "1-dej-3-slag-julesmåkager",
-    "title": "1 dej - 3 slags julesmåkager",
-    "category": "Dessert",
-    "time": "90 min",
-    "prepTime": "60 min",
-    "cookTime": "12 min",
-    "difficulty": "Let",
-    "excerpt": "En smart opskrift på julesmåkager hvor du laver én grunddej og deler den i tre dele for at lave tre forskellige slags julekager: vaniljekager, chokoladekager og krydderikager. Perfekt til julehygge og meget nemmere end at lave tre separate opskrifter!"
-  },
-  {
     "slug": "a-la-casper-dromme",
     "title": "A LA CASPER DRØMME",
     "category": "Kød",
@@ -50,14 +40,144 @@
     "excerpt": "Store, saftige chicken tenders - dobbeltpaneret og ekstra sprøde. Den perfekte snack eller hovedret med maksimal knas og saft. Denne opskrift giver dig den ultimative chicken tender-oplevelse med dobbelt panering for ekstra sprødhed og størrelse."
   },
   {
-    "slug": "original-burger-all-the-way",
-    "title": "A LA ORIGINAL BURGER ALL THE WAY",
-    "category": "Kød",
-    "time": "30 min",
+    "slug": "a-la-paradis-is-amarena-chokolade",
+    "title": "A La Paradis Is - Amarena Chokolade",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet amarena chokoladeis med kirsebær fra Italien og sprød stracciatella. En rig og sofistikeret is med perfekt balance mellem kirsebær og chokolade."
+  },
+  {
+    "slug": "a-la-paradis-is-banan",
+    "title": "A La Paradis Is - Banan",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet bananis med søde og smagfulde bananer. En klassisk og populær is med intens banansmag og naturlig sødme."
+  },
+  {
+    "slug": "a-la-paradis-is-is-med-bastogne",
+    "title": "A La Paradis Is - Is med Bastogne",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet is med den originale kiks med smag af kanel. En klassisk og populær is med sprøde Bastogne-stykker og cremet vaniljesmag."
+  },
+  {
+    "slug": "a-la-paradis-is-passionsfrugt",
+    "title": "A La Paradis Is - Passionsfrugt",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet passionsfrugtis med eksotisk sødme og tropiske noter. En unik og forfriskende is med intens passionsfrugtsmag og naturlig sødme."
+  },
+  {
+    "slug": "a-la-paradis-is-penautbutter",
+    "title": "A La Paradis Is - Penautbutter",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet penautbutteris med chokolade og karamel - en smag af amerikansk chokoladebar. En rig og mættende is med intens penautbutter-smag."
+  },
+  {
+    "slug": "a-la-paradis-is-pistacie",
+    "title": "A La Paradis Is - Pistacie",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet pistacieis med ægte pistacienødder fra Italien. En rig og nøddeagtig is med intens pistaciesmag og cremet konsistens."
+  },
+  {
+    "slug": "a-la-paradis-is-saltkaramel",
+    "title": "A La Paradis Is - Saltkaramel",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet saltkaramelis med cremet karamelsauce og lækker fudge. En rig og sofistikeret is med perfekt balance mellem sødme og salt."
+  },
+  {
+    "slug": "a-la-paradis-is-stracciatella",
+    "title": "A La Paradis Is - Stracciatella",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "En ægte italiensk klassiker med cremet vaniljeis og sprøde chokoladestykker. En elegant og klassisk is med perfekt balance mellem cremethed og knas."
+  },
+  {
+    "slug": "a-la-paradis-is-tarte-au-citron",
+    "title": "A La Paradis Is - Tarte au Citron",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet tarte au citron is med øko citroner fra Sicilien og marengs på toppen. En elegant og sofistikeret is med perfekt balance mellem syrlighed og sødme."
+  },
+  {
+    "slug": "a-la-paradis-milkshake",
+    "title": "A LA PARADIS MILKSHAKE",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk cremet milkshake inspireret af Paradis Is. Friskrørt vaniljeis shaket med økologisk mælk til en tyk og cremet milkshake. Den perfekte dessert der smager som fra din yndlingsisbutik."
+  },
+  {
+    "slug": "acai-bowl-a-la-joe-the-juice",
+    "title": "Acai Bowl a la Joe & The Juice",
+    "category": "Morgenmad",
+    "time": "10 min",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Sund og nærende acai bowl a la Joe & The Juice med banan, granola, mandelsmør og acai. Den perfekte morgenmad til at starte dagen med energi. Denne opskrift giver dig den autentiske acai bowl der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "aeblegloeg",
+    "title": "Æblegløg",
+    "category": "Vegetarisk",
+    "time": "60 min",
     "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk dansk hjemmelavet æblegløg med søde æbler, bløde løg og sød-syrlig smag. Den perfekte tilbehør til flæskesteg, frikadeller eller anden dansk mad. Denne opskrift giver dig den autentiske æblegløg der smager langt bedre end fra butikken. Traditionel dansk hjemmekøkken på sit bedste!"
+  },
+  {
+    "slug": "aebleskiver",
+    "title": "Æbleskiver",
+    "category": "Dessert",
+    "time": "40 min",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Klassiske dansk æbleskiver med luftig tekstur og guldbrun farve. Den perfekte dessert eller snack til jul eller hverdagen. Denne opskrift giver dig den autentiske æbleskiver der smager langt bedre end fra butikken. Server med flormelis og syltetøj!"
+  },
+  {
+    "slug": "aeggekage",
+    "title": "Æggekage",
+    "category": "Hurtigt",
+    "time": "20 min",
+    "prepTime": "5 min",
     "cookTime": "15 min",
     "difficulty": "Let",
-    "excerpt": "100% økologisk oksekød, friskhakket dagligt. Frisk og sprød salat, en skive tomat, frisk rødløg og økologiske pickles. Afsluttet med vores egen lækre Gasoline Grill Sauce. Tilføj ost! FRA GASOLINE GRILL"
+    "excerpt": "Cremet og smagfuld hjemmelavet æggekage med æg, mælk og smør. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske æggekage der smager langt bedre end fra restauranten. Server med bacon, brød eller grøntsager!"
   },
   {
     "slug": "airfryer-fisk",
@@ -118,6 +238,16 @@
     "cookTime": "25 min",
     "difficulty": "Let",
     "excerpt": "Sprøde og gyldne hjemmelavet pomfritter i airfryer med perfekt struktur og mindre fedt. Denne opskrift giver dig de autentiske pomfritter der smager langt bedre end fra butikken, men med langt mindre olie. Server med mayo, ketchup eller din yndlingsdip!"
+  },
+  {
+    "slug": "americano",
+    "title": "Americano",
+    "category": "Dessert",
+    "time": "3 min",
+    "prepTime": "3 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk americano med espresso og varmt vand. Den perfekte kaffedrik for dem der elsker filterkaffe-smag med espresso-styrke. Denne opskrift giver dig en autentisk americano oplevelse hjemme."
   },
   {
     "slug": "amerikanske-pandekager",
@@ -228,6 +358,16 @@
     "cookTime": "5 min",
     "difficulty": "Let",
     "excerpt": "Frisk og sund hjemmelavet avocado sandwich a la Joe & The Juice med cremet avocado, frisk salat og lækker dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske avocado sandwich der smager langt bedre end fra butikken. Server med juice!"
+  },
+  {
+    "slug": "avocado-sandwich-a-la-joe-the-juice-simple",
+    "title": "Avocado a la Joe & The Juice",
+    "category": "Vegetarisk",
+    "time": "15 min",
+    "prepTime": "10 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og sund hjemmelavet avocado sandwich a la Joe & The Juice med cremet avocado, mozzarella, vegansk pesto og tomat. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske avocado sandwich der smager langt bedre end fra butikken."
   },
   {
     "slug": "baconruller-i-kartoffelfad-med-groent",
@@ -391,6 +531,16 @@
     "excerpt": "Klassisk hjemmelavet Beef Wellington med oksekød, champignonfarce og puff pastry. Den perfekte festret. Denne opskrift giver dig den autentiske Beef Wellington der smager langt bedre end fra restauranten."
   },
   {
+    "slug": "beets-berries-a-la-joe-the-juice",
+    "title": "Beets & Berries a la Joe & The Juice",
+    "category": "Drikkevarer",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Proteinrig smoothie a la Joe & The Juice med jordbær, banan, rødbede pulver, Sproud M*lk, daddelpuré, kollagen & whey protein og is. Den perfekte smoothie til træning eller som proteinrig snack. Denne opskrift giver dig den autentiske Beets & Berries smoothie der smager langt bedre end fra butikken."
+  },
+  {
     "slug": "belgiske-pandekager",
     "title": "Belgiske Pandekager",
     "category": "Hurtigt",
@@ -429,6 +579,26 @@
     "cookTime": "40 min",
     "difficulty": "Let",
     "excerpt": "Klassisk dansk hjemmelavet biksemad i ovnen med saftigt kød, sprøde kartofler og kold bearnaise. Den perfekte hverdagsret der smager langt bedre end fra restauranten. Nem, hurtig og perfekt til hele familien!"
+  },
+  {
+    "slug": "blomkaal-og-kikaerter-i-cremet-dildsauce",
+    "title": "Blomkål Og Kikærter I Cremet Dildsauce",
+    "category": "Vegetarisk",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Kremet blomkål og kikærter i en lækker dildsauce. En perfekt vegetarisk ret der er nem at lave og smager fantastisk!"
+  },
+  {
+    "slug": "boef-lindstroem",
+    "title": "Bøf Lindstrøm",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk dansk bøf lindstrøm med saftige kødbøffer, rødbeder, kapers og æg. Den perfekte komfortmad der smager langt bedre end fra restauranten. Nem, mættende og perfekt til hele familien!"
   },
   {
     "slug": "boller",
@@ -481,16 +651,6 @@
     "excerpt": "Autentisk hjemmelavet laktosefri bolognese med saftigt hakket kød, rødvin, laktosefri mælk og aromatiske krydderier. Den perfekte italienske klassiker der smager langt bedre end fra restauranten - helt uden laktose! Perfekt til pasta, lasagne eller polenta!"
   },
   {
-    "slug": "bolognese-plantebaseret-glutenfri",
-    "title": "Bolognese (Plantebaseret, Glutenfri)",
-    "category": "Vegetarisk",
-    "time": "90 min",
-    "prepTime": "20 min",
-    "cookTime": "70 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk hjemmelavet plantebaseret og glutenfri bolognese med linser, champignoner, rødvin og plantemælk. Den perfekte italienske klassiker uden kød og gluten, der smager lige så godt som originalen. Perfekt til glutenfri pasta, ris eller polenta!"
-  },
-  {
     "slug": "bolognese-plantebaseret",
     "title": "Bolognese (Plantebaseret)",
     "category": "Vegetarisk",
@@ -499,6 +659,16 @@
     "cookTime": "70 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk hjemmelavet plantebaseret bolognese med linser, champignoner, rødvin og plantemælk. Den perfekte italienske klassiker uden kød, der smager lige så godt som originalen. Perfekt til pasta, lasagne eller polenta!"
+  },
+  {
+    "slug": "bolognese-plantebaseret-glutenfri",
+    "title": "Bolognese (Plantebaseret, Glutenfri)",
+    "category": "Vegetarisk",
+    "time": "90 min",
+    "prepTime": "20 min",
+    "cookTime": "70 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet plantebaseret og glutenfri bolognese med linser, champignoner, rødvin og plantemælk. Den perfekte italienske klassiker uden kød og gluten, der smager lige så godt som originalen. Perfekt til glutenfri pasta, ris eller polenta!"
   },
   {
     "slug": "bolscher",
@@ -519,6 +689,26 @@
     "cookTime": "20 min",
     "difficulty": "Let",
     "excerpt": "Luftig og imponerende hjemmelavet bradepandekage bages i ovnen til en stor, puffet pandekage. Den perfekte morgenmad eller brunch der smager langt bedre end fra restauranten. Nem at lave og perfekt til hele familien!"
+  },
+  {
+    "slug": "braendtemandler",
+    "title": "Brændtemandler",
+    "category": "Dessert",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og knasende hjemmelavet brændtemandler med karameliseret sukker og mandler. Den perfekte snack eller dessert. Denne opskrift giver dig de klassiske brændtemandler der smager langt bedre end købte. Perfekt til julehygge eller som gave!"
+  },
+  {
+    "slug": "brod",
+    "title": "Brød",
+    "category": "Hurtigt",
+    "time": "180 min",
+    "prepTime": "150 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Luftigt og lækkert hjemmelavet brød med guldbrun skorpe. Den perfekte basis til alle måltider. Denne opskrift giver dig det klassiske hjemmebagte brød der smager langt bedre end købt brød. Varmt fra ovnen med smør - der er intet bedre!"
   },
   {
     "slug": "brownie",
@@ -571,26 +761,6 @@
     "excerpt": "Klassisk dansk hjemmelavet brunsovs med stegesaft, fløde og mel. Den perfekte sovs til flæskesteg, frikadeller eller kød. Denne opskrift giver dig den autentiske brunsovs der smager langt bedre end fra butikken."
   },
   {
-    "slug": "braendtemandler",
-    "title": "Brændtemandler",
-    "category": "Dessert",
-    "time": "30 min",
-    "prepTime": "10 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Søde og knasende hjemmelavet brændtemandler med karameliseret sukker og mandler. Den perfekte snack eller dessert. Denne opskrift giver dig de klassiske brændtemandler der smager langt bedre end købte. Perfekt til julehygge eller som gave!"
-  },
-  {
-    "slug": "brod",
-    "title": "Brød",
-    "category": "Hurtigt",
-    "time": "180 min",
-    "prepTime": "150 min",
-    "cookTime": "30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Luftigt og lækkert hjemmelavet brød med guldbrun skorpe. Den perfekte basis til alle måltider. Denne opskrift giver dig det klassiske hjemmebagte brød der smager langt bedre end købt brød. Varmt fra ovnen med smør - der er intet bedre!"
-  },
-  {
     "slug": "budget-pasta",
     "title": "Budget Pasta",
     "category": "Pasta",
@@ -611,44 +781,44 @@
     "excerpt": "Autentisk hjemmelavet burrito med krydret kød, ris, bønner og friske grøntsager rullet i en varm tortilla. Den perfekte mættende ret til en hyggelig aften. Denne opskrift giver dig den autentiske burrito der smager langt bedre end fra restauranten. Server med guacamole, salsa og creme fraiche!"
   },
   {
-    "slug": "smoothie",
-    "title": "Bær Smoothie",
-    "category": "Hurtigt",
+    "slug": "butter-halloumi",
+    "title": "Butter Halloumi",
+    "category": "Vegetarisk",
+    "time": "20 min",
+    "prepTime": "10 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Sprød og gylden halloumi i en lækker butter sauce. En perfekt vegetarisk ret der er nem at lave og smager fantastisk!"
+  },
+  {
+    "slug": "caesar-salat",
+    "title": "Cæsar Salat",
+    "category": "Salat",
+    "time": "25 min",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk hjemmelavet cæsar salat med sprød romaine salat, cremet cæsar dressing, sprøde croutons og parmesan. Den perfekte salat der smager langt bedre end fra restauranten. Nem, hurtig og perfekt til frokost eller som forret!"
+  },
+  {
+    "slug": "cappuccino",
+    "title": "Cappuccino",
+    "category": "Dessert",
     "time": "5 min",
     "prepTime": "5 min",
     "cookTime": "0 min",
     "difficulty": "Let",
-    "excerpt": "Frisk og sød bær smoothie med jordbær, blåbær og banan. Den perfekte morgenmad eller snack der er klar på under 5 minutter. Denne opskrift giver dig en cremet og smagfuld smoothie fyldt med antioxidanter og vitaminer."
+    "excerpt": "Klassisk cappuccino med espresso og tykt mælkeskum. Den perfekte kaffedrik med balance mellem stærk espresso og cremet skum. Denne opskrift giver dig en autentisk cappuccino oplevelse hjemme."
   },
   {
-    "slug": "smoothie-laktosefri",
-    "title": "Bær Smoothie (Laktosefri)",
-    "category": "Hurtigt",
+    "slug": "cappuccino-a-la-joe-the-juice",
+    "title": "Cappuccino a la Joe & The Juice",
+    "category": "Drikkevarer",
     "time": "5 min",
     "prepTime": "5 min",
     "cookTime": "0 min",
     "difficulty": "Let",
-    "excerpt": "Frisk og sød laktosefri bær smoothie med jordbær, blåbær og banan. Den perfekte morgenmad eller snack der er klar på under 5 minutter. Denne opskrift giver dig en cremet og smagfuld smoothie fyldt med antioxidanter og vitaminer - helt uden laktose."
-  },
-  {
-    "slug": "smoothie-vegan",
-    "title": "Bær Smoothie (Vegansk)",
-    "category": "Hurtigt",
-    "time": "5 min",
-    "prepTime": "5 min",
-    "cookTime": "0 min",
-    "difficulty": "Let",
-    "excerpt": "Frisk og sød vegansk bær smoothie med jordbær, blåbær og banan. Den perfekte morgenmad eller snack der er klar på under 5 minutter. Denne opskrift giver dig en cremet og smagfuld smoothie fyldt med antioxidanter og vitaminer - helt uden animalske produkter."
-  },
-  {
-    "slug": "boef-lindstroem",
-    "title": "Bøf Lindstrøm",
-    "category": "Kød",
-    "time": "45 min",
-    "prepTime": "20 min",
-    "cookTime": "25 min",
-    "difficulty": "Let",
-    "excerpt": "Klassisk dansk bøf lindstrøm med saftige kødbøffer, rødbeder, kapers og æg. Den perfekte komfortmad der smager langt bedre end fra restauranten. Nem, mættende og perfekt til hele familien!"
+    "excerpt": "Klassisk cappuccino a la Joe & The Juice med almindelig mælk og espresso. Den perfekte kaffe til morgenmad eller som eftermiddagskaffe. Denne opskrift giver dig den autentiske cappuccino der smager langt bedre end fra butikken."
   },
   {
     "slug": "carbonara",
@@ -689,6 +859,26 @@
     "cookTime": "20 min",
     "difficulty": "Let",
     "excerpt": "Lækre hjemmelavet cheeseburger tacos - den perfekte fusion mellem cheeseburger og tacos! Saftigt hakket kød, smeltet cheddar, frisk salat og cremet burgerdressing i sprøde tacoskal. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske cheeseburger taco der smager langt bedre end fra restauranten. Server med pommes frites!"
+  },
+  {
+    "slug": "cheeseburgersuppe-med-groentsager",
+    "title": "Cheeseburgersuppe Med Grøntsager",
+    "category": "Kød",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Kremet cheeseburgersuppe med oksekød og friske grøntsager. En lækker og mættende suppe der smager som en cheeseburger!"
+  },
+  {
+    "slug": "chicken-caesar-tacos",
+    "title": "Chicken Cæsar Tacos",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Krydrede tacos med kylling, cæsar dressing og friske grøntsager. En lækker og nem ret der smager som en cæsar salat i tacoform!"
   },
   {
     "slug": "chicken-tender",
@@ -951,26 +1141,6 @@
     "excerpt": "Sprøde og krøllede hjemmelavet curly fries med perfekt struktur. Denne opskrift giver dig de autentiske curly fries der smager langt bedre end fra fastfood-restauranten. Server med dip eller bare som snack!"
   },
   {
-    "slug": "caesar-salat",
-    "title": "Cæsar Salat",
-    "category": "Salat",
-    "time": "25 min",
-    "prepTime": "15 min",
-    "cookTime": "10 min",
-    "difficulty": "Let",
-    "excerpt": "Klassisk hjemmelavet cæsar salat med sprød romaine salat, cremet cæsar dressing, sprøde croutons og parmesan. Den perfekte salat der smager langt bedre end fra restauranten. Nem, hurtig og perfekt til frokost eller som forret!"
-  },
-  {
-    "slug": "pandekager",
-    "title": "Danske Pandekager",
-    "category": "Hurtigt",
-    "time": "30 min",
-    "prepTime": "10 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Bløde og gyldne hjemmelavet pandekager med den perfekte tekstur. Perfekte til morgenmad, brunch eller dessert. Denne opskrift giver dig de klassiske danske pandekager der smager langt bedre end købte. Server med syltetøj, sukker og citron!"
-  },
-  {
     "slug": "de-perfekte-cruncy-pomfritter",
     "title": "De Perfekte Cruncy Pomfritter",
     "category": "Hurtigt",
@@ -989,6 +1159,26 @@
     "cookTime": "25 min",
     "difficulty": "Let",
     "excerpt": "Klassiske danske frikadeller med perfekt tekstur og smag. Saftige, gyldne og smagfulde - præcis som de skal være. Denne opskrift giver dig de perfekte frikadeller der smager langt bedre end fra butikken. Perfekt til hverdagen!"
+  },
+  {
+    "slug": "dobbelt-jordbaer-frappe",
+    "title": "Dobbelt Jordbær Frappé",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Friskrørt jordbær is shaket med økologisk mælk, pyntet med jordbærsauce og toppet med økologisk flødeskum. Den perfekte jordbær-frappé til jordbær-elskeren."
+  },
+  {
+    "slug": "dobbelt-kakao-frappe",
+    "title": "Dobbelt Kakao Frappé",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Friskrørt chokolade is shaket med økologisk mælk, pyntet med kakaosauce og toppet med økologisk flødeskum. Den perfekte chokolade-frappé til chokolade-elskeren."
   },
   {
     "slug": "doner-boks",
@@ -1041,6 +1231,16 @@
     "excerpt": "Nem og hurtig en gryde pasta med tomater, løg og krydderier. Alt koges sammen i én gryde - perfekt til hverdagen! Denne opskrift giver dig en lækker og smagfuld pasta ret uden besvær med opvask."
   },
   {
+    "slug": "english-breakfast-tea",
+    "title": "English Breakfast Tea",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk English Breakfast Tea med stærk og robust smag. Den perfekte morgen-te med kraftig smag og opkvikkende effekt. Denne opskrift giver dig en autentisk English Breakfast Tea oplevelse hjemme."
+  },
+  {
     "slug": "entrecote",
     "title": "Entrecote",
     "category": "Kød",
@@ -1049,6 +1249,26 @@
     "cookTime": "15 min",
     "difficulty": "Mellem",
     "excerpt": "Klassisk entrecote med saftig, mør kød og perfekt stegt skorpe. Den perfekte bøf til en særlig aften. Denne opskrift giver dig den autentiske entrecote der smager langt bedre end fra restauranten. Server med bearnaise sovs og pommes frites!"
+  },
+  {
+    "slug": "espresso",
+    "title": "Espresso",
+    "category": "Dessert",
+    "time": "2 min",
+    "prepTime": "2 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk espresso - ren og stærk kaffe. Den perfekte kaffedrik for dem der elsker stærk kaffe uden mælk. Denne opskrift giver dig en autentisk espresso oplevelse hjemme."
+  },
+  {
+    "slug": "espresso-macchiato",
+    "title": "Espresso Macchiato",
+    "category": "Dessert",
+    "time": "3 min",
+    "prepTime": "3 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk espresso macchiato med espresso og en lille klat mælkeskum. Den perfekte kaffedrik for dem der elsker stærk kaffe med en lille smule cremethed. Denne opskrift giver dig en autentisk espresso macchiato oplevelse hjemme."
   },
   {
     "slug": "fastalavensbolle",
@@ -1081,6 +1301,16 @@
     "excerpt": "Klassisk dansk hjemmelavet fedtebrød med sødt romglasur og smørrig smag. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske fedtebrød der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
+    "slug": "feel-good-a-la-joe-the-juice",
+    "title": "Feel Good a la Joe & The Juice",
+    "category": "Drikkevarer",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og sund juice a la Joe & The Juice med ingefær, citron, gurkemeje, gulerod, olivenolie, æble og is. Den perfekte juice til at booste dit immunforsvar og give dig energi. Denne opskrift giver dig den autentiske Feel Good juice der smager langt bedre end fra butikken."
+  },
+  {
     "slug": "finskbrød",
     "title": "Finskbrød",
     "category": "Bageri",
@@ -1111,16 +1341,6 @@
     "excerpt": "Saftige og sprøde hjemmelavede fiskefrikadeller med frisk dild og citron. Den klassiske danske fiskeret der smager langt bedre end fra butikken. Klar på under 35 minutter - perfekt til hverdagen!"
   },
   {
-    "slug": "flutes",
-    "title": "Flutes",
-    "category": "Hurtigt",
-    "time": "3 timer",
-    "prepTime": "30 min",
-    "cookTime": "20 min",
-    "difficulty": "Mellem",
-    "excerpt": "Sprøde og luftige hjemmelavet flutes med guldbrun skorpe og blød krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske flutes der smager langt bedre end fra bageren. Server med smør og syltetøj!"
-  },
-  {
     "slug": "flaeskesteg",
     "title": "Flæskesteg",
     "category": "Kød",
@@ -1141,6 +1361,16 @@
     "excerpt": "Klassisk dansk hjemmelavet flæskestegssandwich med sprødt svær, saftigt kød og rødkål. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske flæskestegssandwich der smager langt bedre end fra butikken. Server med brun sovs!"
   },
   {
+    "slug": "flat-white",
+    "title": "Flat White",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk flat white med dobbelt espresso og cremet mælk. Den perfekte kaffedrik med stærk kaffesmag og cremet tekstur. Denne opskrift giver dig en autentisk flat white oplevelse hjemme."
+  },
+  {
     "slug": "flodebollekage",
     "title": "Flødebollekage",
     "category": "Dessert",
@@ -1149,6 +1379,16 @@
     "cookTime": "75 min",
     "difficulty": "Mellem",
     "excerpt": "Klassisk dansk hjemmelavet flødebollekage med luftig kagebund, cremet flødeskum og flødeboller. Den perfekte kage til fødselsdage eller særlige lejligheder. Denne opskrift giver dig den autentiske flødebollekage der smager langt bedre end fra konditoriet. Server med kaffe eller te!"
+  },
+  {
+    "slug": "flødeis",
+    "title": "Flødeis",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "Ekstra cremet og rig hjemmelavet flødeis med høj flødeprocent. Den perfekte luksuriøse dessert der smager langt bedre end købt is. Denne klassiske flødeis er ekstra cremet og smagfuld med den autentiske flødeis-smag."
   },
   {
     "slug": "floedeboller",
@@ -1161,14 +1401,14 @@
     "excerpt": "Luftige og søde hjemmelavet flødeboller med meringue-kern og chokoladeovertræk. Den perfekte danske klassiker. Denne opskrift giver dig de autentiske flødeboller der smager langt bedre end købte. Perfekt til fester, gaver eller bare til dig selv!"
   },
   {
-    "slug": "flødeis",
-    "title": "Flødeis",
-    "category": "Dessert",
-    "time": "240 min",
+    "slug": "flutes",
+    "title": "Flutes",
+    "category": "Hurtigt",
+    "time": "3 timer",
     "prepTime": "30 min",
-    "cookTime": "210 min",
+    "cookTime": "20 min",
     "difficulty": "Mellem",
-    "excerpt": "Ekstra cremet og rig hjemmelavet flødeis med høj flødeprocent. Den perfekte luksuriøse dessert der smager langt bedre end købt is. Denne klassiske flødeis er ekstra cremet og smagfuld med den autentiske flødeis-smag."
+    "excerpt": "Sprøde og luftige hjemmelavet flutes med guldbrun skorpe og blød krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske flutes der smager langt bedre end fra bageren. Server med smør og syltetøj!"
   },
   {
     "slug": "forloren-hare-med-bacon",
@@ -1189,6 +1429,16 @@
     "cookTime": "10 min",
     "difficulty": "Let",
     "excerpt": "Klassisk hjemmelavet fransk toast med gyldenbrun skorpe og cremet indre. Den perfekte morgenmad eller brunch der smager langt bedre end fra restauranten. Simpel, hurtig og perfekt til hele familien!"
+  },
+  {
+    "slug": "frappe",
+    "title": "Græsk Frappe",
+    "category": "Hurtigt",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk græsk frappe med instant kaffe, sukker og mælk. Den perfekte kold kaffedrik til sommeren. Denne opskrift giver dig den klassiske græske frappe med skummende top og autentisk smag."
   },
   {
     "slug": "frikadeller",
@@ -1281,24 +1531,14 @@
     "excerpt": "Varm og krydret hjemmelavet gløg med rødvin, krydderier og appelsin. Den perfekte drik til vintermånederne og juletiden. Denne opskrift giver dig den autentiske gløg-smag der varmer hele kroppen."
   },
   {
-    "slug": "granola",
-    "title": "Granola",
-    "category": "Hurtigt",
-    "time": "45 min",
-    "prepTime": "10 min",
-    "cookTime": "35 min",
+    "slug": "gnocchi-i-svampesauce",
+    "title": "Gnocchi I Svampesauce",
+    "category": "Vegetarisk",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
     "difficulty": "Let",
-    "excerpt": "Knasende og sødt hjemmelavet granola med havregryn, nødder og tørret frugt. Perfekt til morgenmad med yoghurt eller mælk. Denne opskrift giver dig den perfekte balance mellem sødt og nøddeagtigt, og kan tilpasses med dine yndlingsingredienser."
-  },
-  {
-    "slug": "gravad-laks",
-    "title": "Gravad Laks",
-    "category": "Fisk",
-    "time": "2-3 dage",
-    "prepTime": "30 min + 2-3 dages køling",
-    "cookTime": "0 min",
-    "difficulty": "Let",
-    "excerpt": "Autentisk hjemmelavet gravad laks med dild, sukker og salt. Den klassiske nordiske ret der smager langt bedre end fra butikken. Perfekt til brunch, frokost eller som forret!"
+    "excerpt": "Cremet gnocchi i lækker svampesauce. En perfekt vegetarisk ret der er nem at lave og smager fantastisk!"
   },
   {
     "slug": "graesk-moussaka",
@@ -1319,6 +1559,56 @@
     "cookTime": "0 min",
     "difficulty": "Let",
     "excerpt": "Autentisk græsk salat med friske tomater, agurk, rødløg, oliven og cremet feta ost. Den klassiske græske ret der smager fantastisk og er perfekt til sommeren. Fuld af smag og farver - perfekt som forret, tilbehør eller hovedret!"
+  },
+  {
+    "slug": "granola",
+    "title": "Granola",
+    "category": "Hurtigt",
+    "time": "45 min",
+    "prepTime": "10 min",
+    "cookTime": "35 min",
+    "difficulty": "Let",
+    "excerpt": "Knasende og sødt hjemmelavet granola med havregryn, nødder og tørret frugt. Perfekt til morgenmad med yoghurt eller mælk. Denne opskrift giver dig den perfekte balance mellem sødt og nøddeagtigt, og kan tilpasses med dine yndlingsingredienser."
+  },
+  {
+    "slug": "gravad-laks",
+    "title": "Gravad Laks",
+    "category": "Fisk",
+    "time": "2-3 dage",
+    "prepTime": "30 min + 2-3 dages køling",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk hjemmelavet gravad laks med dild, sukker og salt. Den klassiske nordiske ret der smager langt bedre end fra butikken. Perfekt til brunch, frokost eller som forret!"
+  },
+  {
+    "slug": "green-mandarin-tea",
+    "title": "Green Mandarin Tea",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Aromatisk green mandarin tea med grøn te og appelsin-smag. Den perfekte koffeinfri te med balance mellem grøn te og frisk appelsin. Denne opskrift giver dig en autentisk green mandarin tea oplevelse hjemme."
+  },
+  {
+    "slug": "green-tuna-bowl-a-la-joe-the-juice",
+    "title": "Green Tuna Bowl a la Joe & The Juice",
+    "category": "Fisk",
+    "time": "20 min",
+    "prepTime": "15 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Forbedret sund salat bowl a la Joe & The Juice med citron, vegansk pesto, spinat, tun mousse, agurk, kale, syltet rødløg, tranebær, edamame og græskarkerner. Den perfekte salat bowl til frokost eller middag. Denne opskrift giver dig den autentiske green tuna bowl der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "green-vegan-bowl-a-la-joe-the-juice",
+    "title": "Green Vegan Bowl a la Joe & The Juice",
+    "category": "Vegetarisk",
+    "time": "20 min",
+    "prepTime": "15 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Forbedret sund salat bowl a la Joe & The Juice med avocado, citron, vegansk pesto, spinat, agurk, kale, syltet rødløg, tranebær, edamame og græskarkerner. Den perfekte veganske salat bowl til frokost eller middag. Denne opskrift giver dig den autentiske green vegan bowl der smager langt bedre end fra butikken."
   },
   {
     "slug": "groen-smoothie",
@@ -1361,16 +1651,6 @@
     "excerpt": "Cremet og smagfuld hjemmelavet guacamole med modne avocados, frisk lime og krydderier. Den perfekte dip til tacos, nachos eller bare med chips. Denne opskrift giver dig den autentiske guacamole der smager langt bedre end fra butikken."
   },
   {
-    "slug": "gulerodskage",
-    "title": "Gulerodskage",
-    "category": "Dessert",
-    "time": "75 min",
-    "prepTime": "20 min",
-    "cookTime": "55 min",
-    "difficulty": "Let",
-    "excerpt": "Klassisk hjemmelavet gulerodskage med creme cheese frosting. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig den autentiske gulerodskage der smager langt bedre end købt."
-  },
-  {
     "slug": "gulerods-tarteletter",
     "title": "Gulerøds Tarteletter",
     "category": "Vegetarisk",
@@ -1379,6 +1659,16 @@
     "cookTime": "30 min",
     "difficulty": "Mellem",
     "excerpt": "Klassiske danske hjemmelavet gulerøds tarteletter med cremet gulerødssauce, sprøde tartelet-skaller og aromatiske krydderier. Den perfekte vegetariske danske klassiker der smager langt bedre end fra butikken. Perfekt til særlige lejligheder, jul, påske eller bare en hyggelig aften med familien!"
+  },
+  {
+    "slug": "gulerodskage",
+    "title": "Gulerodskage",
+    "category": "Dessert",
+    "time": "75 min",
+    "prepTime": "20 min",
+    "cookTime": "55 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk hjemmelavet gulerodskage med creme cheese frosting. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig den autentiske gulerodskage der smager langt bedre end købt."
   },
   {
     "slug": "gunkan",
@@ -1401,6 +1691,16 @@
     "excerpt": "Autentisk hjemmelavet gyros med krydret kød, frisk salat og cremet tzatziki. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske gyros der smager langt bedre end fra biks. Server med pita brød og pommes frites!"
   },
   {
+    "slug": "haakonskager",
+    "title": "Håkonskager",
+    "category": "Dessert",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "12 min",
+    "difficulty": "Let",
+    "excerpt": "Klassiske hjemmelavet håkonskager med smørrig smag, sprød tekstur og nøddeagtig smag. Den perfekte dansk-norske kage til kaffen eller som dessert. Denne opskrift giver dig de autentiske håkonskager der smager langt bedre end fra butikken. Server med kaffe eller te!"
+  },
+  {
     "slug": "hakkebof",
     "title": "Hakkebøf",
     "category": "Kød",
@@ -1419,6 +1719,16 @@
     "cookTime": "20 min",
     "difficulty": "Let",
     "excerpt": "Nem og smagfuld hjemmelavet hakket oksekød med saftigt kød, aromatiske krydderier og perfekt tekstur. Den perfekte hverdagsret der smager langt bedre end fra butikken. Denne klassiske opskrift på hakket oksekød er nem at lave, mættende og perfekt til hele familien!"
+  },
+  {
+    "slug": "halloumi-hotdog",
+    "title": "Halloumi-Hotdog",
+    "category": "Vegetarisk",
+    "time": "20 min",
+    "prepTime": "10 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Sprød halloumi i hotdogbrød med lækre toppings. En perfekt vegetarisk hotdog der smager fantastisk!"
   },
   {
     "slug": "hamburger",
@@ -1441,16 +1751,6 @@
     "excerpt": "Saftig og sprød hjemmelavet hamburgerryg i ovn med gyldenbrun skorpe og perfekt krydret smag. Den perfekte hovedret til hverdagen eller weekenden. Denne opskrift giver dig den autentiske ovnbagte hamburgerryg der smager langt bedre end fra butikken. Server med kartofler, ris eller grøntsager!"
   },
   {
-    "slug": "hasselnoeddetroefler",
-    "title": "Hasselnødde Trøfler",
-    "category": "Dessert",
-    "time": "60 min",
-    "prepTime": "30 min",
-    "cookTime": "30 min",
-    "difficulty": "Let",
-    "excerpt": "Rige og cremede hjemmelavet hasselnødde trøfler med mørk chokolade og ristede hasselnødder. Den perfekte dessert eller snack. Denne opskrift giver dig de lækreste hasselnødde trøfler der smager langt bedre end købte. Perfekt til gaver eller særlige lejligheder!"
-  },
-  {
     "slug": "hasselnøddesmåkager",
     "title": "Hasselnøddesmåkager",
     "category": "Dessert",
@@ -1459,6 +1759,16 @@
     "cookTime": "12 min",
     "difficulty": "Let",
     "excerpt": "Klassiske hjemmelavet hasselnøddesmåkager med rig hasselnøddesmag og sprød tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig de autentiske hasselnøddesmåkager der smager langt bedre end fra butikken. Server med kaffe eller te!"
+  },
+  {
+    "slug": "hasselnoeddetroefler",
+    "title": "Hasselnødde Trøfler",
+    "category": "Dessert",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Rige og cremede hjemmelavet hasselnødde trøfler med mørk chokolade og ristede hasselnødder. Den perfekte dessert eller snack. Denne opskrift giver dig de lækreste hasselnødde trøfler der smager langt bedre end købte. Perfekt til gaver eller særlige lejligheder!"
   },
   {
     "slug": "havrabarbar",
@@ -1541,6 +1851,16 @@
     "excerpt": "Hurtige og nemme frikadeller klar på kun 25 minutter! Perfekt når du har travlt. Disse saftige frikadeller smager fantastisk uden lang hviletid. Server med kartofler og brun sovs!"
   },
   {
+    "slug": "hvidkaalssuppe",
+    "title": "Hvidkålssuppe",
+    "category": "Grøntsager",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Kremet og smagfuld hvidkålssuppe. En lækker og nærende suppe der er perfekt til hverdagen."
+  },
+  {
     "slug": "hytte-alamande",
     "title": "Hytte-alamande",
     "category": "Dessert",
@@ -1551,14 +1871,44 @@
     "excerpt": "Lækker og lettere hjemmelavet hytte-alamande med cremet hytteost, flødeskum, vanilje og hele mandler. Den perfekte proteinrige variation af risalamande der smager fantastisk. Nem, hurtig og perfekt til hele familien!"
   },
   {
-    "slug": "haakonskager",
-    "title": "Håkonskager",
+    "slug": "iced-americano",
+    "title": "Iced Americano",
     "category": "Dessert",
-    "time": "60 min",
-    "prepTime": "30 min",
-    "cookTime": "12 min",
+    "time": "3 min",
+    "prepTime": "3 min",
+    "cookTime": "0 min",
     "difficulty": "Let",
-    "excerpt": "Klassiske hjemmelavet håkonskager med smørrig smag, sprød tekstur og nøddeagtig smag. Den perfekte dansk-norske kage til kaffen eller som dessert. Denne opskrift giver dig de autentiske håkonskager der smager langt bedre end fra butikken. Server med kaffe eller te!"
+    "excerpt": "Kold og forfriskende iced americano med espresso og is. Den perfekte kaffedrik til varme dage med stærk kaffesmag. Denne opskrift giver dig en autentisk iced americano oplevelse hjemme."
+  },
+  {
+    "slug": "iced-latte",
+    "title": "Iced Latte",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Kold og forfriskende iced latte med espresso, mælk og is. Den perfekte kaffedrik til varme dage med balance mellem stærk espresso og cremet mælk. Denne opskrift giver dig en autentisk iced latte oplevelse hjemme."
+  },
+  {
+    "slug": "iced-matcha-oat-latte",
+    "title": "Iced Matcha Oat Latte",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Kold og forfriskende iced matcha oat latte med matcha pulver, havremælk og is. Den perfekte koffeinfri drik til varme dage med balance mellem jordnødde-smag fra matcha og cremet havremælk. Denne opskrift giver dig en autentisk iced matcha latte oplevelse hjemme."
+  },
+  {
+    "slug": "iced-vanilla-matcha-oat-latte",
+    "title": "Iced Vanilla Matcha Oat Latte",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Kold og forfriskende iced vanilla matcha oat latte med matcha pulver, havremælk, vanilje sirup og is. Den perfekte koffeinfri drik til varme dage med balance mellem jordnødde-smag fra matcha, cremet havremælk og sød vanilje. Denne opskrift giver dig en autentisk iced vanilla matcha latte oplevelse hjemme."
   },
   {
     "slug": "inarizushi",
@@ -1571,6 +1921,16 @@
     "excerpt": "Autentisk hjemmelavet inarizushi - små, søde og syrlige lommer lavet af friturestegt tofu (aburaage), fyldt med sushiris. Den klassiske japanske vegetariske sushi der smager langt bedre end fra restauranten. Perfekt til en særlig aften!"
   },
   {
+    "slug": "indisk-dhal-med-raita",
+    "title": "Indisk Dhal Med Raita",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk indisk dhal med rød linser og cremet raita. En lækker og nærende vegetarisk ret der er fyldt med smag."
+  },
+  {
     "slug": "is",
     "title": "Is",
     "category": "Dessert",
@@ -1581,6 +1941,56 @@
     "excerpt": "Cremet og lækker hjemmelavet is med kun få ingredienser. Den perfekte dessert til enhver lejlighed. Denne opskrift giver dig den cremede tekstur og rene smag der er langt bedre end købt is. Tilpas med dine yndlingssmage!"
   },
   {
+    "slug": "iskaffe",
+    "title": "Iskaffe",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Espresso afkølet på isterninger, shaket på økologisk mælk og toppet med frisklavet vanilje is. Den perfekte iskaffe til kaffe-elskeren."
+  },
+  {
+    "slug": "italiensk-pastasalat-med-tomat-burrata-og-pestodressing",
+    "title": "Italiensk Pastasalat Med Tomat, Burrata Og Pestodressing",
+    "category": "Vegetarisk",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk italiensk pastasalat med cherrytomater, cremet burrata og lækker pestodressing. En perfekt sommerret!"
+  },
+  {
+    "slug": "joedekager",
+    "title": "Jødekager",
+    "category": "Dessert",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "12 min",
+    "difficulty": "Let",
+    "excerpt": "Klassiske danske hjemmelavet jødekager med smørrig smag, sprød tekstur og let krydret smag. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske jødekage der smager langt bedre end fra butikken. Server med kaffe eller te!"
+  },
+  {
+    "slug": "joes-club-a-la-joe-the-juice",
+    "title": "JOEs Club a la Joe & The Juice",
+    "category": "Kød",
+    "time": "15 min",
+    "prepTime": "10 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Populær sandwich a la Joe & The Juice med avocado, kylling, vegansk pesto og tomat. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske club sandwich der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "joes-overnight-oats-a-la-joe-the-juice",
+    "title": "JOE's Overnight Oats a la Joe & The Juice",
+    "category": "Morgenmad",
+    "time": "10 min + nat",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Nærende overnight oats a la Joe & The Juice med banan, bærkompot, blåbær og overnight oats. Den perfekte morgenmad der er klar når du vågner. Denne opskrift giver dig den autentiske overnight oats der smager langt bedre end fra butikken."
+  },
+  {
     "slug": "jomfruhummer",
     "title": "Jomfruhummer",
     "category": "Fisk",
@@ -1589,16 +1999,6 @@
     "cookTime": "15 min",
     "difficulty": "Mellem",
     "excerpt": "Lækker hjemmelavet jomfruhummer med smør, hvidløg og citron. Den perfekte luksuriøse fiskeret der smager langt bedre end fra restauranten. Perfekt til en særlig aften!"
-  },
-  {
-    "slug": "jordbaer-milkshake",
-    "title": "Jordbær Milkshake",
-    "category": "Dessert",
-    "time": "5 min",
-    "prepTime": "5 min",
-    "cookTime": "0 min",
-    "difficulty": "Let",
-    "excerpt": "Frisk og sød jordbær milkshake med jordbæris og friske jordbær. Perfekt til sommeren eller når du har lyst til noget frisk. Denne opskrift giver dig en cremet og bæragtig milkshake med autentisk jordbærsmag."
   },
   {
     "slug": "jordbaer-banan-smoothie",
@@ -1629,6 +2029,36 @@
     "cookTime": "0 min",
     "difficulty": "Let",
     "excerpt": "Sød og cremet vegansk jordbær-banan smoothie med plantebaseret yoghurt. Den perfekte morgenmad eller snack med klassisk frugtsmag. Denne opskrift giver dig en lækker og mættende smoothie der er klar på under 5 minutter - helt uden animalske produkter."
+  },
+  {
+    "slug": "jordbaer-icesmoothie",
+    "title": "Jordbær Icesmoothie",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Friskrørt vanilje og jordbær is shaket med økologisk mælk. En cremet og sød smoothie med perfekt balance mellem vanilje og jordbær."
+  },
+  {
+    "slug": "jordbaer-milkshake",
+    "title": "Jordbær Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og sød jordbær milkshake med jordbæris og friske jordbær. Perfekt til sommeren eller når du har lyst til noget frisk. Denne opskrift giver dig en cremet og bæragtig milkshake med autentisk jordbærsmag."
+  },
+  {
+    "slug": "jordbaer-vanilje-milkshake",
+    "title": "Jordbær/Vanilje Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Friskrørt jordbær og vanilje is, shaket med økologisk mælk. Den perfekte kombination af sød jordbær og cremet vanilje."
   },
   {
     "slug": "jordbaeris",
@@ -1711,14 +2141,24 @@
     "excerpt": "Klassiske danske julesmåkager med varme krydderier, smørrig smag og sprød tekstur. Den perfekte julekage der smager langt bedre end fra butikken. Disse traditionelle julekager er en dansk klassiker og perfekt til kaffen eller som snack. Nem at lave og perfekt til hele familien!"
   },
   {
-    "slug": "joedekager",
-    "title": "Jødekager",
-    "category": "Dessert",
-    "time": "60 min",
-    "prepTime": "30 min",
-    "cookTime": "12 min",
+    "slug": "kaalpande-med-spidskaal-og-oksekoed",
+    "title": "Kålpande Med Spidskål Og Oksekød",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
     "difficulty": "Let",
-    "excerpt": "Klassiske danske hjemmelavet jødekager med smørrig smag, sprød tekstur og let krydret smag. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske jødekage der smager langt bedre end fra butikken. Server med kaffe eller te!"
+    "excerpt": "Krydret kålpande med spidskål og oksekød. En lækker og mættende ret der er nem at lave og perfekt til hverdagen."
+  },
+  {
+    "slug": "kaalwok-med-kylling",
+    "title": "Kålwok Med Kylling",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Krydret kålwok med saftig kylling. En lækker og mættende ret der er nem at lave og perfekt til hverdagen."
   },
   {
     "slug": "kaburimaki",
@@ -1861,6 +2301,16 @@
     "excerpt": "Autentisk hjemmelavet kebab med krydret kød, frisk salat og lækker dressing. Denne opskrift giver dig den perfekte smag og tekstur. Perfekt til en hyggelig aften."
   },
   {
+    "slug": "keto-bof",
+    "title": "Keto Bøf",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og smagfuld hjemmelavet keto bøf med perfekt stegt oksekød, cremet smør-sauce og friske grøntsager. Perfekt til low carb og keto diæt. Denne opskrift giver dig en lækker og mættende ret med minimalt kulhydratindhold. Perfekt til hverdagen eller særlige lejligheder!"
+  },
+  {
     "slug": "keto-boller-i-karry",
     "title": "Keto Boller i Karry",
     "category": "Kød",
@@ -1889,16 +2339,6 @@
     "cookTime": "45 min",
     "difficulty": "Let",
     "excerpt": "Luftigt og lækkert hjemmelavet keto brød med mandelmel og kokosmel. Perfekt til low carb og keto diæt. Dette brød er lavet uden hvedemel og har kun få kulhydrater, men smager fantastisk. Perfekt til morgenmad, frokost eller som tilbehør."
-  },
-  {
-    "slug": "keto-bof",
-    "title": "Keto Bøf",
-    "category": "Kød",
-    "time": "35 min",
-    "prepTime": "10 min",
-    "cookTime": "25 min",
-    "difficulty": "Let",
-    "excerpt": "Saftig og smagfuld hjemmelavet keto bøf med perfekt stegt oksekød, cremet smør-sauce og friske grøntsager. Perfekt til low carb og keto diæt. Denne opskrift giver dig en lækker og mættende ret med minimalt kulhydratindhold. Perfekt til hverdagen eller særlige lejligheder!"
   },
   {
     "slug": "keto-carbonara",
@@ -2001,6 +2441,26 @@
     "excerpt": "Lækker hjemmelavet ketokage med mandelmel, kokosmel og sukkerfri sødemiddel. Perfekt til low carb og keto diæt. Denne opskrift giver dig en saftig og smagfuld kage med minimalt kulhydratindhold, men masser af smag. Perfekt til kaffe eller dessert!"
   },
   {
+    "slug": "kikaertevafler-med-bagte-tomater-og-burrata",
+    "title": "Kikærtevafler Med Bagte Tomater Og Burrata",
+    "category": "Vegetarisk",
+    "time": "40 min",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækre kikærtevafler med bagte tomater og cremet burrata. En perfekt vegetarisk ret der er både nærende og smagfuld!"
+  },
+  {
+    "slug": "kinesisk-kung-pao-med-kylling",
+    "title": "Kinesisk Kung Pao Med Kylling",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk kinesisk kung pao med kylling, peanuts og chili. En lækker og krydret ret der er perfekt til hverdagen."
+  },
+  {
     "slug": "kirsebærsauce",
     "title": "Kirsebærsauce",
     "category": "Dessert",
@@ -2059,6 +2519,37 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Sprødt og knasende hjemmelavet knækbrød med hørfrø og græskarkerner. Perfekt til ost, pålæg eller bare som snack. Disse knækbrød er rig på omega-3 og proteiner og smager fantastisk!"
+  },
+  {
+    "slug": "kobenhavner-pandekager",
+    "title": "Københavner Pandekager",
+    "category": "Hurtigt",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Luftige og tykke hjemmelavet københavner pandekager med buttermælk og bagepulver. Den klassiske københavnske specialitet der smager langt bedre end fra caféen. Perfekte til morgenmad, brunch eller dessert. Server med syltetøj, sukker og citron!"
+  },
+  {
+    "slug": "kodsovs",
+    "title": "Kødsovs",
+    "type": "sovs",
+    "category": "Sovs",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk hjemmelavet kødsovs med saftigt hakket kød, røde tomater og krydderier. Den perfekte sovs til pasta, kartofler eller ris. Simpel at lave, men smager fantastisk."
+  },
+  {
+    "slug": "koedboller-i-svampesauce",
+    "title": "Kødboller I Svampesauce",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Mellem",
+    "excerpt": "Saftige kødboller i cremet svampesauce. En klassisk og smagfuld ret der er perfekt til hverdagen."
   },
   {
     "slug": "koldskal",
@@ -2129,6 +2620,26 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Nem og smagfuld hjemmelavet glutenfri kylling curry med krydret kylling, cremet sauce og aromatiske krydderier. Den perfekte hverdagsret der smager langt bedre end takeaway. Hurtig, nem og perfekt til hele familien - helt uden gluten!"
+  },
+  {
+    "slug": "kylling-i-cremet-sennepssauce",
+    "title": "Kylling I Cremet Sennepssauce",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig kylling i en cremet sennepssauce. En klassisk og smagfuld ret der er nem at lave og perfekt til hverdagen."
+  },
+  {
+    "slug": "kylling-i-fad-med-kokosmaelk-og-karry",
+    "title": "Kylling I Fad Med Kokosmælk Og Karry",
+    "category": "Kød",
+    "time": "50 min",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Krydret kylling i fad med kokosmælk og karry. En lækker og aromatisk ret der er perfekt til hverdagen."
   },
   {
     "slug": "kylling-i-karry",
@@ -2251,6 +2762,16 @@
     "excerpt": "Juicy og sprød hjemmelavet kyllingburger med saftig kylling, frisk salat og cremet dressing. Den perfekte burger til hverdagen. Denne opskrift giver dig den autentiske kyllingburger der smager langt bedre end fra fastfood. Server med pommes frites!"
   },
   {
+    "slug": "kyllinge-nuggets",
+    "title": "Kyllinge Nuggets",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Sprøde hjemmelavede kyllinge nuggets. Meget bedre end fra butikken og nemme at lave!"
+  },
+  {
     "slug": "kyllingfilet",
     "title": "Kyllingfilet",
     "category": "Kød",
@@ -2259,27 +2780,6 @@
     "cookTime": "20 min",
     "difficulty": "Let",
     "excerpt": "Saftig og mør hjemmelavet kyllingfilet med gyldenbrun skorpe og perfekt krydret smag. Den perfekte hovedret til hverdagen. Denne opskrift giver dig den autentiske kyllingfilet der smager langt bedre end fra butikken. Server med kartofler, ris eller grøntsager!"
-  },
-  {
-    "slug": "kobenhavner-pandekager",
-    "title": "Københavner Pandekager",
-    "category": "Hurtigt",
-    "time": "35 min",
-    "prepTime": "15 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Luftige og tykke hjemmelavet københavner pandekager med buttermælk og bagepulver. Den klassiske københavnske specialitet der smager langt bedre end fra caféen. Perfekte til morgenmad, brunch eller dessert. Server med syltetøj, sukker og citron!"
-  },
-  {
-    "slug": "kodsovs",
-    "title": "Kødsovs",
-    "type": "sovs",
-    "category": "Sovs",
-    "time": "120 min",
-    "prepTime": "30 min",
-    "cookTime": "90 min",
-    "difficulty": "Mellem",
-    "excerpt": "Klassisk hjemmelavet kødsovs med saftigt hakket kød, røde tomater og krydderier. Den perfekte sovs til pasta, kartofler eller ris. Simpel at lave, men smager fantastisk."
   },
   {
     "slug": "lagkage",
@@ -2372,16 +2872,6 @@
     "excerpt": "Rig og sødt laktosefri karamel milkshake med laktosefri karamelis og laktosefri mælk. Den perfekte dessert til karamel-elskeren med laktoseintolerans. Denne opskrift giver dig en tyk og cremet milkshake med autentisk karamelsmag uden laktose."
   },
   {
-    "slug": "laktosefri-oreo-milkshake",
-    "title": "Laktosefri Oreo Milkshake",
-    "category": "Dessert",
-    "time": "5 min",
-    "prepTime": "5 min",
-    "cookTime": "0 min",
-    "difficulty": "Let",
-    "excerpt": "Knasende og cremet laktosefri Oreo milkshake med laktosefri vaniljeis og knuste Oreo-kiks. Den perfekte dessert til cookie-elskeren med laktoseintolerans. Denne opskrift giver dig en tyk og knasende milkshake med autentisk Oreo-smag uden laktose."
-  },
-  {
     "slug": "laktosefri-milkshake",
     "title": "Laktosefri Vanilje Milkshake",
     "category": "Dessert",
@@ -2390,6 +2880,16 @@
     "cookTime": "0 min",
     "difficulty": "Let",
     "excerpt": "Klassisk cremet laktosefri vanilje milkshake med laktosefri vaniljeis og laktosefri mælk. Den perfekte dessert eller snack for dem med laktoseintolerans. Denne opskrift giver dig en tyk og cremet milkshake med autentisk vaniljesmag uden laktose."
+  },
+  {
+    "slug": "laktosefri-oreo-milkshake",
+    "title": "Laktosefri Oreo Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Knasende og cremet laktosefri Oreo milkshake med laktosefri vaniljeis og knuste Oreo-kiks. Den perfekte dessert til cookie-elskeren med laktoseintolerans. Denne opskrift giver dig en tyk og knasende milkshake med autentisk Oreo-smag uden laktose."
   },
   {
     "slug": "lasagne",
@@ -2412,6 +2912,26 @@
     "excerpt": "Nem og hurtig lasagnette - en mindre version af klassisk lasagne. Perfekt til hverdagen når du har brug for noget lækkert og mættende!"
   },
   {
+    "slug": "latte-12oz",
+    "title": "Latte 12oz",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "POPULAR - Klassisk cremet latte med espresso og mælk. Den perfekte kaffedrik med balance mellem stærk espresso og cremet mælk. Denne opskrift giver dig en autentisk café-latte oplevelse hjemme."
+  },
+  {
+    "slug": "latte-16oz",
+    "title": "Latte 16oz",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk cremet latte med espresso og mælk. Den perfekte kaffedrik med balance mellem stærk espresso og cremet mælk. Denne opskrift giver dig en autentisk café-latte oplevelse hjemme."
+  },
+  {
     "slug": "linsesuppe",
     "title": "Linsesuppe",
     "category": "Vegetarisk",
@@ -2420,6 +2940,16 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Nærende og mættende hjemmelavet linsesuppe med grøntsager og aromatiske krydderier. Den perfekte budgetvenlige ret der er både sund og lækker. Fuld af protein, fiber og smag - perfekt til hele familien!"
+  },
+  {
+    "slug": "loegtaerte",
+    "title": "Løgtærte",
+    "category": "Vegetarisk",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk fransk løgtærte med bløde løg og cremet fyld. En lækker og elegant ret der er perfekt til både frokost og aftensmad."
   },
   {
     "slug": "luciaboller",
@@ -2482,6 +3012,16 @@
     "excerpt": "Cremet og smagfuld kylling i en lækker sauce med soltørrede tomater, parmesan og krydderurter. Denne opskrift har fået sit navn fordi den er så god, at den kunne få nogen til at fri! Perfekt til en romantisk aften eller når du vil imponere."
   },
   {
+    "slug": "matcha-oat-latte",
+    "title": "Matcha Oat Latte",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet matcha oat latte med matcha pulver og havremælk. Den perfekte koffeinfri drik med balance mellem jordnødde-smag fra matcha og cremet havremælk. Denne opskrift giver dig en autentisk matcha latte oplevelse hjemme."
+  },
+  {
     "slug": "mayo",
     "title": "Mayo",
     "category": "Hurtigt",
@@ -2500,6 +3040,46 @@
     "cookTime": "35 min",
     "difficulty": "Let",
     "excerpt": "Autentisk hjemmelavet mexicansk suppe med saftigt oksekød, bønner, tomater og aromatiske krydderier. Den perfekte komfortmad der smager fantastisk og er nem at lave. Perfekt til hele familien!"
+  },
+  {
+    "slug": "middelhavskylling-i-fad",
+    "title": "Middelhavskylling I Fad",
+    "category": "Kød",
+    "time": "50 min",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Aromatisk middelhavskylling i fad med tomater, oliven og feta. En lækker og smagfuld ret der er perfekt til hverdagen."
+  },
+  {
+    "slug": "milkshake",
+    "title": "Vanilje Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk cremet vanilje milkshake med vaniljeis og mælk. Den perfekte dessert eller snack der smager som fra din yndlingsrestaurant. Denne opskrift giver dig en tyk og cremet milkshake med autentisk vaniljesmag."
+  },
+  {
+    "slug": "milkshake-laktosefri",
+    "title": "Vanilje Milkshake (Laktosefri)",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk cremet laktosefri vanilje milkshake med laktosefri vaniljeis og laktosefri mælk. Den perfekte dessert eller snack der smager som fra din yndlingsrestaurant - helt uden laktose."
+  },
+  {
+    "slug": "milkshake-vegan",
+    "title": "Vanilje Milkshake (Vegansk)",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk cremet vegansk vanilje milkshake med vegansk vaniljeis og plantemælk. Den perfekte dessert eller snack der smager som fra din yndlingsrestaurant. Denne opskrift giver dig en tyk og cremet milkshake med autentisk vaniljesmag - helt uden animalske produkter."
   },
   {
     "slug": "millionlinser",
@@ -2532,6 +3112,16 @@
     "excerpt": "Klassiske hjemmelavet mozartkugler med marcipan, nougat og mørk chokolade. Den perfekte dessert til særlige lejligheder. Denne opskrift giver dig de autentiske mozartkugler der smager langt bedre end købt."
   },
   {
+    "slug": "naan-brod",
+    "title": "Naan Brød",
+    "category": "Hurtigt",
+    "time": "2 timer",
+    "prepTime": "20 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Blødt og smagfuldt hjemmelavet naan brød med hvidløg og smør. Den perfekte brød til indisk mad eller som snack. Denne opskrift giver dig den autentiske naan der smager langt bedre end fra restauranten. Server med curry, dip eller smør!"
+  },
+  {
     "slug": "nachos",
     "title": "Nachos",
     "category": "Hurtigt",
@@ -2540,6 +3130,16 @@
     "cookTime": "15 min",
     "difficulty": "Let",
     "excerpt": "Lækre hjemmelavet nachos med smeltet ost, jalapeños, salsa og cremet guacamole. Den perfekte snack eller forret til en hyggelig aften. Denne opskrift giver dig den autentiske nachos-oplevelse med alle de klassiske toppings."
+  },
+  {
+    "slug": "nachosfad-med-stegte-boenner",
+    "title": "Nachosfad Med Stegte Bønner",
+    "category": "Vegetarisk",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Krydret nachosfad med stegte bønner, ost og lækre toppings. En perfekt vegetarisk ret der er nem at lave og smager fantastisk!"
   },
   {
     "slug": "nem-butter-chicken",
@@ -2552,16 +3152,6 @@
     "excerpt": "Autentisk hjemmelavet butter chicken (murgh makhani) med mør kylling, cremet tomat-sauce og rig smør. Den perfekte indiske klassiker der smager langt bedre end fra takeaway. Perfekt til en hyggelig aften!"
   },
   {
-    "slug": "nem-kylling-med-ris",
-    "title": "Nem Kylling med Ris",
-    "category": "Kød",
-    "time": "35 min",
-    "prepTime": "10 min",
-    "cookTime": "25 min",
-    "difficulty": "Let",
-    "excerpt": "Nem og hurtig hjemmelavet kylling med ris opskrift - perfekt til hverdagen! Saftig kylling, fluffet ris og lækker sovs på under 35 minutter. Denne nemme opskrift smager langt bedre end takeaway og er perfekt til hele familien. Simpel, hurtig og lækker!"
-  },
-  {
     "slug": "nem-koedsauce-med-groentsager",
     "title": "Nem Kødsauce Med Grøntsager",
     "category": "Kød",
@@ -2570,6 +3160,16 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Nem og hurtig kødsauce med friske grøntsager. Perfekt til pasta, ris eller kartofler. Klar på under 45 minutter og smager fantastisk!"
+  },
+  {
+    "slug": "nem-kylling-med-ris",
+    "title": "Nem Kylling med Ris",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og hurtig hjemmelavet kylling med ris opskrift - perfekt til hverdagen! Saftig kylling, fluffet ris og lækker sovs på under 35 minutter. Denne nemme opskrift smager langt bedre end takeaway og er perfekt til hele familien. Simpel, hurtig og lækker!"
   },
   {
     "slug": "nem-pastaret-i-cremet-svampesauce",
@@ -2622,6 +3222,16 @@
     "excerpt": "Klassiske danske hjemmelavet nougatsnitter med smørrig kagedej og cremet nougatfyld. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske nougatsnitter der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
+    "slug": "nudelsalat-med-peanutbutterdressing",
+    "title": "Nudelsalat Med Peanutbutterdressing",
+    "category": "Vegetarisk",
+    "time": "25 min",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk nudelsalat med cremet peanutbutterdressing. En lækker og nærende salat der er perfekt til både frokost og aftensmad."
+  },
+  {
     "slug": "nudelsuppe-med-kylling-og-groent",
     "title": "Nudelsuppe Med Kylling Og Grønt",
     "category": "Kød",
@@ -2652,14 +3262,14 @@
     "excerpt": "Cremet og smagfuld hjemmelavet nutella med hasselnødder og chokolade. Den perfekte pålæg eller ingrediens til kager. Denne opskrift giver dig den autentiske nutella der smager langt bedre end fra butikken. Server på brød, pandekager eller i kager!"
   },
   {
-    "slug": "naan-brod",
-    "title": "Naan Brød",
-    "category": "Hurtigt",
-    "time": "2 timer",
-    "prepTime": "20 min",
-    "cookTime": "10 min",
-    "difficulty": "Let",
-    "excerpt": "Blødt og smagfuldt hjemmelavet naan brød med hvidløg og smør. Den perfekte brød til indisk mad eller som snack. Denne opskrift giver dig den autentiske naan der smager langt bedre end fra restauranten. Server med curry, dip eller smør!"
+    "slug": "ol",
+    "title": "Øl",
+    "category": "Dessert",
+    "time": "4 timer + 2-4 uger gæring",
+    "prepTime": "30 min",
+    "cookTime": "3 timer 30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet øl med malt, humle og gær. Den perfekte bryggeoplevelse der giver dig din egen unikke øl. Denne opskrift giver dig en klassisk pilsner-stil øl med balanceret smag og perfekt kulsyre. Tålmodighed belønnes med en fantastisk hjemmebrygget øl!"
   },
   {
     "slug": "omelet",
@@ -2670,6 +3280,36 @@
     "cookTime": "10 min",
     "difficulty": "Let",
     "excerpt": "Perfekt hjemmelavet omelet med gyldenbrun skorpe og cremet fyld. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske omelet der smager langt bedre end fra restauranten. Server med fyld, brød eller salat!"
+  },
+  {
+    "slug": "one-pot-pasta",
+    "title": "One Pot Pasta",
+    "category": "Pasta",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og hurtig one pot pasta. Alt laves i én gryde - perfekt til hverdagen når du har brug for noget hurtigt og lækkert!"
+  },
+  {
+    "slug": "one-pot-tortellini-suppe",
+    "title": "One Pot Tortellini Suppe",
+    "category": "Pasta",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og hurtig one pot tortellini suppe. Alt laves i én gryde - perfekt til hverdagen når du har brug for noget hurtigt og lækkert!"
+  },
+  {
+    "slug": "one-pot-vegetar-pasta-med-tomatfloedessauce",
+    "title": "One Pot Vegetar Pasta Med Tomatflødesauce",
+    "category": "Vegetarisk",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og hurtig one pot vegetar pasta med cremet tomatflødesauce. Alt laves i én gryde - perfekt til hverdagen!"
   },
   {
     "slug": "orange-chokoladesnit",
@@ -2692,6 +3332,16 @@
     "excerpt": "Klassiske hjemmelavet orangestænger med frisk appelsinsmag og sprød tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske orangestænger der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
+    "slug": "oreo-frappe",
+    "title": "Oreo Frappé",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Friskrørt is med Oreo, shaket med økologisk mælk og pyntet med kakaosauce og toppet med økologisk flødeskum. Den perfekte Oreo-frappé til kage-elskeren."
+  },
+  {
     "slug": "oreo-milkshake",
     "title": "Oreo Milkshake",
     "category": "Dessert",
@@ -2700,6 +3350,16 @@
     "cookTime": "0 min",
     "difficulty": "Let",
     "excerpt": "Knasende og cremet Oreo milkshake med vaniljeis og knuste Oreo-kiks. Den perfekte dessert til cookie-elskeren. Denne opskrift giver dig en tyk og knasende milkshake med autentisk Oreo-smag."
+  },
+  {
+    "slug": "original-burger-all-the-way",
+    "title": "A LA ORIGINAL BURGER ALL THE WAY",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "100% økologisk oksekød, friskhakket dagligt. Frisk og sprød salat, en skive tomat, frisk rødløg og økologiske pickles. Afsluttet med vores egen lækre Gasoline Grill Sauce. Tilføj ost! FRA GASOLINE GRILL"
   },
   {
     "slug": "orzo-med-citron-laks",
@@ -2752,6 +3412,16 @@
     "excerpt": "Autentisk thailandsk pad thai med risnudler, æg, kylling og friske grøntsager. Den perfekte ret med sød-syrlig smag. Denne opskrift giver dig den autentiske pad thai der smager langt bedre end fra takeaway."
   },
   {
+    "slug": "pålægchokolade",
+    "title": "Pålægchokolade",
+    "category": "Dessert",
+    "time": "20 min",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet og smagfuld hjemmelavet pålægchokolade med mørk chokolade og sukker. Den perfekte danske klassiker til brød, pandekager eller vafler. Denne opskrift giver dig den autentiske pålægchokolade der smager langt bedre end fra butikken. Server på brød, pandekager eller vafler!"
+  },
+  {
     "slug": "panang-karry",
     "title": "Panang Karry",
     "category": "Kød",
@@ -2770,6 +3440,16 @@
     "cookTime": "15 min",
     "difficulty": "Let",
     "excerpt": "Simpel og klassisk hjemmelavet pandekage med blød tekstur og gylden farve. Den perfekte hurtige morgenmad eller dessert. Nem at lave og smager fantastisk med syltetøj, sukker og citron!"
+  },
+  {
+    "slug": "pandekager",
+    "title": "Danske Pandekager",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Bløde og gyldne hjemmelavet pandekager med den perfekte tekstur. Perfekte til morgenmad, brunch eller dessert. Denne opskrift giver dig de klassiske danske pandekager der smager langt bedre end købte. Server med syltetøj, sukker og citron!"
   },
   {
     "slug": "pandepage",
@@ -2882,6 +3562,26 @@
     "excerpt": "Autentisk italiensk hjemmelavet pasta carbonara med sprød bacon, cremet æggecreme og parmesan. Den perfekte klassiske italienske opskrift der smager langt bedre end fra restauranten. Nem, hurtig og perfekt til hverdagen!"
   },
   {
+    "slug": "pasta-e-fagioli",
+    "title": "Pasta E Fagioli",
+    "category": "Vegetarisk",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk italiensk pasta e fagioli (pasta og bønner). En lækker og mættende suppe der er perfekt til hverdagen."
+  },
+  {
+    "slug": "pasta-med-laks-og-spinat",
+    "title": "Pasta Med Laks Og Spinat",
+    "category": "Fisk",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og hurtig pasta med laks og spinat. En lækker og nærende ret der er klar på under 25 minutter!"
+  },
+  {
     "slug": "pasta-pesto",
     "title": "Pasta Pesto",
     "category": "Pasta",
@@ -2930,6 +3630,16 @@
     "cookTime": "12 min",
     "difficulty": "Let",
     "excerpt": "Klassiske danske pebernødder med varm kanel, ingefær og peber. Den perfekte julekage der smager langt bedre end fra butikken. Disse små, sprøde kager er en dansk juleklassiker og perfekt til kaffen eller som snack. Nem at lave og perfekt til hele familien!"
+  },
+  {
+    "slug": "phat-joe-a-la-joe-the-juice",
+    "title": "PHAT JOE a la Joe & The Juice",
+    "category": "Kød",
+    "time": "20 min",
+    "prepTime": "15 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Premium sandwich a la Joe & The Juice med avocado, kylling, kalkun, tomat, rucola, Grana Padano og honning sennep dressing. Den perfekte luksuriøse sandwich til frokost eller middag. Denne opskrift giver dig den autentiske premium sandwich der smager langt bedre end fra butikken."
   },
   {
     "slug": "pho-nudelsuppe-med-med-oksekoed",
@@ -3022,6 +3732,16 @@
     "excerpt": "Cremet og smagfuld hjemmelavet plantebaseret lasagne med linser, champignoner, bechamel og ost. Den perfekte vegetariske klassiker der smager lige så godt som originalen. Perfekt til en hyggelig aften!"
   },
   {
+    "slug": "polsehorn",
+    "title": "Pølsehorn",
+    "category": "Hurtigt",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Sprøde og smagfulde hjemmelavet pølsehorn med saftig pølse og blød dej. Den perfekte snack eller forret. Denne opskrift giver dig den autentiske pølsehorn der smager langt bedre end fra butikken. Server med ketchup, sennep eller din yndlingsdip!"
+  },
+  {
     "slug": "pomfritter",
     "title": "Pomfritter",
     "category": "Hurtigt",
@@ -3082,26 +3802,6 @@
     "excerpt": "Højprotein hjemmelavet proteinpandekager med proteinpulver og æg. Den perfekte sunde morgenmad til træning eller fitness. Denne opskrift giver dig de lækreste proteinpandekager der smager langt bedre end fra butikken. Højt proteinindhold og lavt kulhydratindhold - perfekt til en sund livsstil!"
   },
   {
-    "slug": "polsehorn",
-    "title": "Pølsehorn",
-    "category": "Hurtigt",
-    "time": "45 min",
-    "prepTime": "20 min",
-    "cookTime": "25 min",
-    "difficulty": "Let",
-    "excerpt": "Sprøde og smagfulde hjemmelavet pølsehorn med saftig pølse og blød dej. Den perfekte snack eller forret. Denne opskrift giver dig den autentiske pølsehorn der smager langt bedre end fra butikken. Server med ketchup, sennep eller din yndlingsdip!"
-  },
-  {
-    "slug": "pålægchokolade",
-    "title": "Pålægchokolade",
-    "category": "Dessert",
-    "time": "20 min",
-    "prepTime": "5 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "Cremet og smagfuld hjemmelavet pålægchokolade med mørk chokolade og sukker. Den perfekte danske klassiker til brød, pandekager eller vafler. Denne opskrift giver dig den autentiske pålægchokolade der smager langt bedre end fra butikken. Server på brød, pandekager eller vafler!"
-  },
-  {
     "slug": "ramen",
     "title": "Ramen",
     "category": "Pasta",
@@ -3110,6 +3810,26 @@
     "cookTime": "40 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk hjemmelavet ramen med rig bouillon, saftig kylling, bløde æg og friske grøntsager. Den perfekte komfortmad der smager langt bedre end instant ramen. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "ramen-med-sproed-kylling",
+    "title": "Ramen Med Sprød Kylling",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk ramen med sprød kylling, æg og friske grøntsager. En lækker og nærende suppe der er perfekt til både frokost og aftensmad."
+  },
+  {
+    "slug": "ramsloegspasta-med-burrata-og-aerter",
+    "title": "Ramsløgspasta Med Burrata Og Ærter",
+    "category": "Vegetarisk",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk pasta med ramsløg, cremet burrata og søde ærter. En lækker og nem ret der er perfekt til foråret!"
   },
   {
     "slug": "rejechips",
@@ -3162,6 +3882,16 @@
     "excerpt": "Klassisk dansk risengrød med cremet konsistens og vaniljesmag. Den perfekte dessert til jul eller hverdagen. Denne opskrift giver dig den autentiske risengrød der smager langt bedre end fra butikken. Server med smør, kanel og sukker!"
   },
   {
+    "slug": "risengrod-med-kanel-og-smoerklat",
+    "title": "Risengrød Med Kanel Og Smørklat",
+    "category": "Dessert",
+    "time": "45 min",
+    "prepTime": "5 min",
+    "cookTime": "40 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk dansk risengrød med kanel og smørklat. En lækker og hyggelig dessert der er perfekt til vinteren!"
+  },
+  {
     "slug": "risotto",
     "title": "Risotto",
     "category": "Pasta",
@@ -3180,26 +3910,6 @@
     "cookTime": "2 timer",
     "difficulty": "Mellem",
     "excerpt": "Saftig og smagfuld hjemmelavet roastbeef sandwich med perfekt stegt oksekød og cremet dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske roastbeef sandwich der smager langt bedre end fra butikken. Server med pommes frites!"
-  },
-  {
-    "slug": "rosmarin-og-hvidloegssnurrer",
-    "title": "Rosmarin- og hvidløgssnurrer",
-    "category": "Hurtigt",
-    "time": "2 timer",
-    "prepTime": "90 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "Sprøde og smagfulde hjemmelavet rosmarin- og hvidløgssnurrer med aromatiske krydderier. Den perfekte snack eller tilbehør til måltider. Disse snurrer smager langt bedre end købte og er overraskende nemme at lave. Perfekt til en hyggelig aften!"
-  },
-  {
-    "slug": "rugbrodskugler",
-    "title": "Rugbrødskugler",
-    "category": "Dessert",
-    "time": "25 min",
-    "prepTime": "15 min",
-    "cookTime": "10 min",
-    "difficulty": "Let",
-    "excerpt": "Klassiske hjemmelavet rugbrødskugler med kakaopulver og kokosmel. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig de autentiske rugbrødskugler der smager langt bedre end købt."
   },
   {
     "slug": "rod-grod-med-flode",
@@ -3230,6 +3940,46 @@
     "cookTime": "10 min",
     "difficulty": "Let",
     "excerpt": "Frisk og sprød hjemmelavet rødkål salat med sød-syrlig dressing. Den perfekte sunde salat der smager fantastisk og er perfekt til frokost, som tilbehør eller som hovedret. Nem, hurtig og perfekt til hele familien!"
+  },
+  {
+    "slug": "roeget-boennesuppe",
+    "title": "Røget Bønnesuppe",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Kremet røget bønnesuppe med røget paprika og krydderier. En lækker og mættende suppe der er perfekt til hverdagen."
+  },
+  {
+    "slug": "roeget-paprikablomkaal-og-appelsinsalat",
+    "title": "Røget Paprikablomkål Og Appelsinsalat",
+    "category": "Vegetarisk",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og smagfuld salat med røget paprikablomkål og appelsin. En lækker og nærende ret der er perfekt til både frokost og aftensmad."
+  },
+  {
+    "slug": "rosmarin-og-hvidloegssnurrer",
+    "title": "Rosmarin- og hvidløgssnurrer",
+    "category": "Hurtigt",
+    "time": "2 timer",
+    "prepTime": "90 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Sprøde og smagfulde hjemmelavet rosmarin- og hvidløgssnurrer med aromatiske krydderier. Den perfekte snack eller tilbehør til måltider. Disse snurrer smager langt bedre end købte og er overraskende nemme at lave. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "rugbrodskugler",
+    "title": "Rugbrødskugler",
+    "category": "Dessert",
+    "time": "25 min",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Klassiske hjemmelavet rugbrødskugler med kakaopulver og kokosmel. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig de autentiske rugbrødskugler der smager langt bedre end købt."
   },
   {
     "slug": "salat-med-kaal-og-appelsin",
@@ -3280,6 +4030,16 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Kremet og smagfuld hjemmelavet sellerisuppe med frisk selleri, løg og creme fraiche. Den perfekte varme suppe der smager langt bedre end fra butikken. Nem, mættende og perfekt til hele familien!"
+  },
+  {
+    "slug": "serrano-a-la-joe-the-juice",
+    "title": "Serrano a la Joe & The Juice",
+    "category": "Kød",
+    "time": "15 min",
+    "prepTime": "10 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og smagfuld sandwich a la Joe & The Juice med avocado, mozzarella, vegansk pesto, serrano skinke og tomat. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske serrano sandwich der smager langt bedre end fra butikken."
   },
   {
     "slug": "shawarma",
@@ -3423,6 +4183,46 @@
     "excerpt": "Juicy og sprøde hjemmelavet smashburger med tynd, knasende burger og perfekt smeltet ost. Den perfekte burger til hverdagen. Denne opskrift giver dig den autentiske smashburger-smag der smager langt bedre end fastfood. Server med pommes frites!"
   },
   {
+    "slug": "smoothie",
+    "title": "Bær Smoothie",
+    "category": "Hurtigt",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og sød bær smoothie med jordbær, blåbær og banan. Den perfekte morgenmad eller snack der er klar på under 5 minutter. Denne opskrift giver dig en cremet og smagfuld smoothie fyldt med antioxidanter og vitaminer."
+  },
+  {
+    "slug": "smoothie-laktosefri",
+    "title": "Bær Smoothie (Laktosefri)",
+    "category": "Hurtigt",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og sød laktosefri bær smoothie med jordbær, blåbær og banan. Den perfekte morgenmad eller snack der er klar på under 5 minutter. Denne opskrift giver dig en cremet og smagfuld smoothie fyldt med antioxidanter og vitaminer - helt uden laktose."
+  },
+  {
+    "slug": "smoothie-vegan",
+    "title": "Bær Smoothie (Vegansk)",
+    "category": "Hurtigt",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og sød vegansk bær smoothie med jordbær, blåbær og banan. Den perfekte morgenmad eller snack der er klar på under 5 minutter. Denne opskrift giver dig en cremet og smagfuld smoothie fyldt med antioxidanter og vitaminer - helt uden animalske produkter."
+  },
+  {
+    "slug": "soede-appelsinskiver-med-chokolade",
+    "title": "Søde Appelsinskiver med Chokolade",
+    "category": "Dessert",
+    "time": "90 min",
+    "prepTime": "60 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækre hjemmelavet søde appelsinskiver med chokolade - perfekt kombination af frisk appelsin og rig chokolade. Den perfekte dessert eller snack. Denne opskrift giver dig de autentiske søde appelsinskiver med chokolade der smager langt bedre end fra butikken. Server som dessert eller til kaffen!"
+  },
+  {
     "slug": "softice",
     "title": "Softice",
     "category": "Dessert",
@@ -3463,6 +4263,26 @@
     "excerpt": "Klassiske danske hjemmelavet spanskrør med chokolade, kokos og sprød tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig de autentiske spanskrør der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
+    "slug": "spicy-tuna-a-la-joe-the-juice",
+    "title": "Spicy Tuna a la Joe & The Juice",
+    "category": "Fisk",
+    "time": "20 min",
+    "prepTime": "15 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Populær sandwich a la Joe & The Juice med tun, vegansk pesto, tomat, jalapenos og Tabasco. Den perfekte krydrede sandwich til frokost eller middag. Denne opskrift giver dig den autentiske spicy tuna sandwich der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "spinatvafler-med-kylling",
+    "title": "Spinatvafler Med Kylling",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "20 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Lækre spinatvafler med saftig kylling. En perfekt kombination af sprøde vafler og saftig kylling. Nem at lave og perfekt til både morgenmad, frokost eller aftensmad."
+  },
+  {
     "slug": "spinatvafler-med-roeget-laks",
     "title": "Spinatvafler Med Røget Laks",
     "category": "Fisk",
@@ -3491,6 +4311,16 @@
     "cookTime": "45 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk tysk stollen - traditionelt julebrød med tørrede frugter, nødder og krydderier. Den perfekte julekage der smager langt bedre end købt. Perfekt til julefrokost eller som gave!"
+  },
+  {
+    "slug": "stracciatella-espresso-frappe",
+    "title": "Stracciatella Espresso Frappé",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Friskrørt stracciatella is shaket med økologisk mælk og kaffe, pyntet med økologisk flødeskum. Den perfekte kombination af kaffe, vanilje og chokolade."
   },
   {
     "slug": "strawberry-daiquiri",
@@ -3603,16 +4433,6 @@
     "excerpt": "Klassiske svenske chokoladesnitter med rig chokoladesmag og blød tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske svenske chokoladesnitter der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
-    "slug": "soede-appelsinskiver-med-chokolade",
-    "title": "Søde Appelsinskiver med Chokolade",
-    "category": "Dessert",
-    "time": "90 min",
-    "prepTime": "60 min",
-    "cookTime": "30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Lækre hjemmelavet søde appelsinskiver med chokolade - perfekt kombination af frisk appelsin og rig chokolade. Den perfekte dessert eller snack. Denne opskrift giver dig de autentiske søde appelsinskiver med chokolade der smager langt bedre end fra butikken. Server som dessert eller til kaffen!"
-  },
-  {
     "slug": "taccosuppe",
     "title": "Taccosuppe",
     "category": "Kød",
@@ -3631,6 +4451,16 @@
     "cookTime": "25 min",
     "difficulty": "Let",
     "excerpt": "Autentiske hjemmelavet tacos med krydret kød, friske grøntsager og lækker salsa. Den perfekte ret til en hyggelig aften med familie og venner. Denne opskrift giver dig de autentiske tacos der smager langt bedre end fra restauranten. Server med guacamole, creme fraiche og lime!"
+  },
+  {
+    "slug": "tacosuppe",
+    "title": "Tacosuppe",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Krydret tacosuppe med oksekød, bønner og majs. En lækker og mættende suppe der smager som tacos men i suppeform!"
   },
   {
     "slug": "taquitos",
@@ -3663,6 +4493,26 @@
     "excerpt": "Autentisk hjemmelavet temaki sushi - kegleformet håndrulle, spises typisk med fingrene. Den klassiske japanske håndrulle der smager langt bedre end fra restauranten. Perfekt til en hyggelig aften!"
   },
   {
+    "slug": "texmex-risret-med-oksekoed",
+    "title": "Texmex Risret Med Oksekød",
+    "category": "Kød",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Krydret texmex risret med saftigt oksekød, bønner og majs. En lækker og mættende ret der er perfekt til hverdagen."
+  },
+  {
+    "slug": "the-steak-a-la-joe-the-juice",
+    "title": "THE STEAK a la Joe & The Juice",
+    "category": "Kød",
+    "time": "25 min",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "difficulty": "Mellem",
+    "excerpt": "Premium steak sandwich a la Joe & The Juice med saftig bøf, rucola, Grana Padano, pickles og honning sennep dressing. Den perfekte luksuriøse sandwich til frokost eller middag. Denne opskrift giver dig den autentiske premium steak sandwich der smager langt bedre end fra butikken."
+  },
+  {
     "slug": "tiramisu-brownie",
     "title": "Tiramisu Brownie",
     "category": "Dessert",
@@ -3671,6 +4521,26 @@
     "cookTime": "40 min",
     "difficulty": "Mellem",
     "excerpt": "Luksuriøs tiramisu brownie med lag af chokoladebrownie, kaffemascarpone og kakao. En perfekt kombination af to klassiske desserter - cremet tiramisu og fudgy brownie. Smager fantastisk og er perfekt til en særlig aften!"
+  },
+  {
+    "slug": "torsk-i-fad-med-groentsager",
+    "title": "Torsk I Fad Med Grøntsager",
+    "category": "Fisk",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig torsk i fad med friske grøntsager. En lækker og sund ret der er nem at lave og perfekt til hverdagen."
+  },
+  {
+    "slug": "torsk-med-roed-karrysauce-og-groentsager",
+    "title": "Torsk Med Rød Karrysauce Og Grøntsager",
+    "category": "Fisk",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Mellem",
+    "excerpt": "Krydret torsk med rød karrysauce og friske grøntsager. En lækker og aromatisk ret der er perfekt til hverdagen."
   },
   {
     "slug": "tropisk-smoothie",
@@ -3693,6 +4563,26 @@
     "excerpt": "Eksotisk vegansk tropisk smoothie med mango, ananas og kokosmælk. Perfekt til sommeren eller når du drømmer om tropiske strande. Denne opskrift giver dig en cremet og sød smoothie med en autentisk tropisk smag - helt uden animalske produkter."
   },
   {
+    "slug": "trust-your-gut-a-la-joe-the-juice",
+    "title": "Trust Your Gut a la Joe & The Juice",
+    "category": "Drikkevarer",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Sund og nærende smoothie a la Joe & The Juice med jordbær, banan, rødbede pulver, Sproud M*lk, daddelpuré, kefir og fiber booster. Den perfekte smoothie til at støtte dit fordøjelsessystem. Denne opskrift giver dig den autentiske Trust Your Gut smoothie der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "trust-your-gut-funktionel-shake",
+    "title": "Trust Your Gut - Funktionel Shake",
+    "category": "Drikkevarer",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Nærende funktionel shake med jordbær, banan, rødbedepulver, Sproud M*lk, daddelpuré, kefir og fiber booster. Den perfekte shake til at støtte fordøjelsen og tarmhelbredet. Denne opskrift giver dig en sund og nærende shake fyldt med probiotika og fiber."
+  },
+  {
     "slug": "tunacado-a-la-joe-the-juice",
     "title": "Tunacado a la Joe & The Juice",
     "category": "Fisk",
@@ -3701,6 +4591,16 @@
     "cookTime": "5 min",
     "difficulty": "Let",
     "excerpt": "Frisk og smagfuld hjemmelavet tunacado a la Joe & The Juice med tun, cremet avocado, frisk salat og lækker dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske tunacado der smager langt bedre end fra butikken. Server med juice!"
+  },
+  {
+    "slug": "turkey-a-la-joe-the-juice",
+    "title": "Turkey a la Joe & The Juice",
+    "category": "Kød",
+    "time": "15 min",
+    "prepTime": "10 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og sund sandwich a la Joe & The Juice med kalkun, mozzarella, vegansk pesto og tomat. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske turkey sandwich der smager langt bedre end fra butikken."
   },
   {
     "slug": "tyndepandekager",
@@ -3743,36 +4643,6 @@
     "excerpt": "Sprøde og gyldne hjemmelavet vafler med den perfekte tekstur. Perfekte til morgenmad, brunch eller dessert. Denne opskrift giver dig de klassiske danske vafler der smager langt bedre end købte. Server med syltetøj, sukker og flødeskum!"
   },
   {
-    "slug": "milkshake",
-    "title": "Vanilje Milkshake",
-    "category": "Dessert",
-    "time": "5 min",
-    "prepTime": "5 min",
-    "cookTime": "0 min",
-    "difficulty": "Let",
-    "excerpt": "Klassisk cremet vanilje milkshake med vaniljeis og mælk. Den perfekte dessert eller snack der smager som fra din yndlingsrestaurant. Denne opskrift giver dig en tyk og cremet milkshake med autentisk vaniljesmag."
-  },
-  {
-    "slug": "milkshake-laktosefri",
-    "title": "Vanilje Milkshake (Laktosefri)",
-    "category": "Dessert",
-    "time": "5 min",
-    "prepTime": "5 min",
-    "cookTime": "0 min",
-    "difficulty": "Let",
-    "excerpt": "Klassisk cremet laktosefri vanilje milkshake med laktosefri vaniljeis og laktosefri mælk. Den perfekte dessert eller snack der smager som fra din yndlingsrestaurant - helt uden laktose."
-  },
-  {
-    "slug": "milkshake-vegan",
-    "title": "Vanilje Milkshake (Vegansk)",
-    "category": "Dessert",
-    "time": "5 min",
-    "prepTime": "5 min",
-    "cookTime": "0 min",
-    "difficulty": "Let",
-    "excerpt": "Klassisk cremet vegansk vanilje milkshake med vegansk vaniljeis og plantemælk. Den perfekte dessert eller snack der smager som fra din yndlingsrestaurant. Denne opskrift giver dig en tyk og cremet milkshake med autentisk vaniljesmag - helt uden animalske produkter."
-  },
-  {
     "slug": "vanilieis",
     "title": "Vaniljeis",
     "category": "Dessert",
@@ -3781,6 +4651,26 @@
     "cookTime": "210 min",
     "difficulty": "Mellem",
     "excerpt": "Cremet og aromatisk hjemmelavet vaniljeis med rig vaniljesmag og perfekt tekstur. Den klassiske is der smager langt bedre end købt. Denne opskrift giver dig den autentiske vaniljeis med intens vaniljesmag og cremet konsistens. Perfekt til dessert eller som base til andre isretter!"
+  },
+  {
+    "slug": "vanilje-espresso-frappe",
+    "title": "Vanilje Espresso Frappé",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Friskrørt vanilje is shaket med økologisk mælk og kaffe, pyntet med økologisk flødeskum. Den perfekte kombination af kaffe og vanilje."
+  },
+  {
+    "slug": "vanilje-karamel-frappe",
+    "title": "Vanilje Karamel Frappé",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Friskrørt vanilje is shaket med økologisk mælk, pyntet med karamelsauce og toppet med økologisk flødeskum. Den perfekte kombination af cremet vanilje og sød karamel."
   },
   {
     "slug": "vaniljekranse",
@@ -3803,6 +4693,26 @@
     "excerpt": "Bløde og aromatiske hjemmelavet vaniljepandekager med rig vaniljesmag. Perfekte til morgenmad, brunch eller dessert. Denne opskrift giver dig de lækreste vaniljepandekager der smager langt bedre end købte. Server med syltetøj, sukker, citron eller flødeskum!"
   },
   {
+    "slug": "vanilla-matcha-oat-latte",
+    "title": "Vanilla Matcha Oat Latte",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet vanilla matcha oat latte med matcha pulver, havremælk og vanilje sirup. Den perfekte koffeinfri drik med balance mellem jordnødde-smag fra matcha, cremet havremælk og sød vanilje. Denne opskrift giver dig en autentisk vanilla matcha latte oplevelse hjemme."
+  },
+  {
+    "slug": "vanilla-rooibos-tea",
+    "title": "Vanilla Rooibos Tea",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Varmende vanilla rooibos tea med rooibos te og vanilje-smag. Den perfekte koffeinfri te med balance mellem jordnødde-smag fra rooibos og sød vanilje. Denne opskrift giver dig en autentisk vanilla rooibos tea oplevelse hjemme."
+  },
+  {
     "slug": "varm-kakao",
     "title": "Varm Kakao",
     "category": "Dessert",
@@ -3821,6 +4731,16 @@
     "cookTime": "4 min",
     "difficulty": "Let",
     "excerpt": "Simpel og varmende hjemmelavet varm mælk - perfekt til aftenen eller når du har brug for noget beroligende. Den perfekte drik til at slappe af med eller som ingrediens i andre opskrifter."
+  },
+  {
+    "slug": "vavo-vegan-avocado-a-la-joe-the-juice",
+    "title": "VAVO (Vegan Avocado) a la Joe & The Juice",
+    "category": "Vegetarisk",
+    "time": "15 min",
+    "prepTime": "10 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og sund vegansk sandwich a la Joe & The Juice med avocado, vegansk pesto, spinat og tomat. Den perfekte veganske sandwich til frokost eller middag. Denne opskrift giver dig den autentiske veganske avocado sandwich der smager langt bedre end fra butikken."
   },
   {
     "slug": "vegan-chokolade-milkshake",
@@ -3843,16 +4763,6 @@
     "excerpt": "Frisk og sød vegansk jordbær milkshake med vegansk jordbæris og friske jordbær. Perfekt til sommeren eller når du har lyst til noget frisk. Denne opskrift giver dig en cremet og bæragtig milkshake med autentisk jordbærsmag - helt plantebaseret."
   },
   {
-    "slug": "vegan-oreo-milkshake",
-    "title": "Vegansk Oreo Milkshake",
-    "category": "Dessert",
-    "time": "5 min",
-    "prepTime": "5 min",
-    "cookTime": "0 min",
-    "difficulty": "Let",
-    "excerpt": "Knasende og cremet vegansk Oreo milkshake med vegansk vaniljeis og knuste veganske Oreo-kiks. Den perfekte veganske dessert til cookie-elskeren. Denne opskrift giver dig en tyk og knasende milkshake med autentisk Oreo-smag - helt plantebaseret."
-  },
-  {
     "slug": "vegan-milkshake",
     "title": "Vegansk Vanilje Milkshake",
     "category": "Dessert",
@@ -3863,6 +4773,16 @@
     "excerpt": "Klassisk cremet vegansk vanilje milkshake med vegansk vaniljeis og plantemælk. Den perfekte veganske dessert eller snack der smager som fra din yndlingsrestaurant. Denne opskrift giver dig en tyk og cremet milkshake med autentisk vaniljesmag - helt plantebaseret."
   },
   {
+    "slug": "vegan-oreo-milkshake",
+    "title": "Vegansk Oreo Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Knasende og cremet vegansk Oreo milkshake med vegansk vaniljeis og knuste veganske Oreo-kiks. Den perfekte veganske dessert til cookie-elskeren. Denne opskrift giver dig en tyk og knasende milkshake med autentisk Oreo-smag - helt plantebaseret."
+  },
+  {
     "slug": "vegetar-burger",
     "title": "Vegetar Burger",
     "category": "Vegetarisk",
@@ -3871,6 +4791,26 @@
     "cookTime": "20 min",
     "difficulty": "Let",
     "excerpt": "Juicy og smagfuld hjemmelavet vegetarisk burger med sorte bønner, æg og aromatiske krydderier. Den perfekte vegetariske burger der smager fantastisk og er nem at lave. Mættende, sund og perfekt til hele familien!"
+  },
+  {
+    "slug": "vegetar-quesadillas-med-stegte-boenner-og-cheddar",
+    "title": "Vegetar Quesadillas Med Stegte Bønner Og Cheddar",
+    "category": "Vegetarisk",
+    "time": "25 min",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Krydrede vegetariske quesadillas med stegte bønner og smeltet cheddar. En lækker og mættende ret der er nem at lave!"
+  },
+  {
+    "slug": "vegetar-ramen-med-svampe-og-aeg",
+    "title": "Vegetar Ramen Med Svampe Og Æg",
+    "category": "Vegetarisk",
+    "time": "35 min",
+    "prepTime": "20 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk vegetarisk ramen med svampe og blødt kogt æg. En lækker og nærende suppe der er perfekt til både frokost og aftensmad."
   },
   {
     "slug": "vegetarisk-burrito",
@@ -3913,16 +4853,6 @@
     "excerpt": "Klassiske danske hjemmelavet vegetariske tarteletter med cremet champignoner i asparges, sprøde tartelet-skaller og aromatiske krydderier. Den perfekte vegetariske klassiker der smager langt bedre end fra butikken - helt uden kød! Perfekt til særlige lejligheder, jul, påske eller bare en hyggelig aften med familien!"
   },
   {
-    "slug": "verdens-bedste-pandekager",
-    "title": "Verdens bedste pandekager",
-    "category": "Hurtigt",
-    "time": "25 min",
-    "prepTime": "10 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "De absolut bedste pandekager du nogensinde vil smage! Bløde, luftige og perfekt gyldne med en smag der overgår alt andet. Denne opskrift er testet og perfektioneret til det yderste. Perfekte til morgenmad, brunch eller dessert."
-  },
-  {
     "slug": "verdens-bedste-aeggekage",
     "title": "Verdens bedste æggekage",
     "category": "Hurtigt",
@@ -3931,6 +4861,16 @@
     "cookTime": "5 min",
     "difficulty": "Let",
     "excerpt": "Perfekt cremet og luftig æggekage med den rigtige teknik. Denne opskrift giver dig en æggekage der er gylden udenpå, cremet indeni og helt perfekt. Simpel at lave, men smager fantastisk!"
+  },
+  {
+    "slug": "verdens-bedste-pandekager",
+    "title": "Verdens bedste pandekager",
+    "category": "Hurtigt",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "De absolut bedste pandekager du nogensinde vil smage! Bløde, luftige og perfekt gyldne med en smag der overgår alt andet. Denne opskrift er testet og perfektioneret til det yderste. Perfekte til morgenmad, brunch eller dessert."
   },
   {
     "slug": "whisky-sour",
@@ -3943,43 +4883,33 @@
     "excerpt": "Klassisk hjemmelavet whisky sour med whisky, citronsaft og simpelt sirup. Den perfekte cocktail til aftenen eller særlige lejligheder. Denne opskrift giver dig den autentiske whisky sour der smager langt bedre end fra baren."
   },
   {
-    "slug": "aeblegloeg",
-    "title": "Æblegløg",
-    "category": "Vegetarisk",
-    "time": "60 min",
-    "prepTime": "15 min",
-    "cookTime": "45 min",
-    "difficulty": "Let",
-    "excerpt": "Klassisk dansk hjemmelavet æblegløg med søde æbler, bløde løg og sød-syrlig smag. Den perfekte tilbehør til flæskesteg, frikadeller eller anden dansk mad. Denne opskrift giver dig den autentiske æblegløg der smager langt bedre end fra butikken. Traditionel dansk hjemmekøkken på sit bedste!"
-  },
-  {
-    "slug": "aebleskiver",
-    "title": "Æbleskiver",
+    "slug": "white-temple-tea",
+    "title": "White Temple Tea",
     "category": "Dessert",
-    "time": "40 min",
-    "prepTime": "20 min",
-    "cookTime": "20 min",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
     "difficulty": "Let",
-    "excerpt": "Klassiske dansk æbleskiver med luftig tekstur og guldbrun farve. Den perfekte dessert eller snack til jul eller hverdagen. Denne opskrift giver dig den autentiske æbleskiver der smager langt bedre end fra butikken. Server med flormelis og syltetøj!"
+    "excerpt": "POPULAR - Delikat white temple tea med mild og blomstrende smag. Den perfekte koffeinfri te med subtil smag og aromatisk duft. Denne opskrift giver dig en autentisk white temple tea oplevelse hjemme."
   },
   {
-    "slug": "aeggekage",
-    "title": "Æggekage",
-    "category": "Hurtigt",
-    "time": "20 min",
-    "prepTime": "5 min",
+    "slug": "wok-med-kaal-og-friterede-spejlaeg",
+    "title": "Wok Med Kål Og Friterede Spejlæg",
+    "category": "Vegetarisk",
+    "time": "25 min",
+    "prepTime": "10 min",
     "cookTime": "15 min",
     "difficulty": "Let",
-    "excerpt": "Cremet og smagfuld hjemmelavet æggekage med æg, mælk og smør. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske æggekage der smager langt bedre end fra restauranten. Server med bacon, brød eller grøntsager!"
+    "excerpt": "Krydret wok med kål og friterede spejlæg. En lækker og nærende ret der er nem at lave og perfekt til hverdagen."
   },
   {
-    "slug": "ol",
-    "title": "Øl",
-    "category": "Dessert",
-    "time": "4 timer + 2-4 uger gæring",
-    "prepTime": "30 min",
-    "cookTime": "3 timer 30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk hjemmelavet øl med malt, humle og gær. Den perfekte bryggeoplevelse der giver dig din egen unikke øl. Denne opskrift giver dig en klassisk pilsner-stil øl med balanceret smag og perfekt kulsyre. Tålmodighed belønnes med en fantastisk hjemmebrygget øl!"
+    "slug": "yoghurt-bowl-a-la-joe-the-juice",
+    "title": "Yoghurt Bowl a la Joe & The Juice",
+    "category": "Morgenmad",
+    "time": "10 min",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Sund og nærende yoghurt bowl a la Joe & The Juice med granola, bærkompot, blåbær og græsk yoghurt. Den perfekte morgenmad til at starte dagen med energi. Denne opskrift giver dig den autentiske yoghurt bowl der smager langt bedre end fra butikken."
   }
 ]

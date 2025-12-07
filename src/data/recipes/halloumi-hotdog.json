@@ -1,0 +1,53 @@
+{
+  "slug": "halloumi-hotdog",
+  "id": "636",
+  "title": "Halloumi-Hotdog",
+  "category": "Vegetarisk",
+  "time": "20 min",
+  "prepTime": "10 min",
+  "cookTime": "10 min",
+  "difficulty": "Let",
+  "excerpt": "Sprød halloumi i hotdogbrød med lækre toppings. En perfekt vegetarisk hotdog der smager fantastisk!",
+  "description": "Sprød halloumi i hotdogbrød med lækre toppings. En perfekt vegetarisk hotdog der smager fantastisk! Denne opskrift kombinerer sprød, gylden halloumi med friske grøntsager og lækre dressinger for en komplet og smagfuld hotdog.",
+  "ingredients": [
+    "400g halloumi, skåret i strimler",
+    "4 hotdogbrød",
+    "2 spsk olivenolie",
+    "",
+    "Til toppings:",
+    "Rødkål, finthakket",
+    "Agurk, i skiver",
+    "Tomat, i skiver",
+    "Løg, i ringe",
+    "Mayonnaise",
+    "Sennep",
+    "Frisk koriander"
+  ],
+  "instructions": [
+    "FORBEREDELSE (10 min)",
+    "Skær halloumi i strimler (ca. 1 cm tykke). Tip: Ensartet tykkelse giver jævn stegning.",
+    "Forbered toppings: Hak rødkål, skær agurk og tomat i skiver, og løg i ringe. Tip: Ensartet størrelse giver bedre præsentation.",
+    "",
+    "TILBEREDNING (10 min)",
+    "Varm olivenolie i en stor pande over medium varme. Tip: Pande skal være varm før du tilføjer halloumi.",
+    "Steg halloumi-strimler i 3-4 minutter på hver side, eller til de er gyldne og sprøde. Tip: Rør ikke for meget - lad halloumi steges færdig.",
+    "Varm hotdogbrød i ovnen eller i en pande. Tip: Varme brød giver bedre smag.",
+    "",
+    "SAMMENSAETNING (5 min)",
+    "Arranger halloumi-strimler i hotdogbrød. Tip: Brug flotte brød - præsentation er vigtig!",
+    "Top med rødkål, agurk, tomat, løg, mayonnaise, sennep og frisk koriander. Tip: Brug rigeligt med toppings - det giver bedre smag.",
+    "Tip: Halloumi-hotdog smager bedst når den er varm og lige kommet ud af panden!"
+  ],
+  "nutrition": {
+    "energy": "1850 kJ / 442 kcal",
+    "fat": "24g",
+    "saturatedFat": "14g",
+    "carbs": "38g",
+    "sugar": "4g",
+    "fiber": "3g",
+    "protein": "22g",
+    "salt": "2.5g"
+  },
+  "datePublished": "2025-01-15T10:00:00+01:00",
+  "dateModified": "2025-01-15T10:00:00+01:00"
+}
