@@ -9,6 +9,7 @@
     "lint": "next lint",
     "extract-recipes": "node scripts/extract-recipes.js",
     "migrate": "tsx scripts/migrate.ts",
+    "check-404": "tsx scripts/check-404.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate"
   },
