@@ -2,6 +2,7 @@ import { Container } from '@/components/container'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
+import { EmailLink } from '@/components/email-link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -133,12 +134,7 @@ export default function PrivatlivspolitikPage() {
             <p>
               Hvis du har spørgsmål til vores behandling af dine personoplysninger, 
               eller hvis du ønsker at udøve dine rettigheder, kan du kontakte os på{' '}
-              <a
-                href="mailto:hej@simpelspis.dk"
-                className="underline hover:text-gray-900 dark:hover:text-gray-50 font-medium"
-              >
-                hej@simpelspis.dk
-              </a>
+              <EmailLink className="underline hover:text-gray-900 dark:hover:text-gray-50 font-medium" />
               .
             </p>
           </section>
@@ -150,12 +146,7 @@ export default function PrivatlivspolitikPage() {
             <p>
               Hvis du har spørgsmål til vores privatlivspolitik eller ønsker at udøve dine rettigheder, 
               kan du kontakte os på{' '}
-              <a
-                href="mailto:hej@simpelspis.dk"
-                className="underline hover:text-gray-900 dark:hover:text-gray-50 font-medium"
-              >
-                hej@simpelspis.dk
-              </a>
+              <EmailLink className="underline hover:text-gray-900 dark:hover:text-gray-50 font-medium" />
               .
             </p>
           </section>

@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 import recipesData from '@/data/recipes/index.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis-website-git-main-holm-team.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'
 
   // Statiske sider
   const staticPages: MetadataRoute.Sitemap = [

@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
 
     // Send password reset email
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'}/reset-password`,
+      redirectTo: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'}/reset-password`,
     })
 
     if (error) {

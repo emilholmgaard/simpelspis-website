@@ -31,6 +31,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'
+  
+  // Organization schema for structured data
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Simpel Spis',
+    url: baseUrl,
+    logo: `${baseUrl}/logo_black.svg`,
+    description: 'Udforsk hundredevis af lækre opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken.',
+    sameAs: [],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      email: 'hej@simpelspis.dk',
+      availableLanguage: ['Danish', 'da'],
+    },
+  }
+
   return (
     <html lang="da" suppressHydrationWarning>
       <head>
@@ -40,6 +59,10 @@ export default function RootLayout({
         <link
           rel="stylesheet"
           href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <script
           dangerouslySetInnerHTML={{

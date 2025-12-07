@@ -1,3 +1,5 @@
+import { EmailLink } from '@/components/email-link'
+
 export function Footer() {
   return (
     <footer>
@@ -31,12 +33,7 @@ export function Footer() {
             <span className="text-gray-400">•</span>
             <span>
               Kontakt os på{' '}
-              <a
-                href="mailto:hej@simpelspis.dk"
-                className="underline hover:text-gray-900 dark:hover:text-gray-50 font-medium"
-              >
-                hej@simpelspis.dk
-              </a>
+              <EmailLink className="underline hover:text-gray-900 dark:hover:text-gray-50 font-medium" />
             </span>
           </div>
         </div>

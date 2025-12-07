@@ -37,7 +37,7 @@ export async function generateMetadata({
     }
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'
   const url = `${baseUrl}/opskrifter/${slug}`
 
   return {
@@ -84,7 +84,7 @@ export default async function RecipePage({
     notFound()
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'
   
   // Fetch review stats for AggregateRating schema
   let reviewStats = null

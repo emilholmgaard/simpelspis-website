@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     'Udforsk vores samling af nemme opskrifter fra hele verden. Fra klassiske retter som carbonara og tiramisu til moderne fusion-køkken. Find nemme opskrifter efter kategori, sværhedsgrad eller tid.',
   keywords: ['alle nemme opskrifter', 'nemme opskrifter samling', 'pasta nemme opskrifter', 'fisk nemme opskrifter', 'dessert nemme opskrifter', 'vegetarisk nemme opskrifter', 'dansk mad'],
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'}/opskrifter`,
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'}/opskrifter`,
   },
   openGraph: {
     title: 'Alle Nemme Opskrifter',
     description: 'Udforsk vores samling af nemme opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken.',
     type: 'website',
-    url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk'}/opskrifter`,
+    url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'}/opskrifter`,
     siteName: 'Simpel Spis',
     locale: 'da_DK',
   },
@@ -687,8 +687,82 @@ export default async function RecipesPage({
     return pages
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'
+  
+  // Build current URL for structured data
+  const urlParams = new URLSearchParams()
+  if (searchQuery) urlParams.set('q', searchQuery)
+  if (mealType && mealType !== 'alle') urlParams.set('maaltid', mealType)
+  if (dishType && dishType !== 'alle') urlParams.set('rettype', dishType)
+  if (cookingMethod && cookingMethod !== 'alle') urlParams.set('tilberedning', cookingMethod)
+  if (dietary) urlParams.set('diaet', dietary)
+  if (budgetFilter && budgetFilter !== 'alle') urlParams.set('budget', budgetFilter)
+  if (healthyFilter && healthyFilter !== 'alle') urlParams.set('sund', healthyFilter)
+  if (timeFilter && timeFilter !== 'alle') urlParams.set('tid', timeFilter)
+  if (difficultyFilter && difficultyFilter !== 'alle') urlParams.set('svaerhed', difficultyFilter)
+  if (currentPage > 1) urlParams.set('page', currentPage.toString())
+  const queryString = urlParams.toString()
+  const currentUrl = `${baseUrl}/opskrifter${queryString ? `?${queryString}` : ''}`
+
+  // CollectionPage schema for recipe listing page
+  const collectionPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Alle Nemme Opskrifter',
+    description: 'Udforsk vores samling af nemme opskrifter fra hele verden. Fra klassiske retter som carbonara og tiramisu til moderne fusion-køkken.',
+    url: currentUrl,
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: totalRecipes,
+      itemListElement: paginatedRecipes.slice(0, 10).map((recipe, index) => ({
+        '@type': 'ListItem',
+        position: startIndex + index + 1,
+        item: {
+          '@type': 'Recipe',
+          name: recipe.title,
+          url: `${baseUrl}/opskrifter/${recipe.slug}`,
+          description: recipe.excerpt,
+          image: `${baseUrl}/images/recipes/${recipe.slug}-16x9.jpg`,
+          recipeCategory: recipe.category,
+          totalTime: recipe.time,
+          prepTime: recipe.prepTime,
+          cookTime: recipe.cookTime,
+        },
+      })),
+    },
+  }
+
+  // BreadcrumbList schema
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Forside',
+        item: baseUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Nemme Opskrifter',
+        item: `${baseUrl}/opskrifter`,
+      },
+    ],
+  }
+
   return (
-    <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
       <GradientBackground />
       <Navbar />
       <Container className="mt-28 pb-24">
@@ -958,5 +1032,6 @@ export default async function RecipesPage({
         )}
       </Container>
     </main>
+    </>
   )
 }

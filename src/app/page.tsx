@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     'Søg efter nemme opskrifter baseret på ingredienser, kategori eller tid. Udforsk over 211.000 nemme opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken.',
   keywords: ['nemme opskrifter', 'søg nemme opskrifter', 'nemme madopskrifter', 'nemme opskrifter', 'hurtige nemme opskrifter', 'nemme opskrifter efter ingredienser', 'dansk mad', 'kogebog'],
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk',
+    canonical: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk',
   },
   openGraph: {
     title: 'Nemme Opskrifter',
     description: 'Søg efter nemme opskrifter baseret på ingredienser, kategori eller tid. Udforsk over 211.000 nemme opskrifter fra hele verden.',
     type: 'website',
-    url: process.env.NEXT_PUBLIC_BASE_URL || 'https://simpelspis.dk',
+    url: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk',
     siteName: 'Simpel Spis',
     locale: 'da_DK',
   },
@@ -33,9 +33,33 @@ export const metadata: Metadata = {
 export default function Home() {
   const recipes = getAllRecipes()
   const recipeCount = recipes.length
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'
+
+  // WebSite schema with SearchAction for Google search box
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Simpel Spis',
+    url: baseUrl,
+    description: 'Udforsk hundredevis af lækre opskrifter fra hele verden. Fra klassiske retter til moderne fusion-køkken.',
+    inLanguage: 'da-DK',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${baseUrl}/opskrifter?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  }
 
   return (
-    <main className="overflow-hidden min-h-screen flex flex-col relative">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <main className="overflow-hidden min-h-screen flex flex-col relative">
       {/* Pattern background with wave fade effect */}
       <div 
         className="absolute inset-0 bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-gray-950)]/2 dark:[--pattern-fg:var(--color-white)]/5 pointer-events-none"
@@ -94,5 +118,6 @@ export default function Home() {
         </div>
       </Container>
     </main>
+    </>
   )
 }
