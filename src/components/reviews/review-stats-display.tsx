@@ -16,6 +16,18 @@ interface User {
   username: string | null
 }
 
+// Local interface matching the API response structure
+interface ReviewData {
+  id: string
+  recipeSlug: string
+  userId: string | null
+  anonymousId: string | null
+  rating: number
+  comment: string | null
+  createdAt: string
+  updatedAt: string
+}
+
 export function ReviewStatsDisplay({ 
   averageRating, 
   totalReviews, 
@@ -69,7 +81,7 @@ export function ReviewStatsDisplay({
           setUser(userData.user)
           // First check for user review
           const userReview = Array.isArray(reviewsData) 
-            ? reviewsData.find((r: any) => r.userId === userData.user.id)
+            ? reviewsData.find((r: ReviewData) => r.userId === userData.user.id)
             : null
           if (userReview) {
             setUserRating(userReview.rating)
@@ -78,7 +90,7 @@ export function ReviewStatsDisplay({
             try {
               const anonymousId = getOrCreateAnonymousId()
               const anonymousReview = Array.isArray(reviewsData)
-                ? reviewsData.find((r: any) => r.anonymousId === anonymousId)
+                ? reviewsData.find((r: ReviewData) => r.anonymousId === anonymousId)
                 : null
               if (anonymousReview) {
                 setUserRating(anonymousReview.rating)
@@ -92,7 +104,7 @@ export function ReviewStatsDisplay({
           try {
             const anonymousId = getOrCreateAnonymousId()
             const anonymousReview = Array.isArray(reviewsData)
-              ? reviewsData.find((r: any) => r.anonymousId === anonymousId)
+              ? reviewsData.find((r: ReviewData) => r.anonymousId === anonymousId)
               : null
             if (anonymousReview) {
               setUserRating(anonymousReview.rating)
@@ -165,7 +177,7 @@ export function ReviewStatsDisplay({
       // Update user rating from server response to be sure
       if (reviewsRes.ok && user) {
         const reviewsData = await reviewsRes.json()
-        const userReview = reviewsData.find((r: any) => r.userId === user.id)
+        const userReview = reviewsData.find((r: ReviewData) => r.userId === user.id)
         if (userReview) {
           setUserRating(userReview.rating)
         }
@@ -214,4 +226,3 @@ export function ReviewStatsDisplay({
     </>
   )
 }
-

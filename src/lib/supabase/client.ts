@@ -1,21 +1,11 @@
 import { createClient } from '@supabase/supabase-js'
+import { env } from '../env'
 
-const supabaseUrl = 
-  process.env.NEXT_PUBLIC_SUPABASE_URL || 
-  process.env['simpelspisSUPABASE_URL'] ||
-  process.env['simpelspis_SUPABASE_URL'] ||
-  ''
-const supabaseAnonKey = 
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 
-  process.env['simpelspisSUPABASE_ANON_KEY'] ||
-  process.env['simpelspis_SUPABASE_ANON_KEY'] ||
-  ''
-
-if (!supabaseUrl || !supabaseAnonKey) {
+if (!env.NEXT_PUBLIC_SUPABASE_URL || !env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
   throw new Error('Missing Supabase environment variables')
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
-
-
-
+export const supabase = createClient(
+  env.NEXT_PUBLIC_SUPABASE_URL, 
+  env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+)

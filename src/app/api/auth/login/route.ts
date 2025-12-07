@@ -1,11 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClientFromRequest } from '@/lib/supabase/server'
-
-const supabaseUrl = 
-  process.env.NEXT_PUBLIC_SUPABASE_URL || 
-  process.env['simpelspisSUPABASE_URL'] ||
-  process.env['simpelspis_SUPABASE_URL'] ||
-  ''
+import { env } from '@/lib/env'
 
 export async function POST(request: NextRequest) {
   try {
@@ -46,13 +41,13 @@ export async function POST(request: NextRequest) {
 
     // Set Supabase auth cookies
     // Supabase uses specific cookie names based on project ref
-    const projectRef = supabaseUrl ? supabaseUrl.split('//')[1]?.split('.')[0] || 'default' : 'default'
+    const projectRef = env.NEXT_PUBLIC_SUPABASE_URL.split('//')[1]?.split('.')[0] || 'default'
     const cookieName = `sb-${projectRef}-auth-token`
     
     // Set the session cookie that Supabase expects
     response.cookies.set(cookieName, JSON.stringify(data.session), {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
+      secure: env.isProduction,
       sameSite: 'lax',
       maxAge: data.session.expires_in || 3600,
       path: '/',
@@ -67,4 +62,3 @@ export async function POST(request: NextRequest) {
     )
   }
 }
-

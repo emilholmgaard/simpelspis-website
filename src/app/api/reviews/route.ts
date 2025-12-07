@@ -3,6 +3,7 @@ import { db } from '@/lib/db'
 import { reviews } from '@/lib/db/schema'
 import { createServerClient } from '@/lib/supabase/server'
 import { eq, and, desc, isNotNull } from 'drizzle-orm'
+import { env } from '@/lib/env'
 
 export async function GET(request: NextRequest) {
   try {
@@ -17,15 +18,7 @@ export async function GET(request: NextRequest) {
     }
 
     // Check if database connection is available before attempting database query
-    const hasDbConnection = 
-      process.env.POSTGRES_URL || 
-      process.env.POSTGRES_URL_NON_POOLING ||
-      process.env.POSTGRES_PRISMA_URL ||
-      process.env['simpelspis_POSTGRES_URL'] ||
-      process.env['simpelspis_POSTGRES_URL_NON_POOLING'] ||
-      process.env['simpelspis_POSTGRES_PRISMA_URL']
-    
-    if (!hasDbConnection) {
+    if (!env.POSTGRES_URL) {
       // Return empty array if database is not configured (e.g., in static builds)
       return NextResponse.json([])
     }
@@ -55,7 +48,7 @@ export async function POST(request: NextRequest) {
         } = await supabase.auth.getUser()
         user = authUser
       }
-    } catch (error) {
+    } catch {
       // If auth fails, user is null (anonymous user)
       // This is fine - we'll use anonymousId instead
       // Silently continue - anonymous users are allowed
@@ -165,11 +158,12 @@ export async function POST(request: NextRequest) {
           .returning()
 
         return NextResponse.json(newReview[0], { status: 201 })
-      } catch (dbError: any) {
+      } catch (dbError: unknown) {
         console.error('Database error creating review:', dbError)
         
+        const error = dbError as { code?: string; message?: string }
         // Check if it's a foreign key constraint error
-        if (dbError?.code === '23503' || dbError?.message?.includes('foreign key')) {
+        if (error?.code === '23503' || error?.message?.includes('foreign key')) {
           return NextResponse.json(
             { error: 'Brugeren eksisterer ikke i systemet' },
             { status: 400 }
@@ -233,9 +227,8 @@ export async function POST(request: NextRequest) {
     console.error('Error creating review:', error)
     
     // Don't expose internal errors to client in production
-    const isDevelopment = process.env.NODE_ENV === 'development'
     const errorMessage = error instanceof Error 
-      ? (isDevelopment ? error.message : 'Kunne ikke oprette anmeldelse')
+      ? (env.isProduction ? 'Kunne ikke oprette anmeldelse' : error.message)
       : 'Kunne ikke oprette anmeldelse'
     
     return NextResponse.json(
@@ -244,6 +237,3 @@ export async function POST(request: NextRequest) {
     )
   }
 }
-
-
-

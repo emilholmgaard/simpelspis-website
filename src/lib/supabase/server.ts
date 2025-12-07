@@ -1,30 +1,27 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient, SupabaseClient } from '@supabase/supabase-js'
 import { cookies } from 'next/headers'
 import { NextRequest } from 'next/server'
+import { env } from '../env'
 
-const supabaseUrl = 
-  process.env.NEXT_PUBLIC_SUPABASE_URL || 
-  process.env['simpelspisSUPABASE_URL'] ||
-  process.env['simpelspis_SUPABASE_URL'] ||
-  ''
-const supabaseAnonKey = 
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 
-  process.env['simpelspisSUPABASE_ANON_KEY'] ||
-  process.env['simpelspis_SUPABASE_ANON_KEY'] ||
-  ''
+// Define a type for the mock client return
+type MockSupabaseClient = {
+  auth: {
+    getUser: () => Promise<{ data: { user: null }; error: null }>;
+  };
+}
 
 export async function createServerClient() {
   // Allow missing Supabase env vars - return a mock client if not configured
-  if (!supabaseUrl || !supabaseAnonKey) {
+  if (!env.NEXT_PUBLIC_SUPABASE_URL || !env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
     // Return a mock client that won't crash
     return {
       auth: {
         getUser: async () => ({ data: { user: null }, error: null }),
       },
-    } as any
+    } as unknown as SupabaseClient
   }
   const cookieStore = await cookies()
-  const projectRef = supabaseUrl.split('//')[1]?.split('.')[0] || 'default'
+  const projectRef = env.NEXT_PUBLIC_SUPABASE_URL.split('//')[1]?.split('.')[0] || 'default'
   const authCookieName = `sb-${projectRef}-auth-token`
   
   // Get session from cookie
@@ -38,7 +35,7 @@ export async function createServerClient() {
     }
   }
   
-  return createClient(supabaseUrl, supabaseAnonKey, {
+  return createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.NEXT_PUBLIC_SUPABASE_ANON_KEY, {
     auth: {
       persistSession: false,
       autoRefreshToken: false,
@@ -61,44 +58,31 @@ export async function createServerClient() {
       },
       set(name: string, value: string, options?: { maxAge?: number; httpOnly?: boolean; secure?: boolean; sameSite?: 'lax' | 'strict' | 'none'; path?: string }) {
         try {
+          // Note: In Next.js Server Components, we can't set cookies.
+          // This usually needs to happen in Middleware or Server Actions/Route Handlers.
           cookieStore.set(name, value, options)
         } catch {
-          // The `set` method was called from a Server Component.
-          // This can be ignored if you have middleware refreshing
-          // user sessions.
+          // Ignored in Server Components
         }
       },
       remove(name: string, options?: { path?: string }) {
         try {
           cookieStore.set(name, '', { ...options, maxAge: 0 })
         } catch {
-          // The `delete` method was called from a Server Component.
-          // This can be ignored if you have middleware refreshing
-          // user sessions.
+          // Ignored in Server Components
         }
       },
     },
-  } as Parameters<typeof createClient>[2])
+  })
 }
 
 // Helper to create client from request (for API routes)
 export function createClientFromRequest(request: NextRequest) {
-  const url = 
-    process.env.NEXT_PUBLIC_SUPABASE_URL || 
-    process.env['simpelspisSUPABASE_URL'] ||
-    process.env['simpelspis_SUPABASE_URL'] ||
-    ''
-  const key = 
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 
-    process.env['simpelspisSUPABASE_ANON_KEY'] ||
-    process.env['simpelspis_SUPABASE_ANON_KEY'] ||
-    ''
-  
-  if (!url || !key) {
+  if (!env.NEXT_PUBLIC_SUPABASE_URL || !env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
     throw new Error('Missing Supabase environment variables')
   }
   
-  return createClient(url, key, {
+  return createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.NEXT_PUBLIC_SUPABASE_ANON_KEY, {
     auth: {
       persistSession: false,
       autoRefreshToken: false,
@@ -109,12 +93,11 @@ export function createClientFromRequest(request: NextRequest) {
         return request.cookies.get(name)?.value
       },
       set() {
-        // Cookies set via response
+        // Cookies set via response in the route handler usually
       },
       remove() {
         // Cookies removed via response
       },
     },
-  } as Parameters<typeof createClient>[2])
+  })
 }
-
