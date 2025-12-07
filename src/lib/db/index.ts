@@ -2,10 +2,9 @@ import { drizzle } from 'drizzle-orm/postgres-js'
 import postgres from 'postgres'
 import * as schema from './schema'
 
-// Support multiple environment variable names for compatibility
-// Vercel uses POSTGRES_URL, while local development might use DATABASE_URL
+// Support multiple environment variable names for Vercel/Supabase
+// Vercel provides POSTGRES_URL variants
 const connectionString = 
-  process.env.DATABASE_URL || 
   process.env.POSTGRES_URL_NON_POOLING || 
   process.env.POSTGRES_URL || 
   process.env.POSTGRES_PRISMA_URL || 
@@ -17,7 +16,7 @@ let dbInstance: ReturnType<typeof drizzle> | null = null
 
 function getDb() {
   if (!connectionString) {
-    // Return a mock db object that won't crash if DATABASE_URL is not set
+    // Return a mock db object that won't crash if database connection is not configured
     return {
       select: () => ({
         from: () => ({
