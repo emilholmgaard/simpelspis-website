@@ -16,9 +16,47 @@ export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
   const [error, setError] = useState('')
 
   useEffect(() => {
-    fetch('/api/auth/user')
-      .catch(() => {})
-  }, [])
+    // Load existing review if present
+    const loadExistingReview = async () => {
+      try {
+        const [userRes, reviewsRes] = await Promise.all([
+          fetch('/api/auth/user'),
+          fetch(`/api/reviews?recipeSlug=${recipeSlug}`)
+        ])
+        
+        const userData = await userRes.json().catch(() => ({ user: null }))
+        const reviewsData = await reviewsRes.json().catch(() => [])
+        
+        if (!Array.isArray(reviewsData)) return
+
+        let myReview = null
+        
+        // Check for user review
+        if (userData?.user) {
+          myReview = reviewsData.find((r: any) => r.userId === userData.user.id)
+        }
+        
+        // If not found, check for anonymous review
+        if (!myReview) {
+          const anonymousId = localStorage.getItem('anonymous-id')
+          if (anonymousId) {
+            myReview = reviewsData.find((r: any) => r.anonymousId === anonymousId)
+          }
+        }
+        
+        if (myReview) {
+          setRating(myReview.rating)
+          if (myReview.comment) {
+            setComment(myReview.comment)
+          }
+        }
+      } catch (err) {
+        console.error('Error loading existing review:', err)
+      }
+    }
+    
+    loadExistingReview()
+  }, [recipeSlug])
 
   const getOrCreateAnonymousId = (): string => {
     let anonymousId = localStorage.getItem('anonymous-id')

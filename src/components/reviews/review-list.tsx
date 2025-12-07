@@ -47,8 +47,8 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
         return
       }
 
-      // Filter reviews to only show those with comments
-      const filteredReviews = reviewsData.filter((review: Review) => review.comment && review.comment.trim() !== '')
+      // Show all reviews, even those without comments
+      const filteredReviews = reviewsData
 
       // Fetch user data for each review
       const reviewsWithUsers = await Promise.all(
