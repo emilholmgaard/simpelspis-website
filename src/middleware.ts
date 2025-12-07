@@ -1,8 +1,24 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import { createClientFromRequest } from '@/lib/supabase/server'
 
-export function middleware(request: NextRequest) {
-  const response = NextResponse.next()
+export async function middleware(request: NextRequest) {
+  // Create an initial response
+  let response = NextResponse.next({
+    request: {
+      headers: request.headers,
+    },
+  })
+
+  // 1. Handle Supabase Auth Session Refresh
+  // This must happen before any other logic to ensure cookies are updated
+  const supabase = createClientFromRequest(request, response)
+  
+  // Refresh session if expired - required for Server Components
+  // https://supabase.com/docs/guides/auth/server-side/nextjs
+  await supabase.auth.getUser()
+
+  // 2. Existing Caching Logic
   const { pathname } = request.nextUrl
 
   // Cache statiske assets (billeder, fonts, etc.) i 1 år
@@ -71,4 +87,3 @@ export const config = {
     '/((?!api|_next/webpack).*)',
   ],
 }
-

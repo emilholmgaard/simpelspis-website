@@ -4,16 +4,7 @@ import { createClient } from '@supabase/supabase-js'
 import { db } from '@/lib/db'
 import { users, reviews } from '@/lib/db/schema'
 import { eq } from 'drizzle-orm'
-
-const supabaseUrl = 
-  process.env.NEXT_PUBLIC_SUPABASE_URL || 
-  process.env['simpelspisSUPABASE_URL'] ||
-  process.env['simpelspis_SUPABASE_URL'] ||
-  ''
-const supabaseServiceKey = 
-  process.env.SUPABASE_SERVICE_ROLE_KEY ||
-  process.env['simpelspis_SUPABASE_SERVICE_ROLE_KEY'] ||
-  ''
+import { env } from '@/lib/env'
 
 export async function DELETE() {
   try {
@@ -33,8 +24,8 @@ export async function DELETE() {
     await db.delete(users).where(eq(users.id, authUser.id))
 
     // Delete user from Supabase Auth using service role
-    if (supabaseServiceKey) {
-      const adminClient = createClient(supabaseUrl, supabaseServiceKey, {
+    if (env.SUPABASE_SERVICE_ROLE_KEY) {
+      const adminClient = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY, {
         auth: {
           autoRefreshToken: false,
           persistSession: false,
@@ -57,4 +48,3 @@ export async function DELETE() {
     )
   }
 }
-

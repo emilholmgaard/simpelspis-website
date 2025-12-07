@@ -2,12 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createClientFromRequest } from '@/lib/supabase/server'
 import { db } from '@/lib/db'
 import { users } from '@/lib/db/schema'
-
-const supabaseUrl = 
-  process.env.NEXT_PUBLIC_SUPABASE_URL || 
-  process.env['simpelspisSUPABASE_URL'] ||
-  process.env['simpelspis_SUPABASE_URL'] ||
-  ''
+import { env } from '@/lib/env'
 
 export async function POST(request: NextRequest) {
   try {
@@ -21,8 +16,11 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create a Supabase client for this request
-    const supabase = createClientFromRequest(request)
+    // Create an empty response object first that Supabase can modify
+    const response = NextResponse.json({}, { status: 200 })
+
+    // Create a Supabase client that writes cookies to this response
+    const supabase = createClientFromRequest(request, response)
 
     // Sign up user in Supabase Auth
     const { data: authData, error: authError } = await supabase.auth.signUp({
@@ -53,27 +51,25 @@ export async function POST(request: NextRequest) {
       console.log('User might already exist in database')
     }
 
-    // Create response
-    const response = NextResponse.json({
+    // Create final response
+    const finalResponse = NextResponse.json({
       user: authData.user,
       message: 'User created successfully',
     })
 
-    // Set Supabase auth cookies if session exists
+    // Copy cookies from the Supabase-modified response to the final response
     if (authData.session) {
-      const projectRef = supabaseUrl ? supabaseUrl.split('//')[1]?.split('.')[0] || 'default' : 'default'
-      const cookieName = `sb-${projectRef}-auth-token`
-      
-      response.cookies.set(cookieName, JSON.stringify(authData.session), {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === 'production',
-        sameSite: 'lax',
-        maxAge: authData.session.expires_in || 3600,
-        path: '/',
+      response.cookies.getAll().forEach((cookie) => {
+        finalResponse.cookies.set(cookie.name, cookie.value, {
+          ...cookie,
+          sameSite: 'lax',
+          httpOnly: true,
+          secure: env.isProduction
+        })
       })
     }
 
-    return response
+    return finalResponse
   } catch (error) {
     console.error('Error signing up:', error)
     return NextResponse.json(
@@ -82,4 +78,3 @@ export async function POST(request: NextRequest) {
     )
   }
 }
-

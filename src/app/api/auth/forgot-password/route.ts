@@ -1,16 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = 
-  process.env.NEXT_PUBLIC_SUPABASE_URL || 
-  process.env['simpelspisSUPABASE_URL'] ||
-  process.env['simpelspis_SUPABASE_URL'] ||
-  ''
-const supabaseAnonKey = 
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 
-  process.env['simpelspisSUPABASE_ANON_KEY'] ||
-  process.env['simpelspis_SUPABASE_ANON_KEY'] ||
-  ''
+import { env } from '@/lib/env'
 
 export async function POST(request: NextRequest) {
   try {
@@ -24,11 +14,11 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const supabase = createClient(supabaseUrl, supabaseAnonKey)
+    const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.NEXT_PUBLIC_SUPABASE_ANON_KEY)
 
     // Send password reset email
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'}/reset-password`,
+      redirectTo: `${env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'}/reset-password`,
     })
 
     if (error) {
@@ -47,6 +37,3 @@ export async function POST(request: NextRequest) {
     )
   }
 }
-
-
-

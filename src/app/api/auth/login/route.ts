@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClientFromRequest } from '@/lib/supabase/server'
-import { env } from '@/lib/env'
 
 export async function POST(request: NextRequest) {
   try {
@@ -14,8 +13,11 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create a Supabase client for this request
-    const supabase = createClientFromRequest(request)
+    // Create an empty response object first that Supabase can modify
+    const response = NextResponse.json({}, { status: 200 })
+
+    // Create a Supabase client that writes cookies to this response
+    const supabase = createClientFromRequest(request, response)
 
     const { data, error } = await supabase.auth.signInWithPassword({
       email,
@@ -33,27 +35,31 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create response
-    const response = NextResponse.json({
+    // Add user data to the response body (cookies are already set on 'response' object)
+    // We need to recreate the response with the body, but keep the headers/cookies
+    // OR simpler: just return the response we created, since the client likely just needs a 200 OK
+    // But typically the frontend might expect the user object back.
+    
+    // Since we can't easily modify the body of an existing NextResponse without reading streams,
+    // let's create a final response that copies the cookies from the intermediate one.
+    
+    const finalResponse = NextResponse.json({
       user: data.user,
       session: data.session,
     })
 
-    // Set Supabase auth cookies
-    // Supabase uses specific cookie names based on project ref
-    const projectRef = env.NEXT_PUBLIC_SUPABASE_URL.split('//')[1]?.split('.')[0] || 'default'
-    const cookieName = `sb-${projectRef}-auth-token`
-    
-    // Set the session cookie that Supabase expects
-    response.cookies.set(cookieName, JSON.stringify(data.session), {
-      httpOnly: true,
-      secure: env.isProduction,
-      sameSite: 'lax',
-      maxAge: data.session.expires_in || 3600,
-      path: '/',
+    // Copy cookies from the Supabase-modified response to the final response
+    response.cookies.getAll().forEach((cookie) => {
+      finalResponse.cookies.set(cookie.name, cookie.value, {
+        ...cookie,
+        // Ensure secure attributes are preserved/set correctly
+        sameSite: 'lax', 
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production'
+      })
     })
 
-    return response
+    return finalResponse
   } catch (error) {
     console.error('Error logging in:', error)
     return NextResponse.json(
