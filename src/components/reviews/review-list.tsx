@@ -39,7 +39,7 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
       ])
 
       if (!reviewsRes.ok || !statsRes.ok) {
-        console.error('Failed to fetch reviews or stats')
+        // Silently handle errors - database might not be available in static builds
         setReviews([])
         setStats({
           averageRating: 0,
@@ -54,7 +54,7 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
 
       // Ensure reviewsData is an array
       if (!Array.isArray(reviewsData)) {
-        console.error('Reviews data is not an array:', reviewsData)
+        // Silently handle invalid data format
         setReviews([])
         setStats(statsData || {
           averageRating: 0,
@@ -87,7 +87,11 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
         ratingCounts: [0, 0, 0, 0, 0],
       })
     } catch (error) {
-      console.error('Error fetching reviews:', error)
+      // Silently handle errors - database might not be available in static builds
+      // Only log in development mode
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Error fetching reviews:', error)
+      }
       setReviews([])
       setStats({
         averageRating: 0,

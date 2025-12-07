@@ -89,8 +89,14 @@ export default async function RecipePage({
   // Fetch review stats for AggregateRating schema
   let reviewStats = null
   try {
-    // Check if DATABASE_URL is available before attempting database query
-    if (process.env.DATABASE_URL) {
+    // Check if database connection is available before attempting database query
+    const hasDbConnection = 
+      process.env.DATABASE_URL || 
+      process.env.POSTGRES_URL || 
+      process.env.POSTGRES_URL_NON_POOLING ||
+      process.env.POSTGRES_PRISMA_URL
+    
+    if (hasDbConnection) {
       const stats = await db
         .select({
           averageRating: sql<number>`COALESCE(AVG(${reviews.rating})::numeric, 0)`,

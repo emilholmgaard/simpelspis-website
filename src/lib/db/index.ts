@@ -2,7 +2,14 @@ import { drizzle } from 'drizzle-orm/postgres-js'
 import postgres from 'postgres'
 import * as schema from './schema'
 
-const connectionString = process.env.DATABASE_URL || ''
+// Support multiple environment variable names for compatibility
+// Vercel uses POSTGRES_URL, while local development might use DATABASE_URL
+const connectionString = 
+  process.env.DATABASE_URL || 
+  process.env.POSTGRES_URL_NON_POOLING || 
+  process.env.POSTGRES_URL || 
+  process.env.POSTGRES_PRISMA_URL || 
+  ''
 
 // Lazy initialization - only create client when needed
 let client: ReturnType<typeof postgres> | null = null
