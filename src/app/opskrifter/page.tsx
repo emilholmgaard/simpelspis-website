@@ -420,8 +420,7 @@ export default async function RecipesPage({
 
     // Filtrer efter rettype
     if (dishType && dishType !== 'alle') {
-      const fullRecipe = 'fullRecipe' in recipe ? (recipe as RecipeListItem & { fullRecipe?: Recipe }).fullRecipe : undefined
-      const recipeDishType = getDishType(recipe, fullRecipe)
+      const recipeDishType = getDishType(recipe)
       if (recipeDishType !== dishType) return false
     }
 
