@@ -16,3 +16,4 @@ export function CookiePreferencesButton() {
     </button>
   )
 }
+
