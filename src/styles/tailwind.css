@@ -36,9 +36,16 @@
 
 /* Print styles */
 @media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
   body {
     background: white !important;
     color: black !important;
+    font-size: 12pt;
+    line-height: 1.5;
   }
   
   .no-print {
@@ -48,9 +55,225 @@
   main {
     max-width: 100% !important;
     padding: 0 !important;
+    margin: 0 !important;
+    background: white !important;
   }
   
+  /* Container adjustments */
+  [class*="Container"],
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Remove top margin in print */
+  .print\:mt-0,
+  [class*="mt-28"],
+  [class*="mt-16"] {
+    margin-top: 0 !important;
+  }
+  
+  /* Remove dark mode colors */
+  .dark\:bg-gray-950,
+  .dark\:bg-gray-800,
+  .dark\:text-gray-50,
+  .dark\:text-gray-300,
+  .dark\:text-gray-400 {
+    background: white !important;
+    color: black !important;
+  }
+  
+  /* Typography improvements */
+  h1, h2, h3, h4, h5, h6 {
+    color: black !important;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  
+  h1 {
+    font-size: 24pt !important;
+    margin-top: 0 !important;
+    margin-bottom: 12pt !important;
+  }
+  
+  h2 {
+    font-size: 18pt !important;
+    margin-top: 16pt !important;
+    margin-bottom: 8pt !important;
+    page-break-after: avoid;
+  }
+  
+  h3 {
+    font-size: 14pt !important;
+    margin-top: 12pt !important;
+    margin-bottom: 6pt !important;
+  }
+  
+  p {
+    color: black !important;
+    margin-bottom: 8pt !important;
+  }
+  
+  /* Recipe metadata badges */
+  span[class*="rounded-full"] {
+    background: #f3f4f6 !important;
+    color: black !important;
+    border: 1px solid #d1d5db !important;
+    padding: 4pt 8pt !important;
+    font-size: 10pt !important;
+  }
+  
+  /* Ingredients and instructions */
+  ul, ol {
+    page-break-inside: avoid;
+  }
+  
+  li {
+    page-break-inside: avoid;
+    color: black !important;
+  }
+  
+  /* Step numbers and bullets */
+  span[class*="rounded-full"][class*="bg-gray"] {
+    background: #f3f4f6 !important;
+    color: black !important;
+    border: 1px solid #d1d5db !important;
+  }
+  
+  span[class*="size-1.5"][class*="rounded-full"] {
+    background: black !important;
+  }
+  
+  /* Nutrition grid */
+  div[class*="grid"] {
+    page-break-inside: avoid;
+  }
+  
+  /* Nutrition section */
+  div[class*="grid"][class*="grid-cols"] {
+    gap: 12pt !important;
+  }
+  
+  /* Better spacing for nutrition items */
+  .flex.flex-col {
+    page-break-inside: avoid;
+  }
+  
+  /* Spacing adjustments */
+  .mt-28,
+  .mt-16,
+  .mt-12,
+  .mt-8,
+  .mt-6,
+  .mt-4,
+  .mt-2 {
+    margin-top: 12pt !important;
+  }
+  
+  .mb-24,
+  .mb-8,
+  .mb-6,
+  .mb-4 {
+    margin-bottom: 12pt !important;
+  }
+  
+  .pb-24 {
+    padding-bottom: 0 !important;
+  }
+  
+  /* Remove gaps that waste space */
+  .gap-12,
+  .gap-8,
+  .gap-6,
+  .gap-4 {
+    gap: 8pt !important;
+  }
+  
+  /* Two column layout for recipe */
+  .lg\:grid-cols-2,
+  [class*="grid-cols-1"][class*="lg:grid-cols-2"] {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24pt !important;
+    page-break-inside: avoid;
+  }
+  
+  /* Ensure recipe content doesn't break awkwardly */
+  .recipe-section > div {
+    page-break-inside: avoid;
+  }
+  
+  /* Better spacing for instructions */
+  .space-y-6 > * + * {
+    margin-top: 12pt !important;
+  }
+  
+  .space-y-2 > * + * {
+    margin-top: 6pt !important;
+  }
+  
+  /* Hide reviews and similar recipes in print */
+  .review-section,
+  [class*="Review"],
+  [class*="review"] {
+    display: none !important;
+  }
+  
+  /* Recipe sections should not break */
+  .recipe-section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Page breaks */
   @page {
-    margin: 2cm;
+    margin: 1.5cm;
+    size: A4;
+  }
+  
+  /* Avoid breaking recipe sections */
+  .recipe-section {
+    page-break-inside: avoid;
+  }
+  
+  /* Links should not be blue in print */
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+  
+  /* Remove all background images and gradients */
+  [class*="bg-gradient"],
+  [class*="Gradient"] {
+    display: none !important;
+  }
+  
+  /* Better contrast for badges */
+  [class*="bg-gray-100"],
+  [class*="bg-gray-800"] {
+    background: #f3f4f6 !important;
+    border: 1px solid #d1d5db !important;
+  }
+  
+  /* Ensure all text is black */
+  * {
+    color: black !important;
+  }
+  
+  /* But keep headings bold */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold !important;
+  }
+  
+  /* Ensure text is readable */
+  .text-gray-600,
+  .text-gray-400,
+  .text-gray-700 {
+    color: black !important;
+  }
+  
+  .text-gray-950,
+  .text-gray-50 {
+    color: black !important;
   }
 }

@@ -294,7 +294,7 @@ export default async function RecipePage({
       <GradientBackground />
       <Navbar />
       </div>
-      <Container className="mt-28 pb-24">
+      <Container className="mt-28 pb-24 print:mt-0">
         {/* Breadcrumbs */}
         <nav className="no-print mb-8" aria-label="Breadcrumb">
           <ol className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
@@ -352,6 +352,8 @@ export default async function RecipePage({
           <p className="mt-6 max-w-3xl text-base/7 text-gray-600 dark:text-gray-400">
             {recipe.description}
           </p>
+
+          <RecipeActions recipe={recipe} />
 
           <div className="mt-8">
             <Subheading as="h2">Næringsindhold per portion</Subheading>
@@ -419,7 +421,7 @@ export default async function RecipePage({
             </div>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2">
+          <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 recipe-section">
             <div>
               <Subheading as="h2">Fremgangsmåde</Subheading>
               <div className="mt-4 space-y-6">
@@ -487,7 +489,7 @@ export default async function RecipePage({
               </div>
             </div>
 
-            <div>
+            <div className="recipe-section">
               <Subheading as="h2">Ingredienser</Subheading>
               <ul className="mt-4 space-y-2">
                 {recipe.ingredients.map((ingredient, index) => {
@@ -522,11 +524,9 @@ export default async function RecipePage({
             </div>
           </div>
         </div>
-
-        <RecipeActions title={recipe.title} slug={slug} />
       </Container>
 
-      <Container className="pb-24">
+      <Container className="pb-24 no-print">
         <div className="max-w-4xl">
           <Subheading className="mt-12 mb-8">Anmeldelser</Subheading>
           <ReviewList recipeSlug={slug} />
@@ -538,7 +538,7 @@ export default async function RecipePage({
 
       {/* Lignende opskrifter */}
       {similarRecipes.length > 0 && (
-        <Container className="pb-24">
+        <Container className="pb-24 no-print">
           <div className="max-w-7xl">
             <Subheading className="mb-8">Lignende opskrifter</Subheading>
             <div className="grid grid-cols-1 gap-8">
