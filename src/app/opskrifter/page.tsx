@@ -274,6 +274,16 @@ export default async function RecipesPage({
     return 'alle'
   }
 
+  // Helper function to create safe regex for word matching
+  const createWordRegex = (word: string) => {
+    // Escape special regex characters
+    const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    // Match word boundaries including Danish characters
+    // Look for the word preceded by start of string or non-word char
+    // and followed by end of string or non-word char
+    return new RegExp(`(?:^|[^a-zæøå0-9])${escaped}(?:$|[^a-zæøå0-9])`, 'i')
+  }
+
   // Helper function to determine if recipe is budget-friendly
   function isBudgetFriendly(recipe: RecipeListItem & { fullRecipe?: Recipe }): boolean {
     const fullRecipe = 'fullRecipe' in recipe ? recipe.fullRecipe : undefined
@@ -299,9 +309,10 @@ export default async function RecipesPage({
       'kød (dyrt)', 'premium', 'luksus'
     ]
     
-    const hasExpensiveIngredient = expensiveIngredients.some(ingredient => 
-      ingredientsText.includes(ingredient) || recipeText.includes(ingredient)
-    )
+    const hasExpensiveIngredient = expensiveIngredients.some(ingredient => {
+      const regex = createWordRegex(ingredient)
+      return regex.test(ingredientsText) || regex.test(recipeText)
+    })
     
     if (hasExpensiveIngredient) {
       return false
@@ -311,16 +322,17 @@ export default async function RecipesPage({
     const budgetFriendlyIngredients = [
       'ris', 'rice', 'pasta', 'kartofler', 'potato', 'kartofel',
       'bønner', 'beans', 'linser', 'lentils', 'kikærter', 'chickpeas',
-      'æg', 'egg', 'ost (billig)', 'cheddar', 'gul ost',
+      'æg', 'egg', 'ost', 'cheddar', 'gul ost',
       'kylling', 'chicken', 'hakket kød', 'ground meat', 'minced meat',
       'tomat', 'tomato', 'løg', 'onion', 'hvidløg', 'garlic',
       'gulerod', 'carrot', 'kål', 'cabbage', 'broccoli'
     ]
 
     // Count budget-friendly ingredients
-    const budgetIngredientCount = budgetFriendlyIngredients.filter(ingredient =>
-      ingredientsText.includes(ingredient) || recipeText.includes(ingredient)
-    ).length
+    const budgetIngredientCount = budgetFriendlyIngredients.filter(ingredient => {
+      const regex = createWordRegex(ingredient)
+      return regex.test(ingredientsText) || regex.test(recipeText)
+    }).length
 
     // Recipe is budget-friendly if it has at least 3 budget-friendly ingredients
     // and no expensive ingredients
@@ -351,9 +363,10 @@ export default async function RecipesPage({
       'processed', 'forarbejdet', 'konserveringsmiddel'
     ]
     
-    const hasUnhealthyIngredient = unhealthyIngredients.some(ingredient => 
-      ingredientsText.includes(ingredient) || recipeText.includes(ingredient)
-    )
+    const hasUnhealthyIngredient = unhealthyIngredients.some(ingredient => {
+      const regex = createWordRegex(ingredient)
+      return regex.test(ingredientsText) || regex.test(recipeText)
+    })
     
     if (hasUnhealthyIngredient) {
       return false
@@ -370,9 +383,10 @@ export default async function RecipesPage({
     ]
 
     // Count healthy ingredients
-    const healthyIngredientCount = healthyIngredients.filter(ingredient =>
-      ingredientsText.includes(ingredient) || recipeText.includes(ingredient)
-    ).length
+    const healthyIngredientCount = healthyIngredients.filter(ingredient => {
+      const regex = createWordRegex(ingredient)
+      return regex.test(ingredientsText) || regex.test(recipeText)
+    }).length
 
     // Check nutrition values if available
     let hasGoodNutrition = false
