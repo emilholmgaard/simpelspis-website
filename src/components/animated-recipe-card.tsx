@@ -174,7 +174,7 @@ export function AnimatedRecipeCard({
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-gray-950 dark:text-gray-50">Ingredienser</span>
                 <span className="text-sm text-gray-600 dark:text-gray-400">
-                  {recipeData.ingredients.length} {recipeData.ingredients.length === 1 ? 'ingrediens' : 'ingredienser'}
+                  {recipeData.ingredients.filter(i => i.trim() !== '' && !i.trim().endsWith(':')).length} {recipeData.ingredients.filter(i => i.trim() !== '' && !i.trim().endsWith(':')).length === 1 ? 'ingrediens' : 'ingredienser'}
                 </span>
               </div>
             </div>
