@@ -120,8 +120,6 @@ export function AnimatedRecipeCard({
         <div className="flex w-full flex-1 flex-col gap-y-8 p-6 md:p-12">
           <div className="flex flex-wrap items-center gap-3 text-sm/5 text-gray-600 dark:text-gray-400">
             <span className="font-medium">{category}</span>
-            <span>•</span>
-            <span>{difficulty}</span>
             {reviewStats && reviewStats.totalReviews > 0 && (
               <>
                 <span>•</span>
@@ -136,6 +134,8 @@ export function AnimatedRecipeCard({
                 </div>
               </>
             )}
+            <span>•</span>
+            <span>{difficulty}</span>
           </div>
           <h3 className="text-3xl leading-tight text-balance md:text-4xl font-medium text-gray-950 dark:text-gray-50">
             {title}

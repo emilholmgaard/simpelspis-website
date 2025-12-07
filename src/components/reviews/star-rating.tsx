@@ -48,7 +48,7 @@ export function HeartRating({
 
   return (
     <div 
-      className="flex items-center gap-0.5"
+      className="flex items-center gap-0.5 relative z-10"
       onMouseLeave={handleMouseLeave}
     >
       {[1, 2, 3, 4, 5].map((heart) => (
@@ -58,7 +58,7 @@ export function HeartRating({
           onClick={() => handleClick(heart)}
           onMouseEnter={() => handleMouseEnter(heart)}
           disabled={!interactive}
-          className={interactive ? 'cursor-pointer transition-transform hover:scale-110' : 'cursor-default'}
+          className={interactive ? 'cursor-pointer transition-transform hover:scale-110 p-1' : 'cursor-default p-1'}
           aria-label={`Rate ${heart} out of 5`}
         >
           {heart <= displayRating ? (

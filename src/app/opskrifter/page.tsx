@@ -4,11 +4,10 @@ import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
-import { ChevronRightIcon, FunnelIcon } from '@heroicons/react/24/outline'
+import { FunnelIcon } from '@heroicons/react/24/outline'
 import type { Metadata } from 'next'
 import { getAllRecipes, getAllRecipesWithData, type RecipeListItem, type Recipe } from '@/lib/recipes'
 import { AnimatedRecipeCard } from '@/components/animated-recipe-card'
-import { RecipeCard } from '@/components/recipe-card'
 import { SortSelect } from '@/components/recipe-sort-select'
 
 export const metadata: Metadata = {
@@ -220,7 +219,7 @@ export default async function RecipesPage({
   }
 
   // Helper function to determine dish type
-  function getDishType(recipe: RecipeListItem, fullRecipe?: Recipe): string {
+  function getDishType(recipe: RecipeListItem): string {
     const categoryLower = recipe.category.toLowerCase()
     const titleLower = recipe.title.toLowerCase()
 

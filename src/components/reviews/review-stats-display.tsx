@@ -50,7 +50,7 @@ export function ReviewStatsDisplay({
         localStorage.setItem('anonymous-id', anonymousId)
       }
       return anonymousId
-    } catch (error) {
+    } catch {
       // Fallback if localStorage is not available
       return `anon_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
     }
@@ -61,9 +61,9 @@ export function ReviewStatsDisplay({
     
     // Fetch current user and latest stats
     Promise.all([
-      fetch('/api/auth/user').then((res) => res.json()).catch(() => ({ user: null })),
-      fetch(`/api/reviews/stats?recipeSlug=${recipeSlug}`).then((res) => res.json()).catch(() => ({ averageRating: 0, totalReviews: 0 })),
-      fetch(`/api/reviews?recipeSlug=${recipeSlug}`).then((res) => res.json()).catch(() => [])
+      fetch('/api/auth/user', { cache: 'no-store' }).then((res) => res.json()).catch(() => ({ user: null })),
+      fetch(`/api/reviews/stats?recipeSlug=${recipeSlug}`, { cache: 'no-store' }).then((res) => res.json()).catch(() => ({ averageRating: 0, totalReviews: 0 })),
+      fetch(`/api/reviews?recipeSlug=${recipeSlug}`, { cache: 'no-store' }).then((res) => res.json()).catch(() => [])
     ])
       .then(([userData, statsData, reviewsData]) => {
         if (!isMounted) return
@@ -95,7 +95,7 @@ export function ReviewStatsDisplay({
               if (anonymousReview) {
                 setUserRating(anonymousReview.rating)
               }
-            } catch (error) {
+            } catch {
               // Silently handle localStorage errors
             }
           }
@@ -109,7 +109,7 @@ export function ReviewStatsDisplay({
             if (anonymousReview) {
               setUserRating(anonymousReview.rating)
             }
-          } catch (error) {
+          } catch {
             // Silently handle localStorage errors
           }
         }
@@ -165,8 +165,8 @@ export function ReviewStatsDisplay({
       // Refresh stats and reviews to get updated data from server
       // This ensures we have the correct average and counts
       const [statsRes, reviewsRes] = await Promise.all([
-        fetch(`/api/reviews/stats?recipeSlug=${recipeSlug}`),
-        fetch(`/api/reviews?recipeSlug=${recipeSlug}`)
+        fetch(`/api/reviews/stats?recipeSlug=${recipeSlug}`, { cache: 'no-store' }),
+        fetch(`/api/reviews?recipeSlug=${recipeSlug}`, { cache: 'no-store' })
       ])
       
       if (statsRes.ok) {

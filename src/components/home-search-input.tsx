@@ -20,7 +20,6 @@ export function HomeSearchInput() {
   const [value, setValue] = useState('')
   const [displayText, setDisplayText] = useState('')
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
-  const [isTyping, setIsTyping] = useState(true)
   const [showCursor, setShowCursor] = useState(true)
   const router = useRouter()
   const inputRef = useRef<HTMLInputElement>(null)
@@ -55,12 +54,10 @@ export function HomeSearchInput() {
         setDisplayText(currentText.slice(0, charIndex + 1))
         charIndex++
       } else {
-        setIsTyping(false)
         clearInterval(typeInterval)
         
         // Wait before deleting
         setTimeout(() => {
-          setIsTyping(true)
           const deleteInterval = setInterval(() => {
             if (charIndex > 0) {
               charIndex--

@@ -9,14 +9,7 @@ interface ReviewFormProps {
   onReviewSubmitted?: () => void
 }
 
-interface User {
-  id: string
-  email: string
-  username: string | null
-}
-
 export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
-  const [user, setUser] = useState<User | null>(null)
   const [rating, setRating] = useState(0)
   const [comment, setComment] = useState('')
   const [loading, setLoading] = useState(false)
@@ -24,8 +17,6 @@ export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
 
   useEffect(() => {
     fetch('/api/auth/user')
-      .then((res) => res.json())
-      .then((data) => setUser(data.user))
       .catch(() => {})
   }, [])
 

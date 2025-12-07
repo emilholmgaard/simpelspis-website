@@ -25,42 +25,25 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
   const [reviews, setReviews] = useState<Review[]>([])
   const [loading, setLoading] = useState(true)
   const [currentUserId, setCurrentUserId] = useState<string | null>(null)
-  const [stats, setStats] = useState({
-    averageRating: 0,
-    totalReviews: 0,
-    ratingCounts: [0, 0, 0, 0, 0],
-  })
 
   const fetchReviews = async () => {
     try {
-      const [reviewsRes, statsRes] = await Promise.all([
+      const [reviewsRes] = await Promise.all([
         fetch(`/api/reviews?recipeSlug=${recipeSlug}`),
-        fetch(`/api/reviews/stats?recipeSlug=${recipeSlug}`),
       ])
 
-      if (!reviewsRes.ok || !statsRes.ok) {
+      if (!reviewsRes.ok) {
         // Silently handle errors - database might not be available in static builds
         setReviews([])
-        setStats({
-          averageRating: 0,
-          totalReviews: 0,
-          ratingCounts: [0, 0, 0, 0, 0],
-        })
         return
       }
 
       const reviewsData = await reviewsRes.json()
-      const statsData = await statsRes.json()
 
       // Ensure reviewsData is an array
       if (!Array.isArray(reviewsData)) {
         // Silently handle invalid data format
         setReviews([])
-        setStats(statsData || {
-          averageRating: 0,
-          totalReviews: 0,
-          ratingCounts: [0, 0, 0, 0, 0],
-        })
         return
       }
 
@@ -84,11 +67,6 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
       )
 
       setReviews(reviewsWithUsers)
-      setStats(statsData || {
-        averageRating: 0,
-        totalReviews: 0,
-        ratingCounts: [0, 0, 0, 0, 0],
-      })
     } catch (error) {
       // Silently handle errors - database might not be available in static builds
       // Only log in development mode
@@ -96,11 +74,6 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
         console.error('Error fetching reviews:', error)
       }
       setReviews([])
-      setStats({
-        averageRating: 0,
-        totalReviews: 0,
-        ratingCounts: [0, 0, 0, 0, 0],
-      })
     } finally {
       setLoading(false)
     }

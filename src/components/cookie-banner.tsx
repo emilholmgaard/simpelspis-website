@@ -131,7 +131,6 @@ export function CookieBanner() {
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
         preferences={preferences}
-        setPreferences={setPreferences}
         expandedCategories={expandedCategories}
         toggleCategory={toggleCategory}
         togglePreference={togglePreference}
@@ -147,7 +146,6 @@ function CookiePreferencesModal({
   isModalOpen,
   setIsModalOpen,
   preferences,
-  setPreferences,
   expandedCategories,
   toggleCategory,
   togglePreference,
@@ -158,7 +156,6 @@ function CookiePreferencesModal({
   isModalOpen: boolean
   setIsModalOpen: (open: boolean) => void
   preferences: CookiePreferences
-  setPreferences: React.Dispatch<React.SetStateAction<CookiePreferences>>
   expandedCategories: Set<string>
   toggleCategory: (category: string) => void
   togglePreference: (key: keyof CookiePreferences) => void
