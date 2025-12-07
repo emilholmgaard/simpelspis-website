@@ -30,15 +30,6 @@ export const metadata: Metadata = {
   },
 }
 
-function formatDate(dateString: string): string {
-  const date = new Date(dateString)
-  return new Intl.DateTimeFormat('da-DK', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  }).format(date)
-}
-
 export default function BlogPage() {
   const posts = getAllBlogPosts().sort((a, b) => {
     return new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime()
@@ -105,15 +96,11 @@ export default function BlogPage() {
                     <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
                       {post.excerpt}
                     </p>
-                    <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-500">
-                      <span>{formatDate(post.datePublished)}</span>
-                      {post.author && (
-                        <>
-                          <span>•</span>
-                          <span>{post.author}</span>
-                        </>
-                      )}
-                    </div>
+                    {post.author && (
+                      <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-500">
+                        <span>{post.author}</span>
+                      </div>
+                    )}
                   </Link>
                 </article>
               ))}

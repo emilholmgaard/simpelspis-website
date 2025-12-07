@@ -66,15 +66,6 @@ export async function generateMetadata({
   }
 }
 
-function formatDate(dateString: string): string {
-  const date = new Date(dateString)
-  return new Intl.DateTimeFormat('da-DK', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  }).format(date)
-}
-
 function parseMarkdown(text: string): React.ReactNode[] {
   const parts: React.ReactNode[] = []
   let currentIndex = 0
@@ -318,17 +309,11 @@ export default async function BlogPostPage({
               {post.title}
             </Heading>
             
-            <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-500 mb-8">
-              <time dateTime={post.datePublished}>
-                {formatDate(post.datePublished)}
-              </time>
-              {post.author && (
-                <>
-                  <span>•</span>
-                  <span>{post.author}</span>
-                </>
-              )}
-            </div>
+            {post.author && (
+              <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-500 mb-8">
+                <span>{post.author}</span>
+              </div>
+            )}
 
             {post.image && (
               <img

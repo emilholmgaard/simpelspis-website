@@ -11,7 +11,7 @@ import { UserMenu } from './auth/user-menu'
 
 const navigation = [
   { name: 'Nemme Opskrifter', href: '/opskrifter' },
-  { name: 'Blog', href: '/blog' }
+  { name: 'Blog', href: '/blog' } // Navigation items
 ]
 
 interface User {
@@ -24,16 +24,27 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [authModalOpen, setAuthModalOpen] = useState(false)
   const [user, setUser] = useState<User | null>(null)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     fetch('/api/auth/user')
       .then((res) => res.json())
-      .then((data) => setUser(data.user))
-      .catch(() => {})
+      .then((data) => {
+        setUser(data.user)
+        setLoading(false)
+      })
+      .catch(() => {
+        setLoading(false)
+      })
   }, [])
 
+  const handleLogout = async () => {
+    await fetch('/api/auth/logout', { method: 'POST' })
+    window.location.reload()
+  }
+
   return (
-    <header>
+    <header className="relative z-50">
       <nav aria-label="Global" className="px-6 lg:px-8">
         <div className="mx-auto flex max-w-2xl lg:max-w-6xl items-center justify-between py-6">
         <Link href="/" className="-m-1.5 p-1.5">
@@ -60,12 +71,14 @@ export function Navbar() {
               {item.name}
             </Link>
           ))}
-          {user ? (
-            <UserMenu />
-          ) : (
-            <Button variant="outline" onClick={() => setAuthModalOpen(true)}>
-              Log ind
-            </Button>
+          {!loading && (
+            user ? (
+              <UserMenu user={user} />
+            ) : (
+              <Button variant="outline" onClick={() => setAuthModalOpen(true)}>
+                Log ind
+              </Button>
+            )
           )}
         </div>
       </div>
@@ -100,6 +113,43 @@ export function Navbar() {
                     {item.name}
                   </Link>
                 ))}
+              </div>
+              <div className="py-6">
+                {!loading && (
+                  user ? (
+                    <>
+                      <div className="px-3 py-2 text-sm text-gray-500 dark:text-gray-400">
+                        Logget ind som {user.username || user.email}
+                      </div>
+                      <Link
+                        href="/konto"
+                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        Indstillinger
+                      </Link>
+                      <button
+                        onClick={() => {
+                          setMobileMenuOpen(false)
+                          handleLogout()
+                        }}
+                        className="-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800"
+                      >
+                        Log ud
+                      </button>
+                    </>
+                  ) : (
+                    <button
+                      onClick={() => {
+                        setMobileMenuOpen(false)
+                        setAuthModalOpen(true)
+                      }}
+                      className="-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-50 dark:hover:bg-gray-800"
+                    >
+                      Log ind
+                    </button>
+                  )
+                )}
               </div>
             </div>
           </div>

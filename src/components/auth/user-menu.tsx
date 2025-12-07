@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { UserIcon, ArrowRightOnRectangleIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import { Button } from '@/components/button'
@@ -11,34 +11,17 @@ interface User {
   username: string | null
 }
 
-export function UserMenu() {
+interface UserMenuProps {
+  user: User
+}
+
+export function UserMenu({ user }: UserMenuProps) {
   const router = useRouter()
-  const [user, setUser] = useState<User | null>(null)
-  const [loading, setLoading] = useState(true)
   const [showMenu, setShowMenu] = useState(false)
-
-  const fetchUser = async () => {
-    try {
-      const response = await fetch('/api/auth/user')
-      const data = await response.json()
-      setUser(data.user)
-      setLoading(false)
-    } catch {
-      setLoading(false)
-    }
-  }
-
-  useEffect(() => {
-    fetchUser()
-  }, [])
 
   const handleLogout = async () => {
     await fetch('/api/auth/logout', { method: 'POST' })
     window.location.reload()
-  }
-
-  if (loading) {
-    return null
   }
 
   if (!user) {
