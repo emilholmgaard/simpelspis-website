@@ -96,10 +96,14 @@ export function HomeSearchInput() {
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-md mx-auto">
       <div className="relative w-full">
+        <label htmlFor="home-search-input" className="sr-only">
+          Søg efter opskrifter
+        </label>
         <div className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 inline-flex flex-shrink-0 w-5 h-5 items-center justify-center">
-          <MagnifyingGlassIcon className="w-5 h-5 text-gray-400 dark:text-gray-500" />
+          <MagnifyingGlassIcon className="w-5 h-5 text-gray-400 dark:text-gray-500" aria-hidden="true" />
         </div>
         <input
+          id="home-search-input"
           ref={inputRef}
           type="text"
           value={value}
@@ -107,10 +111,11 @@ export function HomeSearchInput() {
           onFocus={handleFocus}
           onBlur={handleBlur}
           placeholder=""
+          aria-label="Søg efter opskrifter"
           className="w-full rounded-full border border-gray-200 dark:border-gray-800 bg-white dark:bg-white/5 pl-12 pr-12 py-4 text-base text-gray-950 dark:text-gray-50 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-gray-950/10 dark:focus:ring-white/10 hover:border-gray-300 dark:hover:border-gray-700 transition-all shadow-sm hover:shadow-md dark:ring-1 dark:ring-inset dark:ring-white/10"
         />
         {!value && displayText && (
-          <div className="pointer-events-none absolute left-12 top-1/2 -translate-y-1/2 text-base text-gray-400 dark:text-gray-500">
+          <div className="pointer-events-none absolute left-12 top-1/2 -translate-y-1/2 text-base text-gray-500 dark:text-gray-400" aria-hidden="true">
             {displayText}
             {showCursor && <span className="ml-0.5">|</span>}
           </div>

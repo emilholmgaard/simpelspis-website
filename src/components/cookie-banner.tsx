@@ -40,9 +40,9 @@ export function CookieBanner() {
       <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex-1">
-            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-2">
+            <div className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-2">
               Vi bruger cookies
-            </h3>
+            </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               Vi bruger kun nødvendige cookies til at håndtere din login-session. 
               Disse cookies er påkrævet for at logge ind og skrive anmeldelser. 

@@ -8,7 +8,7 @@ export function Logo({ className }: { className?: string }) {
     <div className={clsx(className, 'relative flex items-center')}>
       <Image
         src="/logo_black.svg"
-        alt="Simpel Spis"
+        alt=""
         width={1804}
         height={328}
         className="h-auto w-auto max-h-6 object-contain dark:hidden"
@@ -17,7 +17,7 @@ export function Logo({ className }: { className?: string }) {
       />
       <Image
         src="/logo_white.svg"
-        alt="Simpel Spis"
+        alt=""
         width={1804}
         height={328}
         className="h-auto w-auto max-h-6 object-contain hidden dark:block"
