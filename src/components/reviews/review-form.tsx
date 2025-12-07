@@ -9,6 +9,16 @@ interface ReviewFormProps {
   onReviewSubmitted?: () => void
 }
 
+interface Review {
+  id: string
+  recipeSlug: string
+  userId: string | null
+  anonymousId: string | null
+  rating: number
+  comment: string | null
+  createdAt: string
+}
+
 export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
   const [rating, setRating] = useState(0)
   const [comment, setComment] = useState('')
@@ -33,14 +43,14 @@ export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
         
         // Check for user review
         if (userData?.user) {
-          myReview = reviewsData.find((r: any) => r.userId === userData.user.id)
+          myReview = reviewsData.find((r: Review) => r.userId === userData.user.id)
         }
         
         // If not found, check for anonymous review
         if (!myReview) {
           const anonymousId = localStorage.getItem('anonymous-id')
           if (anonymousId) {
-            myReview = reviewsData.find((r: any) => r.anonymousId === anonymousId)
+            myReview = reviewsData.find((r: Review) => r.anonymousId === anonymousId)
           }
         }
         
