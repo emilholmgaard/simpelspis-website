@@ -11,6 +11,7 @@ import { UserMenu } from './auth/user-menu'
 
 const navigation = [
   { name: 'Nemme Opskrifter', href: '/opskrifter' },
+  { name: 'Blog', href: '/blog' }
 ]
 
 interface User {

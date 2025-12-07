@@ -4911,5 +4911,85 @@
     "cookTime": "0 min",
     "difficulty": "Let",
     "excerpt": "Sund og nærende yoghurt bowl a la Joe & The Juice med granola, bærkompot, blåbær og græsk yoghurt. Den perfekte morgenmad til at starte dagen med energi. Denne opskrift giver dig den autentiske yoghurt bowl der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "vegetarisk-juleand",
+    "title": "Vegetarisk Juleand",
+    "category": "Vegetarisk",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker vegetarisk juleand lavet af seitan med sprød overflade og saftig tekstur. Den perfekte vegetariske erstatning til traditionel juleand - helt uden kød! Perfekt til juleaften eller julefrokost med familie og venner."
+  },
+  {
+    "slug": "vegetarisk-flaeskesteg",
+    "title": "Vegetarisk Flæskesteg",
+    "category": "Vegetarisk",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker vegetarisk flæskesteg lavet af seitan med sprød svær-lignende overflade og saftig tekstur. Den perfekte vegetariske erstatning til traditionel flæskesteg - helt uden kød! Perfekt til juleaften eller julefrokost med familie og venner."
+  },
+  {
+    "slug": "vegetarisk-julefrikadeller",
+    "title": "Vegetariske Julefrikadeller",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Lækre vegetariske julefrikadeller lavet af linser og grøntsager med aromatiske julekrydderier. Den perfekte vegetariske erstatning til traditionelle julefrikadeller - helt uden kød! Perfekt til julefrokost eller juleaften med familie og venner."
+  },
+  {
+    "slug": "vegetarisk-julemenu",
+    "title": "Vegetarisk Julemenu - Komplet Dansk Julemiddag",
+    "category": "Vegetarisk",
+    "time": "4 timer",
+    "prepTime": "90 min",
+    "cookTime": "2,5 timer",
+    "difficulty": "Mellem",
+    "excerpt": "Komplet vegetarisk dansk julemenu med vegetarisk flæskesteg, rødkål, brunede kartofler og vegetarisk brun sovs. Den perfekte vegetariske julemiddag der smager langt bedre end fra restauranten - helt uden kød! Autentisk dansk jul på sit bedste!"
+  },
+  {
+    "slug": "vegetarisk-julepoelse",
+    "title": "Vegetarisk Julepølse",
+    "category": "Vegetarisk",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker vegetarisk julepølse lavet af linser, bønner og grøntsager med aromatiske julekrydderier. Den perfekte vegetariske erstatning til traditionel julepølse - helt uden kød! Perfekt til julefrokost eller juleaften med familie og venner."
+  },
+  {
+    "slug": "vegetarisk-julekartoffelmos",
+    "title": "Vegetarisk Julekartoffelmos",
+    "category": "Vegetarisk",
+    "time": "40 min",
+    "prepTime": "10 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet vegetarisk julekartoffelmos med smør, mælk og en smule muskatnød. Den perfekte tilbehør til vegetarisk julemad - cremet, luftig og fuld af smag. Perfekt til juleaften eller julefrokost med familie og venner."
+  },
+  {
+    "slug": "vegetarisk-julefrokost",
+    "title": "Vegetarisk Julefrokost - Komplet Dansk Julefrokost",
+    "category": "Vegetarisk",
+    "time": "5 timer",
+    "prepTime": "2 timer",
+    "cookTime": "3 timer",
+    "difficulty": "Svær",
+    "excerpt": "Komplet vegetarisk dansk julefrokost med vegetariske julefrikadeller, vegetarisk julepølse, rødkål, brunede kartofler, vegetarisk kartoffelmos og vegetarisk brun sovs. Den perfekte vegetariske julefrokost der smager langt bedre end fra restauranten - helt uden kød! Autentisk dansk jul på sit bedste!"
+  },
+  {
+    "slug": "vegetarisk-julebrod",
+    "title": "Vegetarisk Julebrød",
+    "category": "Vegetarisk",
+    "time": "180 min",
+    "prepTime": "60 min",
+    "cookTime": "120 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækkert vegetarisk julebrød med tørrede frugter, nødder og julekrydderier. Et sødt og luftigt brød perfekt til julefrokost eller juleaften. Den perfekte vegetariske juleklassiker der smager langt bedre end købt!"
   }
 ]
