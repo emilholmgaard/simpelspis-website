@@ -5,7 +5,7 @@ import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
-import { getBlogPostBySlug, getAllBlogPostsWithData, type BlogPost } from '@/lib/blog'
+import { getBlogPostBySlug, getAllBlogPostsWithData, categoryToSlug, type BlogPost } from '@/lib/blog'
 import { ChevronLeftIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
@@ -260,8 +260,8 @@ export default async function BlogPost({
         {post.category && (
           <div className="mt-6 flex flex-wrap items-center gap-4">
             <Link
-              href={`/blog?category=${post.category.toLowerCase().replace(/\s+/g, '-')}`}
-              className="rounded-full border border-dotted border-gray-300 bg-gray-50 px-2 text-sm/6 font-medium text-gray-500"
+              href={`/blog?category=${categoryToSlug(post.category)}`}
+              className="inline-flex items-center rounded-full border border-dotted border-gray-300 bg-gray-50 px-3 py-1.5 text-sm/6 font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 hover:border-gray-400"
             >
               {post.category}
             </Link>

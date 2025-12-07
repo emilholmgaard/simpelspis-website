@@ -1,8 +1,160 @@
 [
   {
+    "slug": "bedste-vin-fra-bordeaux",
+    "title": "De Bedste Vine fra Bordeaux - En Komplet Guide",
+    "excerpt": "Opdag de bedste vine fra Bordeaux, verdens mest berømte vinregion. Fra legendariske Premier Cru Classé til budgetvenlige perler. En detaljeret guide til Bordeaux's fineste vine med anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-vin-fra-burgundy",
+    "title": "De Bedste Vine fra Burgundy - Elegance og Kompleksitet",
+    "excerpt": "Opdag de bedste vine fra Burgundy, verdens mest komplekse vinregion. Fra legendariske Domaine de la Romanée-Conti til budgetvenlige Mâcon-vine. En detaljeret guide til Burgundy's fineste vine med anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-vin-fra-champagne",
+    "title": "De Bedste Vine fra Champagne - Verdens Bedste Mousserende Vin",
+    "excerpt": "Opdag de bedste vine fra Champagne, verdens mest prestigefyldte mousserende vinregion. Fra legendariske Dom Pérignon til budgetvenlige grower Champagne. En detaljeret guide til Champagne's fineste vine med anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-vin-fra-rhone",
+    "title": "De Bedste Vine fra Rhône - Kraftfulde og Aromatiske",
+    "excerpt": "Opdag de bedste vine fra Rhône-dalen, hjemsted for nogle af Frankrigs mest kraftfulde og aromatiske vine. Fra elegante Côte-Rôtie til kraftfulde Châteauneuf-du-Pape. En detaljeret guide til Rhône's fineste vine med anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-vin-fra-loire",
+    "title": "De Bedste Vine fra Loire - Friskhed og Elegance",
+    "excerpt": "Opdag de bedste vine fra Loire-dalen, hjemsted for nogle af Frankrigs mest friske og elegante vine. Fra klassiske Sancerre til elegante Vouvray. En detaljeret guide til Loire's fineste vine med anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-vin-fra-alsace",
+    "title": "De Bedste Vine fra Alsace - Aromatiske Hvidvine",
+    "excerpt": "Opdag de bedste vine fra Alsace, hjemsted for nogle af verdens bedste aromatiske hvidvine. Fra elegante Riesling til krydrede Gewürztraminer. En detaljeret guide til Alsace's fineste vine med anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-vin-fra-provence",
+    "title": "De Bedste Vine fra Provence - Rosé Paradise",
+    "excerpt": "Opdag de bedste vine fra Provence, verdens mest berømte rosé region. Fra elegante Côtes de Provence til kraftfulde Bandol. En detaljeret guide til Provence's fineste vine med anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-vin-fra-languedoc",
+    "title": "De Bedste Vine fra Languedoc-Roussillon - Fremragende Værdi",
+    "excerpt": "Opdag de bedste vine fra Languedoc-Roussillon, Frankrigs største vinregion med fremragende værdi. Fra kraftfulde Corbières til elegante Picpoul de Pinet. En detaljeret guide til Languedoc's fineste vine med anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "guide-til-champagne",
+    "title": "Komplet Guide til Champagne - Alt du Skal Vide",
+    "excerpt": "Lær alt om champagne - fra produktion og typer til servering og opbevaring. En komplet guide til verdens mest ikoniske mousserende vin.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-champagne-maerker",
+    "title": "De Bedste Champagne Mærker - Anbefalinger og Guide",
+    "excerpt": "Opdag de bedste champagne mærker fra de store ikoniske huse til skjulte perler. En komplet guide til champagne mærker med anbefalinger, priser og smagsprofiler.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "sadan-vaelger-du-champagne",
+    "title": "Sådan Vælger du den Perfekte Champagne - Komplet Guide",
+    "excerpt": "Lær hvordan du vælger den rigtige champagne til enhver lejlighed. Fra budget til prestige, madparring til servering - alt du skal vide for at træffe det perfekte valg.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "champagne-til-forskellige-lejligheder",
+    "title": "Champagne til Forskellige Lejligheder - Den Perfekte Flaske til Hver Anledning",
+    "excerpt": "Find den perfekte champagne til enhver lejlighed. Fra bryllup og fødselsdage til juleaften og nytår - en komplet guide til at vælge champagne til hver anledning.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-01-15T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "vin-servering",
+    "title": "Komplet Guide til Vinservering - Sådan Serverer du Vin Perfekt",
+    "excerpt": "Lær kunsten at servere vin korrekt. Fra den rigtige temperatur og glasvalg til dekanting og madparring. En komplet guide til vinservering der sikrer den bedste smagsoplevelse.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "vin-for-begyndere",
+    "title": "Basisguide til Vin for Begyndere - En Komplet Guide til at Komme i Gang med Vin",
+    "excerpt": "Ny til vin? Denne guide lærer dig det grundlæggende om vin. Fra hvordan du vælger din første flaske til serveringstemperatur og madparring. Alt du behøver at vide for at komme i gang med vin.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "vin-opbevaring",
+    "title": "Vin Opbevaring - Sådan Opbevarer du Din Vin Korrekt",
+    "excerpt": "Lær de vigtigste regler for vinopbevaring. Fra temperatur og luftfugtighed til lys og positionering. En komplet guide til at opbevare din vin, så den bevarer sin kvalitet og smag.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-vin-lande-for-begyndere",
+    "title": "De Bedste Vinlande for Begyndere - En Guide til Verdens Vinlande",
+    "excerpt": "Opdag de bedste vinlande for begyndere. En komplet guide til vinlande der er lette at forstå, tilgængelige og perfekte til at starte din vinrejse. Fra Italien til Chile, Spanien til Australien.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
     "slug": "bedste-vin-aargange",
     "title": "Guide til de Bedste Vinårgange - Sådan Vælger du det Rigtige År",
     "excerpt": "Forstå betydningen af årstal på vinetiketten. En komplet guide til gode og dårlige vinårgange for verdens vigtigste vinregioner.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-øl-typer",
+    "title": "Guide til de Bedste Øltyper - Sådan Vælger du det Rigtige Øl",
+    "excerpt": "Forstå forskellen mellem de forskellige øltyper. En komplet guide til IPA, pilsner, stout, ale og mange flere, så du altid vælger den bedste øl.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-vin-italienske-omrader",
+    "title": "Bedste Vin for de Forskellige Områder i Italien",
+    "excerpt": "En komplet guide til de bedste vine fra Italiens forskellige regioner. Fra Piemonte til Sicilien - opdag hvilke vine der er perfekte til hver italiensk region med anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-vin-spanske-omrader",
+    "title": "Bedste Vin for de Forskellige Områder i Spanien",
+    "excerpt": "Opdag hvilke vine der er bedst til hvert spanske område. Fra Rioja til Andalucía - en komplet guide til de bedste vine for Spanien's forskellige regioner med specifikke anbefalinger og madparring.",
     "author": "Simpel Spis",
     "datePublished": "2025-12-07T10:00:00+01:00",
     "category": "Tips & Tricks"
@@ -16,9 +168,25 @@
     "category": "Tips & Tricks"
   },
   {
+    "slug": "forskellige-typer-øl",
+    "title": "Guide til Forskellige Typer Øl - Kend Dit Øl",
+    "excerpt": "En komplet guide til de forskellige typer øl. Lær forskellen på IPA, pilsner, stout, porter, ale og lager. Bliv klogere på humle, malt, smagsprofiler og madparring.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
     "slug": "bedste-tyske-vine",
     "title": "De Bedste Tyske Vine",
     "excerpt": "Opdag de bedste tyske vine fra Mosel, Rheingau og andre berømte regioner. Fra klassiske Riesling til moderne Spätburgunder. En detaljeret guide til Tysklands fineste vine med anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-tyske-øl",
+    "title": "De Bedste Tyske Øl",
+    "excerpt": "Opdag de bedste tyske øl fra Bayern, München og andre berømte regioner. Fra klassiske Pilsner til moderne IPA. En detaljeret guide til Tysklands fineste øl med anbefalinger, priser og bryggerier.",
     "author": "Simpel Spis",
     "datePublished": "2025-12-07T10:00:00+01:00",
     "category": "Tips & Tricks"
@@ -32,9 +200,25 @@
     "category": "Tips & Tricks"
   },
   {
+    "slug": "bedste-italienske-øl",
+    "title": "De Bedste Italienske Øl",
+    "excerpt": "Opdag Italiens ølverden med vores guide til de bedste italienske øl. Fra klassiske pilsnere til moderne IPA og skjulte perler. Anbefalinger, priser og bryggerier.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
     "slug": "bedste-spanske-vine",
     "title": "De Bedste Spanske Vine",
     "excerpt": "Opdag Spanien's fantastiske vine. Fra klassiske Rioja til moderne Priorat. En detaljeret guide til de bedste spanske vine med specifikke anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-spanske-øl",
+    "title": "De Bedste Spanske Øl",
+    "excerpt": "Opdag Spanien's fantastiske øl. Fra klassiske pilsnere til moderne craft beer. En detaljeret guide til de bedste spanske øl med specifikke anbefalinger, priser og bryggerier.",
     "author": "Simpel Spis",
     "datePublished": "2025-12-07T10:00:00+01:00",
     "category": "Tips & Tricks"
@@ -48,9 +232,25 @@
     "category": "Tips & Tricks"
   },
   {
+    "slug": "bedste-portugisiske-øl",
+    "title": "De Bedste Portugisiske Øl",
+    "excerpt": "Opdag Portugals fantastiske ølverden. Fra klassiske pilsnere til moderne craft beer. En detaljeret guide til Portugals bedste øl med specifikke anbefalinger, priser og bryggerier.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
     "slug": "bedste-danske-vine",
     "title": "De Bedste Danske Vine - En Guide til Dansk Vinproduktion",
     "excerpt": "Opdag Danmarks fremragende vinproduktion. Fra klassiske hvidvine til innovative rødvine - en guide til de bedste danske vine, producenter og vingårde.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-danske-øl",
+    "title": "De Bedste Danske Øl - En Guide til Danmarks Bryggerier",
+    "excerpt": "Opdag Danmarks fremragende ølproduktion. Fra Carlsberg til Mikkeller - en guide til de bedste danske øl, bryggerier og hvad der gør dansk øl speciel.",
     "author": "Simpel Spis",
     "datePublished": "2025-12-07T10:00:00+01:00",
     "category": "Tips & Tricks"
@@ -64,6 +264,14 @@
     "category": "Tips & Tricks"
   },
   {
+    "slug": "bedste-øl-til-julemaden",
+    "title": "De Bedste Øl til Julemaden",
+    "excerpt": "Opdag de perfekte øl til din julemenu. Fra klassiske kombinationer til flæskesteg, juleand og julefrikadeller. En detaljeret guide til øl og julemad med specifikke anbefalinger til både traditionelle og vegetariske juleretter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
     "slug": "bedste-budget-vine",
     "title": "De Bedste Budget Vine - God Vin Uden at Sprænge Budgettet",
     "excerpt": "Opdag de bedste budgetvenlige vine der smager fantastisk uden at koste en formue. Vi har samlet vores yndlingsanbefalinger til rødvin, hvidvin, rosé og mousserende vin under 150 kr.",
@@ -72,9 +280,49 @@
     "category": "Budget"
   },
   {
+    "slug": "bedste-budget-øl",
+    "title": "De Bedste Budget Øl - Godt Øl Uden at Sprænge Budgettet",
+    "excerpt": "Opdag de bedste budgetvenlige øl der smager fantastisk uden at koste en formue. Vi har samlet vores yndlingsanbefalinger til IPA, pilsner, stout og mousserende øl under 25 kr.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Budget"
+  },
+  {
     "slug": "bedste-vine-til-mad",
     "title": "De Bedste Franske Vine",
     "excerpt": "Opdag de bedste franske vine til forskellige retter. Fra klassiske Bordeaux til elegante Burgundy vine. En detaljeret guide til Frankrigs fineste vine med specifikke anbefalinger, priser og producenter.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-øl-til-mad",
+    "title": "De Bedste Belgiske Øl",
+    "excerpt": "Opdag de bedste belgiske øl til forskellige retter. Fra klassiske Trappist-øl til elegante Witbier. En detaljeret guide til Belgiens fineste øl med specifikke anbefalinger, priser og bryggerier.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-øl-til-and",
+    "title": "Bedste Øl til And: Den Store Guide til Ølmatch",
+    "excerpt": "Find det perfekte øl til andestegen. Uanset om det er Mortensaften, Juleaften eller en hyggelig weekendmiddag, guider vi dig til de bedste mørke og lyse øl, der matcher andens smag.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-øl-til-tapas",
+    "title": "De Bedste Øl til Tapas",
+    "excerpt": "Find det perfekte øl til din tapas aften. Guide til de bedste spanske øl der passer til alt fra chorizo og manchego til gambas pil pil.",
+    "author": "Simpel Spis",
+    "datePublished": "2025-12-07T10:00:00+01:00",
+    "category": "Tips & Tricks"
+  },
+  {
+    "slug": "bedste-øl-til-prisen",
+    "title": "Bedste Øl til Prisen - Her Får Du Mest for Pengene",
+    "excerpt": "Glem alt om dyre etiketter. Her er din guide til at finde de øl, hvor kvaliteten langt overgår prisen. Vi dykker ned i oversete ølregioner og typer, der leverer store oplevelser uden at vælte budgettet.",
     "author": "Simpel Spis",
     "datePublished": "2025-12-07T10:00:00+01:00",
     "category": "Tips & Tricks"

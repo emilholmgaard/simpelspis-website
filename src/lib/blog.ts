@@ -27,6 +27,17 @@ export interface BlogPostListItem {
 const blogDirectory = path.join(process.cwd(), 'src/data/blog')
 
 /**
+ * Konverterer en kategori til et slug (URL-venligt format)
+ */
+export function categoryToSlug(category: string): string {
+  return category
+    .toLowerCase()
+    .replace(/\s*&\s*/g, '-og-') // Erstat & med -og-
+    .replace(/\s+/g, '-') // Erstat whitespace med -
+    .replace(/[^a-z0-9æøå-]/g, '') // Fjern specialtegn, men behold danske bogstaver
+}
+
+/**
  * Henter alle blogindlæg (kun metadata for liste)
  */
 export function getAllBlogPosts(): BlogPostListItem[] {
@@ -84,7 +95,7 @@ export function getCategories(): Array<{ slug: string; title: string }> {
   return Array.from(categorySet)
     .sort()
     .map((category) => ({
-      slug: category.toLowerCase().replace(/\s+/g, '-'),
+      slug: categoryToSlug(category),
       title: category,
     }))
 }
@@ -112,14 +123,10 @@ export function getPosts(
   
   // Filtrer efter kategori hvis angivet
   if (category) {
-    const categoryTitle = category
-      .split('-')
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ')
     posts = posts.filter((post) => {
       if (!post.category) return false
-      const postCategorySlug = post.category.toLowerCase().replace(/\s+/g, '-')
-      return postCategorySlug === category || post.category === categoryTitle
+      const postCategorySlug = categoryToSlug(post.category)
+      return postCategorySlug === category
     })
   }
   
@@ -138,14 +145,10 @@ export function getPostsCount(category?: string): number {
   let posts = getAllBlogPosts()
   
   if (category) {
-    const categoryTitle = category
-      .split('-')
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ')
     posts = posts.filter((post) => {
       if (!post.category) return false
-      const postCategorySlug = post.category.toLowerCase().replace(/\s+/g, '-')
-      return postCategorySlug === category || post.category === categoryTitle
+      const postCategorySlug = categoryToSlug(post.category)
+      return postCategorySlug === category
     })
   }
   
