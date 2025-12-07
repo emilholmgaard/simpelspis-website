@@ -1,12 +1,14 @@
+import { Button } from '@/components/button'
 import { Container } from '@/components/container'
+import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
-import { ArrowLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid'
+import { getBlogPostBySlug, getAllBlogPostsWithData, type BlogPost } from '@/lib/blog'
+import { ChevronLeftIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getBlogPostBySlug, getAllBlogPostsWithData, type BlogPost } from '@/lib/blog'
 
 export async function generateStaticParams() {
   const posts = getAllBlogPostsWithData()
@@ -34,7 +36,7 @@ export async function generateMetadata({
   const url = `${baseUrl}/blog/${slug}`
 
   return {
-    title: `${post.title} - Blog`,
+    title: post.title,
     description: post.excerpt,
     keywords: [
       post.title.toLowerCase(),
@@ -47,7 +49,7 @@ export async function generateMetadata({
       canonical: url,
     },
     openGraph: {
-      title: `${post.title} - Blog`,
+      title: post.title,
       description: post.excerpt,
       type: 'article',
       url: url,
@@ -60,19 +62,29 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${post.title} - Blog`,
+      title: post.title,
       description: post.excerpt,
     },
   }
 }
 
+function formatDate(dateString: string): string {
+  const date = new Date(dateString)
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }
+  return date.toLocaleDateString('da-DK', options)
+}
+
 function parseMarkdown(text: string): React.ReactNode[] {
   const parts: React.ReactNode[] = []
-  let currentIndex = 0
+  let lastIndex = 0
   
   // Match **bold** text
   const boldRegex = /\*\*(.*?)\*\*/g
-  let lastIndex = 0
   let match
   
   while ((match = boldRegex.exec(text)) !== null) {
@@ -82,7 +94,7 @@ function parseMarkdown(text: string): React.ReactNode[] {
     }
     // Add bold text
     parts.push(
-      <strong key={`bold-${match.index}`} className="font-semibold text-gray-950 dark:text-gray-50">
+      <strong key={`bold-${match.index}`} className="font-semibold text-gray-950">
         {match[1]}
       </strong>
     )
@@ -98,7 +110,6 @@ function parseMarkdown(text: string): React.ReactNode[] {
 }
 
 function formatContent(content: string): React.ReactNode {
-  // Split content into paragraphs (double newlines)
   const paragraphs = content.split('\n\n')
   const elements: React.ReactNode[] = []
   let listItems: string[] = []
@@ -112,7 +123,6 @@ function formatContent(content: string): React.ReactNode {
       return
     }
     
-    // Split paragraph by single newlines to handle mixed content
     const lines = trimmed.split('\n').map(l => l.trim()).filter(l => l)
     
     lines.forEach((line) => {
@@ -121,9 +131,11 @@ function formatContent(content: string): React.ReactNode {
         // Close any open list
         if (inList) {
           elements.push(
-            <ul key={`list-${elementIndex++}`} className="list-disc list-inside mb-4 space-y-1 text-lg text-gray-700 dark:text-gray-300">
+            <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400">
               {listItems.map((item, i) => (
-                <li key={i}>{parseMarkdown(item.replace(/^[-*]\s*/, ''))}</li>
+                <li key={i} className="my-2 pl-2">
+                  {parseMarkdown(item.replace(/^[-*]\s*/, ''))}
+                </li>
               ))}
             </ul>
           )
@@ -135,7 +147,7 @@ function formatContent(content: string): React.ReactNode {
         elements.push(
           <h2
             key={`h2-${elementIndex++}`}
-            className="text-2xl font-semibold mt-8 mb-4 text-gray-950 dark:text-gray-50"
+            className="mt-12 mb-10 text-2xl/8 font-medium tracking-tight text-gray-950 first:mt-0 last:mb-0"
           >
             {parseMarkdown(headingText)}
           </h2>
@@ -148,9 +160,11 @@ function formatContent(content: string): React.ReactNode {
         // Close any open list
         if (inList) {
           elements.push(
-            <ul key={`list-${elementIndex++}`} className="list-disc list-inside mb-4 space-y-1 text-lg text-gray-700 dark:text-gray-300">
+            <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400">
               {listItems.map((item, i) => (
-                <li key={i}>{parseMarkdown(item.replace(/^[-*]\s*/, ''))}</li>
+                <li key={i} className="my-2 pl-2">
+                  {parseMarkdown(item.replace(/^[-*]\s*/, ''))}
+                </li>
               ))}
             </ul>
           )
@@ -162,7 +176,7 @@ function formatContent(content: string): React.ReactNode {
         elements.push(
           <h3
             key={`h3-${elementIndex++}`}
-            className="text-xl font-semibold mt-6 mb-3 text-gray-950 dark:text-gray-50"
+            className="mt-12 mb-10 text-xl/8 font-medium tracking-tight text-gray-950 first:mt-0 last:mb-0"
           >
             {parseMarkdown(headingText)}
           </h3>
@@ -182,9 +196,11 @@ function formatContent(content: string): React.ReactNode {
       // Close any open list before a regular paragraph
       if (inList) {
         elements.push(
-          <ul key={`list-${elementIndex++}`} className="list-disc list-inside mb-4 space-y-1 text-lg text-gray-700 dark:text-gray-300">
+          <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400">
             {listItems.map((item, i) => (
-              <li key={i}>{parseMarkdown(item.replace(/^[-*]\s*/, ''))}</li>
+              <li key={i} className="my-2 pl-2">
+                {parseMarkdown(item.replace(/^[-*]\s*/, ''))}
+              </li>
             ))}
           </ul>
         )
@@ -196,7 +212,7 @@ function formatContent(content: string): React.ReactNode {
       elements.push(
         <p
           key={`p-${elementIndex++}`}
-          className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4"
+          className="my-10 text-base/8 first:mt-0 last:mb-0"
         >
           {parseMarkdown(line)}
         </p>
@@ -207,9 +223,11 @@ function formatContent(content: string): React.ReactNode {
   // Close any remaining list
   if (inList && listItems.length > 0) {
     elements.push(
-      <ul key={`list-${elementIndex++}`} className="list-disc list-inside mb-4 space-y-1 text-lg text-gray-700 dark:text-gray-300">
+      <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400">
         {listItems.map((item, i) => (
-          <li key={i}>{parseMarkdown(item.replace(/^[-*]\s*/, ''))}</li>
+          <li key={i} className="my-2 pl-2">
+            {parseMarkdown(item.replace(/^[-*]\s*/, ''))}
+          </li>
         ))}
       </ul>
     )
@@ -218,133 +236,60 @@ function formatContent(content: string): React.ReactNode {
   return <>{elements}</>
 }
 
-export default async function BlogPostPage({
+export default async function BlogPost({
   params,
 }: {
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
   const post = getBlogPostBySlug(slug)
-
-  if (!post) {
-    notFound()
-  }
-
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.simpelspis.dk'
-
-  // Article schema for SEO
-  const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title,
-    description: post.excerpt,
-    author: {
-      '@type': 'Person',
-      name: post.author,
-    },
-    datePublished: post.datePublished,
-    dateModified: post.dateModified || post.datePublished,
-    publisher: {
-      '@type': 'Organization',
-      name: 'Simpel Spis',
-      logo: {
-        '@type': 'ImageObject',
-        url: `${baseUrl}/logo_black.svg`,
-      },
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `${baseUrl}/blog/${slug}`,
-    },
-  }
+  
+  if (!post) notFound()
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
-        <GradientBackground />
-        <Navbar />
-        <Container className="mt-28 pb-24">
-          {/* Breadcrumbs */}
-          <nav className="mb-8" aria-label="Breadcrumb">
-            <ol className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-              <li>
-                <Link href="/" className="data-hover:text-gray-950 dark:data-hover:text-gray-50">
-                  Forside
-                </Link>
-              </li>
-              <li>
-                <ChevronRightIcon className="size-4" />
-              </li>
-              <li>
-                <Link href="/blog" className="data-hover:text-gray-950 dark:data-hover:text-gray-50">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <ChevronRightIcon className="size-4" />
-              </li>
-              <li className="text-gray-950 dark:text-gray-50 font-medium" aria-current="page">
-                {post.title}
-              </li>
-            </ol>
-          </nav>
-
-          <Link
-            href="/blog"
-            className="mb-8 inline-flex items-center gap-2 text-sm/6 font-medium text-gray-600 dark:text-gray-400 data-hover:text-gray-950 dark:data-hover:text-gray-50"
-          >
-            <ArrowLeftIcon className="size-4" />
-            Tilbage til blog
-          </Link>
-
-          <article className="max-w-4xl">
-            {post.category && (
-              <Subheading className="mb-2">{post.category}</Subheading>
-            )}
-            <Heading as="h1" className="mb-4">
-              {post.title}
-            </Heading>
-            
-            {post.author && (
-              <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-500 mb-8">
-                <span>{post.author}</span>
-              </div>
-            )}
-
-            {post.image && (
-              <img
-                src={post.image}
-                alt={post.title}
-                className="w-full h-auto rounded-2xl mb-8"
-              />
-            )}
-
-            <div className="prose prose-lg dark:prose-invert max-w-none">
+    <main className="overflow-hidden">
+      <GradientBackground />
+      <Navbar />
+      <Container>
+        <Subheading className="mt-16">
+          {formatDate(post.datePublished)}
+        </Subheading>
+        <Heading as="h1" className="mt-2">
+          {post.title}
+        </Heading>
+        {post.category && (
+          <div className="mt-6 flex flex-wrap items-center gap-4">
+            <Link
+              href={`/blog?category=${post.category.toLowerCase().replace(/\s+/g, '-')}`}
+              className="rounded-full border border-dotted border-gray-300 bg-gray-50 px-2 text-sm/6 font-medium text-gray-500"
+            >
+              {post.category}
+            </Link>
+          </div>
+        )}
+        <div className="mt-16 grid grid-cols-1 gap-8 pb-24 lg:grid-cols-[15rem_1fr] xl:grid-cols-[15rem_1fr_15rem]">
+          <div></div>
+          <div className="text-gray-700">
+            <div className="max-w-2xl xl:mx-auto">
+              {post.image && (
+                <img
+                  alt={post.title}
+                  src={post.image}
+                  className="mb-10 aspect-3/2 w-full rounded-2xl object-cover shadow-xl"
+                />
+              )}
               {formatContent(post.content)}
-            </div>
-
-            {post.tags && post.tags.length > 0 && (
-              <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Tags:</p>
-                <div className="flex flex-wrap gap-2">
-                  {post.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+              <div className="mt-10">
+                <Button variant="outline" href="/blog">
+                  <ChevronLeftIcon className="size-4" />
+                  Tilbage til blog
+                </Button>
               </div>
-            )}
-          </article>
-        </Container>
-      </main>
-    </>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <Footer />
+    </main>
   )
 }

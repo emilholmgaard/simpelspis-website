@@ -67,3 +67,87 @@ export function getAllBlogPostsWithData(): BlogPost[] {
     .map((post) => getBlogPostBySlug(post.slug))
     .filter((post): post is BlogPost => post !== null)
 }
+
+/**
+ * Henter alle kategorier fra blogindlæg
+ */
+export function getCategories(): Array<{ slug: string; title: string }> {
+  const posts = getAllBlogPosts()
+  const categorySet = new Set<string>()
+  
+  posts.forEach((post) => {
+    if (post.category) {
+      categorySet.add(post.category)
+    }
+  })
+  
+  return Array.from(categorySet)
+    .sort()
+    .map((category) => ({
+      slug: category.toLowerCase().replace(/\s+/g, '-'),
+      title: category,
+    }))
+}
+
+/**
+ * Henter featured blogindlæg (første 3) med fuldt indhold
+ */
+export function getFeaturedPosts(count: number = 3): BlogPost[] {
+  const posts = getAllBlogPosts()
+  return posts
+    .slice(0, count)
+    .map((post) => getBlogPostBySlug(post.slug))
+    .filter((post): post is BlogPost => post !== null)
+}
+
+/**
+ * Henter blogindlæg med pagination og kategori filter
+ */
+export function getPosts(
+  start: number,
+  end: number,
+  category?: string,
+): BlogPostListItem[] {
+  let posts = getAllBlogPosts()
+  
+  // Filtrer efter kategori hvis angivet
+  if (category) {
+    const categoryTitle = category
+      .split('-')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ')
+    posts = posts.filter((post) => {
+      if (!post.category) return false
+      const postCategorySlug = post.category.toLowerCase().replace(/\s+/g, '-')
+      return postCategorySlug === category || post.category === categoryTitle
+    })
+  }
+  
+  // Sorter efter dato (nyeste først)
+  posts.sort((a, b) => {
+    return new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime()
+  })
+  
+  return posts.slice(start, end)
+}
+
+/**
+ * Tæller antal blogindlæg (med evt. kategori filter)
+ */
+export function getPostsCount(category?: string): number {
+  let posts = getAllBlogPosts()
+  
+  if (category) {
+    const categoryTitle = category
+      .split('-')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ')
+    posts = posts.filter((post) => {
+      if (!post.category) return false
+      const postCategorySlug = post.category.toLowerCase().replace(/\s+/g, '-')
+      return postCategorySlug === category || post.category === categoryTitle
+    })
+  }
+  
+  return posts.length
+}
