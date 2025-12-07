@@ -3,6 +3,8 @@ import { Analytics } from '@vercel/analytics/react'
 import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
 import { CookieBanner } from '@/components/cookie-banner'
+import { CookiePreferencesProvider } from '@/components/cookie-preferences-provider'
+import { CookiePreferencesButton } from '@/components/cookie-preferences-button'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -79,9 +81,12 @@ export default function RootLayout({
       </head>
       <body className="text-gray-950 dark:text-gray-50 bg-white dark:bg-gray-950 antialiased transition-colors">
         <ThemeProvider />
-        {children}
-        <Footer />
-        <CookieBanner />
+        <CookiePreferencesProvider>
+          {children}
+          <Footer />
+          <CookieBanner />
+          <CookiePreferencesButton />
+        </CookiePreferencesProvider>
         <Analytics />
       </body>
     </html>

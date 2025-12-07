@@ -127,7 +127,7 @@ export function HomeSearchInput() {
             aria-label="Ryd"
             className="absolute right-4 top-1/2 -translate-y-1/2 inline-flex flex-shrink-0 w-5 h-5 items-center justify-center text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
           >
-            <XMarkIcon className="w-5 h-5" />
+            <XMarkIcon className="w-5 h-5" aria-hidden="true" />
           </button>
         )}
       </div>

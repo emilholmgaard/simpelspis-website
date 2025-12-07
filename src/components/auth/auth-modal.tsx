@@ -101,9 +101,10 @@ export function AuthModal({ isOpen, onClose, onSuccess }: AuthModalProps) {
       <div className="relative w-full max-w-md rounded-3xl bg-white dark:bg-gray-800 p-8 shadow-md ring-1 ring-black/5 dark:ring-white/10">
         <button
           onClick={onClose}
+          aria-label="Luk"
           className="absolute right-4 top-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
         >
-          <XMarkIcon className="h-6 w-6" />
+          <XMarkIcon className="h-6 w-6" aria-hidden="true" />
         </button>
 
         <h2 className="text-2xl font-semibold text-gray-950 dark:text-gray-50 mb-6">

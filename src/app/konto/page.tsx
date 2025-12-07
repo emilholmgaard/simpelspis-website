@@ -375,7 +375,11 @@ export default function KontoPage() {
                     {deleteConfirmCode}
                   </p>
                 </div>
+                <label htmlFor="delete-confirm-code" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  Bekræftelseskode
+                </label>
                 <input
+                  id="delete-confirm-code"
                   type="text"
                   value={deleteConfirmText}
                   onChange={(e) => setDeleteConfirmText(e.target.value.toUpperCase())}

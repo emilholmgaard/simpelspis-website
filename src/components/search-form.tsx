@@ -30,18 +30,21 @@ function SearchInput({
     setValue('')
   }
 
+  const inputId = `${dataQa}-input-${name}`
+  
   return (
     <>
       {/* Mobile version */}
       <div className={`relative flex flex-col lg:hidden ${className}`} data-qa={dataQa}>
-        <p className="mb-1.5 block text-xs font-semibold text-gray-900 dark:text-gray-100">
+        <label htmlFor={inputId} className="mb-1.5 block text-xs font-semibold text-gray-900 dark:text-gray-100">
           {label}
-        </p>
+        </label>
         <div className="relative w-full">
           <div className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 inline-flex flex-shrink-0 w-5 h-5 items-center justify-center">
-            <Icon className="w-5 h-5 text-gray-400 dark:text-gray-500" />
+            <Icon className="w-5 h-5 text-gray-400 dark:text-gray-500" aria-hidden="true" />
           </div>
           <input
+            id={inputId}
             type="text"
             name={name}
             value={value}
@@ -58,21 +61,22 @@ function SearchInput({
               data-qa={`${dataQa}-clear`}
               className="absolute right-3 top-1/2 -translate-y-1/2 inline-flex flex-shrink-0 w-5 h-5 items-center justify-center text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
             >
-              <XMarkIcon className="w-5 h-5" />
+              <XMarkIcon className="w-5 h-5" aria-hidden="true" />
             </button>
           )}
         </div>
       </div>
       {/* Desktop version */}
       <div className={`relative hidden lg:flex flex-col ${className}`} data-qa={dataQa}>
-        <p className="mb-1.5 block text-xs font-semibold text-gray-900 dark:text-gray-100">
+        <label htmlFor={`${inputId}-desktop`} className="mb-1.5 block text-xs font-semibold text-gray-900 dark:text-gray-100">
           {label}
-        </p>
+        </label>
         <div className="relative w-full">
           <div className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 inline-flex flex-shrink-0 w-5 h-5 items-center justify-center">
-            <Icon className="w-5 h-5 text-gray-400 dark:text-gray-500" />
+            <Icon className="w-5 h-5 text-gray-400 dark:text-gray-500" aria-hidden="true" />
           </div>
           <input
+            id={`${inputId}-desktop`}
             type="text"
             name={name}
             value={value}
@@ -89,7 +93,7 @@ function SearchInput({
               data-qa={`${dataQa}-clear`}
               className="absolute right-3 top-1/2 -translate-y-1/2 inline-flex flex-shrink-0 w-5 h-5 items-center justify-center text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
             >
-              <XMarkIcon className="w-5 h-5" />
+              <XMarkIcon className="w-5 h-5" aria-hidden="true" />
             </button>
           )}
         </div>
@@ -123,18 +127,21 @@ function TimeInput({
     setValue('')
   }
 
+  const inputId = `${dataQa}-input-${name}`
+  
   return (
     <>
       {/* Mobile version */}
       <div className={`relative flex flex-col lg:hidden ${className}`} data-qa={dataQa}>
-        <p className="mb-1.5 block text-xs font-semibold text-gray-900 dark:text-gray-100">
+        <label htmlFor={inputId} className="mb-1.5 block text-xs font-semibold text-gray-900 dark:text-gray-100">
           {label}
-        </p>
+        </label>
         <div className="relative w-full">
           <div className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 inline-flex flex-shrink-0 w-5 h-5 items-center justify-center">
-            <Icon className="w-5 h-5 text-gray-400 dark:text-gray-500" />
+            <Icon className="w-5 h-5 text-gray-400 dark:text-gray-500" aria-hidden="true" />
           </div>
           <input
+            id={inputId}
             type="text"
             inputMode="numeric"
             pattern="[0-9]*"
@@ -153,21 +160,22 @@ function TimeInput({
               data-qa={`${dataQa}-clear`}
               className="absolute right-3 top-1/2 -translate-y-1/2 inline-flex flex-shrink-0 w-5 h-5 items-center justify-center text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
             >
-              <XMarkIcon className="w-5 h-5" />
+              <XMarkIcon className="w-5 h-5" aria-hidden="true" />
             </button>
           )}
         </div>
       </div>
       {/* Desktop version */}
       <div className={`relative hidden lg:flex flex-col ${className}`} data-qa={dataQa}>
-        <p className="mb-1.5 block text-xs font-semibold text-gray-900 dark:text-gray-100">
+        <label htmlFor={`${inputId}-desktop`} className="mb-1.5 block text-xs font-semibold text-gray-900 dark:text-gray-100">
           {label}
-        </p>
+        </label>
         <div className="relative w-full">
           <div className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 inline-flex flex-shrink-0 w-5 h-5 items-center justify-center">
-            <Icon className="w-5 h-5 text-gray-400 dark:text-gray-500" />
+            <Icon className="w-5 h-5 text-gray-400 dark:text-gray-500" aria-hidden="true" />
           </div>
           <input
+            id={`${inputId}-desktop`}
             type="text"
             inputMode="numeric"
             pattern="[0-9]*"
@@ -186,7 +194,7 @@ function TimeInput({
               data-qa={`${dataQa}-clear`}
               className="absolute right-3 top-1/2 -translate-y-1/2 inline-flex flex-shrink-0 w-5 h-5 items-center justify-center text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
             >
-              <XMarkIcon className="w-5 h-5" />
+              <XMarkIcon className="w-5 h-5" aria-hidden="true" />
             </button>
           )}
         </div>
