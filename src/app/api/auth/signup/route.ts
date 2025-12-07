@@ -3,7 +3,11 @@ import { createClientFromRequest } from '@/lib/supabase/server'
 import { db } from '@/lib/db'
 import { users } from '@/lib/db/schema'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabaseUrl = 
+  process.env.NEXT_PUBLIC_SUPABASE_URL || 
+  process.env['simpelspisSUPABASE_URL'] ||
+  process.env['simpelspis_SUPABASE_URL'] ||
+  ''
 
 export async function POST(request: NextRequest) {
   try {
@@ -57,7 +61,7 @@ export async function POST(request: NextRequest) {
 
     // Set Supabase auth cookies if session exists
     if (authData.session) {
-      const projectRef = supabaseUrl.split('//')[1]?.split('.')[0] || 'default'
+      const projectRef = supabaseUrl ? supabaseUrl.split('//')[1]?.split('.')[0] || 'default' : 'default'
       const cookieName = `sb-${projectRef}-auth-token`
       
       response.cookies.set(cookieName, JSON.stringify(authData.session), {

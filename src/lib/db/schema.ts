@@ -13,8 +13,8 @@ export const reviews = pgTable('reviews', {
   id: uuid('id').primaryKey().defaultRandom(),
   recipeSlug: text('recipe_slug').notNull(),
   userId: uuid('user_id')
-    .notNull()
     .references(() => users.id, { onDelete: 'cascade' }),
+  anonymousId: text('anonymous_id'), // For tracking anonymous users
   rating: integer('rating').notNull(), // 1-5 stjerner
   comment: text('comment'),
   createdAt: timestamp('created_at').defaultNow().notNull(),

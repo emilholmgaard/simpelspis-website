@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { HeartIcon } from '@heroicons/react/24/solid'
 import { HeartIcon as HeartOutlineIcon } from '@heroicons/react/24/outline'
 
@@ -16,6 +17,8 @@ export function HeartRating({
   interactive = false,
   size = 'md',
 }: HeartRatingProps) {
+  const [hoverRating, setHoverRating] = useState<number | null>(null)
+  
   const sizeClasses = {
     sm: 'h-4 w-4',
     md: 'h-5 w-5',
@@ -28,25 +31,45 @@ export function HeartRating({
     }
   }
 
+  const handleMouseEnter = (heartValue: number) => {
+    if (interactive) {
+      setHoverRating(heartValue)
+    }
+  }
+
+  const handleMouseLeave = () => {
+    if (interactive) {
+      setHoverRating(null)
+    }
+  }
+
+  // Use hover rating if available, otherwise use actual rating
+  const displayRating = hoverRating !== null ? hoverRating : rating
+
   return (
-    <div className="flex items-center gap-0.5">
+    <div 
+      className="flex items-center gap-0.5"
+      onMouseLeave={handleMouseLeave}
+    >
       {[1, 2, 3, 4, 5].map((heart) => (
         <button
           key={heart}
           type="button"
           onClick={() => handleClick(heart)}
+          onMouseEnter={() => handleMouseEnter(heart)}
           disabled={!interactive}
-          className={interactive ? 'cursor-pointer' : 'cursor-default'}
+          className={interactive ? 'cursor-pointer transition-transform hover:scale-110' : 'cursor-default'}
+          aria-label={`Rate ${heart} out of 5`}
         >
-          {heart <= rating ? (
+          {heart <= displayRating ? (
             <HeartIcon
-              className={`${sizeClasses[size]} text-red-500 ${
+              className={`${sizeClasses[size]} text-red-500 transition-colors ${
                 interactive ? 'hover:text-red-600' : ''
               }`}
             />
           ) : (
             <HeartOutlineIcon
-              className={`${sizeClasses[size]} text-gray-300 dark:text-gray-600 ${
+              className={`${sizeClasses[size]} text-gray-300 dark:text-gray-600 transition-colors ${
                 interactive ? 'hover:text-red-400' : ''
               }`}
             />

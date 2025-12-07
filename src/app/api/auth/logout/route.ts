@@ -1,7 +1,11 @@
 import { NextResponse } from 'next/server'
 import { createServerClient } from '@/lib/supabase/server'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabaseUrl = 
+  process.env.NEXT_PUBLIC_SUPABASE_URL || 
+  process.env['simpelspisSUPABASE_URL'] ||
+  process.env['simpelspis_SUPABASE_URL'] ||
+  ''
 
 export async function POST() {
   try {
@@ -13,7 +17,7 @@ export async function POST() {
     }
 
     // Clear auth cookies
-    const projectRef = supabaseUrl.split('//')[1]?.split('.')[0] || 'default'
+    const projectRef = supabaseUrl ? supabaseUrl.split('//')[1]?.split('.')[0] || 'default' : 'default'
     const cookieName = `sb-${projectRef}-auth-token`
     
     const response = NextResponse.json({ message: 'Logged out successfully' })

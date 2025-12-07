@@ -3,11 +3,14 @@ import postgres from 'postgres'
 import * as schema from './schema'
 
 // Support multiple environment variable names for Vercel/Supabase
-// Vercel provides POSTGRES_URL variants
+// Vercel provides POSTGRES_URL variants (including prefixed ones like simpelspis_POSTGRES_URL)
 const connectionString = 
   process.env.POSTGRES_URL_NON_POOLING || 
   process.env.POSTGRES_URL || 
-  process.env.POSTGRES_PRISMA_URL || 
+  process.env.POSTGRES_PRISMA_URL ||
+  process.env['simpelspis_POSTGRES_URL_NON_POOLING'] ||
+  process.env['simpelspis_POSTGRES_URL'] ||
+  process.env['simpelspis_POSTGRES_PRISMA_URL'] ||
   ''
 
 // Lazy initialization - only create client when needed

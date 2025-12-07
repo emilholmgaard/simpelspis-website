@@ -719,7 +719,7 @@ export default async function RecipesPage({
       <main className="overflow-hidden min-h-screen bg-white dark:bg-gray-950">
       <GradientBackground />
       <Navbar />
-      <Container className="mt-28 pb-24">
+      <Container className="mt-12 pb-24">
         <Subheading>Nemme Opskrifter</Subheading>
         <Heading as="h1" className="mt-2">
           Udforsk vores samling af nemme opskrifter.
@@ -976,7 +976,7 @@ export default async function RecipesPage({
             <p className="text-lg text-gray-600 dark:text-gray-400">
               Ingen opskrifter fundet.
             </p>
-            <p className="mt-2 text-sm text-gray-500 dark:text-gray-500">
+            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
               Prøv at ændre dine søgekriterier eller filtre.
             </p>
             <Button href="/opskrifter" className="mt-4">

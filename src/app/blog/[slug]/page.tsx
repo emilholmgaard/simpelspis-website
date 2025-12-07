@@ -1,6 +1,5 @@
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
-import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
@@ -94,7 +93,7 @@ function parseMarkdown(text: string): React.ReactNode[] {
     }
     // Add bold text
     parts.push(
-      <strong key={`bold-${match.index}`} className="font-semibold text-gray-950">
+      <strong key={`bold-${match.index}`} className="font-semibold text-gray-950 dark:text-gray-50">
         {match[1]}
       </strong>
     )
@@ -131,7 +130,7 @@ function formatContent(content: string): React.ReactNode {
         // Close any open list
         if (inList) {
           elements.push(
-            <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400">
+            <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400 dark:marker:text-gray-500">
               {listItems.map((item, i) => (
                 <li key={i} className="my-2 pl-2">
                   {parseMarkdown(item.replace(/^[-*]\s*/, ''))}
@@ -147,7 +146,7 @@ function formatContent(content: string): React.ReactNode {
         elements.push(
           <h2
             key={`h2-${elementIndex++}`}
-            className="mt-12 mb-10 text-2xl/8 font-medium tracking-tight text-gray-950 first:mt-0 last:mb-0"
+            className="mt-12 mb-10 text-2xl/8 font-medium tracking-tight text-gray-950 dark:text-gray-50 first:mt-0 last:mb-0"
           >
             {parseMarkdown(headingText)}
           </h2>
@@ -160,7 +159,7 @@ function formatContent(content: string): React.ReactNode {
         // Close any open list
         if (inList) {
           elements.push(
-            <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400">
+            <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400 dark:marker:text-gray-500">
               {listItems.map((item, i) => (
                 <li key={i} className="my-2 pl-2">
                   {parseMarkdown(item.replace(/^[-*]\s*/, ''))}
@@ -176,7 +175,7 @@ function formatContent(content: string): React.ReactNode {
         elements.push(
           <h3
             key={`h3-${elementIndex++}`}
-            className="mt-12 mb-10 text-xl/8 font-medium tracking-tight text-gray-950 first:mt-0 last:mb-0"
+            className="mt-12 mb-10 text-xl/8 font-medium tracking-tight text-gray-950 dark:text-gray-50 first:mt-0 last:mb-0"
           >
             {parseMarkdown(headingText)}
           </h3>
@@ -196,7 +195,7 @@ function formatContent(content: string): React.ReactNode {
       // Close any open list before a regular paragraph
       if (inList) {
         elements.push(
-          <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400">
+          <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400 dark:marker:text-gray-500">
             {listItems.map((item, i) => (
               <li key={i} className="my-2 pl-2">
                 {parseMarkdown(item.replace(/^[-*]\s*/, ''))}
@@ -223,7 +222,7 @@ function formatContent(content: string): React.ReactNode {
   // Close any remaining list
   if (inList && listItems.length > 0) {
     elements.push(
-      <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400">
+      <ul key={`list-${elementIndex++}`} className="list-disc pl-4 text-base/8 marker:text-gray-400 dark:marker:text-gray-500">
         {listItems.map((item, i) => (
           <li key={i} className="my-2 pl-2">
             {parseMarkdown(item.replace(/^[-*]\s*/, ''))}
@@ -261,7 +260,7 @@ export default async function BlogPost({
           <div className="mt-6 flex flex-wrap items-center gap-4">
             <Link
               href={`/blog?category=${categoryToSlug(post.category)}`}
-              className="inline-flex items-center rounded-full border border-dotted border-gray-300 bg-gray-50 px-3 py-1.5 text-sm/6 font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 hover:border-gray-400"
+              className="inline-flex items-center rounded-full border border-dotted border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-3 py-1.5 text-sm/6 font-medium text-gray-600 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-gray-100 hover:border-gray-400 dark:hover:border-gray-600"
             >
               {post.category}
             </Link>
@@ -269,7 +268,7 @@ export default async function BlogPost({
         )}
         <div className="mt-16 grid grid-cols-1 gap-8 pb-24 lg:grid-cols-[15rem_1fr] xl:grid-cols-[15rem_1fr_15rem]">
           <div></div>
-          <div className="text-gray-700">
+          <div className="text-gray-700 dark:text-gray-300">
             <div className="max-w-2xl xl:mx-auto">
               {post.image && (
                 <img
@@ -289,7 +288,6 @@ export default async function BlogPost({
           </div>
         </div>
       </Container>
-      <Footer />
     </main>
   )
 }

@@ -64,9 +64,12 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
         return
       }
 
+      // Filter reviews to only show those with comments
+      const filteredReviews = reviewsData.filter((review: Review) => review.comment && review.comment.trim() !== '')
+
       // Fetch user data for each review
       const reviewsWithUsers = await Promise.all(
-        reviewsData.map(async (review: Review) => {
+        filteredReviews.map(async (review: Review) => {
           try {
             const userRes = await fetch(`/api/reviews/users/${review.userId}`)
             if (userRes.ok) {
@@ -152,26 +155,6 @@ export function ReviewList({ recipeSlug }: ReviewListProps) {
 
   return (
     <div className="space-y-6">
-      {/* Stats */}
-      {stats.totalReviews > 0 && (
-        <div className="rounded-3xl bg-white dark:bg-gray-800 p-8 shadow-md ring-1 ring-black/5 dark:ring-white/10">
-          <h3 className="text-xl font-medium text-gray-950 dark:text-gray-50 mb-4">
-            Anmeldelser
-          </h3>
-          <div className="flex items-center gap-4">
-            <div className="text-3xl font-bold text-gray-950 dark:text-gray-50">
-              {stats.averageRating.toFixed(1)}
-            </div>
-            <div>
-              <HeartRating rating={Math.round(stats.averageRating)} size="lg" />
-              <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                {stats.totalReviews} anmeldelse{stats.totalReviews !== 1 ? 'r' : ''}
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Reviews */}
       {reviews.length === 0 ? (
         <div className="rounded-3xl bg-white dark:bg-gray-800 p-8 shadow-md ring-1 ring-black/5 dark:ring-white/10">

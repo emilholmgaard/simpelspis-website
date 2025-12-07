@@ -19,7 +19,10 @@ export async function GET(request: NextRequest) {
     const hasDbConnection = 
       process.env.POSTGRES_URL || 
       process.env.POSTGRES_URL_NON_POOLING ||
-      process.env.POSTGRES_PRISMA_URL
+      process.env.POSTGRES_PRISMA_URL ||
+      process.env['simpelspis_POSTGRES_URL'] ||
+      process.env['simpelspis_POSTGRES_URL_NON_POOLING'] ||
+      process.env['simpelspis_POSTGRES_PRISMA_URL']
     
     if (!hasDbConnection) {
       // Return empty stats if database is not configured (e.g., in static builds)

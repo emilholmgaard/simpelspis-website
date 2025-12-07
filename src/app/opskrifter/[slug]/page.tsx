@@ -10,6 +10,7 @@ import { notFound } from 'next/navigation'
 import { getRecipeBySlug, getAllRecipes, getAllRecipesWithData, type RecipeListItem, type Recipe } from '@/lib/recipes'
 import { ReviewForm } from '@/components/reviews/review-form'
 import { ReviewList } from '@/components/reviews/review-list'
+import { ReviewStatsDisplay } from '@/components/reviews/review-stats-display'
 import { db } from '@/lib/db'
 import { reviews } from '@/lib/db/schema'
 import { eq, sql } from 'drizzle-orm'
@@ -93,7 +94,10 @@ export default async function RecipePage({
     const hasDbConnection = 
       process.env.POSTGRES_URL || 
       process.env.POSTGRES_URL_NON_POOLING ||
-      process.env.POSTGRES_PRISMA_URL
+      process.env.POSTGRES_PRISMA_URL ||
+      process.env['simpelspis_POSTGRES_URL'] ||
+      process.env['simpelspis_POSTGRES_URL_NON_POOLING'] ||
+      process.env['simpelspis_POSTGRES_PRISMA_URL']
     
     if (hasDbConnection) {
       const stats = await db
@@ -294,7 +298,7 @@ export default async function RecipePage({
       <GradientBackground />
       <Navbar />
       </div>
-      <Container className="mt-28 pb-24 print:mt-0">
+      <Container className="mt-12 pb-24 print:mt-0">
         {/* Breadcrumbs */}
         <nav className="no-print mb-8" aria-label="Breadcrumb">
           <ol className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
@@ -346,9 +350,16 @@ export default async function RecipePage({
             </span>
           </div>
 
-          <Heading as="h1" className="mt-2">
-            {recipe.title}
-          </Heading>
+          <div className="mt-2">
+            <Heading as="h1">
+              {recipe.title}
+            </Heading>
+          <ReviewStatsDisplay
+            averageRating={reviewStats?.averageRating || 0}
+            totalReviews={reviewStats?.totalReviews || 0}
+            recipeSlug={slug}
+          />
+          </div>
           <p className="mt-6 max-w-3xl text-base/7 text-gray-600 dark:text-gray-400">
             {recipe.description}
           </p>

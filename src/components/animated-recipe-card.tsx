@@ -1,7 +1,7 @@
 'use client'
 
 import { Link } from '@/components/link'
-import { ChevronRightIcon, StarIcon } from '@heroicons/react/24/solid'
+import { ChevronRightIcon, HeartIcon } from '@heroicons/react/24/solid'
 import type { RecipeListItem } from '@/lib/recipes'
 import { useEffect, useRef, useState } from 'react'
 
@@ -118,10 +118,24 @@ export function AnimatedRecipeCard({
       >
         {/* Content Section */}
         <div className="flex w-full flex-1 flex-col gap-y-8 p-6 md:p-12">
-          <div className="flex items-center gap-3 text-sm/5 text-gray-600 dark:text-gray-400">
+          <div className="flex flex-wrap items-center gap-3 text-sm/5 text-gray-600 dark:text-gray-400">
             <span className="font-medium">{category}</span>
             <span>•</span>
             <span>{difficulty}</span>
+            {reviewStats && reviewStats.totalReviews > 0 && (
+              <>
+                <span>•</span>
+                <div className="flex items-center gap-1">
+                  <HeartIcon className="size-4 text-red-500" />
+                  <span className="font-medium text-gray-950 dark:text-gray-50">
+                    {reviewStats.averageRating.toFixed(1)}
+                  </span>
+                  <span className="text-gray-500 dark:text-gray-400">
+                    ({reviewStats.totalReviews} {reviewStats.totalReviews === 1 ? 'anmeldelse' : 'anmeldelser'})
+                  </span>
+                </div>
+              </>
+            )}
           </div>
           <h3 className="text-3xl leading-tight text-balance md:text-4xl font-medium text-gray-950 dark:text-gray-50">
             {title}
@@ -135,32 +149,6 @@ export function AnimatedRecipeCard({
         
         {/* Info Section */}
         <div className="flex w-full flex-1 flex-col gap-y-4 rounded-3xl bg-gray-50 p-8 dark:bg-gray-800">
-          {/* Reviews */}
-          {reviewStats && reviewStats.totalReviews > 0 && (
-            <div className="mb-4 pb-4 border-b border-gray-200 dark:border-gray-700">
-              <div className="flex items-center gap-2 mb-1">
-                <div className="flex items-center gap-0.5">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <StarIcon
-                      key={star}
-                      className={`h-4 w-4 ${
-                        star <= Math.round(reviewStats.averageRating)
-                          ? 'text-yellow-400'
-                          : 'text-gray-300 dark:text-gray-600'
-                      }`}
-                    />
-                  ))}
-                </div>
-                <span className="text-sm font-medium text-gray-950 dark:text-gray-50">
-                  {reviewStats.averageRating.toFixed(1)}
-                </span>
-              </div>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
-                {reviewStats.totalReviews} {reviewStats.totalReviews === 1 ? 'anmeldelse' : 'anmeldelser'}
-              </p>
-            </div>
-          )}
-
           {/* Time Info */}
           <div className="mb-4">
             <h4 className="text-sm font-medium text-gray-950 dark:text-gray-50 mb-3">Tidsinformation</h4>
@@ -223,4 +211,3 @@ export function AnimatedRecipeCard({
     </div>
   )
 }
-

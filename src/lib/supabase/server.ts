@@ -2,12 +2,26 @@ import { createClient } from '@supabase/supabase-js'
 import { cookies } from 'next/headers'
 import { NextRequest } from 'next/server'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
+const supabaseUrl = 
+  process.env.NEXT_PUBLIC_SUPABASE_URL || 
+  process.env['simpelspisSUPABASE_URL'] ||
+  process.env['simpelspis_SUPABASE_URL'] ||
+  ''
+const supabaseAnonKey = 
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 
+  process.env['simpelspisSUPABASE_ANON_KEY'] ||
+  process.env['simpelspis_SUPABASE_ANON_KEY'] ||
+  ''
 
 export async function createServerClient() {
+  // Allow missing Supabase env vars - return a mock client if not configured
   if (!supabaseUrl || !supabaseAnonKey) {
-    throw new Error('Missing Supabase environment variables')
+    // Return a mock client that won't crash
+    return {
+      auth: {
+        getUser: async () => ({ data: { user: null }, error: null }),
+      },
+    } as any
   }
   const cookieStore = await cookies()
   const projectRef = supabaseUrl.split('//')[1]?.split('.')[0] || 'default'
@@ -69,8 +83,16 @@ export async function createServerClient() {
 
 // Helper to create client from request (for API routes)
 export function createClientFromRequest(request: NextRequest) {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
-  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
+  const url = 
+    process.env.NEXT_PUBLIC_SUPABASE_URL || 
+    process.env['simpelspisSUPABASE_URL'] ||
+    process.env['simpelspis_SUPABASE_URL'] ||
+    ''
+  const key = 
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 
+    process.env['simpelspisSUPABASE_ANON_KEY'] ||
+    process.env['simpelspis_SUPABASE_ANON_KEY'] ||
+    ''
   
   if (!url || !key) {
     throw new Error('Missing Supabase environment variables')

@@ -9,9 +9,12 @@
     "lint": "next lint",
     "extract-recipes": "node scripts/extract-recipes.js",
     "migrate": "tsx scripts/migrate.ts",
+    "migrate:anonymous": "tsx scripts/run-migration.ts",
     "check-404": "tsx scripts/check-404.ts",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate"
+    "db:migrate": "drizzle-kit migrate",
+    "seed": "tsx scripts/seed-reviews.ts",
+    "clear-reviews": "tsx scripts/clear-reviews.ts"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.6",

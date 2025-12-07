@@ -1,6 +1,5 @@
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
-import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
@@ -67,14 +66,14 @@ async function FeaturedPosts() {
   }
 
   return (
-    <div className="mt-16 bg-linear-to-t from-gray-100 pb-14">
+    <div className="mt-16 bg-linear-to-t from-gray-100 dark:from-gray-900 pb-14">
       <Container>
         <h2 className="text-2xl font-medium tracking-tight">Fremhævede</h2>
         <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-2">
           {featuredPosts.map((post) => (
             <div
               key={post.slug}
-              className="relative flex flex-col rounded-3xl bg-white p-2 shadow-md ring-1 shadow-black/5 ring-black/5"
+              className="relative flex flex-col rounded-3xl bg-white dark:bg-gray-800 p-2 shadow-md ring-1 shadow-black/5 dark:shadow-black/20 ring-black/5 dark:ring-white/10"
             >
               {post.image && (
                 <img
@@ -90,7 +89,7 @@ async function FeaturedPosts() {
                     {post.title}
                   </Link>
                 </div>
-                <div className="mt-2 flex-1 text-sm/6 text-gray-500">
+                <div className="mt-2 flex-1 text-sm/6 text-gray-500 dark:text-gray-400">
                   {post.excerpt}
                 </div>
               </div>
@@ -115,17 +114,17 @@ async function Categories({ selected }: { selected?: string }) {
         <MenuButton className="flex items-center justify-between gap-2 font-medium">
           {categories.find(({ slug }) => slug === selected)?.title ||
             'Alle kategorier'}
-          <ChevronUpDownIcon className="size-4 fill-gray-900" />
+          <ChevronUpDownIcon className="size-4 fill-gray-900 dark:fill-gray-100" />
         </MenuButton>
         <MenuItems
           anchor="bottom start"
-          className="min-w-40 rounded-lg bg-white p-1 shadow-lg ring-1 ring-gray-200 [--anchor-gap:6px] [--anchor-offset:-4px] [--anchor-padding:10px]"
+          className="min-w-40 rounded-lg bg-white dark:bg-gray-800 p-1 shadow-lg ring-1 ring-gray-200 dark:ring-gray-700 [--anchor-gap:6px] [--anchor-offset:-4px] [--anchor-padding:10px]"
         >
           <MenuItem>
             <Link
               href="/blog"
               data-selected={selected === undefined ? true : undefined}
-              className="group grid grid-cols-[1rem_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-gray-950/5"
+              className="group grid grid-cols-[1rem_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-gray-950/5 dark:data-focus:bg-white/10"
             >
               <CheckIcon className="hidden size-4 group-data-selected:block" />
               <p className="col-start-2 text-sm/6">Alle kategorier</p>
@@ -136,7 +135,7 @@ async function Categories({ selected }: { selected?: string }) {
               <Link
                 href={`/blog?category=${category.slug}`}
                 data-selected={category.slug === selected ? true : undefined}
-                className="group grid grid-cols-[16px_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-gray-950/5"
+                className="group grid grid-cols-[16px_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-gray-950/5 dark:data-focus:bg-white/10"
               >
                 <CheckIcon className="hidden size-4 group-data-selected:block" />
                 <p className="col-start-2 text-sm/6">{category.title}</p>
@@ -165,7 +164,7 @@ async function Posts({ page, category }: { page: number; category?: string }) {
   }
 
   if (posts.length === 0) {
-    return <p className="mt-6 text-gray-500">Ingen indlæg fundet.</p>
+    return <p className="mt-6 text-gray-500 dark:text-gray-400">Ingen indlæg fundet.</p>
   }
 
   return (
@@ -173,11 +172,11 @@ async function Posts({ page, category }: { page: number; category?: string }) {
       {posts.map((post) => (
         <div
           key={post.slug}
-          className="relative grid grid-cols-1 border-b border-b-gray-100 py-10 first:border-t first:border-t-gray-200"
+          className="relative grid grid-cols-1 border-b border-b-gray-100 dark:border-b-gray-800 py-10 first:border-t first:border-t-gray-200 dark:first:border-t-gray-800"
         >
           <div className="max-w-2xl">
             <h2 className="text-sm/5 font-medium">{post.title}</h2>
-            <p className="mt-3 text-sm/6 text-gray-500">{post.excerpt}</p>
+            <p className="mt-3 text-sm/6 text-gray-500 dark:text-gray-400">{post.excerpt}</p>
             <div className="mt-4">
               <Link
                 href={`/blog/${post.slug}`}
@@ -185,7 +184,7 @@ async function Posts({ page, category }: { page: number; category?: string }) {
               >
                 <span className="absolute inset-0" />
                 Læs mere
-                <ChevronRightIcon className="size-4 fill-gray-400" />
+                <ChevronRightIcon className="size-4 fill-gray-400 dark:fill-gray-500" />
               </Link>
             </div>
           </div>
@@ -240,9 +239,9 @@ async function Pagination({
             data-active={i + 1 === page ? true : undefined}
             className={clsx(
               'size-7 rounded-lg text-center text-sm/7 font-medium',
-              'data-hover:bg-gray-100',
-              'data-active:shadow-sm data-active:ring-1 data-active:ring-black/10',
-              'data-active:data-hover:bg-gray-50',
+              'data-hover:bg-gray-100 dark:data-hover:bg-gray-800',
+              'data-active:shadow-sm data-active:ring-1 data-active:ring-black/10 dark:data-active:ring-white/20',
+              'data-active:data-hover:bg-gray-50 dark:data-active:data-hover:bg-gray-700',
             )}
           >
             {i + 1}
@@ -293,7 +292,6 @@ export default async function Blog({
         <Posts page={page} category={category} />
         <Pagination page={page} category={category} />
       </Container>
-      <Footer />
     </main>
   )
 }

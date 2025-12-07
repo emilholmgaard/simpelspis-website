@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { HeartRating } from './star-rating'
 import { Button } from '@/components/button'
-import { AuthModal } from '@/components/auth/auth-modal'
 
 interface ReviewFormProps {
   recipeSlug: string
@@ -22,7 +21,6 @@ export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
   const [comment, setComment] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
-  const [showAuthModal, setShowAuthModal] = useState(false)
 
   useEffect(() => {
     fetch('/api/auth/user')
@@ -31,20 +29,17 @@ export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
       .catch(() => {})
   }, [])
 
+  const getOrCreateAnonymousId = (): string => {
+    let anonymousId = localStorage.getItem('anonymous-id')
+    if (!anonymousId) {
+      anonymousId = `anon_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+      localStorage.setItem('anonymous-id', anonymousId)
+    }
+    return anonymousId
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-
-    // Check cookie consent - GDPR compliance
-    const cookieConsent = localStorage.getItem('cookie-consent')
-    if (cookieConsent !== 'accepted') {
-      setError('Du skal acceptere cookies for at skrive anmeldelser. Cookies er nødvendige for at håndtere din login-session.')
-      return
-    }
-
-    if (!user) {
-      setShowAuthModal(true)
-      return
-    }
 
     if (rating === 0) {
       setError('Vælg venligst en vurdering')
@@ -55,6 +50,9 @@ export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
     setError('')
 
     try {
+      // Always send anonymousId to allow conversion of anonymous reviews to user reviews
+      const anonymousId = getOrCreateAnonymousId()
+      
       const response = await fetch('/api/reviews', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -62,6 +60,7 @@ export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
           recipeSlug,
           rating,
           comment: comment.trim() || null,
+          anonymousId,
         }),
       })
 
@@ -83,24 +82,6 @@ export function ReviewForm({ recipeSlug, onReviewSubmitted }: ReviewFormProps) {
     } finally {
       setLoading(false)
     }
-  }
-
-  if (!user) {
-    return (
-      <>
-        <div className="rounded-3xl bg-white dark:bg-gray-800 p-8 shadow-md ring-1 ring-black/5 dark:ring-white/10">
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
-            Log ind for at skrive en anmeldelse
-          </p>
-          <Button onClick={() => setShowAuthModal(true)}>Log ind</Button>
-        </div>
-        <AuthModal
-          isOpen={showAuthModal}
-          onClose={() => setShowAuthModal(false)}
-          onSuccess={() => window.location.reload()}
-        />
-      </>
-    )
   }
 
   return (

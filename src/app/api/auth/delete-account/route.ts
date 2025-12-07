@@ -5,8 +5,15 @@ import { db } from '@/lib/db'
 import { users, reviews } from '@/lib/db/schema'
 import { eq } from 'drizzle-orm'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!
+const supabaseUrl = 
+  process.env.NEXT_PUBLIC_SUPABASE_URL || 
+  process.env['simpelspisSUPABASE_URL'] ||
+  process.env['simpelspis_SUPABASE_URL'] ||
+  ''
+const supabaseServiceKey = 
+  process.env.SUPABASE_SERVICE_ROLE_KEY ||
+  process.env['simpelspis_SUPABASE_SERVICE_ROLE_KEY'] ||
+  ''
 
 export async function DELETE() {
   try {
