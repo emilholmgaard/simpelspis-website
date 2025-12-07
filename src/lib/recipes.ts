@@ -16,6 +16,8 @@ export interface Recipe {
   ingredients: string[]
   instructions: string[]
   budget?: boolean
+  datePublished?: string // ISO 8601 format (e.g., "2025-01-15T10:00:00+01:00")
+  dateModified?: string // ISO 8601 format
   nutrition: {
     energy: string
     fat: string

@@ -31,6 +31,16 @@
     "excerpt": "Lækker hjemmelavet pizza med sprød bund, saftig tomat-sauce og dit yndlingsfyld. Denne opskrift giver dig den perfekte pizza-bund der smager bedre end takeaway. Perfekt til en hyggelig aften."
   },
   {
+    "slug": "vegetarisk-pizza",
+    "title": "Vegetarisk Pizza",
+    "category": "Vegetarisk",
+    "time": "60 min",
+    "prepTime": "45 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Lækker hjemmelavet vegetarisk pizza med sprød bund, saftig tomat-sauce og lækre grøntsags-toppings. Denne opskrift giver dig den perfekte pizza-bund med fyldige vegetariske toppings. Perfekt til en hyggelig aften!"
+  },
+  {
     "slug": "boller",
     "title": "Boller",
     "category": "Hurtigt",
@@ -89,6 +99,26 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Sprødt og knasende hjemmelavet knækbrød med frø og krydderier. Perfekt til ost, pålæg eller bare som snack. Disse knækbrød er langt bedre end købte og kan tilpasses med dine yndlingsfrø og krydderier."
+  },
+  {
+    "slug": "knaekbrod-med-havregryn",
+    "title": "Knækbrød med Havregryn",
+    "category": "Hurtigt",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Sprødt og knasende hjemmelavet knækbrød med havregryn, frø og krydderier. Sundt og mættende med fuldkorn. Perfekt til ost, pålæg eller bare som snack. Disse knækbrød er langt bedre end købte og giver dig ekstra fiber og næring fra havregrynene."
+  },
+  {
+    "slug": "knaekbrod-med-horfrø-og-graeskarkerner",
+    "title": "Knækbrød med hørfrø og græskarkerner",
+    "category": "Hurtigt",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Sprødt og knasende hjemmelavet knækbrød med hørfrø og græskarkerner. Perfekt til ost, pålæg eller bare som snack. Disse knækbrød er rig på omega-3 og proteiner og smager fantastisk!"
   },
   {
     "slug": "pasta",
@@ -181,6 +211,36 @@
     "excerpt": "Klassiske danske hjemmelavet frikadeller med hakket kød, løg og krydderier. Den perfekte ret til hverdagen. Denne opskrift giver dig de autentiske danske frikadeller der smager langt bedre end købte. Server med kartofler og brun sovs!"
   },
   {
+    "slug": "nemme-frikadeller",
+    "title": "Nemme Frikadeller",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Super nemme og hurtige frikadeller med få ingredienser. Perfekt til hverdagen når du mangler tid. Disse frikadeller er lette at lave og smager fantastisk!"
+  },
+  {
+    "slug": "hurige-frikadeller",
+    "title": "Hurige Frikadeller",
+    "category": "Kød",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Hurtige og nemme frikadeller klar på kun 25 minutter! Perfekt når du har travlt. Disse saftige frikadeller smager fantastisk uden lang hviletid. Server med kartofler og brun sovs!"
+  },
+  {
+    "slug": "fiskefrikadeller",
+    "title": "Fiskefrikadeller",
+    "category": "Fisk",
+    "time": "35 min",
+    "prepTime": "20 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Saftige og sprøde hjemmelavede fiskefrikadeller med frisk dild og citron. Den klassiske danske fiskeret der smager langt bedre end fra butikken. Klar på under 35 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "frikadellesandwich",
     "title": "Frikadellesandwich",
     "category": "Kød",
@@ -189,6 +249,16 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Klassisk dansk hjemmelavet frikadellesandwich med saftige frikadeller, frisk salat og cremet dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske frikadellesandwich der smager langt bedre end fra butikken. Server med pommes frites!"
+  },
+  {
+    "slug": "forloren-hare-med-bacon",
+    "title": "Forloren Hare med Bacon",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk dansk forloren hare med saftigt hakket kød, krydderier og sprødt bacon. En traditionel dansk ret der smager fantastisk og er perfekt til en hyggelig aften. Fyldig, mættende og fuld af smag!"
   },
   {
     "slug": "chokoladeskeer",
@@ -601,6 +671,16 @@
     "excerpt": "Juicy og sprød hjemmelavet hamburger med saftig oksekød, smeltet ost, frisk salat og cremet dressing. Den perfekte klassiske burger der smager langt bedre end fra fastfood. Nem, hurtig og perfekt til hele familien!"
   },
   {
+    "slug": "hamburgerryg",
+    "title": "Hamburgerryg",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "15 min",
+    "cookTime": "75 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og sprød hjemmelavet hamburgerryg i ovn med gyldenbrun skorpe og perfekt krydret smag. Den perfekte hovedret til hverdagen eller weekenden. Denne opskrift giver dig den autentiske ovnbagte hamburgerryg der smager langt bedre end fra butikken. Server med kartofler, ris eller grøntsager!"
+  },
+  {
     "slug": "taquitos",
     "title": "Taquitos",
     "category": "Kød",
@@ -892,6 +972,16 @@
     "excerpt": "Luftige og tykke hjemmelavet amerikanske pandekager med bagepulver og smør. Den perfekte morgenmad eller brunch. Denne opskrift giver dig de autentiske amerikanske pandekager der smager langt bedre end fra restauranten."
   },
   {
+    "slug": "asiatisk-agurkesalat",
+    "title": "Asiatisk Agurkesalat",
+    "category": "Salat",
+    "time": "15 min",
+    "prepTime": "10 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og sprød asiatisk agurkesalat med soyasauce, riseddike og sesamolie. En perfekt side dish der smager fantastisk til asiatisk mad. Nem, hurtig og fuld af smag!"
+  },
+  {
     "slug": "bananpandekager",
     "title": "Bananpandekager",
     "category": "Hurtigt",
@@ -1052,6 +1142,16 @@
     "excerpt": "Klassisk hjemmelavet klatkage med æg, sukker, mel og smør. Den perfekte danske kage til kaffe eller dessert. Denne opskrift giver dig den autentiske klatkage der smager langt bedre end købt."
   },
   {
+    "slug": "klejner",
+    "title": "Klejner",
+    "category": "Dessert",
+    "time": "90 min",
+    "prepTime": "60 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassiske hjemmelavet klejner med sprød tekstur og sød smag. Den perfekte julekage der smager fantastisk og er en dansk tradition. Disse klejner er friturestegte og har den autentiske smag der bringer minder om jul. Server med kaffe eller gløgg!"
+  },
+  {
     "slug": "gulerodskage",
     "title": "Gulerodskage",
     "category": "Dessert",
@@ -1210,6 +1310,16 @@
     "cookTime": "30 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk hjemmelavet kylling tikka masala med krydret kylling, cremet tomat-sauce og aromatiske krydderier. Den perfekte indiske klassiker der smager langt bedre end fra takeaway. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "nem-butter-chicken",
+    "title": "Nem Butter Chicken (Murgh Makhani)",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet butter chicken (murgh makhani) med mør kylling, cremet tomat-sauce og rig smør. Den perfekte indiske klassiker der smager langt bedre end fra takeaway. Perfekt til en hyggelig aften!"
   },
   {
     "slug": "kylling-teriyaki",
@@ -1922,6 +2032,16 @@
     "excerpt": "Klassisk dansk hjemmelavet julekage med sukker, kanel, kardemomme og smør. Den perfekte søde kage til juletiden. Denne opskrift giver dig den autentiske julekage der smager langt bedre end fra bageren. Server med smør og en varm kop kaffe eller gløg!"
   },
   {
+    "slug": "juleboller",
+    "title": "Juleboller",
+    "category": "Dessert",
+    "time": "3 timer",
+    "prepTime": "2 timer",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Bløde og luftige hjemmelavet juleboller med kanel, kardemomme og rosiner. Den perfekte søde morgenmad til juletiden. Disse juleboller smager fantastisk og bringer julestemning til hjemmet. Server med smør og en varm kop kaffe eller gløg!"
+  },
+  {
     "slug": "and",
     "title": "And - Klassisk Dansk Julemad",
     "category": "Kød",
@@ -1990,6 +2110,16 @@
     "cookTime": "40 min",
     "difficulty": "Let",
     "excerpt": "Klassiske svenske chokoladesnitter med rig chokoladesmag og blød tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske svenske chokoladesnitter der smager langt bedre end fra butikken. Server med kaffe eller te!"
+  },
+  {
+    "slug": "svensk-polseret",
+    "title": "Svensk Pølseret",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk svensk pølseret med saftige pølser, kartofler og cremet sauce. En simpel og mættende ret der smager fantastisk og er perfekt til en hyggelig aften. Traditionel svensk hverdagsmad der er nem at lave!"
   },
   {
     "slug": "joedekager",
@@ -2172,6 +2302,16 @@
     "excerpt": "Klassiske danske hjemmelavet spanskrør med chokolade, kokos og sprød tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig de autentiske spanskrør der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
+    "slug": "de-perfekte-fridakeller",
+    "title": "De Perfekte Fridakeller",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Klassiske danske frikadeller med perfekt tekstur og smag. Saftige, gyldne og smagfulde - præcis som de skal være. Denne opskrift giver dig de perfekte frikadeller der smager langt bedre end fra butikken. Perfekt til hverdagen!"
+  },
+  {
     "slug": "donuts",
     "title": "Donuts",
     "category": "Dessert",
@@ -2190,6 +2330,16 @@
     "cookTime": "30 min",
     "difficulty": "Mellem",
     "excerpt": "Klassiske danske hjemmelavet vegetariske tarteletter med cremet champignoner i asparges, sprøde tartelet-skaller og aromatiske krydderier. Den perfekte vegetariske klassiker der smager langt bedre end fra butikken - helt uden kød! Perfekt til særlige lejligheder, jul, påske eller bare en hyggelig aften med familien!"
+  },
+  {
+    "slug": "vegetarisk-harirasuppe",
+    "title": "Vegetarisk Harirasuppe",
+    "category": "Vegetarisk",
+    "time": "60 min",
+    "prepTime": "20 min",
+    "cookTime": "40 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk vegetarisk marokkansk harirasuppe med linser, kikærter og aromatiske krydderier. En nærende og mættende suppe der er fuld af smag og perfekt til hverdagen eller særlige lejligheder."
   },
   {
     "slug": "roedkaal-salat",
@@ -2310,6 +2460,16 @@
     "cookTime": "10 min",
     "difficulty": "Let",
     "excerpt": "Klassisk hjemmelavet fransk toast med gyldenbrun skorpe og cremet indre. Den perfekte morgenmad eller brunch der smager langt bedre end fra restauranten. Simpel, hurtig og perfekt til hele familien!"
+  },
+  {
+    "slug": "fyldte-portobellosvampe-med-bacon-persille-og-porre",
+    "title": "Fyldte Portobellosvampe med Bacon, Persille og Porre",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Lækre fyldte portobellosvampe med sprødt bacon, frisk persille og porre. En smagfuld og mættende ret der er perfekt som forret eller hovedret. Nem at lave og smager fantastisk!"
   },
   {
     "slug": "hytte-alamande",
@@ -2590,5 +2750,185 @@
     "cookTime": "45 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk græsk spanakopita med spinat, fetaost og filodej. Den perfekte vegetariske ret der smager af Grækenland. Sprød, smagfuld og perfekt til frokost, forret eller hovedret!"
+  },
+  {
+    "slug": "marry-me-chicken",
+    "title": "Marry Me Chicken",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet og smagfuld kylling i en lækker sauce med soltørrede tomater, parmesan og krydderurter. Denne opskrift har fået sit navn fordi den er så god, at den kunne få nogen til at fri! Perfekt til en romantisk aften eller når du vil imponere."
+  },
+  {
+    "slug": "nem-pastaret-i-cremet-svampesauce",
+    "title": "Nem pastaret i cremet svampesauce",
+    "category": "Vegetarisk",
+    "time": "20 min",
+    "prepTime": "10 min",
+    "cookTime": "10 min",
+    "difficulty": "Nem",
+    "excerpt": "En hurtig og nem pastaret i cremet svampesauce. Perfekt til en travl hverdag - klar på kun 20 minutter! Fyldig, cremet og fuld af smag."
+  },
+  {
+    "slug": "orzo-med-citron-laks",
+    "title": "Orzo med citron & laks",
+    "category": "Fisk",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Nem",
+    "excerpt": "Kremet orzo med saftig laks og frisk citron. En hurtig og lækker ret der er perfekt til hverdagen. Fyldig, smagfuld og nem at lave!"
+  },
+  {
+    "slug": "droemmesnegle",
+    "title": "Drømmesnegle",
+    "category": "Dessert",
+    "time": "3 timer",
+    "prepTime": "30 min",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Søde og cremede drømmesnegle med vaniljekrem og fløde. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig de autentiske drømmesnegle der smager langt bedre end fra bageren. Server med kaffe eller te!"
+  },
+  {
+    "slug": "tiramisu-brownie",
+    "title": "Tiramisu Brownie",
+    "category": "Dessert",
+    "time": "60 min",
+    "prepTime": "20 min",
+    "cookTime": "40 min",
+    "difficulty": "Mellem",
+    "excerpt": "Luksuriøs tiramisu brownie med lag af chokoladebrownie, kaffemascarpone og kakao. En perfekt kombination af to klassiske desserter - cremet tiramisu og fudgy brownie. Smager fantastisk og er perfekt til en særlig aften!"
+  },
+  {
+    "slug": "bao-med-sticky-kylling-og-hoisin",
+    "title": "Bao med sticky kylling og hoisin",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Lækre, bløde bao-boller fyldt med saftig, sticky kylling og smagfuld hoisin-sauce. En autentisk asiatisk favorit der er perfekt til en hurtig og lækker måltid. Fyldig, mættende og fuld af smag!"
+  },
+  {
+    "slug": "kartoffel-porresuppe",
+    "title": "Kartoffel-porresuppe",
+    "category": "Grøntsager",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Kremet og smagfuld hjemmelavet kartoffel-porresuppe med frisk porre, kartofler og creme fraiche. Den perfekte varme suppe der smager langt bedre end fra butikken. Nem, mættende og perfekt til hele familien!"
+  },
+  {
+    "slug": "kartoffelsuppe-med-porre-sproed-skinke-og-purløg",
+    "title": "Kartoffelsuppe med porre, sprød skinke og purløg",
+    "category": "Grøntsager",
+    "time": "50 min",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Kremet og smagfuld kartoffelsuppe med porre, sprød skinke og frisk purløg. En lækker og mættende suppe der er perfekt til hverdagen. Den sprøde skinke og friske purløg giver suppen ekstra smag og tekstur!"
+  },
+  {
+    "slug": "honningkage-muffins",
+    "title": "Honningkage Muffins",
+    "category": "Dessert",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Lækre hjemmelavet honningkage muffins med varm kanel, ingefær og honning. Bløde, saftige muffins med den klassiske honningkage-smag. Perfekt til morgenmad, kaffepause eller dessert. Disse muffins smager langt bedre end købte og er overraskende nemme at lave!"
+  },
+  {
+    "slug": "panang-karry",
+    "title": "Panang Karry",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk thailandsk panang karry med mør kylling, cremet kokos-sauce og rig smag. En mild, men smagfuld curry der smager langt bedre end fra takeaway. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "luciaboller",
+    "title": "Luciaboller",
+    "category": "Dessert",
+    "time": "3 timer",
+    "prepTime": "2 timer",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Traditionelle danske luciaboller med safran og rosiner. Disse søde, gyldne boller er en klassiker til Luciadag (13. december) og smager fantastisk med smør og kaffe. Perfekte til julemåneden!"
+  },
+  {
+    "slug": "stollen-julebrod",
+    "title": "Stollen - julebrød",
+    "category": "Dessert",
+    "time": "4 timer",
+    "prepTime": "60 min",
+    "cookTime": "45 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk tysk stollen - traditionelt julebrød med tørrede frugter, nødder og krydderier. Den perfekte julekage der smager langt bedre end købt. Perfekt til julefrokost eller som gave!"
+  },
+  {
+    "slug": "bedste-luksus-moerbradgryde",
+    "title": "Bedste Luksus Mørbradgryde",
+    "category": "Kød",
+    "time": "75 min",
+    "prepTime": "20 min",
+    "cookTime": "55 min",
+    "difficulty": "Mellem",
+    "excerpt": "Luksuriøs og smagfuld mørbradgryde med saftig svinekød, cremet sauce og lækre grøntsager. Denne opskrift giver dig den perfekte luksusgryde der smager fantastisk og er perfekt til en særlig aften. Fyldig, mættende og fuld af smag!"
+  },
+  {
+    "slug": "verdens-bedste-aeggekage",
+    "title": "Verdens bedste æggekage",
+    "category": "Hurtigt",
+    "time": "10 min",
+    "prepTime": "5 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Perfekt cremet og luftig æggekage med den rigtige teknik. Denne opskrift giver dig en æggekage der er gylden udenpå, cremet indeni og helt perfekt. Simpel at lave, men smager fantastisk!"
+  },
+  {
+    "slug": "cookies-med-marcipan-og-nougatsmag",
+    "title": "Cookies med marcipan og nougatsmag",
+    "category": "Dessert",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "12 min",
+    "difficulty": "Let",
+    "excerpt": "Lækre hjemmelavet cookies med marcipan og nougatsmag. Bløde, chewy cookies med den perfekte balance mellem sødme og nøddesmag. Perfekt til kaffepause eller dessert. Disse cookies smager langt bedre end købte og er overraskende nemme at lave!"
+  },
+  {
+    "slug": "confiterede-tandoori-kikærter",
+    "title": "Confiterede Tandoori-Kikærter",
+    "category": "Vegetarisk",
+    "time": "60 min",
+    "prepTime": "10 min",
+    "cookTime": "50 min",
+    "difficulty": "Nem",
+    "excerpt": "Kremet confiterede kikærter med autentisk tandoori-smag. Langsomt kogte i olie med krydderier for maksimal smag og mør tekstur. En vegetarisk ret der smager fantastisk og er perfekt til hverdagen!"
+  },
+  {
+    "slug": "berliner-med-citronsukker",
+    "title": "Berliner med citronsukker",
+    "category": "Dessert",
+    "time": "3 timer",
+    "prepTime": "2 timer",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassiske hjemmelavet berliner (tyske donuts) med sprød skorpe og blød indre, drysset med frisk citronsukker. Den perfekte søde morgenmad eller dessert. Disse berliner smager fantastisk og bringer autentisk tysk bageri-kvalitet til hjemmet. Server med kaffe eller varm chokolade!"
+  },
+  {
+    "slug": "bagt-graeskarsuppe-med-ostebrod",
+    "title": "Bagt græskarsuppe med ostebrød",
+    "category": "Vegetarisk",
+    "time": "75 min",
+    "prepTime": "15 min",
+    "cookTime": "60 min",
+    "difficulty": "Nem",
+    "excerpt": "Cremet bagt græskarsuppe med sprødt ostebrød. En varmende og mættende suppe perfekt til efteråret. Græskaren bages først for maksimal smag, derefter blandes den til en cremet suppe og serveres med sprødt ostebrød."
   }
 ]
