@@ -45,26 +45,31 @@ export function CookieBanner() {
   }, [])
 
   const handleAccept = () => {
-    localStorage.setItem('cookie-consent', 'accepted')
-    localStorage.setItem('cookie-preferences', JSON.stringify({
+    const newPreferences = {
       essential: true,
       marketing: true,
       analytics: true,
       functional: true,
-    }))
+    }
+    localStorage.setItem('cookie-consent', 'accepted')
+    localStorage.setItem('cookie-preferences', JSON.stringify(newPreferences))
+    setPreferences(newPreferences) // Update state to reflect changes
     // Dispatch event for Google Analytics to listen to
     window.dispatchEvent(new Event('cookie-preferences-changed'))
     setIsVisible(false)
+    setIsModalOpen(false)
   }
 
   const handleReject = () => {
-    localStorage.setItem('cookie-consent', 'rejected')
-    localStorage.setItem('cookie-preferences', JSON.stringify({
+    const newPreferences = {
       essential: true,
       marketing: false,
       analytics: false,
       functional: false,
-    }))
+    }
+    localStorage.setItem('cookie-consent', 'rejected')
+    localStorage.setItem('cookie-preferences', JSON.stringify(newPreferences))
+    setPreferences(newPreferences) // Update state to reflect changes
     // Dispatch event for Google Analytics to listen to
     window.dispatchEvent(new Event('cookie-preferences-changed'))
     // Delete any existing auth cookies
@@ -76,6 +81,7 @@ export function CookieBanner() {
       }
     })
     setIsVisible(false)
+    setIsModalOpen(false)
   }
 
   const handleSave = () => {
