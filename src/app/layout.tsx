@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { CookieBanner } from '@/components/cookie-banner'
 import { CookiePreferencesProvider } from '@/components/cookie-preferences-provider'
 import { CookiePreferencesButton } from '@/components/cookie-preferences-button'
+import { GoogleAnalytics } from '@/components/google-analytics'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -86,6 +87,7 @@ export default function RootLayout({
           <Footer />
           <CookieBanner />
           <CookiePreferencesButton />
+          <GoogleAnalytics />
         </CookiePreferencesProvider>
         <Analytics />
       </body>

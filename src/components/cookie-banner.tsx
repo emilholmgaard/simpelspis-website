@@ -28,6 +28,17 @@ export function CookieBanner() {
   useEffect(() => {
     // Check if user has already accepted cookies
     const cookieConsent = localStorage.getItem('cookie-consent')
+    const savedPreferences = localStorage.getItem('cookie-preferences')
+    
+    if (savedPreferences) {
+      try {
+        const parsed = JSON.parse(savedPreferences)
+        setPreferences(parsed)
+      } catch {
+        // Invalid preferences, use defaults
+      }
+    }
+    
     if (!cookieConsent) {
       setIsVisible(true)
     }
@@ -41,6 +52,8 @@ export function CookieBanner() {
       analytics: true,
       functional: true,
     }))
+    // Dispatch event for Google Analytics to listen to
+    window.dispatchEvent(new Event('cookie-preferences-changed'))
     setIsVisible(false)
   }
 
@@ -52,6 +65,8 @@ export function CookieBanner() {
       analytics: false,
       functional: false,
     }))
+    // Dispatch event for Google Analytics to listen to
+    window.dispatchEvent(new Event('cookie-preferences-changed'))
     // Delete any existing auth cookies
     document.cookie.split(';').forEach((cookie) => {
       const eqPos = cookie.indexOf('=')
@@ -66,6 +81,8 @@ export function CookieBanner() {
   const handleSave = () => {
     localStorage.setItem('cookie-consent', 'accepted')
     localStorage.setItem('cookie-preferences', JSON.stringify(preferences))
+    // Dispatch event for Google Analytics to listen to
+    window.dispatchEvent(new Event('cookie-preferences-changed'))
     setIsModalOpen(false)
     setIsVisible(false)
   }
