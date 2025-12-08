@@ -6323,6 +6323,56 @@
     "excerpt": "Tynde og elegante hjemmelavet tyndepandekager (crepes) med perfekt tekstur. Perfekte til morgenmad, brunch eller dessert. Denne opskrift giver dig de klassiske tynde pandekager der smager langt bedre end købte. Server med syltetøj, sukker, citron eller dine yndlingstoppings!"
   },
   {
+    "slug": "crepe-pandekage",
+    "title": "Crêpe Pandekage",
+    "category": "Dessert",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Tynde, smørstegte franske crepe pandekager med silkeblød dej og gyldne kanter. Perfekte til morgenmad, brunch eller dessert med citron-sukker, bær eller Nutella."
+  },
+  {
+    "slug": "crepe-pandekage-variationer",
+    "title": "Crêpe Variationer",
+    "category": "Dessert",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "5 crepe variationer på samme dej: citron-sukker, Nutella-banan, mascarpone-bær, spinat-feta og skinke-ost. Nemt at skifte mellem søde og salte crepes."
+  },
+  {
+    "slug": "tynd-pandekage-opskrift",
+    "title": "Tynd Pandekage Opskrift",
+    "category": "Dessert",
+    "time": "40 min",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Perfekte tynde pandekager - ultratynde, elastiske og gyldne danske pandekager. Denne opskrift giver dig de tyndeste, mest elegante pandekager med perfekt tekstur. Perfekt til morgenmad, brunch eller dessert!"
+  },
+  {
+    "slug": "japansk-pandekage-opskrift",
+    "title": "Japansk Pandekage Opskrift",
+    "category": "Dessert",
+    "time": "45 min",
+    "prepTime": "25 min",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Luftige japanske soufflé pandekager - ekstra tykke, bløde og fluffede pandekager med perfekt tekstur. Disse japanske pandekager er en oplevelse med deres luftige konsistens og søde smag. Perfekt til morgenmad eller brunch!"
+  },
+  {
+    "slug": "perfekt-pandekage-dej",
+    "title": "Det Perfekte Pandekage Dej",
+    "category": "Dessert",
+    "time": "50 min",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Den ultimative master opskrift til perfekt pandekage dej. Testet og perfektioneret med de rigtige ingredienser, teknikker og hviletid. Giver tynde, bløde, luftige pandekager hver gang."
+  },
+  {
     "slug": "tzatziki",
     "title": "Tzatziki",
     "category": "Sovs",
@@ -6731,5 +6781,175 @@
     "cookTime": "0 min",
     "difficulty": "Let",
     "excerpt": "Sund og nærende yoghurt bowl a la Joe & The Juice med granola, bærkompot, blåbær og græsk yoghurt. Den perfekte morgenmad til at starte dagen med energi. Denne opskrift giver dig den autentiske yoghurt bowl der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "pandekage-opskrift",
+    "title": "Pandekage Opskrift - Klassisk Dansk Pandekage",
+    "category": "Dessert",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Den perfekte klassiske danske pandekage opskrift med tynde, luftige pandekager. Nem og lækker pandekage opskrift der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske danske pandekage med perfekt tekstur og smag. Perfekt pandekage opskrift til hele familien!"
+  },
+  {
+    "slug": "pandekage-variationer",
+    "title": "Pandekage Variationer - Banan, Jordbær, Kokos m.fl.",
+    "category": "Dessert",
+    "time": "50 min",
+    "prepTime": "25 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "7 nemme pandekage variationer: banan, jordbær, kokos, citron-blomst, protein, fuldkorn og chokolade. Brug samme grunddej og skift smag efter lyst."
+  },
+  {
+    "slug": "russisk-pandekage",
+    "title": "Russisk Pandekage (Blinis) - Små Luftige Pandekager",
+    "category": "Dessert",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Russiske blinis – små, luftige pandekager med gær. Perfekte med smør og syltetøj eller salt topping som creme fraiche og røget laks."
+  },
+  {
+    "slug": "rasmus-klump-pandekager",
+    "title": "Rasmus Klump Pandekager - Klassisk Børnevenlig Opskrift",
+    "category": "Dessert",
+    "time": "40 min",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Klassiske Rasmus Klump pandekager – tynde, gyldne og børnevenlige. Nem pandekageopskrift med blød tekstur, perfekt med syltetøj og flormelis."
+  },
+  {
+    "slug": "rasmus-klump-pandekager-variationer",
+    "title": "Rasmus Klump Pandekager - 5 Lækre Variationer",
+    "category": "Dessert",
+    "time": "45 min",
+    "prepTime": "25 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "5 lækre Rasmus Klump variationer: chokolade, kanel, citron, banan og æble. Brug samme grunddej og skift smag efter lyst – nemt til hele familien."
+  },
+  {
+    "slug": "pandekager-med-kernemaelk",
+    "title": "Pandekager med Kernemælk - Ekstra Bløde og Luftige",
+    "category": "Dessert",
+    "time": "40 min",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Pandekager med kernemælk – ekstra bløde og luftige med mild syrlighed. Perfekt morgenmad eller dessert, klar på 40 minutter."
+  },
+  {
+    "slug": "rasmus-klump-pandekager-med-kernemaelk",
+    "title": "Rasmus Klump Pandekager med Kernemælk - Den Ultimative Opskrift",
+    "category": "Dessert",
+    "time": "40 min",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Rasmus Klump pandekager med kernemælk – klassisk smag med ekstra luftighed. Kombinerer børnevenlig pandekage og kernemælkens syrlige twist."
+  },
+  {
+    "slug": "cookies-opskrift",
+    "title": "Cookies Opskrift - Perfekte Hjemmelavet Cookies",
+    "category": "Dessert",
+    "time": "75 min",
+    "prepTime": "45 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Den ultimative cookies opskrift til perfekte hjemmelavet cookies med chokoladechips. Bløde i midten og knasende udenpå - præcis som de skal være! Denne cookies opskrift giver dig de bedste cookies der smager langt bedre end købte. Den perfekte cookies opskrift til hele familien!"
+  },
+  {
+    "slug": "frikadeller-opskrift",
+    "title": "Frikadeller Opskrift - Klassisk Dansk Frikadeller",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "20 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Den perfekte klassiske danske frikadeller opskrift med saftige frikadeller lavet af svinekød. Nem og lækker frikadeller opskrift der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske danske frikadeller med perfekt tekstur og smag. Perfekt frikadeller opskrift til hele familien!"
+  },
+  {
+    "slug": "lasagne-opskrift",
+    "title": "Lasagne Opskrift - Autentisk Italiensk Lasagne",
+    "category": "Pasta",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Mellem",
+    "excerpt": "Den perfekte autentiske italienske lasagne opskrift med lækker kødsauce, cremet bechamel og gylden ost. Nem lasagne opskrift der smager langt bedre end fra restauranten eller butikken. Denne opskrift giver dig den autentiske lasagne-smag med rig, dyb smag. Perfekt lasagne opskrift til hele familien!"
+  },
+  {
+    "slug": "vafler-opskrift",
+    "title": "Vafler Opskrift - Klassisk Dansk Vafler",
+    "category": "Hurtigt",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Den perfekte klassiske danske vafler opskrift med luftige og sprøde vafler. Nem og lækker vafler opskrift der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske danske vafler med perfekt tekstur og smag. Perfekt vafler opskrift til hele familien!"
+  },
+  {
+    "slug": "brownie-opskrift",
+    "title": "Brownie Opskrift - Perfekte Chokolade Brownies",
+    "category": "Dessert",
+    "time": "55 min",
+    "prepTime": "20 min",
+    "cookTime": "35 min",
+    "difficulty": "Let",
+    "excerpt": "Den ultimative brownie opskrift til perfekte hjemmelavet brownies med rig chokoladesmag. Tæt konsistens og intens chokoladesmag - præcis som de skal være! Denne brownie opskrift giver dig de bedste brownies der smager langt bedre end købte. Den perfekte brownie opskrift til hele familien!"
+  },
+  {
+    "slug": "banankage-opskrift",
+    "title": "Banankage Opskrift - Saftig Hjemmelavet Banankage",
+    "category": "Dessert",
+    "time": "80 min",
+    "prepTime": "25 min",
+    "cookTime": "55 min",
+    "difficulty": "Let",
+    "excerpt": "Den perfekte saftige banankage opskrift med modne bananer og varm kanel. Nem og lækker banankage opskrift der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske banankage med perfekt tekstur og smag. Perfekt banankage opskrift til hele familien!"
+  },
+  {
+    "slug": "blaabaer-pandekager",
+    "title": "Blåbær Pandekager - Luftige med Friske Blåbær",
+    "category": "Dessert",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Luftige, tynde pandekager fyldt med friske blåbær og et strejf af citron. Perfekt sødme og syre-balanceret pandekageopskrift, der smager som sommer på en tallerken."
+  },
+  {
+    "slug": "fersken-pandekager",
+    "title": "Fersken Pandekager - Saftige med Karamelliseret Fersken",
+    "category": "Dessert",
+    "time": "40 min",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Tynde, luftige pandekager toppet med karamelliserede ferskner og et strejf af vanilje. Sød, saftig og super sommerlig pandekageopskrift, klar på 40 minutter."
+  },
+  {
+    "slug": "sproede-pandekager",
+    "title": "Sprøde Pandekager - Tynde med Knasende Kanter",
+    "category": "Dessert",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Ekstra tynde pandekager med sprøde kanter og let karamelliseret overflade. Perfekt hvis du vil have knas fremfor blødhed – ideelle med sukker, citron eller is."
+  },
+  {
+    "slug": "fluffy-pandekager",
+    "title": "Fluffy Pandekager - Ekstra Luftige med Kærnemælk",
+    "category": "Dessert",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Tykke, luftige fluffy pandekager med kærnemælk, bagepulver og piskede æggehvider. Perfekte til brunch med sirup og bær."
   }
 ]
