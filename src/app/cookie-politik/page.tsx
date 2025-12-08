@@ -116,7 +116,7 @@ export default function CookiePolitikPage() {
             </h2>
             <p className="mb-3">
               Du kan til enhver tid administrere dine cookie-præferencer ved at klikke på 
-              "Cookie-indstillinger" knappen i bunden af hjemmesiden. Her kan du vælge, hvilke typer 
+              &quot;Cookie-indstillinger&quot; knappen i bunden af hjemmesiden. Her kan du vælge, hvilke typer 
               cookies du vil acceptere.
             </p>
             <p className="mb-3">
