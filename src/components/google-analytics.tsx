@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Script from 'next/script'
 
 const GA_MEASUREMENT_ID = 'G-CJ1SZDVENB'
 
@@ -26,35 +27,6 @@ function getCookiePreferences() {
   }
 }
 
-function loadGoogleAnalyticsScript() {
-  // Check if script is already loaded
-  if (document.querySelector(`script[src*="googletagmanager.com/gtag/js"]`)) {
-    return
-  }
-
-  // Ensure dataLayer and gtag function exist (should already be set in head)
-  window.dataLayer = window.dataLayer || []
-  if (!window.gtag) {
-    function gtag(...args: unknown[]) {
-      window.dataLayer.push(args)
-    }
-    window.gtag = gtag
-  }
-
-  // Load the gtag.js script
-  const script1 = document.createElement('script')
-  script1.async = true
-  script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`
-  document.head.appendChild(script1)
-
-  // Configure with GDPR-compliant settings
-  window.gtag('js', new Date())
-  window.gtag('config', GA_MEASUREMENT_ID, {
-    anonymize_ip: true,
-    allow_google_signals: false,
-    allow_ad_personalization_signals: false,
-  })
-}
 
 export function GoogleAnalytics() {
   const [hasConsent, setHasConsent] = useState(false)
@@ -63,53 +35,22 @@ export function GoogleAnalytics() {
     // Check initial consent
     const initialConsent = getCookiePreferences()
     setHasConsent(initialConsent)
+  }, [])
 
-    // If consent is given initially, load the script and update consent
-    if (initialConsent) {
-      loadGoogleAnalyticsScript()
-      // Small delay to ensure script is loaded
-      setTimeout(() => {
-        if (window.gtag) {
-          // Update consent with all Consent Mode v2 parameters
-          window.gtag('consent', 'update', {
-            ad_user_data: 'denied',
-            ad_personalization: 'denied',
-            ad_storage: 'denied',
-            analytics_storage: 'granted',
-          })
-        }
-      }, 100)
-    }
-
+  useEffect(() => {
     // Listen for consent changes
     const handleConsentChange = () => {
       const newConsent = getCookiePreferences()
       setHasConsent(newConsent)
 
-      if (newConsent) {
-        // User has given consent - load script if not already loaded and enable tracking
-        if (!window.gtag) {
-          loadGoogleAnalyticsScript()
-          setTimeout(() => {
-            if (window.gtag) {
-              // Update consent with all Consent Mode v2 parameters
-              window.gtag('consent', 'update', {
-                ad_user_data: 'denied',
-                ad_personalization: 'denied',
-                ad_storage: 'denied',
-                analytics_storage: 'granted',
-              })
-            }
-          }, 100)
-        } else {
-          // Script already loaded, just update consent with all Consent Mode v2 parameters
-          window.gtag('consent', 'update', {
-            ad_user_data: 'denied',
-            ad_personalization: 'denied',
-            ad_storage: 'denied',
-            analytics_storage: 'granted',
-          })
-        }
+      if (newConsent && window.gtag) {
+        // User has given consent - update consent with all Consent Mode v2 parameters
+        window.gtag('consent', 'update', {
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+          ad_storage: 'denied',
+          analytics_storage: 'granted',
+        })
       } else if (!newConsent && window.gtag) {
         // User has revoked consent - disable tracking with all Consent Mode v2 parameters
         window.gtag('consent', 'update', {
@@ -133,7 +74,42 @@ export function GoogleAnalytics() {
     }
   }, [])
 
-  // This component doesn't render anything - it handles script loading via useEffect
-  return null
+  // Only load script if consent is given
+  if (!hasConsent) {
+    return null
+  }
+
+  return (
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+        onLoad={() => {
+          // Update consent after script loads to enable tracking
+          if (window.gtag) {
+            window.gtag('consent', 'update', {
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              ad_storage: 'denied',
+              analytics_storage: 'granted',
+            })
+          }
+        }}
+      />
+      <Script id="google-analytics-config" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_MEASUREMENT_ID}', {
+            anonymize_ip: true,
+            allow_google_signals: false,
+            allow_ad_personalization_signals: false
+          });
+          window.gtag = gtag;
+        `}
+      </Script>
+    </>
+  )
 }
 
