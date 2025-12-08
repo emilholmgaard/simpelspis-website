@@ -1,14 +1,13 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Script from 'next/script'
+import { GoogleAnalytics as NextGoogleAnalytics } from '@next/third-parties/google'
 
 const GA_MEASUREMENT_ID = 'G-CJ1SZDVENB'
 
 // Declare gtag function for TypeScript
 declare global {
   interface Window {
-    dataLayer: unknown[]
     gtag: (...args: unknown[]) => void
   }
 }
@@ -26,7 +25,6 @@ function getCookiePreferences() {
     return false
   }
 }
-
 
 export function GoogleAnalytics() {
   const [hasConsent, setHasConsent] = useState(false)
@@ -74,42 +72,41 @@ export function GoogleAnalytics() {
     }
   }, [])
 
-  // Only load script if consent is given
+  useEffect(() => {
+    // Update consent and configure GDPR settings when component mounts and consent is given
+    if (hasConsent && window.gtag) {
+      // Small delay to ensure gtag is available after NextGoogleAnalytics loads
+      const timer = setTimeout(() => {
+        if (window.gtag) {
+          // Update consent with all Consent Mode v2 parameters
+          window.gtag('consent', 'update', {
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            ad_storage: 'denied',
+            analytics_storage: 'granted',
+          })
+          
+          // Configure GDPR-compliant settings
+          window.gtag('config', GA_MEASUREMENT_ID, {
+            anonymize_ip: true,
+            allow_google_signals: false,
+            allow_ad_personalization_signals: false,
+          })
+        }
+      }, 200)
+      return () => clearTimeout(timer)
+    }
+  }, [hasConsent])
+
+  // Only load Google Analytics if consent is given
   if (!hasConsent) {
     return null
   }
 
   return (
-    <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
-        onLoad={() => {
-          // Update consent after script loads to enable tracking
-          if (window.gtag) {
-            window.gtag('consent', 'update', {
-              ad_user_data: 'denied',
-              ad_personalization: 'denied',
-              ad_storage: 'denied',
-              analytics_storage: 'granted',
-            })
-          }
-        }}
-      />
-      <Script id="google-analytics-config" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_MEASUREMENT_ID}', {
-            anonymize_ip: true,
-            allow_google_signals: false,
-            allow_ad_personalization_signals: false
-          });
-          window.gtag = gtag;
-        `}
-      </Script>
-    </>
+    <NextGoogleAnalytics 
+      gaId={GA_MEASUREMENT_ID}
+    />
   )
 }
 
