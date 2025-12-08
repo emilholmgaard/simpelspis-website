@@ -160,6 +160,26 @@
     "excerpt": "Klassisk dansk hjemmelavet æblegløg med søde æbler, bløde løg og sød-syrlig smag. Den perfekte tilbehør til flæskesteg, frikadeller eller anden dansk mad. Denne opskrift giver dig den autentiske æblegløg der smager langt bedre end fra butikken. Traditionel dansk hjemmekøkken på sit bedste!"
   },
   {
+    "slug": "aeblekage",
+    "title": "Æblekage",
+    "category": "Dessert",
+    "time": "60 min",
+    "prepTime": "20 min",
+    "cookTime": "40 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk dansk hjemmelavet æblekage med søde æbler, knasende tvebakker og cremet vaniljecustard. Den perfekte dessert der smager langt bedre end fra butikken. Traditionel dansk hjemmekøkken på sit bedste! Server med flødeskum eller cremet vaniljecustard."
+  },
+  {
+    "slug": "aeblemazarin",
+    "title": "Æblemazarin",
+    "category": "Dessert",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk dansk æblemazarin med sprød butterdej-bund, cremet mandelmasse og søde æbler. Den perfekte dessert der smager langt bedre end fra konditoriet. Perfekt til fødselsdage, fester eller bare en hyggelig aften med familien!"
+  },
+  {
     "slug": "aebleskiver",
     "title": "Æbleskiver",
     "category": "Dessert",
@@ -170,6 +190,16 @@
     "excerpt": "Klassiske dansk æbleskiver med luftig tekstur og guldbrun farve. Den perfekte dessert eller snack til jul eller hverdagen. Denne opskrift giver dig den autentiske æbleskiver der smager langt bedre end fra butikken. Server med flormelis og syltetøj!"
   },
   {
+    "slug": "aeg-i-airfryer",
+    "title": "Æg i Airfryer",
+    "category": "Hurtigt",
+    "time": "10 min",
+    "prepTime": "2 min",
+    "cookTime": "8 min",
+    "difficulty": "Let",
+    "excerpt": "Perfekte kogte æg i airfryer med præcis tekstur. Den perfekte hurtige morgenmad eller snack der er nemmere end traditionel kogning. Klar på under 10 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "aeggekage",
     "title": "Æggekage",
     "category": "Hurtigt",
@@ -178,6 +208,26 @@
     "cookTime": "15 min",
     "difficulty": "Let",
     "excerpt": "Cremet og smagfuld hjemmelavet æggekage med æg, mælk og smør. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske æggekage der smager langt bedre end fra restauranten. Server med bacon, brød eller grøntsager!"
+  },
+  {
+    "slug": "aeggetaerte",
+    "title": "Æggetærte",
+    "category": "Kage",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk dansk hjemmelavet æggetærte med sprød bund, cremet æggefyld og flødeskum. Den perfekte danske klassiker der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske æggetærte med perfekt balance mellem sødt og cremet. Perfekt til kaffe eller dessert - en sand dansk klassiker!"
+  },
+  {
+    "slug": "afrikansk-curry-med-kylling-og-peanutbutter",
+    "title": "Afrikansk Curry med Kylling og Peanutbutter",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Krydret afrikansk curry med saftig kylling og cremet peanutbutter. En smagfuld ret med eksotiske smage!"
   },
   {
     "slug": "airfryer-fisk",
@@ -260,6 +310,16 @@
     "excerpt": "Luftige og tykke hjemmelavet amerikanske pandekager med bagepulver og smør. Den perfekte morgenmad eller brunch. Denne opskrift giver dig de autentiske amerikanske pandekager der smager langt bedre end fra restauranten."
   },
   {
+    "slug": "amerikanske-pandekager-uden-maelk",
+    "title": "Amerikanske Pandekager uden Mælk",
+    "category": "Morgenmad",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Fluffy hjemmelavet amerikanske pandekager uden mælk med æg, mel og bagepulver. Den perfekte morgenmadsklassiker der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske amerikanske pandekager med luftig tekstur og gylden farve. Server med sirup og smør - perfekt til en hyggelig morgen!"
+  },
+  {
     "slug": "and",
     "title": "And - Klassisk Dansk Julemad",
     "category": "Kød",
@@ -268,6 +328,16 @@
     "cookTime": "3 timer",
     "difficulty": "Mellem",
     "excerpt": "Klassisk dansk juleand med sprød skind, saftigt kød og lækker andesovs. Den perfekte hovedret til julemiddagen. Denne opskrift giver dig den autentiske juleand der smager langt bedre end fra slagteren. Server med rødkål, kartofler og andesovs!"
+  },
+  {
+    "slug": "and-i-airfryer",
+    "title": "And i Airfryer",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Mellem",
+    "excerpt": "Saftig og sprød and i airfryer med gylden skind og perfekt tekstur. Den perfekte klassiske ret der smager langt bedre end ovnbagte and. Klar på under 60 minutter - perfekt til særlige lejligheder!"
   },
   {
     "slug": "andebryst-a-l-orange",
@@ -330,6 +400,16 @@
     "excerpt": "Lækker hjemmelavet appelsinsauce og karameliserede mandler til risalamande. Den perfekte alternative til kirsebærsovs - frisk appelsinsmag og knasende karameliserede mandler. Denne opskrift giver dig en elegant og smagfuld topping der smager langt bedre end fra butikken. Perfekt til juleaften!"
   },
   {
+    "slug": "apple-pie",
+    "title": "Apple Pie",
+    "category": "Dessert",
+    "time": "120 min",
+    "prepTime": "60 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk amerikansk hjemmelavet apple pie med søde æbler, kanel og butterdej. Den perfekte dessert der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske apple pie med sprød bund, saftige æbler og gylden overdel. Perfekt til en hyggelig aften!"
+  },
+  {
     "slug": "asiatisk-agurkesalat",
     "title": "Asiatisk Agurkesalat",
     "category": "Salat",
@@ -340,6 +420,26 @@
     "excerpt": "Frisk og sprød asiatisk agurkesalat med soyasauce, riseddike og sesamolie. En perfekt side dish der smager fantastisk til asiatisk mad. Nem, hurtig og fuld af smag!"
   },
   {
+    "slug": "asparges-med-bacon-i-airfryer",
+    "title": "Asparges med Bacon i Airfryer",
+    "category": "Kød",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Saftige og smagfulde asparges med bacon i airfryer med perfekt tekstur. Den perfekte hurtige side ret der smager langt bedre end ovnbagte asparges. Klar på under 25 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "asparges-med-boenner-og-pesto",
+    "title": "Asparges med Bønner og Pesto",
+    "category": "Vegetarisk",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og smagfuld asparges med grønne bønner og cremet pesto. Den perfekte vegetariske ret der smager fantastisk og er nem at lave. Denne opskrift giver dig den perfekte kombination af sprød asparges, saftige bønner og kraftig pesto. Perfekt til hverdagen!"
+  },
+  {
     "slug": "asparges-med-butterdej-og-parmesan",
     "title": "Asparges med butterdej og parmesan",
     "category": "Vegetarisk",
@@ -348,6 +448,66 @@
     "cookTime": "25 min",
     "difficulty": "Mellem",
     "excerpt": "Elegant hjemmelavet asparges med sprød butterdej og salte parmesan. Den perfekte forret eller tilbehør til måltider. Denne opskrift giver dig den perfekte kombination af sprød butterdej, saftige asparges og kraftig parmesan. Perfekt til en særlig aften!"
+  },
+  {
+    "slug": "autentisk-beef-stroganoff",
+    "title": "Autentisk Beef Stroganoff",
+    "category": "Kød",
+    "time": "50 min",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet beef stroganoff med mør oksekød, cremet flødesauce og svampe. Den perfekte russiske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den cremet, smagfulde ret med saftigt kød og rig sauce. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "autentisk-carbonara",
+    "title": "Autentisk Carbonara - Klassisk Romersk Opskrift",
+    "category": "Pasta",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk romersk carbonara med guanciale, pecorino romano og cremet æggesauce. Den perfekte italienske pasta der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske carbonara-smag uden fløde - kun æg, ost og bacon. Perfekt til en hyggelig aften med venner og familie!"
+  },
+  {
+    "slug": "autentisk-coq-au-vin",
+    "title": "Autentisk Coq au Vin",
+    "category": "Kød",
+    "time": "160 min",
+    "prepTime": "40 min",
+    "cookTime": "120 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk fransk hjemmelavet coq au vin med saftig kylling, rødvinssauce og svampe. Den perfekte franske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske coq au vin med perfekt krydret smag og cremet konsistens. Server med pasta eller kartofler - perfekt til en særlig aften!"
+  },
+  {
+    "slug": "autentisk-moussaka",
+    "title": "Autentisk Moussaka",
+    "category": "Kød",
+    "time": "130 min",
+    "prepTime": "40 min",
+    "cookTime": "90 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk græsk moussaka med lag af aubergine, krydret kødsauce og cremet bechamel. Den perfekte komfortmad der smager af Grækenland. Rigt, mættende og perfekt til en særlig aften!"
+  },
+  {
+    "slug": "autentisk-pad-thai",
+    "title": "Autentisk Pad Thai",
+    "category": "Hurtigt",
+    "time": "25 min",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet pad thai med sprøde rejer, æg og friske grøntsager. Den perfekte thailandsk klassiker der smager langt bedre end takeaway. Autentisk pad thai opskrift klar på 25 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "autentisk-tiramisu",
+    "title": "Autentisk Tiramisu",
+    "category": "Dessert",
+    "time": "70 min",
+    "prepTime": "40 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet tiramisu med mascarpone, kaffesvæppede kiks og kakao. Den perfekte italienske dessert der smager langt bedre end fra restauranten. Denne klassiske tiramisu opskrift giver dig den cremet, luftige dessert med perfekt balance mellem kaffe, søde og cremet smag. Perfekt til særlige lejligheder eller når du vil imponere!"
   },
   {
     "slug": "avocado-sandwich-a-la-joe-the-juice",
@@ -380,6 +540,16 @@
     "excerpt": "Lækre baconruller i et kartoffelfad med friske grøntsager. En mættende og smagfuld ret der er perfekt til både hverdagen og særlige lejligheder."
   },
   {
+    "slug": "bagekartoffel-i-airfryer",
+    "title": "Bagekartoffel i Airfryer",
+    "category": "Hurtigt",
+    "time": "55 min",
+    "prepTime": "5 min",
+    "cookTime": "50 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og smagfuld bagekartoffel i airfryer med sprød skræl og perfekt tekstur. Den perfekte hurtige side ret der smager langt bedre end ovnbagte kartofler. Klar på under 55 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "bagekartofler-med-cremet-topping-og-aebleslaw",
     "title": "Bagekartofler Med Cremet Topping Og Æbleslaw",
     "category": "Grøntsager",
@@ -398,6 +568,16 @@
     "cookTime": "20 min",
     "difficulty": "Mellem",
     "excerpt": "Autentiske hjemmelavet bagels med sprød skorpe og blød krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske bagels der smager langt bedre end fra bageren. Server med cream cheese, laks eller dit yndlingspålæg!"
+  },
+  {
+    "slug": "bagt-blomkal-i-airfryer",
+    "title": "Bagt Blomkål i Airfryer",
+    "category": "Vegetarisk",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Sprød og smagfuld bagt blomkål i airfryer med gylden overflade og perfekt tekstur. Den perfekte vegetariske ret der smager langt bedre end ovnbagte blomkål. Klar på under 30 minutter - perfekt til hverdagen!"
   },
   {
     "slug": "bagt-graeskarsuppe-med-ostebrod",
@@ -450,6 +630,16 @@
     "excerpt": "Cremet og luftig hjemmelavet banan mousse med frisk banan, flødeskum og vanilje. Den perfekte dessert der smager langt bedre end fra butikken. Simpel, hurtig og perfekt til hele familien!"
   },
   {
+    "slug": "bananbroed-med-moerk-maelk-chokolade-ganache",
+    "title": "Bananbrød med Mørk Mælk Chokolade Ganache",
+    "category": "Dessert",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Saftigt og smagfuldt hjemmelavet bananbrød med cremet mørk mælk chokolade ganache. Den perfekte dessert eller morgenmad der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske bananbrød med perfekt balance mellem banan og chokolade. Perfekt til hverdagen!"
+  },
+  {
     "slug": "banankage",
     "title": "Banankage",
     "category": "Dessert",
@@ -458,6 +648,16 @@
     "cookTime": "55 min",
     "difficulty": "Let",
     "excerpt": "Saftig og smagfuld hjemmelavet banankage med modne bananer og varm kanel. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske banankage der smager langt bedre end fra butikken. Server med kaffe eller te!"
+  },
+  {
+    "slug": "bananmuffins-med-svesker",
+    "title": "Bananmuffins med svesker",
+    "category": "Dessert",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Saftige og søde bananmuffins med smagfulde svesker og perfekt balance mellem sødme og frugt. Den perfekte dessert eller snack der smager langt bedre end fra bageriet. Klar på under 40 minutter - perfekt til hverdagen!"
   },
   {
     "slug": "bananpandekager",
@@ -511,6 +711,16 @@
     "excerpt": "Klassisk fransk hjemmelavet bearnaise sovs med smør, æggeblommer, estragon og skalotteløg. Den perfekte sovs til entrecote, bøf eller pommes frites. Denne opskrift giver dig den autentiske bearnaise der smager langt bedre end fra restauranten."
   },
   {
+    "slug": "bedste-carbonara-opskrift",
+    "title": "Bedste Carbonara Opskrift",
+    "category": "Pasta",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Den bedste carbonara opskrift med autentisk italiensk smag. Cremet carbonara med bacon, æg og parmesan der smager langt bedre end fra restauranten. Nem carbonara opskrift klar på 25 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "bedste-luksus-moerbradgryde",
     "title": "Bedste Luksus Mørbradgryde",
     "category": "Kød",
@@ -519,6 +729,66 @@
     "cookTime": "55 min",
     "difficulty": "Mellem",
     "excerpt": "Luksuriøs og smagfuld mørbradgryde med saftig svinekød, cremet sauce og lækre grøntsager. Denne opskrift giver dig den perfekte luksusgryde der smager fantastisk og er perfekt til en særlig aften. Fyldig, mættende og fuld af smag!"
+  },
+  {
+    "slug": "beef-bourguignon",
+    "title": "Beef Bourguignon",
+    "category": "Kød",
+    "time": "180 min",
+    "prepTime": "30 min",
+    "cookTime": "150 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk fransk hjemmelavet beef bourguignon med mør oksekød, rødvin, svampe og løg. Den perfekte franske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske beef bourguignon med dyb, rig smag og mørt kød. Perfekt til en særlig aften!"
+  },
+  {
+    "slug": "beef-bourguignon-autentisk",
+    "title": "Beef Bourguignon Autentisk",
+    "category": "Kød",
+    "time": "180 min",
+    "prepTime": "30 min",
+    "cookTime": "150 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk fransk hjemmelavet beef bourguignon med oksekød, rødvin, svampe og bacon. Den perfekte franske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske beef bourguignon med dyb, rig smag og mørt kød. Server med pasta eller brød - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "beef-rendang",
+    "title": "Beef Rendang",
+    "category": "Kød",
+    "time": "180 min",
+    "prepTime": "30 min",
+    "cookTime": "150 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk indonesisk hjemmelavet beef rendang med mør oksekød, kokosmælk og aromatiske krydderier. Den perfekte indonesiske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske beef rendang med mørt kød og rig, krydret sauce. Perfekt til en særlig aften!"
+  },
+  {
+    "slug": "beef-stroganoff",
+    "title": "Beef Stroganoff",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet beef stroganoff med mør oksekød, cremet flødesauce og svampe. Den perfekte russiske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den cremet, smagfulde ret med saftigt kød og rig sauce. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "beef-stroganoff-autentisk",
+    "title": "Beef Stroganoff Autentisk",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "20 min",
+    "cookTime": "40 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk russisk hjemmelavet beef stroganoff med saftigt oksekød, cremet flødesauce og svampe. Den perfekte russiske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske beef stroganoff med perfekt krydret smag og cremet konsistens. Server med pasta eller ris - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "beef-tacos",
+    "title": "Beef Tacos",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Autentiske hjemmelavet beef tacos med krydret oksekød, friske grøntsager og alle de klassiske toppings. Den perfekte mexicanske klassiker der smager langt bedre end takeaway. Nem, hurtig og perfekt til hele familien!"
   },
   {
     "slug": "beef-wellington",
@@ -581,6 +851,16 @@
     "excerpt": "Klassisk dansk hjemmelavet biksemad i ovnen med saftigt kød, sprøde kartofler og kold bearnaise. Den perfekte hverdagsret der smager langt bedre end fra restauranten. Nem, hurtig og perfekt til hele familien!"
   },
   {
+    "slug": "biryani",
+    "title": "Biryani",
+    "category": "Kød",
+    "time": "120 min",
+    "prepTime": "45 min",
+    "cookTime": "75 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk indisk hjemmelavet biryani med aromatisk ris, saftig kylling og krydderier. Den perfekte indiske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske biryani med perfekt krydret smag og gylden ris. Server med raita og salat - perfekt til en særlig aften!"
+  },
+  {
     "slug": "blomkaal-og-kikaerter-i-cremet-dildsauce",
     "title": "Blomkål Og Kikærter I Cremet Dildsauce",
     "category": "Vegetarisk",
@@ -599,6 +879,16 @@
     "cookTime": "25 min",
     "difficulty": "Let",
     "excerpt": "Klassisk dansk bøf lindstrøm med saftige kødbøffer, rødbeder, kapers og æg. Den perfekte komfortmad der smager langt bedre end fra restauranten. Nem, mættende og perfekt til hele familien!"
+  },
+  {
+    "slug": "boef-stroganoff",
+    "title": "Bøf Stroganoff",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk hjemmelavet bøf stroganoff med saftigt oksekød, cremet flødesauce og svampe. Den perfekte russiske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske stroganoff med perfekt cremet sauce og mørt kød. Server med ris eller pasta - perfekt til en hyggelig aften!"
   },
   {
     "slug": "boller",
@@ -681,6 +971,16 @@
     "excerpt": "Klassiske hjemmelavet bolscher med glasagtig tekstur og intens smag. Den perfekte danske klassiker der smager langt bedre end købte. Perfekt til julehygge, som gave eller bare til en hyggelig aften!"
   },
   {
+    "slug": "bouillabaisse",
+    "title": "Bouillabaisse",
+    "category": "Fisk",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk fransk hjemmelavet bouillabaisse med frisk fisk, skaldyr, safran og aromatiske krydderier. Den perfekte franske fiskesuppe der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske bouillabaisse med rig smag og saftig fisk. Server med rouille og brød - perfekt til en særlig aften!"
+  },
+  {
     "slug": "bradepandekage",
     "title": "Bradepandekage",
     "category": "Hurtigt",
@@ -689,6 +989,16 @@
     "cookTime": "20 min",
     "difficulty": "Let",
     "excerpt": "Luftig og imponerende hjemmelavet bradepandekage bages i ovnen til en stor, puffet pandekage. Den perfekte morgenmad eller brunch der smager langt bedre end fra restauranten. Nem at lave og perfekt til hele familien!"
+  },
+  {
+    "slug": "braendte-mandler-i-airfryer",
+    "title": "Brændte Mandler i Airfryer",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "2 min",
+    "cookTime": "3 min",
+    "difficulty": "Let",
+    "excerpt": "Sprøde og søde brændte mandler i airfryer med perfekt tekstur. Den perfekte hurtige snack eller dessert der smager langt bedre end ovnbagte mandler. Klar på under 5 minutter - perfekt til hverdagen!"
   },
   {
     "slug": "braendtemandler",
@@ -719,6 +1029,16 @@
     "cookTime": "35 min",
     "difficulty": "Let",
     "excerpt": "Klassisk hjemmelavet brownie med rig chokoladesmag og tæt konsistens. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig den autentiske brownie der smager langt bedre end købt."
+  },
+  {
+    "slug": "brun-sovs",
+    "title": "Brun Sovs",
+    "category": "Sovs",
+    "time": "20 min",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet og smagfuld hjemmelavet brun sovs med oksebouillon og smør. Den perfekte klassiske danske sovs der smager langt bedre end instant sovs. Denne opskrift giver dig den perfekte balance mellem cremet konsistens og rig smag. Perfekt til hverdagen!"
   },
   {
     "slug": "brunede-kartofler",
@@ -771,6 +1091,16 @@
     "excerpt": "Nem og billig pasta med tomatsauce lavet af simple ingredienser. Perfekt budgetvenlig ret der smager fantastisk og er klar på under 20 minutter. Ideel til studerende og alle der vil spare penge uden at gå på kompromis med smagen!"
   },
   {
+    "slug": "budget-venlig-opskrift",
+    "title": "Budget Venlig Opskrift",
+    "category": "Hurtigt",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Budget venlig opskrift med få ingredienser der smager fantastisk. Nem budget venlig opskrift klar på 25 minutter - perfekt til hverdagen. Billig opskrift der ikke går på kompromis med smag!"
+  },
+  {
     "slug": "burrito",
     "title": "Burrito",
     "category": "Kød",
@@ -779,6 +1109,16 @@
     "cookTime": "25 min",
     "difficulty": "Let",
     "excerpt": "Autentisk hjemmelavet burrito med krydret kød, ris, bønner og friske grøntsager rullet i en varm tortilla. Den perfekte mættende ret til en hyggelig aften. Denne opskrift giver dig den autentiske burrito der smager langt bedre end fra restauranten. Server med guacamole, salsa og creme fraiche!"
+  },
+  {
+    "slug": "butter-chicken-autentisk",
+    "title": "Butter Chicken Autentisk",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "45 min",
+    "cookTime": "45 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk indisk hjemmelavet butter chicken med cremet tomat-sauce, smør og saftig kylling. Den perfekte indiske klassiker der smager langt bedre end fra restauranten. Mild, cremet og perfekt til hele familien!"
   },
   {
     "slug": "butter-halloumi",
@@ -871,6 +1211,16 @@
     "excerpt": "Kremet cheeseburgersuppe med oksekød og friske grøntsager. En lækker og mættende suppe der smager som en cheeseburger!"
   },
   {
+    "slug": "chicken-alfredo-autentisk",
+    "title": "Chicken Alfredo Autentisk",
+    "category": "Pasta",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk italiensk-amerikansk hjemmelavet chicken alfredo med cremet flødesauce, parmesan og saftig kylling. Den perfekte klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske chicken alfredo med perfekt cremet konsistens og rig smag. Server med frisk pasta - perfekt til en hyggelig aften!"
+  },
+  {
     "slug": "chicken-caesar-tacos",
     "title": "Chicken Cæsar Tacos",
     "category": "Kød",
@@ -881,6 +1231,86 @@
     "excerpt": "Krydrede tacos med kylling, cæsar dressing og friske grøntsager. En lækker og nem ret der smager som en cæsar salat i tacoform!"
   },
   {
+    "slug": "chicken-cordon-bleu",
+    "title": "Chicken Cordon Bleu",
+    "category": "Kød",
+    "time": "50 min",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk fransk hjemmelavet chicken cordon bleu med kylling, skinke og ost. Den perfekte franske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske chicken cordon bleu med sprød panering og smeltet ost. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "chicken-fajitas",
+    "title": "Chicken Fajitas",
+    "category": "Kød",
+    "time": "40 min",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk hjemmelavet chicken fajitas med krydret kylling, peberfrugter og løg. Den perfekte mexicanske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den sprøde, smagfulde kylling med friske grøntsager og varme tortillas. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "chicken-korma-autentisk",
+    "title": "Chicken Korma Autentisk",
+    "category": "Kød",
+    "time": "75 min",
+    "prepTime": "30 min",
+    "cookTime": "45 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk indisk hjemmelavet chicken korma med cremet kokos-sauce, aromatiske krydderier og saftig kylling. Den perfekte indiske klassiker der smager langt bedre end fra restauranten. Mild, cremet og perfekt til hele familien!"
+  },
+  {
+    "slug": "chicken-marsala",
+    "title": "Chicken Marsala",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk italiensk-amerikansk hjemmelavet chicken marsala med paneret kylling, marsala vin og svampe. Den perfekte klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske chicken marsala med cremet sauce og saftig kylling. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "chicken-marsala-autentisk",
+    "title": "Chicken Marsala Autentisk",
+    "category": "Kød",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk italiensk-amerikansk hjemmelavet chicken marsala med saftig kylling, marsala-vin, svampe og cremet sauce. Den perfekte klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske chicken marsala med perfekt balance mellem vin og krydderier. Server med pasta - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "chicken-parmesan",
+    "title": "Chicken Parmesan",
+    "category": "Kød",
+    "time": "50 min",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet chicken parmesan med paneret kylling, tomat-sauce og smeltet mozzarella. Den perfekte italiensk-amerikanske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den sprøde, saftige kylling med cremet ost og rig tomat-sauce. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "chicken-parmesan-autentisk",
+    "title": "Chicken Parmesan Autentisk",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "25 min",
+    "cookTime": "35 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk italiensk-amerikansk hjemmelavet chicken parmesan med paneret kylling, tomat-sauce og smeltet mozzarella. Den perfekte klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske chicken parmesan med sprød panering, cremet sauce og gylden ost. Server med pasta - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "chicken-shawarma",
+    "title": "Chicken Shawarma",
+    "category": "Kød",
+    "time": "50 min",
+    "prepTime": "30 min",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet chicken shawarma med krydret kylling, cremet tahini-sauce og friske grøntsager i varme pitabrød. Den perfekte mellemøstlige klassiker der smager langt bedre end takeaway. Krydret, saftig og perfekt til hele familien!"
+  },
+  {
     "slug": "chicken-tender",
     "title": "Chicken Tender",
     "category": "Kød",
@@ -889,6 +1319,36 @@
     "cookTime": "20 min",
     "difficulty": "Let",
     "excerpt": "Sprøde og saftige hjemmelavet chicken tender med gyldenbrun panering. Den perfekte snack eller hovedret. Denne opskrift giver dig den autentiske chicken tender der smager langt bedre end fra fastfood. Server med dip og pommes frites!"
+  },
+  {
+    "slug": "chicken-teriyaki-autentisk",
+    "title": "Chicken Teriyaki Autentisk",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk japansk hjemmelavet chicken teriyaki med saftig kylling, sødsur teriyaki-sauce og sesamfrø. Den perfekte japanske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske chicken teriyaki med perfekt balance mellem sødt og salt. Server med ris - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "chicken-tikka-masala",
+    "title": "Chicken Tikka Masala",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet chicken tikka masala med saftig kylling, cremet tomatssauce og aromatiske indiske krydderier. Den perfekte indiske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske chicken tikka masala med perfekt krydret smag og cremet konsistens. Server med ris eller naan - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "chicken-tikka-masala-autentisk",
+    "title": "Chicken Tikka Masala Autentisk",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet chicken tikka masala med cremet tomat-sauce, aromatiske krydderier og saftig kylling. Den perfekte indiske klassiker der smager langt bedre end fra restauranten. Krydret, cremet og perfekt til hele familien!"
   },
   {
     "slug": "chili-con-carne",
@@ -1081,6 +1541,26 @@
     "excerpt": "Klassisk dansk hjemmelavet citronmåne med frisk citronsmag, blød kagebund og cremet glasur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig den autentiske citronmåne der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
+    "slug": "citronmayonnaise",
+    "title": "Citronmayonnaise",
+    "category": "Dressing",
+    "time": "10 min",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Hjemmelavet cremet citronmayonnaise med frisk citron, æggeblommer og neutral olie. Den perfekte dressing til fisk, pommes frites eller salat. Denne opskrift giver dig den autentiske citronmayonnaise med perfekt balance mellem cremethed og citrus. Nem citronmayonnaise opskrift klar på 10 minutter - perfekt til hele familien!"
+  },
+  {
+    "slug": "citronsnurrer",
+    "title": "Citronsnurrer",
+    "category": "Dessert",
+    "time": "120 min",
+    "prepTime": "60 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassiske danske hjemmelavet citronsnurrer med frisk citronsmag og sprød tekstur. Den perfekte kage til kaffe eller te der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske citronsnurrer med perfekt balance mellem sødme og citron. Perfekt til hverdagen!"
+  },
+  {
     "slug": "citrontærte",
     "title": "Citrontærte",
     "category": "Dessert",
@@ -1121,6 +1601,16 @@
     "excerpt": "Klassiske hjemmelavet cookies med chokoladechips - bløde i midten og knasende udenpå. Den perfekte dessert eller snack. Denne opskrift giver dig de perfekte cookies der smager langt bedre end købte. Varme fra ovnen med en kop mælk - der er intet bedre!"
   },
   {
+    "slug": "cookies-med-brunet-smoer-pekannoedder-og-maelkechokolade",
+    "title": "Cookies med Brunet Smør, Pekannødder og Mælkechokolade",
+    "category": "Dessert",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækre hjemmelavet cookies med brunet smør, pekannødder og mælkechokolade. Bløde, chewy cookies med den perfekte balance mellem nøddesmag og chokolade. Denne opskrift giver dig de autentiske cookies der smager langt bedre end købte. Perfekt til kaffepause eller dessert!"
+  },
+  {
     "slug": "cookies-med-marcipan-og-nougatsmag",
     "title": "Cookies med marcipan og nougatsmag",
     "category": "Dessert",
@@ -1129,6 +1619,56 @@
     "cookTime": "12 min",
     "difficulty": "Let",
     "excerpt": "Lækre hjemmelavet cookies med marcipan og nougatsmag. Bløde, chewy cookies med den perfekte balance mellem sødme og nøddesmag. Perfekt til kaffepause eller dessert. Disse cookies smager langt bedre end købte og er overraskende nemme at lave!"
+  },
+  {
+    "slug": "coq-au-vin",
+    "title": "Coq au Vin",
+    "category": "Kød",
+    "time": "150 min",
+    "prepTime": "30 min",
+    "cookTime": "120 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk fransk hjemmelavet coq au vin med saftig kylling, rødvinssauce og svampe. Den perfekte franske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske coq au vin med perfekt krydret smag og cremet konsistens. Server med pasta eller kartofler - perfekt til en særlig aften!"
+  },
+  {
+    "slug": "coq-au-vin-autentisk",
+    "title": "Coq au Vin Autentisk",
+    "category": "Kød",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk fransk hjemmelavet coq au vin med kylling, rødvin, svampe og bacon. Den perfekte franske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske coq au vin med dyb, rig smag og saftig kylling. Server med pasta eller brød - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "creme-brulee",
+    "title": "Crème Brûlée",
+    "category": "Dessert",
+    "time": "180 min",
+    "prepTime": "30 min",
+    "cookTime": "150 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk fransk hjemmelavet crème brûlée med cremet vaniljecreme og sprød karameliseret sukker. Den perfekte franske dessert der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske crème brûlée med blød creme og perfekt sprød overdel. Perfekt til en særlig aften!"
+  },
+  {
+    "slug": "cremet-chicken-tikka-masala",
+    "title": "Cremet Chicken Tikka Masala - Autentisk Indisk Opskrift",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet og smagfuld chicken tikka masala med marineret kylling, tomatsauce og krydderier. Den perfekte indiske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske tikka masala-smag med cremet sauce og saftig kylling. Perfekt til en hyggelig aften med venner og familie!"
+  },
+  {
+    "slug": "cremet-kylling-curry-med-kokosmaelk",
+    "title": "Cremet Kylling Curry med Kokosmælk",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Aromatisk og cremet kylling curry med kokosmælk, karry og friske krydderurter. Den perfekte komfortmad der smager fantastisk og er nem at lave. Denne opskrift giver dig den autentiske curry-oplevelse med perfekt balance mellem krydderier og cremethed."
   },
   {
     "slug": "curly-fries",
@@ -1231,6 +1771,16 @@
     "excerpt": "Nem og hurtig en gryde pasta med tomater, løg og krydderier. Alt koges sammen i én gryde - perfekt til hverdagen! Denne opskrift giver dig en lækker og smagfuld pasta ret uden besvær med opvask."
   },
   {
+    "slug": "enchiladas",
+    "title": "Enchiladas",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk mexicansk hjemmelavet enchiladas med saftig kylling, cremet sauce og smeltet ost. Den perfekte mexicanske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske enchiladas med perfekt krydret smag og gylden ost. Server med salsa og guacamole - perfekt til hele familien!"
+  },
+  {
     "slug": "english-breakfast-tea",
     "title": "English Breakfast Tea",
     "category": "Dessert",
@@ -1271,6 +1821,26 @@
     "excerpt": "Klassisk espresso macchiato med espresso og en lille klat mælkeskum. Den perfekte kaffedrik for dem der elsker stærk kaffe med en lille smule cremethed. Denne opskrift giver dig en autentisk espresso macchiato oplevelse hjemme."
   },
   {
+    "slug": "fajitas",
+    "title": "Fajitas",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk mexicansk hjemmelavet fajitas med saftig kylling, peberfrugter og løg. Den perfekte mexicanske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske fajitas med perfekt krydret smag og sprøde grøntsager. Server med tortillas og salsa - perfekt til hele familien!"
+  },
+  {
+    "slug": "falafel-vaffel",
+    "title": "Falafel Vaffel",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "30 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Innovativ falafel vaffel med kikærter, krydderier og cremet tahini. En unik og smagfuld ret!"
+  },
+  {
     "slug": "fastalavensbolle",
     "title": "Fastalavensbolle",
     "category": "Dessert",
@@ -1289,6 +1859,16 @@
     "cookTime": "20 min",
     "difficulty": "Mellem",
     "excerpt": "Klassisk dansk laktosefri fastalavensbolle med søde boller, mandelmassa og laktosefrit flødeskum. Den perfekte dessert til fastelavn eller hverdagen - helt uden laktose! Denne opskrift giver dig den autentiske fastalavensbolle der smager langt bedre end fra bageren. Server med flormelis!"
+  },
+  {
+    "slug": "fastelavnsboller-med-solbaer",
+    "title": "Fastelavnsboller med Solbær",
+    "category": "Dessert",
+    "time": "180 min",
+    "prepTime": "60 min",
+    "cookTime": "120 min",
+    "difficulty": "Svær",
+    "excerpt": "Klassiske danske hjemmelavet fastelavnsboller med solbærfyld og flødeskum. Den perfekte fastelavnskage der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske fastelavnsboller med perfekt balance mellem søde boller og cremet fyld. Perfekt til fastelavn!"
   },
   {
     "slug": "fedtebrod-med-romglasur",
@@ -1311,6 +1891,26 @@
     "excerpt": "Frisk og sund juice a la Joe & The Juice med ingefær, citron, gurkemeje, gulerod, olivenolie, æble og is. Den perfekte juice til at booste dit immunforsvar og give dig energi. Denne opskrift giver dig den autentiske Feel Good juice der smager langt bedre end fra butikken."
   },
   {
+    "slug": "filippinsk-adobo-kylling",
+    "title": "Filippinsk Adobo Kylling",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk filippinsk adobo kylling med søde, syrlige og salte smagsnuancer. En klassisk filippinsk ret med kylling, soya, eddike og hvidløg. Smagfuld, mør og perfekt til hverdagen!"
+  },
+  {
+    "slug": "filonebroed",
+    "title": "Filonebrød",
+    "category": "Brød",
+    "time": "180 min",
+    "prepTime": "30 min",
+    "cookTime": "150 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk italiensk hjemmelavet filonebrød med koldhævning, hvedemel og olivenolie. Den perfekte italienske klassiker der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske filonebrød med sprød skorpe og luftig krumme. Perfekt til morgenmad eller middag - en sand italiensk klassiker!"
+  },
+  {
     "slug": "finskbrød",
     "title": "Finskbrød",
     "category": "Bageri",
@@ -1319,6 +1919,16 @@
     "cookTime": "150 min",
     "difficulty": "Mellem",
     "excerpt": "Klassisk finskbrød med kardemomme og sukker. Blødt og sødt brød med en unik smag der perfekt til morgenmad eller kaffepause. Denne autentiske finske opskrift giver dig det traditionelle finskbrød der smager fantastisk!"
+  },
+  {
+    "slug": "fish-and-chips",
+    "title": "Fish and Chips",
+    "category": "Fisk",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk britisk hjemmelavet fish and chips med sprød paneret fisk og perfekte pommes frites. Den perfekte ret der smager langt bedre end fra fish and chips butikken. Denne opskrift giver dig den autentiske fish and chips med perfekt krydret smag og sprød konsistens. Server med tartarsauce og citron - perfekt til en hyggelig aften!"
   },
   {
     "slug": "fiskefrikadelle-sandwich",
@@ -1341,6 +1951,16 @@
     "excerpt": "Saftige og sprøde hjemmelavede fiskefrikadeller med frisk dild og citron. Den klassiske danske fiskeret der smager langt bedre end fra butikken. Klar på under 35 minutter - perfekt til hverdagen!"
   },
   {
+    "slug": "fiskefrikadeller-i-ovn",
+    "title": "Fiskefrikadeller i Ovn",
+    "category": "Fisk",
+    "time": "40 min",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Saftige hjemmelavet fiskefrikadeller i ovn med torsk, løg og krydderier. Den perfekte danske klassiker der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske fiskefrikadeller med saftig tekstur og rig smag. Server med kartoffelmos og remoulade - perfekt til en hyggelig aften!"
+  },
+  {
     "slug": "flaeskesteg",
     "title": "Flæskesteg",
     "category": "Kød",
@@ -1349,6 +1969,16 @@
     "cookTime": "2 timer 30 min",
     "difficulty": "Mellem",
     "excerpt": "Klassisk dansk flæskesteg med sprødt svær og saftigt kød. Den perfekte hovedret til jul eller særlige lejligheder. Denne opskrift giver dig den autentiske flæskesteg der smager langt bedre end fra slagteren. Server med brun sovs, kartofler og rødkål!"
+  },
+  {
+    "slug": "flaeskesteg-i-airfryer",
+    "title": "Flæskesteg i Airfryer",
+    "category": "Kød",
+    "time": "100 min",
+    "prepTime": "15 min",
+    "cookTime": "85 min",
+    "difficulty": "Mellem",
+    "excerpt": "Saftig og sprød flæskesteg i airfryer med gylden svær og perfekt tekstur. Den perfekte klassiske danske ret der smager langt bedre end ovnbagte flæskesteg. Klar på under 100 minutter - perfekt til særlige lejligheder!"
   },
   {
     "slug": "flaeskestegssandwich",
@@ -1411,6 +2041,26 @@
     "excerpt": "Sprøde og luftige hjemmelavet flutes med guldbrun skorpe og blød krumme. Den perfekte bagværk til morgenmad eller frokost. Denne opskrift giver dig den autentiske flutes der smager langt bedre end fra bageren. Server med smør og syltetøj!"
   },
   {
+    "slug": "forarsruller-i-airfryer",
+    "title": "Forårsruller i Airfryer",
+    "category": "Hurtigt",
+    "time": "65 min",
+    "prepTime": "45 min",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Sprøde og smagfulde forårsruller i airfryer med gylden overflade og perfekt tekstur. Den perfekte hurtige snack eller forret der smager langt bedre end friturestegte forårsruller. Klar på under 65 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "forloren-hare",
+    "title": "Forloren Hare",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk dansk forloren hare med saftig kødfars, bacon og cremet sovs. Den perfekte hovedret til særlige lejligheder. Denne opskrift giver dig den autentiske danske forloren hare der smager langt bedre end fra restauranten. Server med kartofler og brun sovs!"
+  },
+  {
     "slug": "forloren-hare-med-bacon",
     "title": "Forloren Hare med Bacon",
     "category": "Kød",
@@ -1441,6 +2091,16 @@
     "excerpt": "Autentisk græsk frappe med instant kaffe, sukker og mælk. Den perfekte kold kaffedrik til sommeren. Denne opskrift giver dig den klassiske græske frappe med skummende top og autentisk smag."
   },
   {
+    "slug": "french-onion-soup",
+    "title": "French Onion Soup",
+    "category": "Suppe",
+    "time": "90 min",
+    "prepTime": "20 min",
+    "cookTime": "70 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk fransk hjemmelavet french onion soup med karameliserede løg, rig oksebouillon og smeltet ost. Den perfekte franske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske french onion soup med dyb, rig smag og gylden ost. Perfekt til en hyggelig aften!"
+  },
+  {
     "slug": "frikadeller",
     "title": "Frikadeller",
     "category": "Kød",
@@ -1469,6 +2129,16 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Klassisk dansk hjemmelavet frikadellesandwich med saftige frikadeller, frisk salat og cremet dressing. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske frikadellesandwich der smager langt bedre end fra butikken. Server med pommes frites!"
+  },
+  {
+    "slug": "frokostsalat-med-avocado-og-æg",
+    "title": "Frokostsalat med Avocado og Æg",
+    "category": "Vegetarisk",
+    "time": "20 min",
+    "prepTime": "15 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Nærende frokostsalat med cremet avocado og blødt kogt æg. Perfekt start på dagen!"
   },
   {
     "slug": "futomaki",
@@ -1511,6 +2181,16 @@
     "excerpt": "Klassisk dansk hjemmelavet Gateau Marcel med chokoladebund, marcipan og flødeskum. Den perfekte kage til fødselsdage eller særlige lejligheder. Denne opskrift giver dig den autentiske Gateau Marcel der smager langt bedre end fra konditoriet."
   },
   {
+    "slug": "gateau-marcel-orange",
+    "title": "Gateau Marcel Orange",
+    "category": "Dessert",
+    "time": "120 min",
+    "prepTime": "45 min",
+    "cookTime": "75 min",
+    "difficulty": "Svær",
+    "excerpt": "Klassisk dansk hjemmelavet Gateau Marcel med appelsin-smag, chokoladebund, appelsin-marcipan og flødeskum. Den perfekte kage til fødselsdage eller særlige lejligheder. Denne opskrift giver dig den autentiske Gateau Marcel med appelsin-variant der smager langt bedre end fra konditoriet."
+  },
+  {
     "slug": "gin-hass",
     "title": "Gin Hass",
     "category": "Dessert",
@@ -1531,6 +2211,16 @@
     "excerpt": "Varm og krydret hjemmelavet gløg med rødvin, krydderier og appelsin. Den perfekte drik til vintermånederne og juletiden. Denne opskrift giver dig den autentiske gløg-smag der varmer hele kroppen."
   },
   {
+    "slug": "gnocchi",
+    "title": "Gnocchi",
+    "category": "Pasta",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk italiensk hjemmelavet gnocchi med kartofler, mel og æg. Den perfekte italienske klassiker der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske gnocchi med blød, luftig tekstur og rig smag. Server med din yndlingssauce - perfekt til en hyggelig aften!"
+  },
+  {
     "slug": "gnocchi-i-svampesauce",
     "title": "Gnocchi I Svampesauce",
     "category": "Vegetarisk",
@@ -1539,6 +2229,16 @@
     "cookTime": "15 min",
     "difficulty": "Let",
     "excerpt": "Cremet gnocchi i lækker svampesauce. En perfekt vegetarisk ret der er nem at lave og smager fantastisk!"
+  },
+  {
+    "slug": "goulash",
+    "title": "Goulash",
+    "category": "Kød",
+    "time": "120 min",
+    "prepTime": "20 min",
+    "cookTime": "100 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk ungarsk hjemmelavet goulash med mør oksekød, paprika og kartofler. Den perfekte ungarske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske goulash med dyb, rig smag og mørt kød. Server med brød eller nudler - perfekt til en hyggelig aften!"
   },
   {
     "slug": "graesk-moussaka",
@@ -1559,6 +2259,16 @@
     "cookTime": "0 min",
     "difficulty": "Let",
     "excerpt": "Autentisk græsk salat med friske tomater, agurk, rødløg, oliven og cremet feta ost. Den klassiske græske ret der smager fantastisk og er perfekt til sommeren. Fuld af smag og farver - perfekt som forret, tilbehør eller hovedret!"
+  },
+  {
+    "slug": "græskar-gnocchi-med-svampesauce",
+    "title": "Græskar Gnocchi med Svampesauce",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "30 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Hjemmelavet græskar gnocchi med cremet svampesauce. En luksuriøs vegetarisk ret der smager fantastisk!"
   },
   {
     "slug": "granola",
@@ -1781,6 +2491,16 @@
     "excerpt": "Lækker hjemmelavet havrabarbar med frisk rabarber, sød sirup og cremet flødeskum. Den perfekte sommerdessert der smager langt bedre end fra butikken. Perfekt til sommerfester eller bare en hyggelig aften med familien!"
   },
   {
+    "slug": "havregrod-med-karamelliseret-paere",
+    "title": "Havregrød med karamelliseret pære",
+    "category": "Morgenmad",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet havregrød med søde karamelliserede pærer og perfekt balance mellem sødme og nøddeagtig smag. Den perfekte morgenmad der smager langt bedre end almindelig havregrød. Klar på under 25 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "havrepandekager",
     "title": "Havrepandekager",
     "category": "Hurtigt",
@@ -1801,6 +2521,26 @@
     "excerpt": "Klassisk Hawaii pizza med skinke, ananas og smeltet mozzarella. Den perfekte kombination af sødme og salthed. Denne opskrift giver dig den autentiske Hawaii pizza der smager langt bedre end fra pizzeriaen. Perfekt til en hyggelig aften!"
   },
   {
+    "slug": "hel-kylling-i-airfryer",
+    "title": "Hel Kylling i Airfryer",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Mellem",
+    "excerpt": "Saftig og sprød hel kylling i airfryer med gylden skind og perfekt tekstur. Den perfekte klassiske ret der smager langt bedre end ovnbagte kylling. Klar på under 60 minutter - perfekt til særlige lejligheder!"
+  },
+  {
+    "slug": "hjemmelavet-burger",
+    "title": "Hjemmelavet Burger",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og lækker hjemmelavet burger med perfekt stegt kød, cremet ost og friske toppings. Den perfekte burger der smager langt bedre end fra fastfood. Hjemmelavet burger opskrift klar på 35 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "hjemmelavet-lasagne",
     "title": "Hjemmelavet Lasagne - Autentisk Italiensk Opskrift",
     "category": "Pasta",
@@ -1809,6 +2549,26 @@
     "cookTime": "110 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk hjemmelavet lasagne med lækker kødsauce, cremet bechamel og gylden ost. Den perfekte italienske klassiker der smager langt bedre end fra restauranten eller butikken. Nem opskrift til hele familien!"
+  },
+  {
+    "slug": "hjemmelavet-lasagne-med-oksekoed",
+    "title": "Hjemmelavet Lasagne med Oksekød",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk italiensk lasagne med lag af cremet béchamel, saftig kødsauce og smeltet ost. Den perfekte klassiske lasagne der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske italienske lasagne-oplevelse med perfekt balance mellem kød, sauce og ost."
+  },
+  {
+    "slug": "hjemmelavet-pizza-margherita",
+    "title": "Hjemmelavet Pizza Margherita - Autentisk Italiensk Opskrift",
+    "category": "Pizza",
+    "time": "90 min",
+    "prepTime": "60 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet pizza margherita med frisk mozzarella, san marzano tomater og frisk basilikum. Den perfekte italienske pizza der smager langt bedre end fra pizzeriaen. Denne opskrift giver dig den autentiske napolitanske pizza-smag med tynd, sprød bund og cremet ost. Perfekt til en hyggelig aften med venner og familie!"
   },
   {
     "slug": "honninghjerte",
@@ -1841,6 +2601,16 @@
     "excerpt": "Autentisk hjemmelavet hosomaki sushi - tynde ruller med nori yderst og kun ét fyld. Den klassiske japanske sushi-rulle der smager langt bedre end fra restauranten. Perfekt til en særlig aften!"
   },
   {
+    "slug": "huevos-rancheros",
+    "title": "Huevos Rancheros",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk mexicansk hjemmelavet huevos rancheros med stegte æg, tomatsauce og krydret salsa. Den perfekte morgenmad eller brunch der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske huevos rancheros med perfekt balance mellem æg og salsa. Perfekt til hverdagen!"
+  },
+  {
     "slug": "hurige-frikadeller",
     "title": "Hurige Frikadeller",
     "category": "Kød",
@@ -1849,6 +2619,56 @@
     "cookTime": "15 min",
     "difficulty": "Let",
     "excerpt": "Hurtige og nemme frikadeller klar på kun 25 minutter! Perfekt når du har travlt. Disse saftige frikadeller smager fantastisk uden lang hviletid. Server med kartofler og brun sovs!"
+  },
+  {
+    "slug": "hurtig-aftensmad",
+    "title": "Hurtig Aftensmad",
+    "category": "Hurtigt",
+    "time": "15 min",
+    "prepTime": "5 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Hurtig aftensmad klar på 15 minutter. Den perfekte hurtige aftensmad opskrift til hverdagen med kylling, grøntsager og ris. Nem hurtig aftensmad der smager fantastisk - perfekt til travle hverdage!"
+  },
+  {
+    "slug": "hurtig-kylling-curry",
+    "title": "Hurtig Kylling Curry",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Hurtig og lækker hjemmelavet kylling curry med cremet kokos og aromatiske krydderier. Den perfekte hurtige opskrift der smager langt bedre end takeaway. Hurtig kylling curry opskrift klar på 30 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "hurtig-lasagne",
+    "title": "Hurtig Lasagne - Nem Hjemmelavet Opskrift på 45 Minutter",
+    "category": "Pasta",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Hurtig og nem hjemmelavet lasagne med saftig kødsauce, cremet bechamel og smeltet ost. Den perfekte italienske klassiker klar på 45 minutter. Denne opskrift giver dig den autentiske lasagne-smag uden at bruge timer i køkkenet. Perfekt til hverdagen!"
+  },
+  {
+    "slug": "hurtig-pasta-carbonara-autentisk",
+    "title": "Hurtig Pasta Carbonara - Autentisk",
+    "category": "Pasta",
+    "time": "20 min",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk italiensk pasta carbonara med guanciale, æg, parmesan og sort peber. Den perfekte hurtige ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske romerske carbonara-oplevelse med cremet sauce og maksimal smag."
+  },
+  {
+    "slug": "hurtig-wok-med-kylling",
+    "title": "Hurtig Wok med Kylling",
+    "category": "Hurtigt",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Hurtig og lækker hjemmelavet wok med saftig kylling, friske grøntsager og aromatisk sauce. Den perfekte hurtige opskrift der smager langt bedre end takeaway. Hurtig wok med kylling opskrift klar på 25 minutter - perfekt til hverdagen!"
   },
   {
     "slug": "hvidkaalssuppe",
@@ -1951,6 +2771,16 @@
     "excerpt": "Espresso afkølet på isterninger, shaket på økologisk mælk og toppet med frisklavet vanilje is. Den perfekte iskaffe til kaffe-elskeren."
   },
   {
+    "slug": "italiensk-bonnegryde-med-svampe-og-fennikel",
+    "title": "Italiensk bønnegryde med svampe og fennikel",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Hjertevarm italiensk bønnegryde med svampe, fennikel og rig umami-smag. Den perfekte vegetariske ret der smager langt bedre end fra restauranten. Klar på under 45 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "italiensk-pastasalat-med-tomat-burrata-og-pestodressing",
     "title": "Italiensk Pastasalat Med Tomat, Burrata Og Pestodressing",
     "category": "Vegetarisk",
@@ -1999,6 +2829,16 @@
     "cookTime": "15 min",
     "difficulty": "Mellem",
     "excerpt": "Lækker hjemmelavet jomfruhummer med smør, hvidløg og citron. Den perfekte luksuriøse fiskeret der smager langt bedre end fra restauranten. Perfekt til en særlig aften!"
+  },
+  {
+    "slug": "jomfruhummer-med-citronskal-og-urter",
+    "title": "Jomfruhummer med Citronskal og Urter",
+    "category": "Fisk",
+    "time": "25 min",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker jomfruhummer med aromatisk citronskal og friske urter. En luksuriøs fiskeret!"
   },
   {
     "slug": "jordbaer-banan-smoothie",
@@ -2079,6 +2919,16 @@
     "cookTime": "150 min",
     "difficulty": "Mellem",
     "excerpt": "Luftig og cremet hjemmelavet jordbærmousse med friske jordbær og let tekstur. Den perfekte sommerdessert der smager langt bedre end fra konditoriet. Perfekt til fødselsdage, sommerfester eller bare en hyggelig aften med familien!"
+  },
+  {
+    "slug": "jordbærsalat-med-tomater-ærter-og-burrata",
+    "title": "Jordbærsalat med Tomater, Ærter og Burrata",
+    "category": "Vegetarisk",
+    "time": "20 min",
+    "prepTime": "15 min",
+    "cookTime": "5 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk sommersalat med søde jordbær, saftige tomater, sprøde ærter og cremet burrata. En perfekt sommerret!"
   },
   {
     "slug": "jordbaertaerte",
@@ -2261,6 +3111,16 @@
     "excerpt": "Lækre hjemmelavet kartoffelbåde med sprød skræl og cremet fyldning. Kartoflerne bages først, hules ud og fyldes med bacon, ost, creme fraiche og krydderurter, før de bages igen til guldbrune. Den perfekte ret til en hyggelig aften!"
   },
   {
+    "slug": "kartoffelmos",
+    "title": "Kartoffelmos",
+    "category": "Vegetarisk",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet og smagfuld hjemmelavet kartoffelmos med smør, mælk og krydderier. Den perfekte tilbehør til kød, fisk eller grøntsager. Denne opskrift giver dig den autentiske kartoffelmos der smager langt bedre end fra butikken. Perfekt til hverdagen eller særlige lejligheder!"
+  },
+  {
     "slug": "kartoffelmos-laktosefri",
     "title": "Kartoffelmos (Laktosefri)",
     "category": "Vegetarisk",
@@ -2289,6 +3149,16 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Kremet og smagfuld kartoffelsuppe med porre, sprød skinke og frisk purløg. En lækker og mættende suppe der er perfekt til hverdagen. Den sprøde skinke og friske purløg giver suppen ekstra smag og tekstur!"
+  },
+  {
+    "slug": "kartofler-i-airfryer",
+    "title": "Kartofler i Airfryer",
+    "category": "Hurtigt",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Sprøde og gyldne kartofler i airfryer med perfekt tekstur. Den perfekte hurtige side ret der smager langt bedre end ovnbagte kartofler. Klar på under 35 minutter - perfekt til hverdagen!"
   },
   {
     "slug": "kebab",
@@ -2471,6 +3341,16 @@
     "excerpt": "Klassisk hjemmelavet kirsebærsauce med søde kirsebær og perfekt konsistens. Den perfekte topping til risalamande eller is. Denne opskrift giver dig den autentiske danske kirsebærsauce der smager langt bedre end fra butikken. Perfekt til juleaften!"
   },
   {
+    "slug": "klassisk-bolognese",
+    "title": "Klassisk Bolognese - Autentisk Italiensk Kødsauce",
+    "category": "Kød",
+    "time": "180 min",
+    "prepTime": "30 min",
+    "cookTime": "150 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk klassisk bolognese med oksekød, svinekød, tomater og mælk. Den perfekte italienske kødsauce der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske bolognese-smag med lang simretid for maksimal smag. Perfekt til pasta, lasagne eller polenta!"
+  },
+  {
     "slug": "klatkage",
     "title": "Klatkage",
     "category": "Dessert",
@@ -2592,6 +3472,16 @@
     "excerpt": "Klassisk nordisk kransekagetårn med mandelringer stablet i et flot tårn. Den perfekte festkage til bryllup, nytår eller andre særlige lejligheder. Denne autentiske opskrift giver dig den traditionelle kransekage-smag og tekstur der smager langt bedre end fra butikken. Imponerende og smagfuldt!"
   },
   {
+    "slug": "krydret-bonnesnack-i-airfryer",
+    "title": "Krydret Bønnesnack i Airfryer",
+    "category": "Vegetarisk",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Sprøde og smagfulde krydrede bønner i airfryer med perfekt tekstur. Den perfekte vegetariske snack der smager langt bedre end ovnbagte bønner. Klar på under 25 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "kylling-alfredo",
     "title": "Kylling Alfredo",
     "category": "Pasta",
@@ -2632,6 +3522,16 @@
     "excerpt": "Saftig kylling i en cremet sennepssauce. En klassisk og smagfuld ret der er nem at lave og perfekt til hverdagen."
   },
   {
+    "slug": "kylling-i-curry",
+    "title": "Kylling i Curry",
+    "category": "Kød",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet og smagfuld hjemmelavet kylling i curry med kokosmælk og aromatiske krydderier. Den perfekte hurtige hverdagsret der smager langt bedre end fra restauranten. Denne opskrift giver dig saftig kylling i cremet curry med perfekt balance. Perfekt til hverdagen!"
+  },
+  {
     "slug": "kylling-i-fad-med-kokosmaelk-og-karry",
     "title": "Kylling I Fad Med Kokosmælk Og Karry",
     "category": "Kød",
@@ -2650,6 +3550,16 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Nem og lækker hjemmelavet kylling i karry opskrift med saftig kylling, cremet karrysauce og aromatiske krydderier. Den perfekte danske klassiker der smager langt bedre end fra butikken. Hurtig, nem og perfekt til hele familien!"
+  },
+  {
+    "slug": "kylling-i-karry-med-kokosmaelk",
+    "title": "Kylling i Karry med Kokosmælk",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet hjemmelavet kylling i karry med kokosmælk, løg og aromatiske krydderier. Den perfekte asiatiske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske kylling i karry med cremet sauce og perfekt krydret smag. Server med ris eller naan - perfekt til en hyggelig aften!"
   },
   {
     "slug": "kylling-i-ovn",
@@ -2682,6 +3592,16 @@
     "excerpt": "Nem og lækker hjemmelavet kylling med kartofler i ovn - den perfekte komplette ret til hverdagen! Saftig kylling med sprød skorpe og gyldenbrune kartofler. Denne opskrift giver dig den autentiske ovnbagte kylling med kartofler der smager langt bedre end fra restauranten. Perfekt til hele familien!"
   },
   {
+    "slug": "kylling-med-ris",
+    "title": "Kylling med Ris",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og smagfuld hjemmelavet kylling med ris og grøntsager. Den perfekte hurtige hverdagsret der smager langt bedre end fra restauranten. Denne opskrift giver dig saftig kylling, perfekt kogt ris og smagfulde grøntsager. Perfekt til hverdagen!"
+  },
+  {
     "slug": "kylling-og-ris",
     "title": "Kylling og Ris",
     "category": "Kød",
@@ -2690,6 +3610,16 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Klassisk og nem hjemmelavet kylling og ris med saftig kylling, perfekt kogt ris og lækker sovs. Den perfekte hverdagsret der smager langt bedre end takeaway. Sund, mættende og perfekt til hele familien!"
+  },
+  {
+    "slug": "kylling-pad-thai",
+    "title": "Kylling Pad Thai",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk thailandsk pad thai med kylling, risnudler, æg og den klassiske søde-sure-smag. Den perfekte hurtige ret der smager bedre end fra restauranten. Denne opskrift giver dig den autentiske thailandske smag med perfekt balance mellem sødme, surhed og salt. Perfekt til en hyggelig aften eller når du vil imponere med en hurtig og lækker ret!"
   },
   {
     "slug": "kylling-pasta",
@@ -2772,6 +3702,36 @@
     "excerpt": "Sprøde hjemmelavede kyllinge nuggets. Meget bedre end fra butikken og nemme at lave!"
   },
   {
+    "slug": "kyllingefrikasse",
+    "title": "Kyllingefrikasse",
+    "category": "Kød",
+    "time": "50 min",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet og elegant hjemmelavet kyllingefrikasse med kylling, grøntsager og cremet sovs. Den perfekte klassiske danske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig saftig kylling i cremet sovs med perfekt balance. Perfekt til en særlig aften!"
+  },
+  {
+    "slug": "kyllingelar-i-airfryer",
+    "title": "Kyllingelår i Airfryer",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Saftige og sprøde kyllingelår i airfryer med gylden skind og perfekt tekstur. Den perfekte hurtige kyllingeret der smager langt bedre end ovnbagte kyllingelår. Klar på under 30 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "kyllingespyd-med-halloumi",
+    "title": "Kyllingespyd med Halloumi",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Smagfulde kyllingespyd med halloumi, grøntsager og aromatiske krydderier. Perfekt til grill eller ovn!"
+  },
+  {
     "slug": "kyllingfilet",
     "title": "Kyllingfilet",
     "category": "Kød",
@@ -2820,6 +3780,26 @@
     "cookTime": "12 min",
     "difficulty": "Let",
     "excerpt": "Unikke hjemmelavet lakridssmåkager med dadler og intens lakridssmag. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig de autentiske lakridssmåkager der smager langt bedre end fra butikken. Server med kaffe eller te!"
+  },
+  {
+    "slug": "laks-i-airfryer",
+    "title": "Laks i Airfryer",
+    "category": "Fisk",
+    "time": "15 min",
+    "prepTime": "5 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og smagfuld laks i airfryer med perfekt tekstur. Den perfekte hurtige fiskeret der smager langt bedre end ovnbagte laks. Klar på under 15 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "laks-teriyaki-med-sesam",
+    "title": "Laks Teriyaki med Sesam",
+    "category": "Fisk",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig laks i lækker teriyaki-sauce med sesam og friske grøntsager. Den perfekte asiatiske ret der smager bedre end fra restauranten. Denne opskrift giver dig den autentiske japanske smag med perfekt balance mellem sødme og umami. Perfekt til en hyggelig aften eller når du vil imponere med en hurtig og lækker ret!"
   },
   {
     "slug": "laksemouse",
@@ -2892,6 +3872,46 @@
     "excerpt": "Knasende og cremet laktosefri Oreo milkshake med laktosefri vaniljeis og knuste Oreo-kiks. Den perfekte dessert til cookie-elskeren med laktoseintolerans. Denne opskrift giver dig en tyk og knasende milkshake med autentisk Oreo-smag uden laktose."
   },
   {
+    "slug": "lam-tikka-masala",
+    "title": "Lam Tikka Masala",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk lam tikka masala med mørt lam, cremet tomat- og krydderisauce. En smagfuld indisk ret med lam, yoghurt, tomater og aromatiske krydderier. Rig, cremet og perfekt til særlige lejligheder!"
+  },
+  {
+    "slug": "lamb-curry-autentisk",
+    "title": "Lamb Curry Autentisk",
+    "category": "Kød",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk indisk hjemmelavet lamb curry med saftigt lammekød, cremet tomat-sauce og aromatiske krydderier. Den perfekte indiske klassiker der smager langt bedre end fra restauranten. Krydret, cremet og perfekt til hele familien!"
+  },
+  {
+    "slug": "lamb-shank",
+    "title": "Lamb Shank",
+    "category": "Kød",
+    "time": "180 min",
+    "prepTime": "30 min",
+    "cookTime": "150 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk hjemmelavet lamb shank med mørt lammekød, rødvin, grøntsager og aromatiske krydderier. Den perfekte klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske lamb shank med mørt kød og rig smag. Server med kartoffelmos eller ris - perfekt til en særlig aften!"
+  },
+  {
+    "slug": "lammeculotte-i-airfryer",
+    "title": "Lammeculotte i Airfryer",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Saftig og smagfuld lammeculotte i airfryer med perfekt tekstur. Den perfekte klassiske ret der smager langt bedre end ovnbagte lammeculotte. Klar på under 30 minutter - perfekt til særlige lejligheder!"
+  },
+  {
     "slug": "lasagne",
     "title": "Lasagne",
     "category": "Pasta",
@@ -2900,6 +3920,26 @@
     "cookTime": "90 min",
     "difficulty": "Mellem",
     "excerpt": "Klassisk og smagfuld hjemmelavet lasagne med kødsauce, bechamel og ost. Denne opskrift giver dig den autentiske lasagne der smager langt bedre end fra butikken. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "lasagne-autentisk",
+    "title": "Lasagne Autentisk",
+    "category": "Pasta",
+    "time": "120 min",
+    "prepTime": "45 min",
+    "cookTime": "75 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk italiensk hjemmelavet lasagne med lagdelt pasta, bolognese-sauce, bechamel og parmesan. Den perfekte italienske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske lasagne med perfekt lagdeling og cremet konsistens. Server med salat - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "lasagne-bolognese-autentisk",
+    "title": "Lasagne Bolognese Autentisk",
+    "category": "Pasta",
+    "time": "180 min",
+    "prepTime": "60 min",
+    "cookTime": "120 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk italiensk hjemmelavet lasagne bolognese med rig kødsauce, bechamel og ost. Den perfekte italienske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske lasagne med lag på lag af smag. Server med frisk salat - perfekt til en særlig aften!"
   },
   {
     "slug": "lasagnette",
@@ -2930,6 +3970,26 @@
     "cookTime": "0 min",
     "difficulty": "Let",
     "excerpt": "Klassisk cremet latte med espresso og mælk. Den perfekte kaffedrik med balance mellem stærk espresso og cremet mælk. Denne opskrift giver dig en autentisk café-latte oplevelse hjemme."
+  },
+  {
+    "slug": "leverpostej",
+    "title": "Leverpostej",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk dansk hjemmelavet leverpostej med cremet tekstur og rig smag. Den perfekte pålæg til smørrebrød eller morgenmad. Denne opskrift giver dig den autentiske leverpostej der smager langt bedre end fra butikken. Server med rødbeder, agurker og ristet brød - det er dansk hjemmekøkken på sit bedste!"
+  },
+  {
+    "slug": "linsesalat-med-vaniljemarineret-mango-og-sprød-serrano",
+    "title": "Linsesalat med Vaniljemarineret Mango og Sprød Serrano",
+    "category": "Vegetarisk",
+    "time": "40 min",
+    "prepTime": "30 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk linsesalat med søde vaniljemarinerede mango og sprød serrano skinke. En perfekt sommerret!"
   },
   {
     "slug": "linsesuppe",
@@ -2972,6 +4032,16 @@
     "excerpt": "Lækre og cremede hjemmelavet luksus havrekugler med mørk chokolade, kokos og hasselnødder. Den perfekte dessert eller snack. Denne opskrift giver dig de lækreste havrekugler der smager langt bedre end købte. Perfekt til gaver eller særlige lejligheder!"
   },
   {
+    "slug": "maal-tidssalat-til-flere-dage",
+    "title": "Måltidssalat til Flere Dage",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "30 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nærende og mættende måltidssalat der holder sig frisk i flere dage. Den perfekte meal prep ret der smager fantastisk og er nem at lave. Denne opskrift giver dig den perfekte kombination af friske grøntsager, kerner og cremet dressing. Perfekt til hverdagen!"
+  },
+  {
     "slug": "marcipan-konfekt",
     "title": "Marcipan Konfekt",
     "category": "Dessert",
@@ -3012,6 +4082,26 @@
     "excerpt": "Cremet og smagfuld kylling i en lækker sauce med soltørrede tomater, parmesan og krydderurter. Denne opskrift har fået sit navn fordi den er så god, at den kunne få nogen til at fri! Perfekt til en romantisk aften eller når du vil imponere."
   },
   {
+    "slug": "matcha-chokolade",
+    "title": "Matcha Chokolade",
+    "category": "Dessert",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet og smagfuld hjemmelavet matcha chokolade med jordnødde-smag fra matcha og cremet konsistens. Den perfekte dessert eller snack der smager langt bedre end købt. Denne opskrift giver dig den autentiske matcha chokolade med perfekt balance mellem sødme og matcha-smag."
+  },
+  {
+    "slug": "matcha-is",
+    "title": "Matcha is",
+    "category": "Dessert",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Mellem",
+    "excerpt": "Cremet og elegant matcha is med autentisk japansk smag og perfekt balance mellem bitterhed og sødme. Den perfekte dessert til enhver lejlighed. Denne opskrift giver dig den cremede tekstur og rene matcha-smag der er langt bedre end købt is. En lækker forfriskende dessert med japansk flair!"
+  },
+  {
     "slug": "matcha-oat-latte",
     "title": "Matcha Oat Latte",
     "category": "Dessert",
@@ -3022,6 +4112,16 @@
     "excerpt": "Cremet matcha oat latte med matcha pulver og havremælk. Den perfekte koffeinfri drik med balance mellem jordnødde-smag fra matcha og cremet havremælk. Denne opskrift giver dig en autentisk matcha latte oplevelse hjemme."
   },
   {
+    "slug": "matcha-overnight-oats",
+    "title": "Matcha overnight oats",
+    "category": "Morgenmad",
+    "time": "10 min + nat",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet og nærende matcha overnight oats med perfekt balance mellem jordnødde-smag fra matcha og cremet havremælk. Den perfekte morgenmad der smager langt bedre end almindelig havregrød. Klar på 10 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "mayo",
     "title": "Mayo",
     "category": "Hurtigt",
@@ -3030,6 +4130,16 @@
     "cookTime": "0 min",
     "difficulty": "Let",
     "excerpt": "Cremet og smagfuld hjemmelavet mayo med æg og olie. Den perfekte pålæg eller ingrediens til dressinger. Denne opskrift giver dig den autentiske mayo der smager langt bedre end fra butikken. Brug på sandwich, i dressinger eller som dip!"
+  },
+  {
+    "slug": "medisterpølse",
+    "title": "Medisterpølse",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk dansk hjemmelavet medisterpølse med saftig svinefars, krydderier og traditionelle danske smage. Den perfekte hovedret til jul eller særlige lejligheder. Denne opskrift giver dig den autentiske danske medisterpølse der smager langt bedre end fra butikken. Server med kartofler, brun sovs og rødkål!"
   },
   {
     "slug": "mexicansk-suppe-med-oksekod",
@@ -3092,6 +4202,26 @@
     "excerpt": "Klassisk hjemmelavet millionlinser med saftigt hakket kød og cremet sovs. Den perfekte komfortmad der smager langt bedre end fra butikken. Nem, mættende og perfekt til hele familien!"
   },
   {
+    "slug": "miso-suppe",
+    "title": "Miso suppe",
+    "category": "Vegetarisk",
+    "time": "20 min",
+    "prepTime": "10 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk japansk miso suppe med umami-smag og nærende ingredienser. Den perfekte hurtige suppe der smager langt bedre end fra restauranten. Klar på under 20 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "mormors-millionboef",
+    "title": "Mormors Millionbøf",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "20 min",
+    "cookTime": "40 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk dansk hjemmelavet mormors millionbøf med hakket oksekød, løg og cremet sauce. Den perfekte danske klassiker der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske millionbøf med saftig kød og rig smag. Server med kartoffelmos og syltede agurker - perfekt til en hyggelig aften!"
+  },
+  {
     "slug": "moussaka",
     "title": "Moussaka - Græsk Aubergine Lasagne",
     "category": "Kød",
@@ -3100,6 +4230,16 @@
     "cookTime": "60 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk græsk moussaka med lag af aubergine, krydret kødsovs og cremet bechamel. Den klassiske græske ret der smager fantastisk og er perfekt til en hyggelig aften. En rigtig smagsoplevelse!"
+  },
+  {
+    "slug": "moussaka-autentisk",
+    "title": "Moussaka Autentisk",
+    "category": "Kød",
+    "time": "120 min",
+    "prepTime": "45 min",
+    "cookTime": "75 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk græsk hjemmelavet moussaka med lag af aubergine, saftig oksekødsfars og cremet bechamelsauce. Den perfekte græske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske moussaka med perfekt balance mellem smag og tekstur. Perfekt til en hyggelig aften!"
   },
   {
     "slug": "mozartkugler",
@@ -3142,6 +4282,26 @@
     "excerpt": "Krydret nachosfad med stegte bønner, ost og lækre toppings. En perfekt vegetarisk ret der er nem at lave og smager fantastisk!"
   },
   {
+    "slug": "nem-bolognese",
+    "title": "Nem Bolognese - Autentisk Italiensk Kødsauce",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og autentisk hjemmelavet bolognese med saftig oksekød, tomater og aromatiske italienske krydderier. Den perfekte italienske klassiker der smager langt bedre end fra butikken. Hurtig, nem og perfekt til hele familien!"
+  },
+  {
+    "slug": "nem-burger",
+    "title": "Nem Burger",
+    "category": "Kød",
+    "time": "25 min",
+    "prepTime": "15 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Nemme og lækre hjemmelavet burger med saftig oksekød, ost og alle de klassiske toppings. Den perfekte nemme burger opskrift der smager langt bedre end fra restauranten. Perfekt til hverdagen eller når du har gæster - en klassiker alle elsker!"
+  },
+  {
     "slug": "nem-butter-chicken",
     "title": "Nem Butter Chicken (Murgh Makhani)",
     "category": "Kød",
@@ -3150,6 +4310,56 @@
     "cookTime": "30 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk hjemmelavet butter chicken (murgh makhani) med mør kylling, cremet tomat-sauce og rig smør. Den perfekte indiske klassiker der smager langt bedre end fra takeaway. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "nem-chili-con-carne",
+    "title": "Nem Chili Con Carne",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker og nem chili con carne med saftigt oksekød, bønner og krydderier. Den perfekte nemme chili con carne opskrift der smager bedre end fra restauranten. Klar på 60 minutter - perfekt til familien!"
+  },
+  {
+    "slug": "nem-curry-kylling",
+    "title": "Nem Curry Kylling - Autentisk Indisk Opskrift",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og autentisk hjemmelavet curry kylling med saftig kylling, cremet curry-sauce og aromatiske indiske krydderier. Den perfekte indiske klassiker der smager langt bedre end fra restauranten. Hurtig, nem og perfekt til hele familien!"
+  },
+  {
+    "slug": "nem-fiskefrikadeller",
+    "title": "Nem Fiskefrikadeller",
+    "category": "Fisk",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nemme og lækre hjemmelavet fiskefrikadeller med frisk fisk, persille og citron. Den perfekte nemme fiskefrikadelle opskrift der smager langt bedre end fra butikken. Perfekt til hverdagen - klar på 30 minutter!"
+  },
+  {
+    "slug": "nem-frikadeller",
+    "title": "Nem Frikadeller",
+    "category": "Kød",
+    "time": "40 min",
+    "prepTime": "20 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Saftige og lækre hjemmelavet frikadeller med perfekt krydderi og cremet konsistens. Den perfekte danske klassiker der smager langt bedre end færdigretter. Nem frikadeller opskrift klar på 40 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "nem-kartoffelmos",
+    "title": "Nem Kartoffelmos",
+    "category": "Tilbehør",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet og lækker nem kartoffelmos med smør og mælk. Den perfekte nemme kartoffelmos opskrift der smager bedre end fra restauranten. Klar på 30 minutter - perfekt til hverdagen!"
   },
   {
     "slug": "nem-koedsauce-med-groentsager",
@@ -3162,6 +4372,26 @@
     "excerpt": "Nem og hurtig kødsauce med friske grøntsager. Perfekt til pasta, ris eller kartofler. Klar på under 45 minutter og smager fantastisk!"
   },
   {
+    "slug": "nem-kylling-curry",
+    "title": "Nem Kylling Curry",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Lækker og nem kylling curry med cremet kokos-sauce og aromatiske krydderier. Den perfekte nemme curry opskrift der smager bedre end takeaway. Klar på 35 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "nem-kylling-i-ovn-med-kartofler",
+    "title": "Nem Kylling i Ovn med Kartofler",
+    "category": "Kød",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig ovnbagt kylling med sprøde kartofler og aromatiske krydderurter. Den perfekte nem ret til hverdagen der smager fantastisk. Denne opskrift giver dig den perfekte one-pan ret med minimal oprydning og maksimal smag."
+  },
+  {
     "slug": "nem-kylling-med-ris",
     "title": "Nem Kylling med Ris",
     "category": "Kød",
@@ -3172,6 +4402,66 @@
     "excerpt": "Nem og hurtig hjemmelavet kylling med ris opskrift - perfekt til hverdagen! Saftig kylling, fluffet ris og lækker sovs på under 35 minutter. Denne nemme opskrift smager langt bedre end takeaway og er perfekt til hele familien. Simpel, hurtig og lækker!"
   },
   {
+    "slug": "nem-kylling-tikka-masala",
+    "title": "Nem Kylling Tikka Masala - Autentisk Indisk Opskrift",
+    "category": "Kød",
+    "time": "50 min",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Nem og autentisk hjemmelavet kylling tikka masala med saftig kylling, cremet tomat-sauce og aromatiske indiske krydderier. Den perfekte indiske klassiker der smager langt bedre end fra restauranten. Hurtig, nem og perfekt til hele familien!"
+  },
+  {
+    "slug": "nem-kylling-wok",
+    "title": "Nem Kylling Wok",
+    "category": "Kød",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Lækker og nem kylling wok med grøntsager og asiatisk sauce. Den perfekte nemme wok opskrift der smager bedre end takeaway. Klar på 25 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "nem-lasagne",
+    "title": "Nem Lasagne",
+    "category": "Pasta",
+    "time": "75 min",
+    "prepTime": "25 min",
+    "cookTime": "50 min",
+    "difficulty": "Mellem",
+    "excerpt": "Nem og lækker hjemmelavet lasagne med saftig kødsauce, cremet bechamel og smeltet ost. Den perfekte familievenlige opskrift der smager langt bedre end færdigretter. Nem lasagne opskrift klar på 75 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "nem-pad-thai",
+    "title": "Nem Pad Thai",
+    "category": "Asiatisk",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og autentisk pad thai med risnudler, kylling og peanuts. Den perfekte nemme pad thai opskrift der smager langt bedre end fra restauranten. Perfekt til hverdagen - klar på 30 minutter!"
+  },
+  {
+    "slug": "nem-pasta-carbonara",
+    "title": "Nem Pasta Carbonara",
+    "category": "Pasta",
+    "time": "20 min",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og hurtig hjemmelavet pasta carbonara med bacon, æg og parmesan. Den perfekte hurtige opskrift der smager langt bedre end færdigretter. Nem pasta carbonara opskrift klar på 20 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "nem-pasta-opskrift",
+    "title": "Nem Pasta Opskrift",
+    "category": "Pasta",
+    "time": "20 min",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nem pasta opskrift klar på 20 minutter. Den perfekte hurtige pasta opskrift til hverdagen med frisk pasta, tomat og basilikum. Nem pasta opskrift der smager fantastisk - perfekt til travle hverdage!"
+  },
+  {
     "slug": "nem-pastaret-i-cremet-svampesauce",
     "title": "Nem pastaret i cremet svampesauce",
     "category": "Vegetarisk",
@@ -3180,6 +4470,36 @@
     "cookTime": "10 min",
     "difficulty": "Nem",
     "excerpt": "En hurtig og nem pastaret i cremet svampesauce. Perfekt til en travl hverdag - klar på kun 20 minutter! Fyldig, cremet og fuld af smag."
+  },
+  {
+    "slug": "nem-tacos-med-kylling",
+    "title": "Nem Tacos med Kylling",
+    "category": "Kød",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Nemme og lækre hjemmelavet tacos med krydret kylling, salsa og guacamole. Den perfekte nemme taco opskrift der smager langt bedre end fra restauranten. Perfekt til hverdagen - klar på 25 minutter!"
+  },
+  {
+    "slug": "nem-teriyaki-kylling",
+    "title": "Nem Teriyaki Kylling - Autentisk Japansk Opskrift",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Nem og autentisk hjemmelavet teriyaki kylling med saftig kylling, sød teriyaki sauce og aromatiske japanske krydderier. Den perfekte japanske klassiker der smager langt bedre end fra restauranten. Hurtig, nem og perfekt til hele familien!"
+  },
+  {
+    "slug": "nem-tomatsuppe",
+    "title": "Nem Tomatsuppe",
+    "category": "Suppe",
+    "time": "30 min",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Lækker og nem tomatsuppe med friske tomater, hvidløg og basilikum. Den perfekte nemme tomatsuppe opskrift der smager bedre end fra restauranten. Klar på 30 minutter - perfekt til hverdagen!"
   },
   {
     "slug": "nem-tortellini-suppe",
@@ -3252,6 +4572,16 @@
     "excerpt": "Sprøde og saftige hjemmelavet nuggets med perfekt panering. Denne opskrift giver dig de autentiske nuggets der smager langt bedre end fra butikken. Server med mayo, ketchup eller din yndlingsdip!"
   },
   {
+    "slug": "nuggets-i-airfryer",
+    "title": "Nuggets i Airfryer",
+    "category": "Kød",
+    "time": "20 min",
+    "prepTime": "10 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Sprøde og saftige nuggets i airfryer med gylden panering og perfekt tekstur. Den perfekte hurtige snack eller hovedret der smager langt bedre end friturestegte nuggets. Klar på under 20 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "nutella",
     "title": "Nutella",
     "category": "Dessert",
@@ -3280,6 +4610,16 @@
     "cookTime": "10 min",
     "difficulty": "Let",
     "excerpt": "Perfekt hjemmelavet omelet med gyldenbrun skorpe og cremet fyld. Den perfekte ret til morgenmad eller brunch. Denne opskrift giver dig den autentiske omelet der smager langt bedre end fra restauranten. Server med fyld, brød eller salat!"
+  },
+  {
+    "slug": "omelet-i-airfryer",
+    "title": "Omelet i Airfryer",
+    "category": "Hurtigt",
+    "time": "15 min",
+    "prepTime": "5 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Fluffy og smagfuld omelet i airfryer med perfekt tekstur. Den perfekte hurtige morgenmad eller frokost der er nemmere end pandestegte omelet. Klar på under 15 minutter - perfekt til hverdagen!"
   },
   {
     "slug": "one-pot-pasta",
@@ -3382,6 +4722,16 @@
     "excerpt": "Lækker og hurtig orzo pasta med sprødt bacon, søde ærter og cremet parmesan. En perfekt uge-dag ret der er nem at lave og smager fantastisk. Fyldig, mættende og fuld af smag!"
   },
   {
+    "slug": "osso-buco",
+    "title": "Osso Buco",
+    "category": "Kød",
+    "time": "150 min",
+    "prepTime": "30 min",
+    "cookTime": "120 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk italiensk hjemmelavet osso buco med kalvekød, hvidvin, tomater og gremolata. Den perfekte italienske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske osso buco med mørt kød og rig, smagfuld sauce. Perfekt til en særlig aften!"
+  },
+  {
     "slug": "ovnbagt-kylling-med-kartofler",
     "title": "Ovnbagt Kylling med Kartofler",
     "category": "Kød",
@@ -3402,6 +4752,16 @@
     "excerpt": "Nem og lækker hjemmelavet ovnbagt laks med kartofler og grøntsager. Den perfekte sunde hovedret til hverdagen. Denne opskrift giver dig saftig og smagfuld laks med sprøde kartofler og bløde grøntsager. Hurtig, nem og perfekt til hele familien!"
   },
   {
+    "slug": "paaske-chokoladekage",
+    "title": "Påske Chokoladekage",
+    "category": "Dessert",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker hjemmelavet påske chokoladekage med cremet chokolade og påskedekoration. Den perfekte kage til påske der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske påske chokoladekage med perfekt balance mellem sødme og chokolade. Perfekt til påske!"
+  },
+  {
     "slug": "pad-thai",
     "title": "Pad Thai",
     "category": "Pasta",
@@ -3410,6 +4770,26 @@
     "cookTime": "15 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk thailandsk pad thai med risnudler, æg, kylling og friske grøntsager. Den perfekte ret med sød-syrlig smag. Denne opskrift giver dig den autentiske pad thai der smager langt bedre end fra takeaway."
+  },
+  {
+    "slug": "pad-thai-autentisk",
+    "title": "Pad Thai Autentisk",
+    "category": "Pasta",
+    "time": "35 min",
+    "prepTime": "20 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk thailandsk hjemmelavet pad thai med risnudler, rejer, æg og tamarind-sauce. Den perfekte thailandske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske pad thai med perfekt balance mellem sødt, surt, salt og krydret. Server med lime og peanuts - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "paella",
+    "title": "Paella",
+    "category": "Kød",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk spansk hjemmelavet paella med saftigt kød, rejer, muslinger og safranris. Den perfekte spanske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske paella med perfekt krydret smag og gylden ris. Server med citron og frisk persille - perfekt til en hyggelig aften!"
   },
   {
     "slug": "pålægchokolade",
@@ -3522,6 +4902,16 @@
     "excerpt": "Saftige og smagfulde pandestegte svinekoteletter med gyldenbrun skorpe og perfekt tekstur. Den perfekte hverdagsret der smager langt bedre end fra butikken. Nem, hurtig og perfekt til hele familien!"
   },
   {
+    "slug": "påskeæg-med-kokos",
+    "title": "Påskeæg med Kokos",
+    "category": "Dessert",
+    "time": "60 min",
+    "prepTime": "45 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Søde påskeæg med kokos og chokolade. En klassisk påskesnack der smager fantastisk!"
+  },
+  {
     "slug": "pasta",
     "title": "Pasta",
     "category": "Pasta",
@@ -3562,6 +4952,16 @@
     "excerpt": "Autentisk italiensk hjemmelavet pasta carbonara med sprød bacon, cremet æggecreme og parmesan. Den perfekte klassiske italienske opskrift der smager langt bedre end fra restauranten. Nem, hurtig og perfekt til hverdagen!"
   },
   {
+    "slug": "pasta-carbonara-autentisk",
+    "title": "Pasta Carbonara Autentisk",
+    "category": "Pasta",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk italiensk pasta carbonara med guanciale, æg, parmesan og sort peber. Den perfekte romerske ret der smager bedre end fra restauranten. Denne opskrift giver dig den klassiske italienske smag med perfekt cremet konsistens uden fløde. Perfekt til en hyggelig aften eller når du vil imponere med en autentisk italiensk ret!"
+  },
+  {
     "slug": "pasta-e-fagioli",
     "title": "Pasta E Fagioli",
     "category": "Vegetarisk",
@@ -3570,6 +4970,16 @@
     "cookTime": "20 min",
     "difficulty": "Let",
     "excerpt": "Klassisk italiensk pasta e fagioli (pasta og bønner). En lækker og mættende suppe der er perfekt til hverdagen."
+  },
+  {
+    "slug": "pasta-med-græskar-og-salvie",
+    "title": "Pasta med Græskar og Salvie",
+    "category": "Vegetarisk",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet pasta med stegt græskar og aromatisk salvie. En perfekt vegetarisk ret der er nem at lave og smager fantastisk!"
   },
   {
     "slug": "pasta-med-laks-og-spinat",
@@ -3632,6 +5042,16 @@
     "excerpt": "Klassiske danske pebernødder med varm kanel, ingefær og peber. Den perfekte julekage der smager langt bedre end fra butikken. Disse små, sprøde kager er en dansk juleklassiker og perfekt til kaffen eller som snack. Nem at lave og perfekt til hele familien!"
   },
   {
+    "slug": "perfekt-beef-wellington",
+    "title": "Perfekt Beef Wellington - Elegant Hovedret",
+    "category": "Kød",
+    "time": "150 min",
+    "prepTime": "60 min",
+    "cookTime": "90 min",
+    "difficulty": "Svær",
+    "excerpt": "Elegant beef wellington med mørbrad, duxelles, prosciutto og butterdej. Den perfekte festret der imponerer alle gæster. Denne opskrift giver dig den autentiske beef wellington med perfekt stegt mørbrad og sprød butterdej. Perfekt til særlige lejligheder, juleaften eller når du vil imponere!"
+  },
+  {
     "slug": "phat-joe-a-la-joe-the-juice",
     "title": "PHAT JOE a la Joe & The Juice",
     "category": "Kød",
@@ -3640,6 +5060,16 @@
     "cookTime": "5 min",
     "difficulty": "Let",
     "excerpt": "Premium sandwich a la Joe & The Juice med avocado, kylling, kalkun, tomat, rucola, Grana Padano og honning sennep dressing. Den perfekte luksuriøse sandwich til frokost eller middag. Denne opskrift giver dig den autentiske premium sandwich der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "pho",
+    "title": "Pho",
+    "category": "Suppe",
+    "time": "240 min",
+    "prepTime": "30 min",
+    "cookTime": "210 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk vietnamesisk hjemmelavet pho med aromatisk bouillon, tynde nudler og saftigt kød. Den perfekte vietnamesiske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske pho med dyb, rig smag og perfekt tekstur. Server med friske urter og lime - perfekt til en særlig aften!"
   },
   {
     "slug": "pho-nudelsuppe-med-med-oksekoed",
@@ -3660,6 +5090,16 @@
     "cookTime": "15 min",
     "difficulty": "Let",
     "excerpt": "Lækker hjemmelavet pizza med sprød bund, saftig tomat-sauce og dit yndlingsfyld. Denne opskrift giver dig den perfekte pizza-bund der smager bedre end takeaway. Perfekt til en hyggelig aften."
+  },
+  {
+    "slug": "pizza-med-gorgonzola-paere-og-pancetta",
+    "title": "Pizza med Gorgonzola, pære og pancetta",
+    "category": "Hurtigt",
+    "time": "60 min",
+    "prepTime": "45 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Raffineret pizza med cremet Gorgonzola, søde pærer og sprød pancetta. En perfekt balance mellem sødme, salt og cremet smag. Denne opskrift giver dig en autentisk italiensk pizza-oplevelse hjemme."
   },
   {
     "slug": "pizza-slice",
@@ -3752,6 +5192,16 @@
     "excerpt": "Sprøde og gyldne hjemmelavet pomfritter med perfekt struktur. Denne opskrift giver dig de autentiske pomfritter der smager langt bedre end fra butikken. Server med mayo, ketchup eller din yndlingsdip!"
   },
   {
+    "slug": "pommes-frites-i-airfryer",
+    "title": "Pommes Frites i Airfryer",
+    "category": "Hurtigt",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Sprøde og gyldne pommes frites i airfryer uden store mængder olie. Disse pommes frites er langt sundere end friturestegte, men smager lige så godt. Perfekt til hverdagen!"
+  },
+  {
     "slug": "protein-kage",
     "title": "Protein Kage",
     "category": "Dessert",
@@ -3802,6 +5252,36 @@
     "excerpt": "Højprotein hjemmelavet proteinpandekager med proteinpulver og æg. Den perfekte sunde morgenmad til træning eller fitness. Denne opskrift giver dig de lækreste proteinpandekager der smager langt bedre end fra butikken. Højt proteinindhold og lavt kulhydratindhold - perfekt til en sund livsstil!"
   },
   {
+    "slug": "pulled-pork",
+    "title": "Pulled Pork",
+    "category": "Kød",
+    "time": "6 timer",
+    "prepTime": "30 min",
+    "cookTime": "5 timer 30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk amerikansk hjemmelavet pulled pork med saftigt svinekød og BBQ-sauce. Den perfekte ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske pulled pork med perfekt krydret smag og saftig konsistens. Server med coleslaw og brød - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "quesadillas-i-airfryer",
+    "title": "Quesadillas i Airfryer",
+    "category": "Hurtigt",
+    "time": "20 min",
+    "prepTime": "10 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Sprøde og smagfulde quesadillas i airfryer med gylden overflade og perfekt tekstur. Den perfekte hurtige snack eller hovedret der smager langt bedre end pandestegte quesadillas. Klar på under 20 minutter - perfekt til hverdagen!"
+  },
+  {
+    "slug": "quinoasalat-med-vandmelon-og-feta",
+    "title": "Quinoasalat med vandmelon og feta",
+    "category": "Vegetarisk",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og forfriskende quinoasalat med søde vandmelon-stykker, cremet feta og perfekt balance mellem sødme og salt. Den perfekte sommerret der smager langt bedre end fra restauranten. Klar på under 30 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "ramen",
     "title": "Ramen",
     "category": "Pasta",
@@ -3810,6 +5290,16 @@
     "cookTime": "40 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk hjemmelavet ramen med rig bouillon, saftig kylling, bløde æg og friske grøntsager. Den perfekte komfortmad der smager langt bedre end instant ramen. Perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "ramen-autentisk",
+    "title": "Ramen Autentisk",
+    "category": "Suppe",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Svær",
+    "excerpt": "Autentisk japansk hjemmelavet ramen med rig bouillon, nudler, æg og toppings. Den perfekte japanske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske ramen med dyb, rig smag og perfekt tekstur. Server med nori og forårsløg - perfekt til en hyggelig aften!"
   },
   {
     "slug": "ramen-med-sproed-kylling",
@@ -3830,6 +5320,16 @@
     "cookTime": "15 min",
     "difficulty": "Let",
     "excerpt": "Frisk pasta med ramsløg, cremet burrata og søde ærter. En lækker og nem ret der er perfekt til foråret!"
+  },
+  {
+    "slug": "ratatouille",
+    "title": "Ratatouille",
+    "category": "Vegetarisk",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Klassisk fransk hjemmelavet ratatouille med grøntsager, tomater og aromatiske krydderier. Den perfekte vegetariske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske ratatouille med perfekt krydret smag og cremet konsistens. Server med pasta, ris eller brød - perfekt til en hyggelig aften!"
   },
   {
     "slug": "rejechips",
@@ -3902,6 +5402,16 @@
     "excerpt": "Cremet og smagfuld hjemmelavet risotto med parmesan og hvidløg. Den perfekte italienske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske risotto med perfekt cremet konsistens. Perfekt til en hyggelig aften!"
   },
   {
+    "slug": "risotto-med-svampe",
+    "title": "Risotto med Svampe",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk italiensk hjemmelavet risotto med svampe, parmesan og aromatiske krydderier. Den perfekte italienske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske risotto med cremet konsistens og rig svampe-smag. Server med frisk persille og parmesan - perfekt til en hyggelig aften!"
+  },
+  {
     "slug": "roastbeef-sandwich",
     "title": "Roastbeef Sandwich",
     "category": "Kød",
@@ -3920,6 +5430,16 @@
     "cookTime": "30 min",
     "difficulty": "Let",
     "excerpt": "Klassisk dansk rød grød med fløde med frisk bær og cremet fløde. Den perfekte dessert til sommeren. Denne opskrift giver dig den autentiske rød grød der smager langt bedre end fra butikken. Server med kold fløde!"
+  },
+  {
+    "slug": "rodkaal",
+    "title": "Rødkål",
+    "category": "Tilbehør",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Let",
+    "excerpt": "Sød og smagfuld hjemmelavet rødkål med æble, eddike og krydderier. Den perfekte klassiske danske tilbehørsret der smager langt bedre end fra butikken. Denne opskrift giver dig cremet rødkål med perfekt balance mellem sødme og syre. Perfekt til hverdagen!"
   },
   {
     "slug": "roedkaal",
@@ -3982,6 +5502,26 @@
     "excerpt": "Klassiske hjemmelavet rugbrødskugler med kakaopulver og kokosmel. Den perfekte kage til kaffe eller dessert. Denne opskrift giver dig de autentiske rugbrødskugler der smager langt bedre end købt."
   },
   {
+    "slug": "salat-med-aubergine-og-halloumi",
+    "title": "Salat med Aubergine og Halloumi",
+    "category": "Vegetarisk",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Smagfuld og mættende salat med stegt aubergine, sprød halloumi og friske grøntsager. Den perfekte vegetariske hovedret der smager fantastisk og er nem at lave. Denne opskrift giver dig den perfekte kombination af cremet aubergine, sprød halloumi og frisk salat. Perfekt til hverdagen!"
+  },
+  {
+    "slug": "salat-med-bagte-aebler",
+    "title": "Salat med bagte æbler",
+    "category": "Vegetarisk",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og sæsonbaseret salat med søde bagte æbler, nødder og cremet dressing. Den perfekte salat der smager langt bedre end fra restauranten. Klar på under 35 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "salat-med-kaal-og-appelsin",
     "title": "Salat med Kål og Appelsin",
     "category": "Salat",
@@ -4042,6 +5582,16 @@
     "excerpt": "Frisk og smagfuld sandwich a la Joe & The Juice med avocado, mozzarella, vegansk pesto, serrano skinke og tomat. Den perfekte sandwich til frokost eller middag. Denne opskrift giver dig den autentiske serrano sandwich der smager langt bedre end fra butikken."
   },
   {
+    "slug": "shakshuka",
+    "title": "Shakshuka",
+    "category": "Kød",
+    "time": "35 min",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk hjemmelavet shakshuka med æg, tomater, peberfrugter og aromatiske krydderier. Den perfekte mellemøstlige morgenmad eller brunch der smager langt bedre end fra restauranten. Denne opskrift giver dig den cremet, krydrede ret med perfekt stegte æg i en rig tomat-sauce. Perfekt til weekend brunch eller når du vil imponere!"
+  },
+  {
     "slug": "shawarma",
     "title": "Shawarma",
     "category": "Kød",
@@ -4050,6 +5600,26 @@
     "cookTime": "30 min",
     "difficulty": "Mellem",
     "excerpt": "Autentisk hjemmelavet shawarma med krydret kød, frisk salat og cremet dressing. Den perfekte ret til en hyggelig aften. Denne opskrift giver dig den autentiske shawarma der smager langt bedre end fra biks. Server med pita brød og pommes frites!"
+  },
+  {
+    "slug": "shrimp-scampi",
+    "title": "Shrimp Scampi",
+    "category": "Fisk",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk hjemmelavet shrimp scampi med sprøde rejer, hvidløg, hvidvin og cremet sauce. Den perfekte italiensk-amerikanske klassiker der smager langt bedre end fra restauranten. Nem, hurtig og perfekt til hverdagen!"
+  },
+  {
+    "slug": "shrimp-scampi-autentisk",
+    "title": "Shrimp Scampi Autentisk",
+    "category": "Fisk",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk italiensk-amerikansk hjemmelavet shrimp scampi med rejer, hvidløg, hvidvin og smør. Den perfekte klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske shrimp scampi med perfekt balance mellem smag og tekstur. Server med pasta - perfekt til en hyggelig aften!"
   },
   {
     "slug": "simpel-bolle",
@@ -4223,6 +5793,16 @@
     "excerpt": "Lækre hjemmelavet søde appelsinskiver med chokolade - perfekt kombination af frisk appelsin og rig chokolade. Den perfekte dessert eller snack. Denne opskrift giver dig de autentiske søde appelsinskiver med chokolade der smager langt bedre end fra butikken. Server som dessert eller til kaffen!"
   },
   {
+    "slug": "soede-kartoffelfritter-i-airfryer",
+    "title": "Søde Kartoffelfritter i Airfryer",
+    "category": "Vegetarisk",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Sprøde og smagfulde søde kartoffelfritter i airfryer med gylden overflade og perfekt tekstur. Den perfekte vegetariske snack eller side ret der smager langt bedre end ovnbagte fritter. Klar på under 25 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "softice",
     "title": "Softice",
     "category": "Dessert",
@@ -4263,6 +5843,16 @@
     "excerpt": "Klassiske danske hjemmelavet spanskrør med chokolade, kokos og sprød tekstur. Den perfekte kage til kaffen eller som dessert. Denne opskrift giver dig de autentiske spanskrør der smager langt bedre end fra butikken. Server med kaffe eller te!"
   },
   {
+    "slug": "speltkernesalat-med-ristet-blomkal",
+    "title": "Speltkernesalat med Ristet Blomkål",
+    "category": "Salat",
+    "time": "85 min",
+    "prepTime": "25 min",
+    "cookTime": "60 min",
+    "difficulty": "Let",
+    "excerpt": "Nærende speltkernesalat med ristet blomkål, tahindressing og dukkah. Den perfekte vegetariske salat med bid, smag og mæthed. Denne opskrift giver dig en lækker salat med gylden ristet blomkål, cremet tahindressing og aromatisk dukkah. Perfekt til frokost eller som side til hovedretten!"
+  },
+  {
     "slug": "spicy-tuna-a-la-joe-the-juice",
     "title": "Spicy Tuna a la Joe & The Juice",
     "category": "Fisk",
@@ -4293,6 +5883,16 @@
     "excerpt": "Lækre spinatvafler med røget laks - en perfekt kombination af sprøde vafler og saftig laks. Nem at lave og perfekt til både morgenmad, frokost eller aftensmad."
   },
   {
+    "slug": "sproed-granola-i-airfryer",
+    "title": "Sprød granola i airfryer",
+    "category": "Morgenmad",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Sprød og smagfuld hjemmelavet granola i airfryer med nødder, frø og perfekt balance mellem sødme og crunch. Den perfekte morgenmad der smager langt bedre end fra butikken. Klar på under 25 minutter - perfekt til hverdagen!"
+  },
+  {
     "slug": "sproede-vafler",
     "title": "Sprøde Vafler",
     "category": "Hurtigt",
@@ -4301,6 +5901,26 @@
     "cookTime": "25 min",
     "difficulty": "Let",
     "excerpt": "Ekstra sprøde og knasende hjemmelavet vafler med perfekt gyldenbrun farve. Denne opskrift er optimeret for maksimal sprødhed og tekstur. Perfekte til morgenmad, brunch eller dessert. Server med syltetøj, sukker og flødeskum!"
+  },
+  {
+    "slug": "squashsuppe-med-bacon",
+    "title": "Squashsuppe med Bacon",
+    "category": "Suppe",
+    "time": "60 min",
+    "prepTime": "15 min",
+    "cookTime": "45 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet hjemmelavet squashsuppe med sprødt bacon, løg og krydderier. Den perfekte vinterklassiker der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske squashsuppe med cremet konsistens og rig smag. Server med sprødt bacon og frisk persille - perfekt til en hyggelig aften!"
+  },
+  {
+    "slug": "stegt-flaesk-med-persillesovs",
+    "title": "Stegt Flæsk med Persillesovs",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Klassisk dansk stegt flæsk med persillesovs - sprødt stegt flæsk med cremet persillesovs og kartofler. Den perfekte hverdagsret der smager langt bedre end fra restauranten. Autentisk dansk hjemmekøkken på sit bedste! Server med kogte kartofler og persillesovs."
   },
   {
     "slug": "stollen-julebrod",
@@ -4381,6 +6001,66 @@
     "cookTime": "20 min",
     "difficulty": "Let",
     "excerpt": "Sund og budgetvenlig pasta med masser af grøntsager og en lækker tomatbaseret sauce. Perfekt til hverdagen - både sund, mættende og billig at lave. Denne opskrift giver dig en lækker ret der ikke koster det store, men smager fantastisk!"
+  },
+  {
+    "slug": "sund-budgetsuppe-med-fisk",
+    "title": "Sund Budgetsuppe med Fisk - Nem og Billig Opskrift",
+    "category": "Fisk",
+    "time": "35 min",
+    "prepTime": "10 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Sund og billig hjemmelavet suppe med fisk, grøntsager og aromatiske krydderier. Den perfekte budgetvenlige ret der er både mættende og nærende. Hurtig, nem og perfekt til hele familien! Denne opskrift giver dig en lækker, sund suppe uden at koste en formue."
+  },
+  {
+    "slug": "sund-budgetsuppe-med-kylling",
+    "title": "Sund Budgetsuppe med Kylling - Nem og Billig Opskrift",
+    "category": "Kød",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Sund og billig hjemmelavet suppe med kylling, grøntsager og aromatiske krydderier. Den perfekte budgetvenlige ret der er både mættende og nærende. Hurtig, nem og perfekt til hele familien! Denne opskrift giver dig en lækker, sund suppe uden at koste en formue."
+  },
+  {
+    "slug": "sund-budgetsuppe-med-linser",
+    "title": "Sund Budgetsuppe med Linser - Nem og Billig Opskrift",
+    "category": "Vegetarisk",
+    "time": "40 min",
+    "prepTime": "10 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Sund og billig hjemmelavet suppe med linser, grøntsager og aromatiske krydderier. Den perfekte budgetvenlige ret der er både mættende og nærende. Hurtig, nem og perfekt til hele familien! Denne opskrift giver dig en lækker, sund suppe uden at koste en formue."
+  },
+  {
+    "slug": "sund-jordbaertaerte",
+    "title": "Sund jordbærtærte",
+    "category": "Dessert",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Sund og lækker jordbærtærte med nærende ingredienser, cremet krem og friske jordbær. Den perfekte sunde dessert der smager langt bedre end fra konditoriet. Perfekt til fødselsdage, sommerfester eller bare en hyggelig aften med familien!"
+  },
+  {
+    "slug": "sund-morgenmad-med-aeg-og-avocado",
+    "title": "Sund Morgenmad med Æg og Avocado",
+    "category": "Morgenmad",
+    "time": "15 min",
+    "prepTime": "5 min",
+    "cookTime": "10 min",
+    "difficulty": "Let",
+    "excerpt": "Nærende og mættende morgenmad med blødkogte æg, cremet avocado og knasende brød. Den perfekte sunde start på dagen med protein, sunde fedtstoffer og fiber. Denne opskrift giver dig den perfekte balance mellem smag og næring til en energifyldt dag."
+  },
+  {
+    "slug": "sund-opskrift",
+    "title": "Sund Opskrift",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Sund opskrift med nærende ingredienser der smager fantastisk. Nem sund opskrift klar på 30 minutter - perfekt til hverdagen. Sund mad der ikke går på kompromis med smag!"
   },
   {
     "slug": "sushi",
@@ -4503,6 +6183,16 @@
     "excerpt": "Krydret texmex risret med saftigt oksekød, bønner og majs. En lækker og mættende ret der er perfekt til hverdagen."
   },
   {
+    "slug": "thai-green-curry",
+    "title": "Thai Green Curry",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet thai green curry med kylling, kokosmælk og friske grøntsager. Den perfekte thailandske klassiker der smager langt bedre end takeaway. Krydret, cremet og perfekt til hele familien!"
+  },
+  {
     "slug": "the-steak-a-la-joe-the-juice",
     "title": "THE STEAK a la Joe & The Juice",
     "category": "Kød",
@@ -4513,6 +6203,16 @@
     "excerpt": "Premium steak sandwich a la Joe & The Juice med saftig bøf, rucola, Grana Padano, pickles og honning sennep dressing. Den perfekte luksuriøse sandwich til frokost eller middag. Denne opskrift giver dig den autentiske premium steak sandwich der smager langt bedre end fra butikken."
   },
   {
+    "slug": "tiramisu",
+    "title": "Tiramisu",
+    "category": "Dessert",
+    "time": "60 min",
+    "prepTime": "30 min",
+    "cookTime": "30 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk hjemmelavet tiramisu med mascarpone, kaffesvæppede kiks og kakao. Den perfekte italienske dessert der smager langt bedre end fra restauranten. Denne klassiske tiramisu opskrift giver dig den cremet, luftige dessert med perfekt balance mellem kaffe, søde og cremet smag. Perfekt til særlige lejligheder eller når du vil imponere!"
+  },
+  {
     "slug": "tiramisu-brownie",
     "title": "Tiramisu Brownie",
     "category": "Dessert",
@@ -4521,6 +6221,16 @@
     "cookTime": "40 min",
     "difficulty": "Mellem",
     "excerpt": "Luksuriøs tiramisu brownie med lag af chokoladebrownie, kaffemascarpone og kakao. En perfekt kombination af to klassiske desserter - cremet tiramisu og fudgy brownie. Smager fantastisk og er perfekt til en særlig aften!"
+  },
+  {
+    "slug": "tomatsuppe-med-gorgonzola",
+    "title": "Tomatsuppe med Gorgonzola",
+    "category": "Suppe",
+    "time": "45 min",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet og smagfuld hjemmelavet tomatsuppe med kraftig gorgonzola. Den perfekte suppe der smager langt bedre end fra butikken. Denne opskrift giver dig den autentiske tomatsuppe med perfekt balance mellem tomatsmag og gorgonzola. Perfekt til hverdagen!"
   },
   {
     "slug": "torsk-i-fad-med-groentsager",
@@ -4743,6 +6453,16 @@
     "excerpt": "Frisk og sund vegansk sandwich a la Joe & The Juice med avocado, vegansk pesto, spinat og tomat. Den perfekte veganske sandwich til frokost eller middag. Denne opskrift giver dig den autentiske veganske avocado sandwich der smager langt bedre end fra butikken."
   },
   {
+    "slug": "veal-piccata",
+    "title": "Veal Piccata - Klassisk Italiensk Kalvekød Opskrift",
+    "category": "Kød",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Mellem",
+    "excerpt": "Autentisk italiensk veal piccata med tynde kalvekødsskiver, citron og kapers. Den perfekte klassiske italienske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske veal piccata med perfekt cremet sauce og mør kød. Perfekt til en hyggelig aften med venner og familie!"
+  },
+  {
     "slug": "vegan-chokolade-milkshake",
     "title": "Vegansk Chokolade Milkshake",
     "category": "Dessert",
@@ -4813,6 +6533,16 @@
     "excerpt": "Autentisk vegetarisk ramen med svampe og blødt kogt æg. En lækker og nærende suppe der er perfekt til både frokost og aftensmad."
   },
   {
+    "slug": "vegetarisk-buddha-bowl-med-kikærter",
+    "title": "Vegetarisk Buddha Bowl med Kikærter",
+    "category": "Vegetarisk",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Nærende og farverig vegetarisk buddha bowl med sprøde kikærter, quinoa, grøntsager og cremet tahini dressing. Den perfekte sunde og mættende ret der er både lækker og nærende. Denne opskrift giver dig den perfekte balance mellem protein, fiber og sunde fedtstoffer."
+  },
+  {
     "slug": "vegetarisk-burrito",
     "title": "Vegetarisk Burrito",
     "category": "Vegetarisk",
@@ -4823,6 +6553,16 @@
     "excerpt": "Autentisk hjemmelavet vegetarisk burrito med sorte bønner, ris, grøntsager og cremet guacamole. Den perfekte veganske klassiker der smager lige så godt som originalen - helt uden kød! Mættende, sund og perfekt til hele familien!"
   },
   {
+    "slug": "vegetarisk-flaeskesteg",
+    "title": "Vegetarisk Flæskesteg",
+    "category": "Vegetarisk",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker vegetarisk flæskesteg lavet af seitan med sprød svær-lignende overflade og saftig tekstur. Den perfekte vegetariske erstatning til traditionel flæskesteg - helt uden kød! Perfekt til juleaften eller julefrokost med familie og venner."
+  },
+  {
     "slug": "vegetarisk-harirasuppe",
     "title": "Vegetarisk Harirasuppe",
     "category": "Vegetarisk",
@@ -4831,6 +6571,86 @@
     "cookTime": "40 min",
     "difficulty": "Let",
     "excerpt": "Autentisk vegetarisk marokkansk harirasuppe med linser, kikærter og aromatiske krydderier. En nærende og mættende suppe der er fuld af smag og perfekt til hverdagen eller særlige lejligheder."
+  },
+  {
+    "slug": "vegetarisk-juleand",
+    "title": "Vegetarisk Juleand",
+    "category": "Vegetarisk",
+    "time": "120 min",
+    "prepTime": "30 min",
+    "cookTime": "90 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker vegetarisk juleand lavet af seitan med sprød overflade og saftig tekstur. Den perfekte vegetariske erstatning til traditionel juleand - helt uden kød! Perfekt til juleaften eller julefrokost med familie og venner."
+  },
+  {
+    "slug": "vegetarisk-julebrod",
+    "title": "Vegetarisk Julebrød",
+    "category": "Vegetarisk",
+    "time": "180 min",
+    "prepTime": "60 min",
+    "cookTime": "120 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækkert vegetarisk julebrød med tørrede frugter, nødder og julekrydderier. Et sødt og luftigt brød perfekt til julefrokost eller juleaften. Den perfekte vegetariske juleklassiker der smager langt bedre end købt!"
+  },
+  {
+    "slug": "vegetarisk-julefrikadeller",
+    "title": "Vegetariske Julefrikadeller",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Lækre vegetariske julefrikadeller lavet af linser og grøntsager med aromatiske julekrydderier. Den perfekte vegetariske erstatning til traditionelle julefrikadeller - helt uden kød! Perfekt til julefrokost eller juleaften med familie og venner."
+  },
+  {
+    "slug": "vegetarisk-julefrokost",
+    "title": "Vegetarisk Julefrokost - Komplet Dansk Julefrokost",
+    "category": "Vegetarisk",
+    "time": "5 timer",
+    "prepTime": "2 timer",
+    "cookTime": "3 timer",
+    "difficulty": "Svær",
+    "excerpt": "Komplet vegetarisk dansk julefrokost med vegetariske julefrikadeller, vegetarisk julepølse, rødkål, brunede kartofler, vegetarisk kartoffelmos og vegetarisk brun sovs. Den perfekte vegetariske julefrokost der smager langt bedre end fra restauranten - helt uden kød! Autentisk dansk jul på sit bedste!"
+  },
+  {
+    "slug": "vegetarisk-julekartoffelmos",
+    "title": "Vegetarisk Julekartoffelmos",
+    "category": "Vegetarisk",
+    "time": "40 min",
+    "prepTime": "10 min",
+    "cookTime": "30 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet vegetarisk julekartoffelmos med smør, mælk og en smule muskatnød. Den perfekte tilbehør til vegetarisk julemad - cremet, luftig og fuld af smag. Perfekt til juleaften eller julefrokost med familie og venner."
+  },
+  {
+    "slug": "vegetarisk-julemenu",
+    "title": "Vegetarisk Julemenu - Komplet Dansk Julemiddag",
+    "category": "Vegetarisk",
+    "time": "4 timer",
+    "prepTime": "90 min",
+    "cookTime": "2,5 timer",
+    "difficulty": "Mellem",
+    "excerpt": "Komplet vegetarisk dansk julemenu med vegetarisk flæskesteg, rødkål, brunede kartofler og vegetarisk brun sovs. Den perfekte vegetariske julemiddag der smager langt bedre end fra restauranten - helt uden kød! Autentisk dansk jul på sit bedste!"
+  },
+  {
+    "slug": "vegetarisk-julepoelse",
+    "title": "Vegetarisk Julepølse",
+    "category": "Vegetarisk",
+    "time": "90 min",
+    "prepTime": "30 min",
+    "cookTime": "60 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker vegetarisk julepølse lavet af linser, bønner og grøntsager med aromatiske julekrydderier. Den perfekte vegetariske erstatning til traditionel julepølse - helt uden kød! Perfekt til julefrokost eller juleaften med familie og venner."
+  },
+  {
+    "slug": "vegetarisk-lasagne-med-spinat-og-svampe",
+    "title": "Vegetarisk Lasagne med Spinat og Svampe",
+    "category": "Vegetarisk",
+    "time": "75 min",
+    "prepTime": "30 min",
+    "cookTime": "45 min",
+    "difficulty": "Mellem",
+    "excerpt": "Lækker vegetarisk lasagne med cremet spinat, saftige svampe og rig ostesauce. Den perfekte vegetariske ret der smager bedre end traditionel lasagne. Denne opskrift giver dig den autentiske italienske smag med perfekt balance mellem cremethed og umami. Perfekt til en hyggelig aften med familie og venner!"
   },
   {
     "slug": "vegetarisk-pizza",
@@ -4911,595 +6731,5 @@
     "cookTime": "0 min",
     "difficulty": "Let",
     "excerpt": "Sund og nærende yoghurt bowl a la Joe & The Juice med granola, bærkompot, blåbær og græsk yoghurt. Den perfekte morgenmad til at starte dagen med energi. Denne opskrift giver dig den autentiske yoghurt bowl der smager langt bedre end fra butikken."
-  },
-  {
-    "slug": "vegetarisk-juleand",
-    "title": "Vegetarisk Juleand",
-    "category": "Vegetarisk",
-    "time": "120 min",
-    "prepTime": "30 min",
-    "cookTime": "90 min",
-    "difficulty": "Mellem",
-    "excerpt": "Lækker vegetarisk juleand lavet af seitan med sprød overflade og saftig tekstur. Den perfekte vegetariske erstatning til traditionel juleand - helt uden kød! Perfekt til juleaften eller julefrokost med familie og venner."
-  },
-  {
-    "slug": "vegetarisk-flaeskesteg",
-    "title": "Vegetarisk Flæskesteg",
-    "category": "Vegetarisk",
-    "time": "120 min",
-    "prepTime": "30 min",
-    "cookTime": "90 min",
-    "difficulty": "Mellem",
-    "excerpt": "Lækker vegetarisk flæskesteg lavet af seitan med sprød svær-lignende overflade og saftig tekstur. Den perfekte vegetariske erstatning til traditionel flæskesteg - helt uden kød! Perfekt til juleaften eller julefrokost med familie og venner."
-  },
-  {
-    "slug": "vegetarisk-julefrikadeller",
-    "title": "Vegetariske Julefrikadeller",
-    "category": "Vegetarisk",
-    "time": "45 min",
-    "prepTime": "20 min",
-    "cookTime": "25 min",
-    "difficulty": "Let",
-    "excerpt": "Lækre vegetariske julefrikadeller lavet af linser og grøntsager med aromatiske julekrydderier. Den perfekte vegetariske erstatning til traditionelle julefrikadeller - helt uden kød! Perfekt til julefrokost eller juleaften med familie og venner."
-  },
-  {
-    "slug": "vegetarisk-julemenu",
-    "title": "Vegetarisk Julemenu - Komplet Dansk Julemiddag",
-    "category": "Vegetarisk",
-    "time": "4 timer",
-    "prepTime": "90 min",
-    "cookTime": "2,5 timer",
-    "difficulty": "Mellem",
-    "excerpt": "Komplet vegetarisk dansk julemenu med vegetarisk flæskesteg, rødkål, brunede kartofler og vegetarisk brun sovs. Den perfekte vegetariske julemiddag der smager langt bedre end fra restauranten - helt uden kød! Autentisk dansk jul på sit bedste!"
-  },
-  {
-    "slug": "vegetarisk-julepoelse",
-    "title": "Vegetarisk Julepølse",
-    "category": "Vegetarisk",
-    "time": "90 min",
-    "prepTime": "30 min",
-    "cookTime": "60 min",
-    "difficulty": "Mellem",
-    "excerpt": "Lækker vegetarisk julepølse lavet af linser, bønner og grøntsager med aromatiske julekrydderier. Den perfekte vegetariske erstatning til traditionel julepølse - helt uden kød! Perfekt til julefrokost eller juleaften med familie og venner."
-  },
-  {
-    "slug": "vegetarisk-julekartoffelmos",
-    "title": "Vegetarisk Julekartoffelmos",
-    "category": "Vegetarisk",
-    "time": "40 min",
-    "prepTime": "10 min",
-    "cookTime": "30 min",
-    "difficulty": "Let",
-    "excerpt": "Cremet vegetarisk julekartoffelmos med smør, mælk og en smule muskatnød. Den perfekte tilbehør til vegetarisk julemad - cremet, luftig og fuld af smag. Perfekt til juleaften eller julefrokost med familie og venner."
-  },
-  {
-    "slug": "vegetarisk-julefrokost",
-    "title": "Vegetarisk Julefrokost - Komplet Dansk Julefrokost",
-    "category": "Vegetarisk",
-    "time": "5 timer",
-    "prepTime": "2 timer",
-    "cookTime": "3 timer",
-    "difficulty": "Svær",
-    "excerpt": "Komplet vegetarisk dansk julefrokost med vegetariske julefrikadeller, vegetarisk julepølse, rødkål, brunede kartofler, vegetarisk kartoffelmos og vegetarisk brun sovs. Den perfekte vegetariske julefrokost der smager langt bedre end fra restauranten - helt uden kød! Autentisk dansk jul på sit bedste!"
-  },
-  {
-    "slug": "vegetarisk-julebrod",
-    "title": "Vegetarisk Julebrød",
-    "category": "Vegetarisk",
-    "time": "180 min",
-    "prepTime": "60 min",
-    "cookTime": "120 min",
-    "difficulty": "Mellem",
-    "excerpt": "Lækkert vegetarisk julebrød med tørrede frugter, nødder og julekrydderier. Et sødt og luftigt brød perfekt til julefrokost eller juleaften. Den perfekte vegetariske juleklassiker der smager langt bedre end købt!"
-  },
-  {
-    "slug": "bedste-carbonara-opskrift",
-    "title": "Bedste Carbonara Opskrift",
-    "category": "Pasta",
-    "time": "25 min",
-    "prepTime": "10 min",
-    "cookTime": "15 min",
-    "difficulty": "Mellem",
-    "excerpt": "Den bedste carbonara opskrift med autentisk italiensk smag. Cremet carbonara med bacon, æg og parmesan der smager langt bedre end fra restauranten. Nem carbonara opskrift klar på 25 minutter - perfekt til hverdagen!"
-  },
-  {
-    "slug": "nem-pasta-opskrift",
-    "title": "Nem Pasta Opskrift",
-    "category": "Pasta",
-    "time": "20 min",
-    "prepTime": "5 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "Nem pasta opskrift klar på 20 minutter. Den perfekte hurtige pasta opskrift til hverdagen med frisk pasta, tomat og basilikum. Nem pasta opskrift der smager fantastisk - perfekt til travle hverdage!"
-  },
-  {
-    "slug": "hurtig-aftensmad",
-    "title": "Hurtig Aftensmad",
-    "category": "Hurtigt",
-    "time": "15 min",
-    "prepTime": "5 min",
-    "cookTime": "10 min",
-    "difficulty": "Let",
-    "excerpt": "Hurtig aftensmad klar på 15 minutter. Den perfekte hurtige aftensmad opskrift til hverdagen med kylling, grøntsager og ris. Nem hurtig aftensmad der smager fantastisk - perfekt til travle hverdage!"
-  },
-  {
-    "slug": "budget-venlig-opskrift",
-    "title": "Budget Venlig Opskrift",
-    "category": "Hurtigt",
-    "time": "25 min",
-    "prepTime": "10 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "Budget venlig opskrift med få ingredienser der smager fantastisk. Nem budget venlig opskrift klar på 25 minutter - perfekt til hverdagen. Billig opskrift der ikke går på kompromis med smag!"
-  },
-  {
-    "slug": "sund-opskrift",
-    "title": "Sund Opskrift",
-    "category": "Kød",
-    "time": "30 min",
-    "prepTime": "15 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "Sund opskrift med nærende ingredienser der smager fantastisk. Nem sund opskrift klar på 30 minutter - perfekt til hverdagen. Sund mad der ikke går på kompromis med smag!"
-  },
-  {
-    "slug": "kylling-tikka-masala",
-    "title": "Kylling Tikka Masala",
-    "category": "Kød",
-    "time": "45 min",
-    "prepTime": "15 min",
-    "cookTime": "30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk kylling tikka masala med cremet tomat-sauce, krydret kylling og aromatiske indiske krydderier. Den perfekte curry-ret der smager bedre end fra restauranten. Denne opskrift giver dig den klassiske indiske smag med perfekt balance mellem cremethed og krydderi. Perfekt til en hyggelig aften med familie og venner!"
-  },
-  {
-    "slug": "laks-teriyaki-med-sesam",
-    "title": "Laks Teriyaki med Sesam",
-    "category": "Fisk",
-    "time": "30 min",
-    "prepTime": "10 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Saftig laks i lækker teriyaki-sauce med sesam og friske grøntsager. Den perfekte asiatiske ret der smager bedre end fra restauranten. Denne opskrift giver dig den autentiske japanske smag med perfekt balance mellem sødme og umami. Perfekt til en hyggelig aften eller når du vil imponere med en hurtig og lækker ret!"
-  },
-  {
-    "slug": "vegetarisk-lasagne-med-spinat-og-svampe",
-    "title": "Vegetarisk Lasagne med Spinat og Svampe",
-    "category": "Vegetarisk",
-    "time": "75 min",
-    "prepTime": "30 min",
-    "cookTime": "45 min",
-    "difficulty": "Mellem",
-    "excerpt": "Lækker vegetarisk lasagne med cremet spinat, saftige svampe og rig ostesauce. Den perfekte vegetariske ret der smager bedre end traditionel lasagne. Denne opskrift giver dig den autentiske italienske smag med perfekt balance mellem cremethed og umami. Perfekt til en hyggelig aften med familie og venner!"
-  },
-  {
-    "slug": "pasta-carbonara-autentisk",
-    "title": "Pasta Carbonara Autentisk",
-    "category": "Pasta",
-    "time": "25 min",
-    "prepTime": "10 min",
-    "cookTime": "15 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk italiensk pasta carbonara med guanciale, æg, parmesan og sort peber. Den perfekte romerske ret der smager bedre end fra restauranten. Denne opskrift giver dig den klassiske italienske smag med perfekt cremet konsistens uden fløde. Perfekt til en hyggelig aften eller når du vil imponere med en autentisk italiensk ret!"
-  },
-  {
-    "slug": "kylling-pad-thai",
-    "title": "Kylling Pad Thai",
-    "category": "Hurtigt",
-    "time": "30 min",
-    "prepTime": "15 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "Autentisk thailandsk pad thai med kylling, risnudler, æg og den klassiske søde-sure-smag. Den perfekte hurtige ret der smager bedre end fra restauranten. Denne opskrift giver dig den autentiske thailandske smag med perfekt balance mellem sødme, surhed og salt. Perfekt til en hyggelig aften eller når du vil imponere med en hurtig og lækker ret!"
-  },
-  {
-    "slug": "tiramisu",
-    "title": "Tiramisu",
-    "category": "Dessert",
-    "time": "60 min",
-    "prepTime": "30 min",
-    "cookTime": "30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk hjemmelavet tiramisu med mascarpone, kaffesvæppede kiks og kakao. Den perfekte italienske dessert der smager langt bedre end fra restauranten. Denne klassiske tiramisu opskrift giver dig den cremet, luftige dessert med perfekt balance mellem kaffe, søde og cremet smag. Perfekt til særlige lejligheder eller når du vil imponere!"
-  },
-  {
-    "slug": "shakshuka",
-    "title": "Shakshuka",
-    "category": "Kød",
-    "time": "35 min",
-    "prepTime": "15 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Autentisk hjemmelavet shakshuka med æg, tomater, peberfrugter og aromatiske krydderier. Den perfekte mellemøstlige morgenmad eller brunch der smager langt bedre end fra restauranten. Denne opskrift giver dig den cremet, krydrede ret med perfekt stegte æg i en rig tomat-sauce. Perfekt til weekend brunch eller når du vil imponere!"
-  },
-  {
-    "slug": "chicken-parmesan",
-    "title": "Chicken Parmesan",
-    "category": "Kød",
-    "time": "50 min",
-    "prepTime": "20 min",
-    "cookTime": "30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk hjemmelavet chicken parmesan med paneret kylling, tomat-sauce og smeltet mozzarella. Den perfekte italiensk-amerikanske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den sprøde, saftige kylling med cremet ost og rig tomat-sauce. Perfekt til en hyggelig aften!"
-  },
-  {
-    "slug": "beef-stroganoff",
-    "title": "Beef Stroganoff",
-    "category": "Kød",
-    "time": "45 min",
-    "prepTime": "15 min",
-    "cookTime": "30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk hjemmelavet beef stroganoff med mør oksekød, cremet flødesauce og svampe. Den perfekte russiske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den cremet, smagfulde ret med saftigt kød og rig sauce. Perfekt til en hyggelig aften!"
-  },
-  {
-    "slug": "chicken-fajitas",
-    "title": "Chicken Fajitas",
-    "category": "Kød",
-    "time": "40 min",
-    "prepTime": "20 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Autentisk hjemmelavet chicken fajitas med krydret kylling, peberfrugter og løg. Den perfekte mexicanske klassiker der smager langt bedre end fra restauranten. Denne opskrift giver dig den sprøde, smagfulde kylling med friske grøntsager og varme tortillas. Perfekt til en hyggelig aften!"
-  },
-  {
-    "slug": "aeblekage",
-    "title": "Æblekage",
-    "category": "Dessert",
-    "time": "60 min",
-    "prepTime": "20 min",
-    "cookTime": "40 min",
-    "difficulty": "Let",
-    "excerpt": "Klassisk dansk hjemmelavet æblekage med søde æbler, knasende tvebakker og cremet vaniljecustard. Den perfekte dessert der smager langt bedre end fra butikken. Traditionel dansk hjemmekøkken på sit bedste! Server med flødeskum eller cremet vaniljecustard."
-  },
-  {
-    "slug": "kartoffelmos",
-    "title": "Kartoffelmos",
-    "category": "Vegetarisk",
-    "time": "30 min",
-    "prepTime": "10 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Cremet og smagfuld hjemmelavet kartoffelmos med smør, mælk og krydderier. Den perfekte tilbehør til kød, fisk eller grøntsager. Denne opskrift giver dig den autentiske kartoffelmos der smager langt bedre end fra butikken. Perfekt til hverdagen eller særlige lejligheder!"
-  },
-  {
-    "slug": "stegt-flaesk-med-persillesovs",
-    "title": "Stegt Flæsk med Persillesovs",
-    "category": "Kød",
-    "time": "45 min",
-    "prepTime": "15 min",
-    "cookTime": "30 min",
-    "difficulty": "Let",
-    "excerpt": "Klassisk dansk stegt flæsk med persillesovs - sprødt stegt flæsk med cremet persillesovs og kartofler. Den perfekte hverdagsret der smager langt bedre end fra restauranten. Autentisk dansk hjemmekøkken på sit bedste! Server med kogte kartofler og persillesovs."
-  },
-  {
-    "slug": "forloren-hare",
-    "title": "Forloren Hare",
-    "category": "Kød",
-    "time": "90 min",
-    "prepTime": "30 min",
-    "cookTime": "60 min",
-    "difficulty": "Mellem",
-    "excerpt": "Klassisk dansk forloren hare med saftig kødfars, bacon og cremet sovs. Den perfekte hovedret til særlige lejligheder. Denne opskrift giver dig den autentiske danske forloren hare der smager langt bedre end fra restauranten. Server med kartofler og brun sovs!"
-  },
-  {
-    "slug": "medisterpølse",
-    "title": "Medisterpølse",
-    "category": "Kød",
-    "time": "60 min",
-    "prepTime": "30 min",
-    "cookTime": "30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Klassisk dansk hjemmelavet medisterpølse med saftig svinefars, krydderier og traditionelle danske smage. Den perfekte hovedret til jul eller særlige lejligheder. Denne opskrift giver dig den autentiske danske medisterpølse der smager langt bedre end fra butikken. Server med kartofler, brun sovs og rødkål!"
-  },
-  {
-    "slug": "hjemmelavet-pizza-margherita",
-    "title": "Hjemmelavet Pizza Margherita - Autentisk Italiensk Opskrift",
-    "category": "Pizza",
-    "time": "90 min",
-    "prepTime": "60 min",
-    "cookTime": "30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk hjemmelavet pizza margherita med frisk mozzarella, san marzano tomater og frisk basilikum. Den perfekte italienske pizza der smager langt bedre end fra pizzeriaen. Denne opskrift giver dig den autentiske napolitanske pizza-smag med tynd, sprød bund og cremet ost. Perfekt til en hyggelig aften med venner og familie!"
-  },
-  {
-    "slug": "autentisk-carbonara",
-    "title": "Autentisk Carbonara - Klassisk Romersk Opskrift",
-    "category": "Pasta",
-    "time": "25 min",
-    "prepTime": "10 min",
-    "cookTime": "15 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk romersk carbonara med guanciale, pecorino romano og cremet æggesauce. Den perfekte italienske pasta der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske carbonara-smag uden fløde - kun æg, ost og bacon. Perfekt til en hyggelig aften med venner og familie!"
-  },
-  {
-    "slug": "klassisk-bolognese",
-    "title": "Klassisk Bolognese - Autentisk Italiensk Kødsauce",
-    "category": "Kød",
-    "time": "180 min",
-    "prepTime": "30 min",
-    "cookTime": "150 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk klassisk bolognese med oksekød, svinekød, tomater og mælk. Den perfekte italienske kødsauce der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske bolognese-smag med lang simretid for maksimal smag. Perfekt til pasta, lasagne eller polenta!"
-  },
-  {
-    "slug": "cremet-chicken-tikka-masala",
-    "title": "Cremet Chicken Tikka Masala - Autentisk Indisk Opskrift",
-    "category": "Kød",
-    "time": "60 min",
-    "prepTime": "30 min",
-    "cookTime": "30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Cremet og smagfuld chicken tikka masala med marineret kylling, tomatsauce og krydderier. Den perfekte indiske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske tikka masala-smag med cremet sauce og saftig kylling. Perfekt til en hyggelig aften med venner og familie!"
-  },
-  {
-    "slug": "perfekt-beef-wellington",
-    "title": "Perfekt Beef Wellington - Elegant Hovedret",
-    "category": "Kød",
-    "time": "150 min",
-    "prepTime": "60 min",
-    "cookTime": "90 min",
-    "difficulty": "Svær",
-    "excerpt": "Elegant beef wellington med mørbrad, duxelles, prosciutto og butterdej. Den perfekte festret der imponerer alle gæster. Denne opskrift giver dig den autentiske beef wellington med perfekt stegt mørbrad og sprød butterdej. Perfekt til særlige lejligheder, juleaften eller når du vil imponere!"
-  },
-  {
-    "slug": "hjemmelavet-lasagne-med-oksekoed",
-    "title": "Hjemmelavet Lasagne med Oksekød",
-    "category": "Kød",
-    "time": "90 min",
-    "prepTime": "30 min",
-    "cookTime": "60 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk italiensk lasagne med lag af cremet béchamel, saftig kødsauce og smeltet ost. Den perfekte klassiske lasagne der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske italienske lasagne-oplevelse med perfekt balance mellem kød, sauce og ost."
-  },
-  {
-    "slug": "nem-kylling-i-ovn-med-kartofler",
-    "title": "Nem Kylling i Ovn med Kartofler",
-    "category": "Kød",
-    "time": "60 min",
-    "prepTime": "15 min",
-    "cookTime": "45 min",
-    "difficulty": "Let",
-    "excerpt": "Saftig ovnbagt kylling med sprøde kartofler og aromatiske krydderurter. Den perfekte nem ret til hverdagen der smager fantastisk. Denne opskrift giver dig den perfekte one-pan ret med minimal oprydning og maksimal smag."
-  },
-  {
-    "slug": "sund-morgenmad-med-aeg-og-avocado",
-    "title": "Sund Morgenmad med Æg og Avocado",
-    "category": "Morgenmad",
-    "time": "15 min",
-    "prepTime": "5 min",
-    "cookTime": "10 min",
-    "difficulty": "Let",
-    "excerpt": "Nærende og mættende morgenmad med blødkogte æg, cremet avocado og knasende brød. Den perfekte sunde start på dagen med protein, sunde fedtstoffer og fiber. Denne opskrift giver dig den perfekte balance mellem smag og næring til en energifyldt dag."
-  },
-  {
-    "slug": "hurtig-pasta-carbonara-autentisk",
-    "title": "Hurtig Pasta Carbonara - Autentisk",
-    "category": "Pasta",
-    "time": "20 min",
-    "prepTime": "5 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "Autentisk italiensk pasta carbonara med guanciale, æg, parmesan og sort peber. Den perfekte hurtige ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske romerske carbonara-oplevelse med cremet sauce og maksimal smag."
-  },
-  {
-    "slug": "vegetarisk-buddha-bowl-med-kikærter",
-    "title": "Vegetarisk Buddha Bowl med Kikærter",
-    "category": "Vegetarisk",
-    "time": "40 min",
-    "prepTime": "15 min",
-    "cookTime": "25 min",
-    "difficulty": "Let",
-    "excerpt": "Nærende og farverig vegetarisk buddha bowl med sprøde kikærter, quinoa, grøntsager og cremet tahini dressing. Den perfekte sunde og mættende ret der er både lækker og nærende. Denne opskrift giver dig den perfekte balance mellem protein, fiber og sunde fedtstoffer."
-  },
-  {
-    "slug": "cremet-kylling-curry-med-kokosmaelk",
-    "title": "Cremet Kylling Curry med Kokosmælk",
-    "category": "Kød",
-    "time": "35 min",
-    "prepTime": "10 min",
-    "cookTime": "25 min",
-    "difficulty": "Let",
-    "excerpt": "Aromatisk og cremet kylling curry med kokosmælk, karry og friske krydderurter. Den perfekte komfortmad der smager fantastisk og er nem at lave. Denne opskrift giver dig den autentiske curry-oplevelse med perfekt balance mellem krydderier og cremethed."
-  },
-  {
-    "slug": "nem-lasagne",
-    "title": "Nem Lasagne",
-    "category": "Pasta",
-    "time": "75 min",
-    "prepTime": "25 min",
-    "cookTime": "50 min",
-    "difficulty": "Mellem",
-    "excerpt": "Nem og lækker hjemmelavet lasagne med saftig kødsauce, cremet bechamel og smeltet ost. Den perfekte familievenlige opskrift der smager langt bedre end færdigretter. Nem lasagne opskrift klar på 75 minutter - perfekt til hverdagen!"
-  },
-  {
-    "slug": "hurtig-kylling-curry",
-    "title": "Hurtig Kylling Curry",
-    "category": "Kød",
-    "time": "30 min",
-    "prepTime": "10 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Hurtig og lækker hjemmelavet kylling curry med cremet kokos og aromatiske krydderier. Den perfekte hurtige opskrift der smager langt bedre end takeaway. Hurtig kylling curry opskrift klar på 30 minutter - perfekt til hverdagen!"
-  },
-  {
-    "slug": "hjemmelavet-burger",
-    "title": "Hjemmelavet Burger",
-    "category": "Kød",
-    "time": "35 min",
-    "prepTime": "15 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Saftig og lækker hjemmelavet burger med perfekt stegt kød, cremet ost og friske toppings. Den perfekte burger der smager langt bedre end fra fastfood. Hjemmelavet burger opskrift klar på 35 minutter - perfekt til hverdagen!"
-  },
-  {
-    "slug": "nem-frikadeller",
-    "title": "Nem Frikadeller",
-    "category": "Kød",
-    "time": "40 min",
-    "prepTime": "20 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Saftige og lækre hjemmelavet frikadeller med perfekt krydderi og cremet konsistens. Den perfekte danske klassiker der smager langt bedre end færdigretter. Nem frikadeller opskrift klar på 40 minutter - perfekt til hverdagen!"
-  },
-  {
-    "slug": "autentisk-pad-thai",
-    "title": "Autentisk Pad Thai",
-    "category": "Hurtigt",
-    "time": "25 min",
-    "prepTime": "15 min",
-    "cookTime": "10 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk hjemmelavet pad thai med sprøde rejer, æg og friske grøntsager. Den perfekte thailandsk klassiker der smager langt bedre end takeaway. Autentisk pad thai opskrift klar på 25 minutter - perfekt til hverdagen!"
-  },
-  {
-    "slug": "nem-pasta-carbonara",
-    "title": "Nem Pasta Carbonara",
-    "category": "Pasta",
-    "time": "20 min",
-    "prepTime": "5 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "Nem og hurtig hjemmelavet pasta carbonara med bacon, æg og parmesan. Den perfekte hurtige opskrift der smager langt bedre end færdigretter. Nem pasta carbonara opskrift klar på 20 minutter - perfekt til hverdagen!"
-  },
-  {
-    "slug": "hurtig-wok-med-kylling",
-    "title": "Hurtig Wok med Kylling",
-    "category": "Hurtigt",
-    "time": "25 min",
-    "prepTime": "10 min",
-    "cookTime": "15 min",
-    "difficulty": "Let",
-    "excerpt": "Hurtig og lækker hjemmelavet wok med saftig kylling, friske grøntsager og aromatisk sauce. Den perfekte hurtige opskrift der smager langt bedre end takeaway. Hurtig wok med kylling opskrift klar på 25 minutter - perfekt til hverdagen!"
-  },
-  {
-    "slug": "nem-kylling-curry",
-    "title": "Nem Kylling Curry",
-    "category": "Kød",
-    "time": "35 min",
-    "prepTime": "15 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Lækker og nem kylling curry med cremet kokos-sauce og aromatiske krydderier. Den perfekte nemme curry opskrift der smager bedre end takeaway. Klar på 35 minutter - perfekt til hverdagen!"
-  },
-  {
-    "slug": "nem-kartoffelmos",
-    "title": "Nem Kartoffelmos",
-    "category": "Tilbehør",
-    "time": "30 min",
-    "prepTime": "10 min",
-    "cookTime": "20 min",
-    "difficulty": "Let",
-    "excerpt": "Cremet og lækker nem kartoffelmos med smør og mælk. Den perfekte nemme kartoffelmos opskrift der smager bedre end fra restauranten. Klar på 30 minutter - perfekt til hverdagen!"
-  },
-  {
-    "slug": "nem-chili-con-carne",
-    "title": "Nem Chili Con Carne",
-    "category": "Kød",
-    "time": "60 min",
-    "prepTime": "15 min",
-    "cookTime": "45 min",
-    "difficulty": "Mellem",
-    "excerpt": "Lækker og nem chili con carne med saftigt oksekød, bønner og krydderier. Den perfekte nemme chili con carne opskrift der smager bedre end fra restauranten. Klar på 60 minutter - perfekt til familien!"
-  },
-  {
-    "slug": "stegt-flaesk-med-persillesovs",
-    "title": "Stegt Flæsk med Persillesovs",
-    "category": "Kød",
-    "time": "60 min",
-    "prepTime": "15 min",
-    "cookTime": "45 min",
-    "difficulty": "Let",
-    "excerpt": "Klassisk dansk hjemmelavet stegt flæsk med persillesovs - den ultimative danske comfort food. Den perfekte ret til hverdagen eller weekenden. Denne opskrift giver dig den autentiske stegt flæsk med persillesovs der smager langt bedre end fra restauranten. Server med kogte kartofler og persillesovs - det er dansk hjemmekøkken på sit bedste!"
-  },
-  {
-    "slug": "leverpostej",
-    "title": "Leverpostej",
-    "category": "Kød",
-    "time": "90 min",
-    "prepTime": "30 min",
-    "cookTime": "60 min",
-    "difficulty": "Mellem",
-    "excerpt": "Klassisk dansk hjemmelavet leverpostej med cremet tekstur og rig smag. Den perfekte pålæg til smørrebrød eller morgenmad. Denne opskrift giver dig den autentiske leverpostej der smager langt bedre end fra butikken. Server med rødbeder, agurker og ristet brød - det er dansk hjemmekøkken på sit bedste!"
-  },
-  {
-    "slug": "chicken-tikka-masala",
-    "title": "Chicken Tikka Masala",
-    "category": "Kød",
-    "time": "90 min",
-    "prepTime": "30 min",
-    "cookTime": "60 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk hjemmelavet chicken tikka masala med saftig kylling, cremet tomatssauce og aromatiske indiske krydderier. Den perfekte indiske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske chicken tikka masala med perfekt krydret smag og cremet konsistens. Server med ris eller naan - perfekt til en hyggelig aften!"
-  },
-  {
-    "slug": "beef-stroganoff",
-    "title": "Beef Stroganoff",
-    "category": "Kød",
-    "time": "60 min",
-    "prepTime": "20 min",
-    "cookTime": "40 min",
-    "difficulty": "Mellem",
-    "excerpt": "Klassisk hjemmelavet beef stroganoff med mør oksekød, cremet flødesauce og svampe. Den perfekte russiske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske beef stroganoff med perfekt krydret smag og cremet konsistens. Server med pasta eller ris - perfekt til en hyggelig aften!"
-  },
-  {
-    "slug": "coq-au-vin",
-    "title": "Coq au Vin",
-    "category": "Kød",
-    "time": "150 min",
-    "prepTime": "30 min",
-    "cookTime": "120 min",
-    "difficulty": "Mellem",
-    "excerpt": "Klassisk fransk hjemmelavet coq au vin med saftig kylling, rødvinssauce og svampe. Den perfekte franske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske coq au vin med perfekt krydret smag og cremet konsistens. Server med pasta eller kartofler - perfekt til en særlig aften!"
-  },
-  {
-    "slug": "ratatouille",
-    "title": "Ratatouille",
-    "category": "Vegetarisk",
-    "time": "90 min",
-    "prepTime": "30 min",
-    "cookTime": "60 min",
-    "difficulty": "Mellem",
-    "excerpt": "Klassisk fransk hjemmelavet ratatouille med grøntsager, tomater og aromatiske krydderier. Den perfekte vegetariske ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske ratatouille med perfekt krydret smag og cremet konsistens. Server med pasta, ris eller brød - perfekt til en hyggelig aften!"
-  },
-  {
-    "slug": "shakshuka",
-    "title": "Shakshuka",
-    "category": "Vegetarisk",
-    "time": "40 min",
-    "prepTime": "15 min",
-    "cookTime": "25 min",
-    "difficulty": "Let",
-    "excerpt": "Autentisk mellemøstlig hjemmelavet shakshuka med æg, tomater og aromatiske krydderier. Den perfekte morgenmad eller brunch ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske shakshuka med perfekt krydret smag og cremet konsistens. Server med brød - perfekt til en hyggelig morgenmad!"
-  },
-  {
-    "slug": "fish-and-chips",
-    "title": "Fish and Chips",
-    "category": "Fisk",
-    "time": "60 min",
-    "prepTime": "30 min",
-    "cookTime": "30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Klassisk britisk hjemmelavet fish and chips med sprød paneret fisk og perfekte pommes frites. Den perfekte ret der smager langt bedre end fra fish and chips butikken. Denne opskrift giver dig den autentiske fish and chips med perfekt krydret smag og sprød konsistens. Server med tartarsauce og citron - perfekt til en hyggelig aften!"
-  },
-  {
-    "slug": "pulled-pork",
-    "title": "Pulled Pork",
-    "category": "Kød",
-    "time": "6 timer",
-    "prepTime": "30 min",
-    "cookTime": "5 timer 30 min",
-    "difficulty": "Mellem",
-    "excerpt": "Autentisk amerikansk hjemmelavet pulled pork med saftigt svinekød og BBQ-sauce. Den perfekte ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske pulled pork med perfekt krydret smag og saftig konsistens. Server med coleslaw og brød - perfekt til en hyggelig aften!"
-  },
-  {
-    "slug": "chicken-parmesan",
-    "title": "Chicken Parmesan",
-    "category": "Kød",
-    "time": "60 min",
-    "prepTime": "20 min",
-    "cookTime": "40 min",
-    "difficulty": "Mellem",
-    "excerpt": "Klassisk italiensk-amerikansk hjemmelavet chicken parmesan med paneret kylling, tomatssauce og mozzarella. Den perfekte ret der smager langt bedre end fra restauranten. Denne opskrift giver dig den autentiske chicken parmesan med perfekt krydret smag og sprød konsistens. Server med pasta - perfekt til en hyggelig aften!"
   }
 ]
