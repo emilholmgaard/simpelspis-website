@@ -38,13 +38,42 @@ export default function CookiePolitikPage() {
               Hvilke cookies bruger vi?
             </h2>
             <p className="mb-3">
-              Vi bruger kun nødvendige cookies til at håndtere din login-session. Disse cookies er 
-              essentielle for, at du kan logge ind og forblive logget ind på vores hjemmeside.
+              Vi bruger forskellige typer cookies afhængigt af dine præferencer:
             </p>
-            <ul className="list-disc list-inside space-y-2 ml-4">
+            
+            <h3 className="text-lg font-semibold text-gray-950 dark:text-gray-50 mt-4 mb-2">
+              Nødvendige cookies
+            </h3>
+            <p className="mb-3">
+              Disse cookies er essentielle for, at hjemmesiden fungerer korrekt. De bruges til at håndtere 
+              din login-session og sikre, at du kan logge ind og forblive logget ind.
+            </p>
+            <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
               <li>
                 <strong>Session cookies:</strong> Disse cookies gemmes kun midlertidigt og slettes, 
                 når du lukker din browser. De bruges til at håndtere din login-session.
+              </li>
+            </ul>
+
+            <h3 className="text-lg font-semibold text-gray-950 dark:text-gray-50 mt-4 mb-2">
+              Analyse cookies (kun hvis du giver samtykke)
+            </h3>
+            <p className="mb-3">
+              Hvis du giver samtykke til analyse cookies, bruger vi analyseværktøjer til at indsamle 
+              anonymiseret statistik om, hvordan besøgende bruger hjemmesiden. Dette hjælper os med 
+              at forbedre hjemmesiden og forstå, hvilke sider der er mest populære.
+            </p>
+            <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
+              <li>
+                <strong>Google Analytics:</strong> Vi bruger Google Analytics til at indsamle anonymiseret 
+                data om besøg på hjemmesiden. IP-adresser anonymiseres automatisk, og vi deler ikke 
+                personlige oplysninger med Google. Du kan til enhver tid framelde analyse cookies i 
+                cookie-indstillingerne.
+              </li>
+              <li>
+                <strong>Vercel Analytics:</strong> Vi bruger Vercel Analytics til at indsamle anonymiseret 
+                data om hjemmesidens ydeevne og brug. Dette hjælper os med at forbedre hjemmesidens hastighed 
+                og brugeroplevelse. Data er anonymiseret og deles ikke med tredjeparter.
               </li>
             </ul>
           </section>
@@ -57,6 +86,7 @@ export default function CookiePolitikPage() {
               <li>At håndtere din login-session</li>
               <li>At huske, at du er logget ind</li>
               <li>At sikre, at du kan skrive anmeldelser og give stjerner</li>
+              <li>At indsamle anonymiseret statistik om hjemmesidens brug (kun hvis du giver samtykke til analyse cookies)</li>
             </ul>
           </section>
 
@@ -64,10 +94,19 @@ export default function CookiePolitikPage() {
             <h2 className="text-xl font-semibold text-gray-950 dark:text-gray-50 mb-3">
               Deler vi dine data?
             </h2>
+            <p className="mb-3">
+              <strong>Nødvendige cookies:</strong> Vi deler ikke dine data med tredjeparter. Vi bruger kun 
+              cookies til at håndtere din login-session internt på vores hjemmeside.
+            </p>
+            <p className="mb-3">
+              <strong>Analyse cookies (kun hvis du giver samtykke):</strong> Hvis du giver samtykke til 
+              analyse cookies, bruger vi Google Analytics og Vercel Analytics. Disse værktøjer indsamler 
+              anonymiseret data, og IP-adresser anonymiseres automatisk. Vi deler ikke personlige 
+              oplysninger eller identificerbare data med tredjeparter. Data bruges kun til at forstå, 
+              hvordan hjemmesiden bruges, så vi kan forbedre den.
+            </p>
             <p>
-              <strong>Nej.</strong> Vi deler ikke dine data med tredjeparter. Vi bruger kun cookies 
-              til at håndtere din login-session internt på vores hjemmeside. Vi bruger ikke 
-              marketing-cookies, tracking-cookies eller analytics-cookies.
+              Vi bruger <strong>ikke</strong> marketing-cookies eller tracking-cookies til reklamer.
             </p>
           </section>
 
@@ -76,23 +115,27 @@ export default function CookiePolitikPage() {
               Hvordan kan du administrere cookies?
             </h2>
             <p className="mb-3">
-              Du kan til enhver tid slette cookies fra din browser. Bemærk, at hvis du sletter 
-              cookies, kan det påvirke din oplevelse på hjemmesiden, og du kan blive nødt til 
-              at logge ind igen.
+              Du kan til enhver tid administrere dine cookie-præferencer ved at klikke på 
+              "Cookie-indstillinger" knappen i bunden af hjemmesiden. Her kan du vælge, hvilke typer 
+              cookies du vil acceptere.
             </p>
             <p className="mb-3">
-              <strong>Vigtigt:</strong> Hvis du afviser cookies, kan du <strong>ikke</strong> logge ind 
-              eller skrive anmeldelser. Cookies er nødvendige for at håndtere din login-session og 
-              sikre, at du forbliver logget ind.
+              <strong>Nødvendige cookies:</strong> Disse cookies er altid aktive og kan ikke deaktiveres, 
+              da de er nødvendige for, at hjemmesiden fungerer korrekt. Hvis du afviser alle cookies, 
+              kan du <strong>ikke</strong> logge ind eller skrive anmeldelser.
             </p>
             <p className="mb-3">
-              Hvis du accepterer cookies, kan du logge ind og bruge alle funktioner på hjemmesiden. 
-              Vi bruger kun cookies til at håndtere din login-session - vi bruger ikke tracking-cookies 
-              eller marketing-cookies.
+              <strong>Analyse cookies:</strong> Du kan til enhver tid tilmelde eller framelde analyse cookies. 
+              Hvis du framelder analyse cookies, vil Google Analytics ikke indsamle data om dit besøg. 
+              Du kan ændre dette valg når som helst i cookie-indstillingerne.
+            </p>
+            <p className="mb-3">
+              Du kan også slette cookies direkte fra din browser. Bemærk, at hvis du sletter cookies, 
+              kan det påvirke din oplevelse på hjemmesiden, og du kan blive nødt til at logge ind igen.
             </p>
             <p>
-              Du kan til enhver tid ændre dit valg ved at slette cookies fra din browser og besøge 
-              hjemmesiden igen, hvor cookie-banneren vil blive vist igen.
+              Hvis du sletter alle cookies og besøger hjemmesiden igen, vil cookie-banneren blive vist igen, 
+              så du kan vælge dine præferencer på ny.
             </p>
           </section>
 

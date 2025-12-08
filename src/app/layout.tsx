@@ -1,11 +1,11 @@
 import '@/styles/tailwind.css'
-import { Analytics } from '@vercel/analytics/react'
 import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
 import { CookieBanner } from '@/components/cookie-banner'
 import { CookiePreferencesProvider } from '@/components/cookie-preferences-provider'
 import { CookiePreferencesButton } from '@/components/cookie-preferences-button'
 import { GoogleAnalytics } from '@/components/google-analytics'
+import { VercelAnalytics } from '@/components/vercel-analytics'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -79,6 +79,23 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Google Consent Mode v2 - Set defaults BEFORE loading Google tag */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('consent', 'default', {
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'wait_for_update': 500
+              });
+              window.gtag = gtag;
+            `,
+          }}
+        />
       </head>
       <body className="text-gray-950 dark:text-gray-50 bg-white dark:bg-gray-950 antialiased transition-colors">
         <ThemeProvider />
@@ -88,8 +105,8 @@ export default function RootLayout({
           <CookieBanner />
           <CookiePreferencesButton />
           <GoogleAnalytics />
+          <VercelAnalytics />
         </CookiePreferencesProvider>
-        <Analytics />
       </body>
     </html>
   )
