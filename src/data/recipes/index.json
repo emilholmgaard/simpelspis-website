@@ -7121,5 +7121,105 @@
     "cookTime": "15 min",
     "difficulty": "Let",
     "excerpt": "Aromatisk og smagfuld hjemmelavet hvidløgsmør med frisk hvidløg og urter. Den perfekte smør til brød, kød eller grøntsager. Denne opskrift giver dig det lækreste hjemmelavet hvidløgsmør der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "chokolade-banan-smoothie",
+    "title": "Chokolade-Banan Smoothie",
+    "category": "Hurtigt",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet chokolade-banan smoothie med dobbelt banan og rig chokoladesmag. Den perfekte dessert eller mættende snack. Denne opskrift giver dig en cremet og chokoladeagtig smoothie med intens banansmag der smager som en dessert."
+  },
+  {
+    "slug": "chokolade-jordbaer-smoothie",
+    "title": "Chokolade-Jordbær Smoothie",
+    "category": "Hurtigt",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk chokolade-jordbær smoothie med søde jordbær og rig chokoladesmag. Den perfekte dessert eller mættende snack. Denne opskrift giver dig en cremet og chokoladeagtig smoothie med frisk jordbærsmag der smager som en dessert."
+  },
+  {
+    "slug": "chokolade-protein-smoothie",
+    "title": "Chokolade-Protein Smoothie",
+    "category": "Hurtigt",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Mættende chokolade-protein smoothie med proteinpulver og rig chokoladesmag. Perfekt til træning eller som mættende snack. Denne opskrift giver dig en cremet og chokoladeagtig smoothie med ekstra protein der smager som en dessert."
+  },
+  {
+    "slug": "chokolade-kokos-smoothie",
+    "title": "Chokolade-Kokos Smoothie",
+    "category": "Hurtigt",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Tropisk chokolade-kokos smoothie med kokosmælk og rig chokoladesmag. Den perfekte dessert eller mættende snack. Denne opskrift giver dig en cremet og chokoladeagtig smoothie med eksotisk kokossmag der smager som en dessert."
+  },
+  {
+    "slug": "chokolade-banan-milkshake",
+    "title": "Chokolade-Banan Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Cremet chokolade-banan milkshake med chokoladeis og frisk banan. Den perfekte dessert til chokolade-elskeren. Denne opskrift giver dig en tyk og chokoladeagtig milkshake med intens banansmag der smager som fra din yndlingsrestaurant."
+  },
+  {
+    "slug": "chokolade-jordbaer-milkshake",
+    "title": "Chokolade-Jordbær Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk chokolade-jordbær milkshake med chokoladeis og friske jordbær. Den perfekte dessert til chokolade-elskeren. Denne opskrift giver dig en tyk og chokoladeagtig milkshake med frisk jordbærsmag der smager som fra din yndlingsrestaurant."
+  },
+  {
+    "slug": "chokolade-protein-milkshake",
+    "title": "Chokolade-Protein Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Mættende chokolade-protein milkshake med chokoladeis og proteinpulver. Perfekt til træning eller som dessert. Denne opskrift giver dig en tyk og chokoladeagtig milkshake med ekstra protein der smager som fra din yndlingsrestaurant."
+  },
+  {
+    "slug": "chokolade-peanutbutter-milkshake",
+    "title": "Chokolade-Peanutbutter Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Rig chokolade-peanutbutter milkshake med chokoladeis og cremet peanutbutter. Den perfekte dessert til chokolade-elskeren. Denne opskrift giver dig en tyk og chokoladeagtig milkshake med nøddeagtig smag der smager som fra din yndlingsrestaurant."
+  },
+  {
+    "slug": "chokolade-mint-milkshake",
+    "title": "Chokolade-Mint Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Forfriskende chokolade-mint milkshake med chokoladeis og frisk mynte. Den perfekte dessert til chokolade-elskeren. Denne opskrift giver dig en tyk og chokoladeagtig milkshake med frisk myntesmag der smager som fra din yndlingsrestaurant."
+  },
+  {
+    "slug": "chokolade-kokos-milkshake",
+    "title": "Chokolade-Kokos Milkshake",
+    "category": "Dessert",
+    "time": "5 min",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "difficulty": "Let",
+    "excerpt": "Tropisk chokolade-kokos milkshake med chokoladeis og kokosmælk. Den perfekte dessert til chokolade-elskeren. Denne opskrift giver dig en tyk og chokoladeagtig milkshake med eksotisk kokossmag der smager som fra din yndlingsrestaurant."
   }
 ]

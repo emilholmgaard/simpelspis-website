@@ -206,26 +206,26 @@ export function RecipeInstructions({ instructions }: RecipeInstructionsProps) {
                   <div className="mt-3 flex items-center gap-3">
                     {timer ? (
                       <>
-                        <div className="flex items-center gap-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 px-3 py-2">
-                          <ClockIcon className="h-4 w-4 text-gray-600 dark:text-gray-400" />
-                          <span className="text-sm font-medium text-gray-950 dark:text-gray-50">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-transparent bg-white/15 dark:bg-gray-800/50 shadow-md ring-1 ring-[#D15052]/15 dark:ring-white/20 px-4 py-[calc(--spacing(2)-1px)]">
+                          <ClockIcon className="h-5 w-5 text-gray-950 dark:text-gray-50" />
+                          <span className="text-base font-medium text-gray-950 dark:text-gray-50 whitespace-nowrap">
                             {formatTime(timer.timeLeft)}
                           </span>
                         </div>
                         {timer.isRunning ? (
                           <button
                             onClick={() => stopTimer(index)}
-                            className="flex items-center gap-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                            className="inline-flex items-center justify-center rounded-full border border-transparent shadow-sm ring-1 ring-black/10 dark:ring-white/20 px-4 py-[calc(--spacing(2)-1px)] text-base font-medium whitespace-nowrap text-gray-950 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                           >
-                            <PauseIcon className="h-4 w-4" />
+                            <PauseIcon className="mr-2 h-5 w-5" />
                             Stop
                           </button>
                         ) : (
                           <button
                             onClick={() => startTimer(index, timeInInstruction!)}
-                            className="flex items-center gap-2 rounded-lg border border-blue-600 dark:border-blue-500 bg-blue-600 dark:bg-blue-500 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
+                            className="inline-flex items-center justify-center rounded-full border border-transparent bg-gray-950 dark:bg-white shadow-md px-4 py-[calc(--spacing(2)-1px)] text-base font-medium whitespace-nowrap text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
                           >
-                            <PlayIcon className="h-4 w-4" />
+                            <PlayIcon className="mr-2 h-5 w-5" />
                             Start
                           </button>
                         )}
@@ -233,9 +233,9 @@ export function RecipeInstructions({ instructions }: RecipeInstructionsProps) {
                     ) : (
                       <button
                         onClick={() => startTimer(index, timeInInstruction!)}
-                        className="flex items-center gap-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                        className="inline-flex items-center justify-center rounded-full border border-transparent shadow-sm ring-1 ring-black/10 dark:ring-white/20 px-4 py-[calc(--spacing(2)-1px)] text-base font-medium whitespace-nowrap text-gray-950 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                       >
-                        <ClockIcon className="h-4 w-4" />
+                        <ClockIcon className="mr-2 h-5 w-5" />
                         Timer {timeInInstruction} min
                       </button>
                     )}

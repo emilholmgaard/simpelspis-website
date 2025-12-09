@@ -110,7 +110,7 @@ function formatAdjustedIngredient(original: string, factor: number): string {
   return `${adjustedAmount} ${rest}`.trim()
 }
 
-export function RecipeIngredients({ ingredients, defaultPortions = 4 }: RecipeIngredientsProps) {
+export function RecipeIngredients({ ingredients, defaultPortions = 1 }: RecipeIngredientsProps) {
   const [portions, setPortions] = useState(defaultPortions)
   const [checkedItems, setCheckedItems] = useState<Set<number>>(new Set())
 
@@ -138,8 +138,8 @@ export function RecipeIngredients({ ingredients, defaultPortions = 4 }: RecipeIn
   }, [portions])
 
   return (
-    <div className="lg:sticky lg:top-24 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
-      <div className="flex items-center justify-between mb-4">
+    <div className="lg:sticky lg:top-24">
+      <div className="flex flex-col gap-4 mb-4">
         <h2 className="text-xl font-semibold text-gray-950 dark:text-gray-50">Ingredienser</h2>
         <PortionAdjuster defaultPortions={defaultPortions} onPortionsChange={setPortions} />
       </div>

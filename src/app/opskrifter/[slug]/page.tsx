@@ -436,7 +436,7 @@ export default async function RecipePage({
 
           <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 recipe-section">
             <RecipeInstructions instructions={recipe.instructions} />
-            <RecipeIngredients ingredients={recipe.ingredients} defaultPortions={4} />
+            <RecipeIngredients ingredients={recipe.ingredients} defaultPortions={1} />
           </div>
         </div>
       </Container>
