@@ -1,8 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ChevronDownIcon, ChevronUpIcon, LightBulbIcon } from '@heroicons/react/24/outline'
-import { Subheading } from '@/components/text'
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
 
 interface RecipeTipsProps {
   instructions: string[]
@@ -41,50 +40,48 @@ export function RecipeTips({ instructions }: RecipeTipsProps) {
     return null
   }
 
-  // Vis de første 3 tips som standard, resten når expanded
-  const visibleTips = isExpanded ? tips : tips.slice(0, 3)
-  const hasMoreTips = tips.length > 3
+  // Vis de første 5 tips som standard, resten når expanded
+  const visibleTips = isExpanded ? tips : tips.slice(0, 5)
+  const hasMoreTips = tips.length > 5
 
   return (
-    <div className="mt-12">
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="flex w-full items-center justify-between rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-4 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-      >
-        <div className="flex items-center gap-3">
-          <LightBulbIcon className="h-5 w-5 text-yellow-500 dark:text-yellow-400" />
-          <Subheading as="h3" className="mb-0">
-            Pro Tips ({tips.length})
-          </Subheading>
-        </div>
+    <div className="mt-8 space-y-6">
+      {/* Section Header - samme stil som FORBEREDELSE, TILBEREDNING, etc. */}
+      <div className="flex items-center gap-3 flex-wrap">
+        <h3 className="text-lg font-semibold text-gray-950 dark:text-gray-50">
+          PRO TIPS
+        </h3>
         {hasMoreTips && (
-          <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-            <span>{isExpanded ? 'Vis færre' : `Vis alle ${tips.length} tips`}</span>
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="inline-flex items-center gap-1 rounded-full bg-gray-100 dark:bg-gray-800 px-4 py-1.5 text-xs font-medium text-gray-700 dark:text-gray-300 ring-1 ring-inset ring-gray-900/10 dark:ring-white/10 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          >
             {isExpanded ? (
-              <ChevronUpIcon className="h-5 w-5" />
+              <>
+                Vis færre
+                <ChevronUpIcon className="h-3 w-3" />
+              </>
             ) : (
-              <ChevronDownIcon className="h-5 w-5" />
+              <>
+                Vis alle {tips.length} tips
+                <ChevronDownIcon className="h-3 w-3" />
+              </>
             )}
-          </div>
+          </button>
         )}
-      </button>
+      </div>
 
-      <div className="mt-4 space-y-3">
+      {/* Tips - samme stil som instruktioner */}
+      <div className="space-y-6">
         {visibleTips.map((tip, index) => (
           <div
             key={index}
-            className="flex gap-3 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-4"
+            className="flex gap-6 text-base/7 text-gray-600 dark:text-gray-400"
           >
-            <div className="flex-shrink-0 mt-0.5">
-              <div className="flex h-6 w-6 items-center justify-center rounded-full bg-yellow-100 dark:bg-yellow-900/30">
-                <span className="text-xs font-semibold text-yellow-600 dark:text-yellow-400">
-                  {index + 1}
-                </span>
-              </div>
-            </div>
-            <p className="text-sm/6 text-gray-600 dark:text-gray-400 flex-1">
-              {tip}
-            </p>
+            <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-950 dark:text-gray-50">
+              {index + 1}
+            </span>
+            <span className="pt-1 flex-1">{tip}</span>
           </div>
         ))}
       </div>

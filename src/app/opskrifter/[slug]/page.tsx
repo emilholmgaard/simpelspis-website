@@ -18,7 +18,6 @@ import { AnimatedRecipeCard } from '@/components/animated-recipe-card'
 import { RecipeIngredients } from '@/components/recipe/recipe-ingredients'
 import { RecipeInstructions } from '@/components/recipe/recipe-instructions'
 import { RecipeTips } from '@/components/recipe/recipe-tips'
-import { CookingMode } from '@/components/recipe/cooking-mode'
 import { SaveRecipe } from '@/components/recipe/save-recipe'
 
 export async function generateStaticParams() {
@@ -472,17 +471,11 @@ export default async function RecipePage({
           <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 recipe-section">
             <div>
               <RecipeInstructions instructions={recipe.instructions} />
-              <CookingMode 
-                instructions={recipe.instructions}
-                ingredients={recipe.ingredients}
-                recipeTitle={recipe.title}
-              />
+              {/* PRO TIPS Section - samme kolonne som instruktioner */}
+              <RecipeTips instructions={recipe.instructions} />
             </div>
             <RecipeIngredients ingredients={recipe.ingredients} defaultPortions={1} />
           </div>
-
-          {/* PRO TIPS Section */}
-          <RecipeTips instructions={recipe.instructions} />
         </div>
       </Container>
 
