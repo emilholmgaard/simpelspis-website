@@ -5152,6 +5152,56 @@
     "excerpt": "Juicy og smagfuld hjemmelavet plantebaseret burger med kikærter, grøntsager og aromatiske krydderier. Den perfekte vegetariske burger der smager langt bedre end fra butikken. Sund, mættende og perfekt til hele familien!"
   },
   {
+    "slug": "plantebaseret-burger-med-linser",
+    "title": "Plantebaseret Burger med Linser",
+    "category": "Vegetarisk",
+    "time": "50 min",
+    "prepTime": "30 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Saftig og proteinrig plantebaseret burger med røde linser, grøntsager og aromatiske krydderier. Den perfekte veganske burger med autentisk smag og fantastisk tekstur. Mættende, sund og perfekt til hele familien!"
+  },
+  {
+    "slug": "plantebaseret-burger-med-svampe",
+    "title": "Plantebaseret Burger med Svampe",
+    "category": "Vegetarisk",
+    "time": "45 min",
+    "prepTime": "25 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Umami-rig plantebaseret burger med portobello svampe, kikærter og aromatiske krydderier. Den perfekte veganske burger med intens svampesmag og saftig tekstur. Mættende, sund og perfekt til hele familien!"
+  },
+  {
+    "slug": "plantebaseret-burger-med-quinoa",
+    "title": "Plantebaseret Burger med Quinoa og Sorte Bønner",
+    "category": "Vegetarisk",
+    "time": "55 min",
+    "prepTime": "35 min",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Proteinrig og mættende plantebaseret burger med quinoa, sorte bønner og aromatiske krydderier. Den perfekte veganske burger med kompleks tekstur og autentisk smag. Sund, mættende og perfekt til hele familien!"
+  },
+  {
+    "slug": "plantebaseret-burger-med-roedbeder",
+    "title": "Plantebaseret Burger med Rødbeder",
+    "category": "Vegetarisk",
+    "time": "50 min",
+    "prepTime": "30 min",
+    "cookTime": "20 min",
+    "difficulty": "Let",
+    "excerpt": "Farvet og smagfuld plantebaseret burger med rødbeder, kikærter og aromatiske krydderier. Den perfekte veganske burger med intens farve og autentisk smag. Mættende, sund og perfekt til hele familien!"
+  },
+  {
+    "slug": "plantebaseret-burger-med-sojaboenner",
+    "title": "Plantebaseret Burger med Sojabønner",
+    "category": "Vegetarisk",
+    "time": "60 min",
+    "prepTime": "40 min",
+    "cookTime": "20 min",
+    "difficulty": "Mellem",
+    "excerpt": "Proteinrig og mættende plantebaseret burger med sojabønner, grøntsager og aromatiske krydderier. Den perfekte veganske burger med højt proteinindhold og autentisk smag. Sund, mættende og perfekt til hele familien!"
+  },
+  {
     "slug": "plantebaseret-curry",
     "title": "Plantebaseret Curry",
     "category": "Vegetarisk",
