@@ -28,25 +28,25 @@ export function PortionAdjuster({ defaultPortions = 1, onPortionsChange }: Porti
   }
 
   return (
-    <div className="inline-flex items-center gap-1.5 rounded-full border border-transparent bg-white/15 dark:bg-gray-800/50 shadow-md ring-1 ring-[#D15052]/15 dark:ring-white/20 px-3 py-1.5">
+    <div className="inline-flex items-center justify-center gap-2 rounded-full border border-transparent bg-white/15 dark:bg-gray-800/50 shadow-md ring-1 ring-[#D15052]/15 dark:ring-white/20 px-4 py-[calc(--spacing(2)-1px)]">
       <button
         onClick={decreasePortions}
         disabled={portions <= 1}
-        className="text-gray-950 dark:text-gray-50 hover:opacity-70 disabled:opacity-40 disabled:cursor-not-allowed transition-opacity p-0.5"
+        className="text-gray-950 dark:text-gray-50 hover:opacity-70 disabled:opacity-40 disabled:cursor-not-allowed transition-opacity"
         aria-label="Reducer portioner"
       >
-        <MinusIcon className="h-3.5 w-3.5" />
+        <MinusIcon className="h-4 w-4" />
       </button>
-      <span className="min-w-[1.5rem] text-center text-sm font-medium text-gray-950 dark:text-gray-50 whitespace-nowrap">
+      <span className="min-w-[3rem] text-center text-base font-medium text-gray-950 dark:text-gray-50 whitespace-nowrap">
         {portions} {portions === 1 ? 'portion' : 'portioner'}
       </span>
       <button
         onClick={increasePortions}
         disabled={portions >= 12}
-        className="text-gray-950 dark:text-gray-50 hover:opacity-70 disabled:opacity-40 disabled:cursor-not-allowed transition-opacity p-0.5"
+        className="text-gray-950 dark:text-gray-50 hover:opacity-70 disabled:opacity-40 disabled:cursor-not-allowed transition-opacity"
         aria-label="Øg portioner"
       >
-        <PlusIcon className="h-3.5 w-3.5" />
+        <PlusIcon className="h-4 w-4" />
       </button>
     </div>
   )

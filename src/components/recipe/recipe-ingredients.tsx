@@ -140,8 +140,10 @@ export function RecipeIngredients({ ingredients, defaultPortions = 1 }: RecipeIn
   return (
     <div className="lg:sticky lg:top-24">
       <div className="flex flex-col gap-4 mb-4">
-        <h2 className="text-xl font-semibold text-gray-950 dark:text-gray-50">Ingredienser</h2>
-        <PortionAdjuster defaultPortions={defaultPortions} onPortionsChange={setPortions} />
+        <div className="flex items-center justify-between">
+          <h2 className="text-xl font-semibold text-gray-950 dark:text-gray-50">Ingredienser</h2>
+          <PortionAdjuster defaultPortions={defaultPortions} onPortionsChange={setPortions} />
+        </div>
       </div>
       <ul className="space-y-2">
         {ingredients.map((ingredient, index) => {
