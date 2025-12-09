@@ -15,6 +15,8 @@ import { db } from '@/lib/db'
 import { reviews } from '@/lib/db/schema'
 import { eq, sql } from 'drizzle-orm'
 import { AnimatedRecipeCard } from '@/components/animated-recipe-card'
+import { RecipeIngredients } from '@/components/recipe/recipe-ingredients'
+import { RecipeInstructions } from '@/components/recipe/recipe-instructions'
 
 export async function generateStaticParams() {
   const recipes = getAllRecipesWithData()
@@ -433,106 +435,8 @@ export default async function RecipePage({
           </div>
 
           <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 recipe-section">
-            <div>
-              <Subheading as="h2">Fremgangsmåde</Subheading>
-              <div className="mt-4 space-y-6">
-                {recipe.instructions.map((instruction, index) => {
-                  // Check if instruction is a section header (all caps with optional time in parentheses, or known section headers)
-                  const isKnownHeader = instruction.startsWith('FORBEREDELSE') || instruction.startsWith('TILBEREDNING') || instruction.startsWith('SAMMENSAETNING') || instruction.startsWith('PRO TIPS') || instruction.startsWith('TIP') || instruction.startsWith('GLASUR') || instruction.startsWith('FROSTING') || instruction.startsWith('MÆSKNING') || instruction.startsWith('FILTRERING') || instruction.startsWith('KOGNING') || instruction.startsWith('GÆRING') || instruction.startsWith('FLASKNING') || instruction.startsWith('LAGRING')
-                  // Also check for all-caps headers with time in parentheses
-                  const hasTimeInParens = /\([^)]+\)/.test(instruction)
-                  const textBeforeParens = instruction.replace(/\s*\([^)]+\)\s*$/, '').trim()
-                  const isAllCaps = textBeforeParens === textBeforeParens.toUpperCase() && /^[A-ZÆØÅ\s]+$/.test(textBeforeParens)
-                  const isSectionHeader = isKnownHeader || (isAllCaps && hasTimeInParens)
-                  const isEmpty = instruction.trim() === ''
-                  let stepNumber = 0
-                  
-                  // Tæl faktiske steps (ikke sektionstitler eller tomme linjer)
-                  recipe.instructions.slice(0, index).forEach((inst) => {
-                    const isKnownHeaderCheck = inst.startsWith('FORBEREDELSE') || inst.startsWith('TILBEREDNING') || inst.startsWith('SAMMENSAETNING') || inst.startsWith('PRO TIPS') || inst.startsWith('TIP') || inst.startsWith('GLASUR') || inst.startsWith('FROSTING') || inst.startsWith('MÆSKNING') || inst.startsWith('FILTRERING') || inst.startsWith('KOGNING') || inst.startsWith('GÆRING') || inst.startsWith('FLASKNING') || inst.startsWith('LAGRING')
-                    const hasTimeCheck = /\([^)]+\)/.test(inst)
-                    const textBeforeParensCheck = inst.replace(/\s*\([^)]+\)\s*$/, '').trim()
-                    const isAllCapsCheck = textBeforeParensCheck === textBeforeParensCheck.toUpperCase() && /^[A-ZÆØÅ\s]+$/.test(textBeforeParensCheck)
-                    const isHeaderCheck = isKnownHeaderCheck || (isAllCapsCheck && hasTimeCheck)
-                    if (inst.trim() !== '' && !isHeaderCheck) {
-                      stepNumber++
-                    }
-                  })
-                  
-                  if (isEmpty) {
-                    return <div key={index} className="h-4" />
-                  }
-                  
-                  if (isSectionHeader) {
-                    // Find minutter i parentes
-                    const timeMatch = instruction.match(/\(([^)]+)\)/)
-                    const timeText = timeMatch ? timeMatch[1] : null
-                    let headerText = timeMatch ? instruction.replace(timeMatch[0], '').trim() : instruction
-                    // Fjern kolon fra slutningen
-                    headerText = headerText.replace(/:$/, '')
-                    
-                    return (
-                      <div key={index} className="mt-8 first:mt-0 flex items-center gap-3 flex-wrap">
-                        <h3 className="text-lg font-semibold text-gray-950 dark:text-gray-50">
-                          {headerText}
-                        </h3>
-                        {timeText && (
-                          <span className="inline-flex items-center rounded-full bg-gray-100 dark:bg-gray-800 px-4 py-1.5 text-xs font-medium text-gray-700 dark:text-gray-300 ring-1 ring-inset ring-gray-900/10 dark:ring-white/10">
-                            {timeText}
-                          </span>
-                        )}
-                      </div>
-                    )
-                  }
-                  
-                  return (
-                    <div
-                    key={index}
-                      className="flex gap-6 text-base/7 text-gray-600 dark:text-gray-400"
-                  >
-                      <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-950 dark:text-gray-50">
-                        {stepNumber + 1}
-                    </span>
-                      <span className="pt-1 flex-1">{instruction}</span>
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
-
-            <div className="recipe-section">
-              <Subheading as="h2">Ingredienser</Subheading>
-              <ul className="mt-4 space-y-2">
-                {recipe.ingredients.map((ingredient, index) => {
-                  const isSectionHeader = ingredient.endsWith(':')
-                  const isEmpty = ingredient.trim() === ''
-                  
-                  if (isEmpty) {
-                    return <li key={index} className="h-2" />
-                  }
-                  
-                  if (isSectionHeader) {
-                    return (
-                      <li key={index} className="mt-4 first:mt-0">
-                        <span className="text-sm font-semibold text-gray-950 dark:text-gray-50">
-                          {ingredient}
-                        </span>
-                      </li>
-                    )
-                  }
-                  
-                  return (
-                  <li
-                    key={index}
-                      className="flex items-start gap-3 text-sm/6 text-gray-600 dark:text-gray-400"
-                  >
-                      <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-gray-400 dark:bg-gray-500" />
-                    {ingredient}
-                  </li>
-                  )
-                })}
-              </ul>
-            </div>
+            <RecipeInstructions instructions={recipe.instructions} />
+            <RecipeIngredients ingredients={recipe.ingredients} defaultPortions={4} />
           </div>
         </div>
       </Container>

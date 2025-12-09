@@ -7101,5 +7101,25 @@
     "cookTime": "25 min",
     "difficulty": "Let",
     "excerpt": "Autentisk mellemøstlig hjemmelavet shakshuka med kikærter, tomater, æg og aromatiske krydderier. Den perfekte mættende mellemøstlige klassiker med ekstra protein fra kikærter. Denne opskrift giver dig den autentiske shakshuka med kikærter, cremet æg og krydret tomat-sauce. Perfekt til morgenmad eller brunch!"
+  },
+  {
+    "slug": "hjemmelavet-smoer",
+    "title": "Hjemmelavet Smør",
+    "category": "Hurtigt",
+    "time": "20 min",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Frisk og cremet hjemmelavet smør fra piskefløde. Den perfekte smør med rig smag og naturlig tekstur. Denne opskrift giver dig det lækreste hjemmelavet smør der smager langt bedre end fra butikken."
+  },
+  {
+    "slug": "hjemmelavet-hvidloegsmoer",
+    "title": "Hjemmelavet Hvidløgsmør",
+    "category": "Hurtigt",
+    "time": "25 min",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Aromatisk og smagfuld hjemmelavet hvidløgsmør med frisk hvidløg og urter. Den perfekte smør til brød, kød eller grøntsager. Denne opskrift giver dig det lækreste hjemmelavet hvidløgsmør der smager langt bedre end fra butikken."
   }
 ]
