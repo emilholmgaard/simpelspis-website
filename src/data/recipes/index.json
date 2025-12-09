@@ -6951,5 +6951,155 @@
     "cookTime": "20 min",
     "difficulty": "Let",
     "excerpt": "Tykke, luftige fluffy pandekager med kærnemælk, bagepulver og piskede æggehvider. Perfekte til brunch med sirup og bær."
+  },
+  {
+    "slug": "bananpandekager-med-chokoladechips",
+    "title": "Bananpandekager med Chokoladechips",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og saftige bananpandekager med smeltende chokoladechips. Den perfekte morgenmad eller brunch med ekstra chokolade. Denne opskrift giver dig de lækreste bananpandekager med chokoladechips der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-med-blaabaer",
+    "title": "Bananpandekager med Blåbær",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og saftige bananpandekager med friske blåbær og kanel. Den perfekte morgenmad eller brunch med naturlig sødme fra bær. Denne opskrift giver dig de lækreste bananpandekager med blåbær der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-med-valnoedder",
+    "title": "Bananpandekager med Valnødder",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og nøddeagtige bananpandekager med knasende valnødder og kanel. Den perfekte morgenmad eller brunch med ekstra tekstur og protein. Denne opskrift giver dig de lækreste bananpandekager med valnødder der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-med-kokos",
+    "title": "Bananpandekager med Kokos",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og tropiske bananpandekager med kokosflager og kokosnødolie. Den perfekte morgenmad eller brunch med eksotisk smag. Denne opskrift giver dig de lækreste bananpandekager med kokos der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-med-peanutbutter",
+    "title": "Bananpandekager med Peanutbutter",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og saftige bananpandekager med cremet peanutbutter. Den perfekte morgenmad eller brunch med nøddeagtig smag. Denne opskrift giver dig de lækreste bananpandekager med peanutbutter der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-glutenfri",
+    "title": "Bananpandekager Glutenfri",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og saftige glutenfri bananpandekager med mosede bananer og kanel. Den perfekte morgenmad eller brunch for dem med glutenintolerans. Denne opskrift giver dig de lækreste glutenfri bananpandekager der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-med-havregryn",
+    "title": "Bananpandekager med Havregryn",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og saftige bananpandekager med nærende havregryn. Den perfekte morgenmad eller brunch med ekstra fiber. Denne opskrift giver dig de lækreste bananpandekager med havregryn der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-med-appelsin",
+    "title": "Bananpandekager med Appelsin",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og saftige bananpandekager med frisk appelsin og citrus. Den perfekte morgenmad eller brunch med forfriskende smag. Denne opskrift giver dig de lækreste bananpandekager med appelsin der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-med-chokolade",
+    "title": "Bananpandekager med Chokolade",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og luftige bananpandekager med smeltet chokolade og chokoladechips. Den perfekte morgenmad eller brunch med ekstra chokolade-luksus. Denne opskrift giver dig de lækreste bananpandekager med rig chokoladesmag der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-veganske",
+    "title": "Bananpandekager - Veganske",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og saftige veganske bananpandekager uden æg eller mælkeprodukter. Perfekt til plantebaseret kost. Denne opskrift giver dig de lækreste veganske bananpandekager der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-med-protein",
+    "title": "Bananpandekager med Protein",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og mættende bananpandekager med proteinpulver og kanel. Den perfekte morgenmad eller brunch efter træning. Denne opskrift giver dig de lækreste proteinrige bananpandekager der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-protein",
+    "title": "Bananpandekager - Protein",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og proteinrige bananpandekager med proteinpulver og græsk yoghurt. Perfekt til træning og sund kost. Denne opskrift giver dig de lækreste protein bananpandekager der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "bananpandekager-med-kanel-og-kardemomme",
+    "title": "Bananpandekager med Kanel og Kardemomme",
+    "category": "Hurtigt",
+    "time": "30 min",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "difficulty": "Let",
+    "excerpt": "Søde og aromatiske bananpandekager med varm kanel og eksotisk kardemomme. Den perfekte morgenmad eller brunch med nordisk twist. Denne opskrift giver dig de lækreste bananpandekager med kanel og kardemomme der smager langt bedre end fra restauranten."
+  },
+  {
+    "slug": "shakshuka-med-bonner",
+    "title": "Shakshuka med Bønner",
+    "category": "Vegetar",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk mellemøstlig hjemmelavet shakshuka med bønner, tomater, æg og aromatiske krydderier. Den perfekte mættende mellemøstlige klassiker med ekstra protein fra bønner. Denne opskrift giver dig den autentiske shakshuka med bønner, cremet æg og krydret tomat-sauce. Perfekt til morgenmad eller brunch!"
+  },
+  {
+    "slug": "shakshuka-med-kikaerter",
+    "title": "Shakshuka med Kikærter",
+    "category": "Vegetar",
+    "time": "40 min",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "difficulty": "Let",
+    "excerpt": "Autentisk mellemøstlig hjemmelavet shakshuka med kikærter, tomater, æg og aromatiske krydderier. Den perfekte mættende mellemøstlige klassiker med ekstra protein fra kikærter. Denne opskrift giver dig den autentiske shakshuka med kikærter, cremet æg og krydret tomat-sauce. Perfekt til morgenmad eller brunch!"
   }
 ]
